@@ -45,4 +45,6 @@ utf8_sequence_length
 
 {% block patch %}
 sed -e 's|locale.h||' -i meson.build
+sed -e '/^# Tests$/a if false' -e '/^# Documentation\.$/i endif' -i meson.build
+sed -e '/^# Tests$/a has_merge_modes_tests = false' -i meson.build
 {% endblock %}

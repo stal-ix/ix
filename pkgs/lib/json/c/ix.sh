@@ -17,6 +17,10 @@ https://s3.amazonaws.com/json-c_releases/releases/json-c-{{self.version().strip(
 lib/c
 {% endblock %}
 
+{% block cmake_flags %}
+BUILD_APPS=OFF
+{% endblock %}
+
 {% block c_rename_symbol %}
 json_object_equal
 {% endblock %}

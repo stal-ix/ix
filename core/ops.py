@@ -1,6 +1,29 @@
 import os
 
 
+def flags_from_env():
+    def items():
+        for value in os.environ.get('IX_FLAGS', '').split(','):
+            name, separator, argument = value.partition('=')
+
+            if name:
+                yield name, argument if separator else '1'
+
+    result = dict(items())
+
+    if result.get('all_system'):
+        result.setdefault('system_path', os.environ['PATH'])
+
+        for name in ('CPPFLAGS', 'CFLAGS', 'CXXFLAGS', 'LDFLAGS'):
+            if value := os.environ.get(name):
+                result.setdefault(f'system_{name.lower()}', value)
+
+        if value := os.environ.get('ACLOCAL_PATH'):
+            result.setdefault('system_aclocal_path', value)
+
+    return result
+
+
 def construct(cfg, kind=None):
     if not kind:
         kind = os.environ.get('IX_EXEC_KIND', None)

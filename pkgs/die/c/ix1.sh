@@ -12,6 +12,8 @@
     {% block c_compiler %}
       {% if c_compiler %}
         {{c_compiler}}
+      {% elif all_system or system_compiler %}
+        bld/compiler/system
       {% else %}
         bld/compiler(clang_ver={{clang_ver}})
       {% endif %}

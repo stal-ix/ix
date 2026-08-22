@@ -1,7 +1,10 @@
 {% extends '//lib/sqlite/3/t/t/ix.sh' %}
 
+{% block configure %}
+{% endblock %}
+
 {% block build %}
-test -f jimsh0
+${CC} -o jimsh0 autosetup/jimsh0.c
 {% endblock %}
 
 {% block install %}

@@ -56,7 +56,6 @@ class RenderContext:
         bp = pkg.config.ops.boot_path()
 
         args = pkg.config.ops.flags()
-        args = cu.dict_dict_update(args, parse_pkg_flags(os.environ.get('IX_FLAGS', '')))
 
         args = cu.dict_dict_update(args, {
             'ix': self,

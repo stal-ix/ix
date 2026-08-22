@@ -12,14 +12,18 @@ rename_dynlib
 
 {% block std_env %}
   {% block std_box %}
-    {% block shell %}
-      bld/sh
-    {% endblock %}
-    {% block box %}
-      bld/box
-    {% endblock %}
-    {% block decompressor %}
-      bld/extract
-    {% endblock %}
+    {% if all_system %}
+      bld/system/box
+    {% else %}
+      {% block shell %}
+        bld/sh
+      {% endblock %}
+      {% block box %}
+        bld/box
+      {% endblock %}
+      {% block decompressor %}
+        bld/extract
+      {% endblock %}
+    {% endif %}
   {% endblock %}
 {% endblock %}

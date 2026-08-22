@@ -35,13 +35,6 @@ bld/byacc
 BISON_LOCALEDIR_c_make=\\\"${out}/share/locale\\\"
 {% endblock %}
 
-{% block install %}
-{{super()}}
-find ${out}/share -type f | while read l; do
-    sed -e 's|0.22|0.23|' -i ${l}
-done
-{% endblock %}
-
 {% block c_flags %}
 {{super()}}
 -Wno-incompatible-function-pointer-types
