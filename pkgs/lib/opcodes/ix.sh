@@ -23,4 +23,5 @@ lib/c
 
 {% block patch %}
 echo 0 > ../bfd/libtool-soversion
+sed -i '/assert (opcode->bin_opcode == bin);/a\      (void) bin;' avr-dis.c
 {% endblock %}
