@@ -27,6 +27,7 @@ fix_shebangs
 
 {% block patch %}
 sed -e 's|install-data-hook|xxx|' -i Makefile.am
+sed -e 's|if (err)$|if (errcode)|' -e 's|snd_strerror(err))|snd_strerror(errcode))|' -i seq/aconnect/aconnect.c
 {% endblock %}
 
 {% block cpp_defines %}
