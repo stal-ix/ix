@@ -5,12 +5,12 @@ c-ares
 {% endblock %}
 
 {% block version %}
-1.34.6
+1.34.8
 {% endblock %}
 
 {% block fetch %}
 https://github.com/c-ares/c-ares/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-4358939ff800b13b92f37d5fdda003718101faedfbdee792d6b79ddc1a53d890
+ddf8be8b179ef6ff656e7413da93cf0f3038c627aca29ce9aae30f66e5b32bc1
 {% endblock %}
 
 {% block lib_deps %}
