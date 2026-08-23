@@ -5,7 +5,7 @@ cbindgen
 {% endblock %}
 
 {% block version %}
-0.29.2
+0.29.4
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/mozilla/cbindgen/archive/refs/tags/{{self.version().strip()}}
 {% endblock %}
 
 {% block cargo_sha %}
-35541b294bc1a5b1577df272b840ac426c9157f578fbb9baf428f9c76994b742
+81d4868cfef5068406c5dfc41c868b5c4a3984b64df3c53a44246e46df5694f7
 {% endblock %}
 
 {% block cargo_bins %}
