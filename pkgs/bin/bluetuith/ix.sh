@@ -13,7 +13,7 @@ https://github.com/darkhz/bluetuith/archive/refs/tags/v{{self.version().strip()}
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+9586383c1703dd4e12e81f5f68e5144481aed8fb0526ee046dc3a80558d0f0dc
 {% endblock %}
 
 {% block go_bins %}
