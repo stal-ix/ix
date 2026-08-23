@@ -1,16 +1,18 @@
 {% extends '//die/c/meson.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 cagebreak
 {% endblock %}
 
 {% block version %}
-3.2.1
+3.1.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/project-repo/cagebreak/archive/refs/tags/{{self.version().strip()}}.tar.gz
-9642c05320dcf5fa726060f6cfdf30c47783202eb65b9ef6f7a3fe9931aadeca
+af247b2d4b1eb19e2ce2c80b05d68fcc4b0a2f5637669af3644c36edb14c2b70
 {% endblock %}
 
 {% block bld_libs %}
