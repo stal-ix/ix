@@ -20,5 +20,5 @@ lib/c++
 
 {% block patch %}
 {{super()}}
-sed -i '/myci-deb-version\.sh/d' pkg-config/makefile
+sed -i 's/$(shell myci-deb-version\.sh)/{{self.version().strip()}}/' pkg-config/makefile
 {% endblock %}
