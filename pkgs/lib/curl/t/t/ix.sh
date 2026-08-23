@@ -17,6 +17,8 @@ https://github.com/curl/curl/archive/refs/tags/curl-{{self.version().strip().rep
 bld/auto
 {% endblock %}
 
+{% block conf_ver %}2/71{% endblock %}
+
 {% block configure_flags %}
 {% if linux %}
 --with-random="/dev/urandom"
