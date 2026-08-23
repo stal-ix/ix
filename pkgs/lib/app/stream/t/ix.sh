@@ -30,6 +30,7 @@ gir=false
 svg-support=false
 apidocs=false
 install-docs=false
+display-detection=none
 {% endblock %}
 
 {% block bld_tool %}
