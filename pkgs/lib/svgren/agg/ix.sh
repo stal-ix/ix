@@ -20,5 +20,5 @@ lib/c++
 
 {% block patch %}
 {{super()}}
-sed -i 's/^this_version :=.*/this_version := {{self.version().strip()}}/' pkg-config/makefile
+ln -s build/debian debian
 {% endblock %}
