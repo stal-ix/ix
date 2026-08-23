@@ -17,3 +17,8 @@ dc3ec8f9c9d41d8434702a778cc150b196d5d178fd768a964f57d22f268a2c17
 lib/c
 lib/kernel
 {% endblock %}
+
+{% block patch %}
+sed -e 's|pthread_attr_setaffinity_np(&attr, sizeof(cpu_set_t), &cpus)|0|' \
+    -i src/x86/freq/freq.c
+{% endblock %}
