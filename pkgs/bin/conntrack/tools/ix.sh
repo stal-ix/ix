@@ -9,7 +9,7 @@ conntrack-tools
 {% endblock %}
 
 {% block git_repo %}
-git://git.netfilter.org/conntrack-tools
+https://git.netfilter.org/conntrack-tools
 {% endblock %}
 
 {% block git_branch %}
