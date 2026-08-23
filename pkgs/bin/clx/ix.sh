@@ -5,7 +5,7 @@ circumflex
 {% endblock %}
 
 {% block version %}
-3.9
+5.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/bensadeh/circumflex/archive/refs/tags/{{self.version().strip(
 {% endblock %}
 
 {% block go_sha %}
-2046184a714853ae7733060f1c2b5669788c11b33a134f9e75a552335236b123
+b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
 {% endblock %}
 
 {% block go_bins %}
