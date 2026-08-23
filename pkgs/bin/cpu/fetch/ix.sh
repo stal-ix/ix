@@ -5,12 +5,12 @@ cpufetch
 {% endblock %}
 
 {% block version %}
-1.06
+1.07
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Dr-Noob/cpufetch/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-b8ec1339cf3a3bb9325cde7fb0748dd609043e8d2938c292956da7e457bdb7d9
+dc3ec8f9c9d41d8434702a778cc150b196d5d178fd768a964f57d22f268a2c17
 {% endblock %}
 
 {% block bld_libs %}
