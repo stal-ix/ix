@@ -17,3 +17,8 @@ https://github.com/cppfw/agg/archive/refs/tags/{{self.version().strip()}}.tar.gz
 lib/c
 lib/c++
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -i '/myci-deb-version\.sh/d' pkg-config/makefile
+{% endblock %}
