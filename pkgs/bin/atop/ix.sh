@@ -28,6 +28,7 @@ bld/pkg/config
 
 {% block patch %}
 sed -e 's|/bin/systemctl|qqq|g' -i Makefile
+sed -e 's|^#define _XOPEN_SOURCE$|#define _XOPEN_SOURCE 700|' -i *.c
 {% endblock %}
 
 {% block cpp_missing %}
