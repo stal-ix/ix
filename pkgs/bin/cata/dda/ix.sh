@@ -5,7 +5,7 @@ https://github.com/CleverRaven/Cataclysm-DDA
 {% endblock %}
 
 {% block git_branch %}
-0.H-RELEASE
+0.I-RELEASE
 {% endblock %}
 
 {% block git_commit %}
@@ -13,7 +13,7 @@ https://github.com/CleverRaven/Cataclysm-DDA
 {% endblock %}
 
 {% block git_sha %}
-339d3b90d90fe4be0c3d1697cdede97e6bbaa736d439f751c777845e5d0789c9
+4866ff12768f5ecc9b1af92259c4045cbe80deb84e1cd24e9a4642d0ee96b7f2
 {% endblock %}
 
 {% block pkg_name %}
@@ -21,7 +21,7 @@ cataclysm-dda
 {% endblock %}
 
 {% block version %}
-0.H
+0.I
 {% endblock %}
 
 {% block bld_libs %}
@@ -46,7 +46,7 @@ sed -i 's|find_package(Curses)|set(CURSES_FOUND TRUE)\nset(CURSES_LIBRARIES ncur
 # fix const assignment in bundled flatbuffers (clang 21)
 sed -i 's|const size_type count_;|size_type count_;|' src/third-party/flatbuffers/stl_emulation.h
 # cmake install expects VERSION.txt
-echo "0.H" > VERSION.txt
+echo "0.I" > VERSION.txt
 {% endblock %}
 
 {% block cmake_flags %}
