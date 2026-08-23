@@ -5,10 +5,10 @@ adwaita-fonts
 {% endblock %}
 
 {% block version %}
-49.0
+51.0
 {% endblock %}
 
 {% block fetch %}
 https://download.gnome.org/sources/adwaita-fonts/{{self.version().strip()[:2]}}/adwaita-fonts-{{self.version().strip()}}.tar.xz
-3157c620eb5b72b25ab156d194aa4eb223f9870d547fe83fdbdf06d3e7becb37
+fa104ae2c1b96580d322f563ffe8b2dfca5296b0eca4971efd2d8011405123d2
 {% endblock %}
