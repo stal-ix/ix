@@ -5,12 +5,12 @@ btfs
 {% endblock %}
 
 {% block version %}
-3.1
+3.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/johang/btfs/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-c363f04149f97baf1c5e10ac90677b8309724f2042ab045a45041cfb7b44649b
+f41094e7433b36708bd79e4e2a9431731cbd203c0615aa28a1ac71058126dba1
 {% endblock %}
 
 {% block bld_libs %}
