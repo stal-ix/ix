@@ -13,7 +13,7 @@ sshfs-{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-3f17dc9409bb6f64d6b4fb30e7c64352e2a39517fddc391ca3355a7f41371cd6
+4866ff12768f5ecc9b1af92259c4045cbe80deb84e1cd24e9a4642d0ee96b7f2
 {% endblock %}
 
 {% block pkg_name %}
@@ -21,7 +21,7 @@ sshfs
 {% endblock %}
 
 {% block version %}
-3.7.5
+3.7.6
 {% endblock %}
 
 {% block bld_libs %}
