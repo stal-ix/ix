@@ -5,7 +5,7 @@ cosign
 {% endblock %}
 
 {% block version %}
-3.0.6
+3.1.3
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/sigstore/cosign/archive/refs/tags/v{{self.version().strip()}}
 {% endblock %}
 
 {% block go_sha %}
-de04832512620b2edd5f1f21bb8d18523f4ff47705748bb6e34d7699d82014e4
+b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
 {% endblock %}
 
 {% block unpack %}
