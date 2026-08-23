@@ -5,7 +5,7 @@ conntrack-tools
 {% endblock %}
 
 {% block version %}
-1.4.8
+1.4.9
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ conntrack-tools-{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-2c66f6c2b6658ebe5d67b9217f84693ce56a88a591ac23cca702a2f621d7e89c
+4866ff12768f5ecc9b1af92259c4045cbe80deb84e1cd24e9a4642d0ee96b7f2
 {% endblock %}
 
 {% block bld_libs %}
