@@ -17,7 +17,7 @@ conntrack-tools-{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-4866ff12768f5ecc9b1af92259c4045cbe80deb84e1cd24e9a4642d0ee96b7f2
+b21600339b33ff676d571faa0bdeee3424e019b9fcc33ab9c0d13fee8fcb12bc
 {% endblock %}
 
 {% block bld_libs %}
