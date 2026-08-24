@@ -5,12 +5,12 @@ exiv2
 {% endblock %}
 
 {% block version %}
-0.28.7
+0.28.8
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Exiv2/exiv2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-5e292b02614dbc0cee40fe1116db2f42f63ef6b2ba430c77b614e17b8d61a638
+ea51b0609f58a9afa063b60daa1539948b62247721e154f4fff0ad3aec9f9756
 {% endblock %}
 
 {% block lib_deps %}
