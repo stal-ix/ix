@@ -5,7 +5,7 @@ gomuks
 {% endblock %}
 
 {% block version %}
-0.3.1
+26.08
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/tulir/gomuks/archive/refs/tags/v{{self.version().strip()}}.ta
 {% endblock %}
 
 {% block go_sha %}
-4574987269769d1d6cb6a2c66ae7e66ff43263b8817bea4841fb7762c932508c
+b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,4 +23,8 @@ lib/shim/fake(lib_name=stdc++)
 
 {% block go_bins %}
 gomuks
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/25
 {% endblock %}
