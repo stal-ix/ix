@@ -5,7 +5,7 @@ dive
 {% endblock %}
 
 {% block version %}
-0.9.2
+0.13.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/wagoodman/dive/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block go_sha %}
-d80c961e5ee914a918e7fe5cbafef1b357af50589eaec27dce7abb97e984d261
+b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
 {% endblock %}
 
 {% block go_build_flags %}
