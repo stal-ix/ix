@@ -5,10 +5,10 @@ findutils
 {% endblock %}
 
 {% block version %}
-4.10.0
+4.11.0
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/findutils/findutils-{{self.version().strip()}}.tar.xz
-1387e0b67ff247d2abde998f90dfbf70c1491391a59ddfecb8ae698789f0a4f5
+bfd19cb06cc71f3352d567e90284d8cdac02ac89774bbeadf0b533b0c11432fd
 {% endblock %}
