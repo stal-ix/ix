@@ -5,12 +5,12 @@ dos2unix
 {% endblock %}
 
 {% block version %}
-7.5.4
+7.5.6
 {% endblock %}
 
 {% block fetch %}
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-{{self.version().strip()}}.tar.gz
-f811a2b9e4a0c936c61ef7c1732993d1820e5cf011f4d93861885ccb8101ca21
+b900ed9a92ef9b2548a6ac708ec81f724c59f2c089ed90f8e39a4e1287b28c1f
 {% endblock %}
 
 {% block bld_libs %}
