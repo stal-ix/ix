@@ -1,4 +1,4 @@
-{% extends '//lib/xkb/common/t/ix.sh' %}
+{% extends '//lib/xkb/common/base/ix.sh' %}
 
 {% block use_data %}
 aux/x11/locale

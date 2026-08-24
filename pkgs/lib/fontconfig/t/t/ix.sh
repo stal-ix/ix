@@ -31,13 +31,4 @@ bld/meson/6
 
 {% block meson_flags %}
 cache-build=disabled
-default-fonts-dirs=
-{% endblock %}
-
-{% block patch %}
-find . -type f -name '*.c' | while read l; do
-    sed -e 's|.*/usr/share.*||' \
-        -e 's|.*/usr/local/share.*||' \
-        -i ${l}
-done
 {% endblock %}

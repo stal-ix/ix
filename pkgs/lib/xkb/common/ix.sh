@@ -1,16 +1,5 @@
-{% extends 't/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block meson_flags %}
-{{super()}}
-enable-tools=false
-{% endblock %}
-
-{% block c_rename_symbol %}
-{{super()}}
-list_init
-list_insert
-list_append
-list_remove
-list_empty
-expand_path
+{% block lib_deps %}
+lib/xkb/common/{{'stalix' if stalix else 'default'}}
 {% endblock %}
