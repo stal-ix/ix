@@ -5,12 +5,12 @@ elfutils
 {% endblock %}
 
 {% block version %}
-0.194
+0.196
 {% endblock %}
 
 {% block fetch %}
 http://sourceware.org/elfutils/ftp/{{self.version().strip()}}/elfutils-{{self.version().strip()}}.tar.bz2
-09e2ff033d39baa8b388a2d7fbc5390bfde99ae3b7c67c7daaf7433fbcf0f01e
+fd5cc6b77ad6773cac93cb3f415f9318ac3b3455eecf801f6b4a742c4f6c7209
 {% endblock %}
 
 {% block lib_deps %}
