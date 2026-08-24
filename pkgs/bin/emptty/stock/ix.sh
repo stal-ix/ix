@@ -5,7 +5,7 @@ emptty
 {% endblock %}
 
 {% block version %}
-0.15.0
+0.16.1
 {% endblock %}
 
 {# TODO(pg): get rid of /usr/bin/getent reference #}
@@ -15,7 +15,7 @@ https://github.com/tvrzna/emptty/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-5d9f9cea797c200c41c49fcba36da09179f70c2cedbddbaa06ccf5290f3d11ec
+b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
 {% endblock %}
 
 {% block go_tags %}
