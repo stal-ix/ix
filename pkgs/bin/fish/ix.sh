@@ -5,12 +5,12 @@ fish-shell
 {% endblock %}
 
 {% block version %}
-3.7.1
+4.8.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/fish-shell/fish-shell/archive/refs/tags/{{self.version().strip()}}.tar.gz
-a3ea79c8affb9fa3c510ec6f12b9a8d176fec2d532ea7c41dfd4da4205272f19
+f62d5338bd9e767210e1c407680b8beb46ddb24086ac31958dec71df2f741f2a
 {% endblock %}
 
 {% block bld_libs %}
