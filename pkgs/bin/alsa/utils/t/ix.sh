@@ -5,12 +5,12 @@ alsa-utils
 {% endblock %}
 
 {% block version %}
-1.2.15.2
+1.2.16
 {% endblock %}
 
 {% block fetch %}
 https://www.alsa-project.org/files/pub/utils/alsa-utils-{{self.version().strip()}}.tar.bz2
-7aaaafbfb01942113ec0c31e51f705910e81079205088ca2f8f137a3869e1a3a
+092399d5e8749a1d5e188e393157521cec4b75693b60ebb79bbce728cff2232c
 {% endblock %}
 
 {% block bld_tool %}
