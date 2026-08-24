@@ -5,12 +5,12 @@ faac
 {% endblock %}
 
 {% block version %}
-1.31.1
+2.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/knik0/faac/archive/refs/tags/faac-{{self.version().strip()}}.tar.gz
-3191bf1b131f1213221ed86f65c2dfabf22d41f6b3771e7e65b6d29478433527
+1d4b890c7d767361987d80afdacdd654d23a748b4a273d743c174c2d57e9bce5
 {% endblock %}
 
 {% block lib_deps %}
