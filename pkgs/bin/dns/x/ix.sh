@@ -13,7 +13,7 @@ https://github.com/projectdiscovery/dnsx/archive/refs/tags/v{{self.version().str
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+b4b2d8505c2be30181060a05f126a90ef5211c489fa437236172046b38c6ce3b
 {% endblock %}
 
 {% block unpack %}
