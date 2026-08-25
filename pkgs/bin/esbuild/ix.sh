@@ -13,7 +13,7 @@ https://github.com/evanw/esbuild/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+e1edbf35a3be39a1f689bb876033601a8fe49986658ad94d77c540f3eef20fe2
 {% endblock %}
 
 {% block unpack %}
