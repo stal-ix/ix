@@ -14,3 +14,10 @@ lib/pcre/2/overlay
 lib/shim/fake(lib_name=gnurx)
 {% endif %}
 {% endblock %}
+
+{% block setup_target_flags %}
+{% if mingw32 %}
+export ac_cv_func_wcwidth=no
+{% endif %}
+{{super()}}
+{% endblock %}
