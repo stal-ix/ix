@@ -13,7 +13,7 @@ https://github.com/tytso/e2fsprogs/archive/refs/tags/v{{self.version().strip()}}
 9f82eaa7002673291629077b80ee005cadfcd49854907a22007fed70b0ef596e
 {% endblock %}
 
-{% block conf_ver %}2/71{% endblock %}
+{% block conf_ver %}2/72{% endblock %}
 
 {% block lib_deps %}
 lib/c
