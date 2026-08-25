@@ -5,12 +5,12 @@ files
 {% endblock %}
 
 {% block version %}
-7.2.0
+7.3.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/elementary/files/archive/refs/tags/{{self.version().strip()}}.tar.gz
-12da6fd55e5d03af5ad9beadd7b4397f5f15a015b5af32934dc99ed8f6497709
+a5e1b039d59001a636624315e37fa6aeeee8908cf1b323021d06d3ccd49214f2
 {% endblock %}
 
 {% block bld_libs %}
