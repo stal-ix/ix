@@ -1,16 +1,25 @@
 {% extends '//die/c/autohell.sh' %}
 
+# noauto
+
+# 5.4.1 has a regression: array elements created by reference (mentioned in an
+# expression but never assigned) stringify as "0" instead of "" in concatenation.
+# This silently breaks libpng's scripts/options.awk (every pnglibconf option gets
+# a phantom "requires 0" and turns off), and can corrupt any awk-generated config.
+# Reproducer: awk 'BEGIN{ split(a["k"] b["k"], r); print "[" a["k"] "]" }' -> [0]
+# Stay on 5.4.0 until fixed upstream.
+
 {% block pkg_name %}
 gawk
 {% endblock %}
 
 {% block version %}
-5.4.1
+5.4.0
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/gawk/gawk-{{self.version().strip()}}.tar.xz
-07f6f7342b7febe4313fc2c2542ad93d64fe20ad8717200109f105a826f5fd37
+3dd430f0cd3b4428c6c3f6afc021b9cd3c1f8c93f7a688dc268ca428a90b4ac1
 {% endblock %}
 
 {% block bld_libs %}
