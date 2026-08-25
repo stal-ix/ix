@@ -9,11 +9,11 @@ gomuks
 {% endblock %}
 
 {% block go_url %}
-https://github.com/tulir/gomuks/archive/refs/tags/v{{self.version().strip()}}.tar.gz
+https://github.com/tulir/gomuks/archive/refs/tags/v0.{{self.version().strip().replace('.', '')}}.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+e2a157a6b3347a378168f09f27c25f5a462fe2955b6f94d8c243fc6b20e64b0a
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,10 +21,21 @@ lib/olm
 lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
+{% block unpack %}
+{{super()}}
+mkdir -p web/dist
+touch web/dist/empty
+cd cmd/gomuks
+{% endblock %}
+
+{% block go_tags %}
+sqlite_fts5
+{% endblock %}
+
 {% block go_bins %}
 gomuks
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/25
+bin/go/lang/26
 {% endblock %}
