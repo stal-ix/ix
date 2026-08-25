@@ -17,6 +17,8 @@ https://www.alsa-project.org/files/pub/utils/alsa-utils-{{self.version().strip()
 bld/gettext
 {% endblock %}
 
+{% block conf_ver %}2/72{% endblock %}
+
 {% block configure_flags %}
 --with-udev-rules-dir="${out}/share"
 {% endblock %}
