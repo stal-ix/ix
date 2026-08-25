@@ -1,16 +1,18 @@
 {% extends '//die/c/cmake.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 fish-shell
 {% endblock %}
 
 {% block version %}
-4.8.1
+3.7.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/fish-shell/fish-shell/archive/refs/tags/{{self.version().strip()}}.tar.gz
-f62d5338bd9e767210e1c407680b8beb46ddb24086ac31958dec71df2f741f2a
+a3ea79c8affb9fa3c510ec6f12b9a8d176fec2d532ea7c41dfd4da4205272f19
 {% endblock %}
 
 {% block bld_libs %}
