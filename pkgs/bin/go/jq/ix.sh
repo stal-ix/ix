@@ -13,7 +13,7 @@ https://github.com/itchyny/gojq/archive/refs/tags/v{{self.version().strip()}}.ta
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+6d5795e9f50e0c7190e8cddf4ba95bd447b221ffd5ee676e9dd246cd568b8de3
 {% endblock %}
 
 {% block unpack %}
