@@ -13,7 +13,7 @@ https://github.com/alecthomas/chroma/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+207bace8475db9521c9f264db2657eba55f9b2acd886e4d07b0b5c77689beed1
 {% endblock %}
 
 {% block unpack %}
