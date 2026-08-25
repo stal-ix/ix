@@ -5,12 +5,12 @@ evince
 {% endblock %}
 
 {% block version %}
-48.1
+48.4
 {% endblock %}
 
 {% block fetch %}
 https://download.gnome.org/sources/evince/48/evince-{{self.version().strip()}}.tar.xz
-7d8b9a6fa3a05d3f5b9048859027688c73a788ff6e923bc3945126884943fa10
+f296c5c662886635d4cd597e8ac0afcde7982be4486533c2b7f095b268be8668
 {% endblock %}
 
 {% block modules %}
