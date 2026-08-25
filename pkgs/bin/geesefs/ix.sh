@@ -13,7 +13,7 @@ https://github.com/yandex-cloud/geesefs/archive/refs/tags/v{{self.version().stri
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+66383e8a6162e389037135482e93ebe6d04fb0451f98e081d87b089c94fb7ec0
 {% endblock %}
 
 {% block go_bins %}
