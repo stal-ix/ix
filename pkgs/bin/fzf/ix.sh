@@ -13,7 +13,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/v{{self.version().strip()}}.ta
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+38bf5f3d8ae26f8eadce7604ab93ef0fa81421b135168ddd0e6f2bcc41452042
 {% endblock %}
 
 {% block go_bins %}
