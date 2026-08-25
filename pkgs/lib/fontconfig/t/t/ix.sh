@@ -31,4 +31,10 @@ bld/meson/6
 
 {% block meson_flags %}
 cache-build=disabled
+fontations=disabled
+{% endblock %}
+
+{% block step_patch %}
+{{super()}}
+sed -e "s|meson_version : '>= 1.11.0'|meson_version : '>= 1.6.1'|" -i meson.build
 {% endblock %}
