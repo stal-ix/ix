@@ -13,7 +13,7 @@ https://github.com/sigstore/cosign/archive/refs/tags/v{{self.version().strip()}}
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+a974ac4625e91016ce1f247aa4f2c8caa7e61731e220c97c97f2226ce6d71acb
 {% endblock %}
 
 {% block unpack %}
