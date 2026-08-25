@@ -38,3 +38,8 @@ bin/protoc
 {% block setup_target_flags %}
 export CXXFLAGS="${CXXFLAGS} -std=c++17"
 {% endblock %}
+
+{% block patch %}
+sed -e '/list(APPEND _Unwind_LINK_LIBRARIES lzma)/d' \
+    -i cmake/FindUnwind.cmake
+{% endblock %}
