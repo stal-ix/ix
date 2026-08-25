@@ -814,6 +814,7 @@ bin/xdg/desktop/portal
 bin/psmisc
 #bin/dunst
 bin/perf
+bin/perf/lite
 bin/numactl
 bin/ld
 bin/ar
