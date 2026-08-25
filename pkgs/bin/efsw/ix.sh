@@ -35,5 +35,5 @@ export CPPFLAGS="-Du_int32_t=uint32_t ${CPPFLAGS}"
 
 {% block install %}
 mkdir ${out}/bin
-cp bin/efsw* ${out}/bin/efsw
+cp bin/efsw-test-debug ${out}/bin/efsw
 {% endblock %}
