@@ -9,8 +9,8 @@ dos2unix
 {% endblock %}
 
 {% block fetch %}
-https://waterlan.home.xs4all.nl/dos2unix/dos2unix-{{self.version().strip()}}.tar.gz
-b900ed9a92ef9b2548a6ac708ec81f724c59f2c089ed90f8e39a4e1287b28c1f
+https://downloads.sourceforge.net/dos2unix/dos2unix-{{self.version().strip()}}.tar.gz
+63650acbd0c7fa8623429bcbf93a888e3351a1cad0f556cf41876f5673dd7d0b
 {% endblock %}
 
 {% block bld_libs %}
