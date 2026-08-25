@@ -13,7 +13,7 @@ https://github.com/dlvhdr/gh-dash/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+62d2412c9dae90de991a06adcd9cd9170b662f2ed6c9051cda5bcdd1bfaa7b03
 {% endblock %}
 
 {% block go_bins %}
