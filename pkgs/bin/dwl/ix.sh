@@ -16,7 +16,7 @@ https://codeberg.org/dwl/dwl/archive/v{{self.version().strip()}}.tar.gz
 {% block bld_libs %}
 lib/c
 lib/wayland
-lib/wlroots/18
+lib/wlroots/19
 lib/drivers/3d
 {% endblock %}
 
