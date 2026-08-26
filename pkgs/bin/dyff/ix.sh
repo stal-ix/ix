@@ -13,7 +13,7 @@ https://github.com/homeport/dyff/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+477846ee7bb3ce817b806e21788ad2090a74e1c93d2849a5cf51f888b0c2a398
 {% endblock %}
 
 {% block unpack %}
