@@ -18,7 +18,7 @@ lib/c
 lib/glib
 lib/gtk/3
 lib/cairo
-lib/girara
+lib/girara/gtk3
 lib/sqlite/3
 {% endblock %}
 
