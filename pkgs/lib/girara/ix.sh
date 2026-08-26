@@ -5,12 +5,12 @@ girara
 {% endblock %}
 
 {% block version %}
-0.4.5
+2026.07.18
 {% endblock %}
 
 {% block fetch %}
 https://github.com/pwmt/girara/archive/refs/tags/{{self.version().strip()}}.tar.gz
-9abb84fdb3f8f51e8aef8d53488fd0631357f0713ad5aa4a5c755c23f54b23df
+841ca1d6fc33f87ca0065208052dffd7c49489cfd1119ce572176c1d5428a1e0
 {% endblock %}
 
 {% block lib_deps %}
