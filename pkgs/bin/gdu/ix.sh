@@ -13,7 +13,7 @@ https://github.com/dundee/gdu/archive/refs/tags/v{{self.version().strip()}}.tar.
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+2450b5d5703a6de2388d82bfe8ef835c60dfbab593bebeba09491941a9171dc2
 {% endblock %}
 
 {% block unpack %}
