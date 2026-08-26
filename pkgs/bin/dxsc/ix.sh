@@ -19,7 +19,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-4866ff12768f5ecc9b1af92259c4045cbe80deb84e1cd24e9a4642d0ee96b7f2
+94601b00a8147c5c6a6453fd5909d5e751a52b9021dd4eaef4555c5dd7072a6d
 {% endblock %}
 
 {% block git_refine %}
@@ -72,14 +72,4 @@ LLVM_INCLUDE_TESTS=OFF
 {% block build_flags %}
 wrap_cc
 wrap_rdynamic
-{% endblock %}
-
-{% block patch %}
-sed -e 's|bool DxilLibIsEnabled|bool DxilLibIsEnabledXXX|' \
-    -i tools/clang/tools/dxcompiler/dxillib.cpp
-cat << EOF >> tools/clang/tools/dxcompiler/dxillib.cpp
-bool DxilLibIsEnabled() {
-    return false;
-}
-EOF
 {% endblock %}
