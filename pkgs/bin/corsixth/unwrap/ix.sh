@@ -13,6 +13,10 @@ https://github.com/CorsixTH/CorsixTH/archive/refs/tags/v{{self.version().strip()
 e8f9803f6f64d23f057506202fbf275fe136c3245bab4bc19ff4c63691459cb7
 {% endblock %}
 
+{% block cmake_flags %}
+WITH_MIDI_DEVICE=OFF
+{% endblock %}
+
 {% block bld_libs %}
 lib/c
 lib/c++
