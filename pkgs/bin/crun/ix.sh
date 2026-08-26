@@ -17,13 +17,14 @@ https://github.com/containers/crun
 {% endblock %}
 
 {% block git_sha %}
-4866ff12768f5ecc9b1af92259c4045cbe80deb84e1cd24e9a4642d0ee96b7f2
+a59d3f8a2b0179227402be53010ad26f41b4a31abb51371f99c6e4138a3644d9
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/cap
 lib/intl
+lib/json/c
 lib/yajl
 lib/seccomp
 lib/argp/standalone
