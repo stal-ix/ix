@@ -15,7 +15,7 @@ https://github.com/tvrzna/emptty/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+c1ac5f28c3314207b30237b64c137dd66c6044f1aaeab9cf1ccb923100f29154
 {% endblock %}
 
 {% block go_tags %}
