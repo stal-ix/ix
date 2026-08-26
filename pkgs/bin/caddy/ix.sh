@@ -13,7 +13,7 @@ https://github.com/caddyserver/caddy/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+98b6357bbd57a07695e31ab3e7531e62c2804869c4b199b549cba51264af18eb
 {% endblock %}
 
 {% block unpack %}
