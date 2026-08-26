@@ -8,16 +8,9 @@ conntrack-tools
 1.4.9
 {% endblock %}
 
-{% block git_repo %}
-https://git.netfilter.org/conntrack-tools
-{% endblock %}
-
-{% block git_branch %}
-conntrack-tools-{{self.version().strip()}}
-{% endblock %}
-
-{% block git_sha %}
-b21600339b33ff676d571faa0bdeee3424e019b9fcc33ab9c0d13fee8fcb12bc
+{% block fetch %}
+https://www.netfilter.org/projects/conntrack-tools/files/conntrack-tools-{{self.version().strip()}}.tar.xz
+c15afe488a8d408c9d6d61e97dbd19f3c591942f62c13df6453a961ca4231cae
 {% endblock %}
 
 {% block bld_libs %}
