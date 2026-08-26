@@ -5,12 +5,12 @@ file-roller
 {% endblock %}
 
 {% block version %}
-44.6
+44.7
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/file-roller/archive/refs/tags/{{self.version().strip()}}.tar.gz
-57567a1d8320aaba9131832aadce72a8845052e8105c0734cc2713b323f911a1
+86533212a24cf4581023d4c6f74d40d003234ad978b09b013cecd9675131fd45
 {% endblock %}
 
 {% block bld_libs %}
