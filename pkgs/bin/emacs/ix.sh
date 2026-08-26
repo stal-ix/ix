@@ -15,6 +15,7 @@ https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-{{self.version().s
 
 {% block bld_libs %}
 lib/c
+lib/linux/headers
 lib/z
 lib/acl
 lib/gmp
