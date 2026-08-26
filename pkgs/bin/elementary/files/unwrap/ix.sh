@@ -22,6 +22,7 @@ lib/handy
 lib/pango
 lib/portal
 lib/granite
+lib/poppler
 lib/canberra
 lib/shim/gdk
 lib/shim/x11
