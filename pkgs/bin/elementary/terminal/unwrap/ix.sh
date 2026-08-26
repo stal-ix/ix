@@ -18,8 +18,9 @@ lib/c
 lib/gtk
 lib/vte
 lib/gee
-lib/handy
+lib/adwaita
 lib/granite
+lib/pcre/2
 lib/gtk/deps
 {% endblock %}
 
@@ -33,7 +34,7 @@ bld/fake(tool_name=xvfb-run)
 
 {% block bld_data %}
 lib/gee/gir
-lib/handy/gir
+lib/adwaita/vapi
 lib/vte/{{gtk_ver}}/gir
 lib/granite/{{gtk_ver}}/gir
 {% endblock %}

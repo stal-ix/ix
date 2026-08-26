@@ -31,6 +31,7 @@ svg-support=false
 apidocs=false
 install-docs=false
 display-detection=none
+bash-completion=false
 {% endblock %}
 
 {% block bld_tool %}
@@ -43,6 +44,10 @@ bld/fake/er(tool_name=xsltproc)
 
 {% block patch %}
 sed -e 's|/usr/include||' -i meson.build
+
+# fy_node_set_style was added in libfyaml 0.9.4, not 0.9.0.
+sed -e 's|AS_FYAML_CHECK_VERSION(0, 9, 0)|AS_FYAML_CHECK_VERSION(0, 9, 4)|' \
+    -i src/as-reviews-client.c
 
 # data/gen-output invokes the just-built `appstreamcli news-to-metainfo`
 # during the build, which aborts with SIGABRT (exit 134) in the
