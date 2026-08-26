@@ -18,7 +18,7 @@ lib/c
 lib/c++
 lib/curl
 lib/xml/2
-lib/fuse/2
+lib/fuse/3
 {% endblock %}
 
 {% block patch %}
