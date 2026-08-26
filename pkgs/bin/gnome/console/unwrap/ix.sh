@@ -26,6 +26,12 @@ lib/gsettings/desktop/schemas
 
 {% block bld_tool %}
 bin/sassc
+bin/appstream/cli
+bin/xdg/file/utils
+{% endblock %}
+
+{% block meson_tool %}
+bld/meson/6
 {% endblock %}
 
 {% block patch %}
