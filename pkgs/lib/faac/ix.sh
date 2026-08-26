@@ -1,4 +1,4 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block pkg_name %}
 faac
@@ -15,8 +15,4 @@ https://github.com/knik0/faac/archive/refs/tags/faac-{{self.version().strip()}}.
 
 {% block lib_deps %}
 lib/c
-{% endblock %}
-
-{% block conf_ver %}
-2/71
 {% endblock %}
