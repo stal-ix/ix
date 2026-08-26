@@ -1,11 +1,13 @@
 {% extends '//die/c/cmake.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 fluidsynth
 {% endblock %}
 
 {% block version %}
-2.6.0
+2.5.3
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +19,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-4866ff12768f5ecc9b1af92259c4045cbe80deb84e1cd24e9a4642d0ee96b7f2
+cab473179ca6a0f861ff7e5958a562e825ef68f4e086a51dfa6703acdb712d1e
 {% endblock %}
 
 {% block lib_deps %}
