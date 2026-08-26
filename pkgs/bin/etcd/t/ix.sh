@@ -13,7 +13,7 @@ https://github.com/etcd-io/etcd/archive/refs/tags/v{{self.version().strip()}}.ta
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+b2fad291fb45fb3619b3fd0b9cd6e243ba0ccd1967b16b4ae292a7a03d51e52a
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,5 +21,9 @@ lib/c
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/25
+bin/go/lang/26
+{% endblock %}
+
+{% block setup_target_flags %}
+export GOWORK=off
 {% endblock %}
