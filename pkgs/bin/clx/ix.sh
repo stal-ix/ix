@@ -13,7 +13,16 @@ https://github.com/bensadeh/circumflex/archive/refs/tags/{{self.version().strip(
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+9210e25bfaafcc9801a14daf37711322b2388325909954dec21f683507dc97d8
+{% endblock %}
+
+{% block go_parent_id %}
+clx_{{self.go_sha().strip()}}
+{% endblock %}
+
+{% block unpack %}
+{{super()}}
+cd cmd/clx
 {% endblock %}
 
 {% block go_bins %}
@@ -21,5 +30,5 @@ clx
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/25
+bin/go/lang/26
 {% endblock %}
