@@ -24,3 +24,7 @@ lib/json/glib
 bld/glib
 bld/gettext
 {% endblock %}
+
+{% block meson_tool %}
+bld/meson/6
+{% endblock %}
