@@ -5,12 +5,12 @@ gparted
 {% endblock %}
 
 {% block version %}
-1.8.0
+1.8.1
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/gparted/gparted/gparted-{{self.version().strip()}}/gparted-{{self.version().strip()}}.tar.gz
-f584ed4be7fd09c2cf6a784778a8540970d985f0ac8e5a7bd0628528a3ab5609
+67388ac405f9fe92a40636cb03b0e1e0bb6403ad89ccc174b2ff190ef6f32349
 {% endblock %}
 
 {% block bld_libs %}
