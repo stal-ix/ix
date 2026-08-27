@@ -5,12 +5,12 @@ hyprpicker
 {% endblock %}
 
 {% block version %}
-0.4.5
+0.4.7
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-fe9611ec78524f9bbea0d39308da3d9c61cb20f6103179a269cad8013bb0c1f3
+cde02b92abe372187c9d59a7cb2ca07ede5c3e1a8c81ed8b209dc0d3ac5f0339
 {% endblock %}
 
 {% block bld_libs %}
