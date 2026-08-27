@@ -71,7 +71,7 @@ done
 
 {% block patch %}
 sed -e "s|'auto'|'disabled'|g" \
-    -i subprojects/gst-plugins-bad/meson_options.txt
+    -i subprojects/gst-plugins-bad/meson.options
 {% endblock %}
 
 {% block env %}
