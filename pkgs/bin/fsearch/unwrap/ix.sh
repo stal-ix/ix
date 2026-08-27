@@ -28,7 +28,11 @@ bld/gettext
 {% endblock %}
 
 {% block patch %}
+sed -e '/subdir.*help/d' -i meson.build
+
 find . -type f -name '*.c' | while read l; do
-    sed -e 's|malloc_trim.*||' -i ${l}
+    sed -e 's|#include <linux/fanotify.h>||' \
+        -e 's|<linux/limits.h>|<limits.h>|' \
+        -e 's|malloc_trim.*||' -i ${l}
 done
 {% endblock %}
