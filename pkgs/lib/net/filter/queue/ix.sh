@@ -9,7 +9,7 @@ libnetfilter_queue
 {% endblock %}
 
 {% block git_repo %}
-git://git.netfilter.org/libnetfilter_queue
+https://git.netfilter.org/libnetfilter_queue
 {% endblock %}
 
 {% block git_branch %}

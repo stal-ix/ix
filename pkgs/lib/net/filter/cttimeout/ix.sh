@@ -9,7 +9,7 @@ libnetfilter_cttimeout
 {% endblock %}
 
 {% block git_repo %}
-git://git.netfilter.org/libnetfilter_cttimeout
+https://git.netfilter.org/libnetfilter_cttimeout
 {% endblock %}
 
 {% block git_branch %}

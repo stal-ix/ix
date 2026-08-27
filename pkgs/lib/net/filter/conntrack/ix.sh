@@ -9,7 +9,7 @@ libnetfilter_conntrack
 {% endblock %}
 
 {% block git_repo %}
-git://git.netfilter.org/libnetfilter_conntrack
+https://git.netfilter.org/libnetfilter_conntrack
 {% endblock %}
 
 {% block git_branch %}
