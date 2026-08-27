@@ -5,7 +5,7 @@ gum
 {% endblock %}
 
 {% block version %}
-0.14.5
+2.0.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/charmbracelet/gum/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block go_sha %}
-f49a27891d7a7b2d08e013e3a2a6fe8498e0414c759373ccee179f168ce0b366
+89284d3d33109faee18f84bc470980a9a99044b18214f8da85058da0691d23ba
 {% endblock %}
 
 {% block go_bins %}
@@ -21,5 +21,5 @@ gum
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/26
 {% endblock %}
