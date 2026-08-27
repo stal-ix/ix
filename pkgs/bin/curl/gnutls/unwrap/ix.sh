@@ -13,3 +13,10 @@ lib/ng/tcp2/gnutls
 {{super()}}
 --without-ca-fallback
 {% endblock %}
+
+{% block setup_target_flags %}
+# GnuTLS's static archive contains a private gnulib implementation, which can
+# satisfy this link check even though musl does not declare the function.
+export ac_cv_func_memset_explicit=no
+{{super()}}
+{% endblock %}
