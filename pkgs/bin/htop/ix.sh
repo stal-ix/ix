@@ -5,12 +5,12 @@ htop
 {% endblock %}
 
 {% block version %}
-3.4.1
+3.5.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/htop-dev/htop/archive/refs/tags/{{self.version().strip()}}.tar.gz
-af9ec878f831b7c27d33e775c668ec79d569aa781861c995a0fbadc1bdb666cf
+edf25ee020a5263ffbef9eef5a8c14392bf74e78b3d5c8bc64d9343dd9a82605
 {% endblock %}
 
 {% block bld_libs %}
