@@ -13,7 +13,7 @@ https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v{{self.version().stri
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+4b3127909e9f1520dd84469584bd0e761c00587ce87e9ceb719b4ef5ced3c587
 {% endblock %}
 
 {% block go_tool %}
