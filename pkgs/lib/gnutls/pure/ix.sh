@@ -25,6 +25,8 @@ glthread_rwlock_unlock_multithreaded
 glthread_rwlock_wrlock_multithreaded
 hash_string
 hash_lookup
+# leaks into consumers' AC_CHECK_FUNCS, musl has no declaration for it
+memset_explicit
 nettle_rsa_compute_root_tr
 {% endblock %}
 
