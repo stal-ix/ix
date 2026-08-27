@@ -5,12 +5,12 @@ dosbox-staging
 {% endblock %}
 
 {% block version %}
-0.82.2
+0.83.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-d84c87e4b6ec3bdaac126c6354a5d2a94429987c55afbe76d0cb4536bae98428
+9b36be5a666784adaeffa560bd0950691f851a76bdb97e7ae3c989561e91caf3
 {% endblock %}
 
 {% block bld_libs %}
