@@ -41,6 +41,7 @@ export TARGET_STRIP=$(which llvm-strip)
 {% endblock %}
 
 {% block patch %}
+sed -i 's/^#if 1$/#if 0/' grub-core/lib/gnulib/getopt-cdefs.h
 >grub-core/extra_deps.lst
 {% endblock %}
 
