@@ -5,12 +5,12 @@ contour
 {% endblock %}
 
 {% block version %}
-0.6.1.7494
+0.7.0.8982
 {% endblock %}
 
 {% block fetch %}
 https://github.com/contour-terminal/contour/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-15090a08cf05124bf05074130cc6460d1d34c6d80f1058c63202effa032b8f6f
+9afaaed7f705c56e413938f43d338c7700ca69122a531d94c10c8eb9f5a44c28
 {% endblock %}
 
 {% block bld_libs %}
