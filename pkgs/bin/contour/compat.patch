@@ -1,0 +1,152 @@
+diff --git a/cmake/ContourThirdParties.cmake b/cmake/ContourThirdParties.cmake
+--- a/cmake/ContourThirdParties.cmake
++++ b/cmake/ContourThirdParties.cmake
+@@ -145,7 +145,7 @@ if(COMMAND ContourThirdParties_Embed_libunicode)
+     endif()
+     set(THIRDPARTY_BUILTIN_unicode_core "embedded")
+ else()
+-    if(NOT CONTOUR_BUILD_STATIC)
++    if(TRUE)
+         find_package(libunicode ${LIBUNICODE_MINIMAL_VERSION} QUIET)
+     endif()
+     if(TARGET unicode::unicode OR TARGET unicode::core)
+diff --git a/src/vtbackend/Image.cpp b/src/vtbackend/Image.cpp
+--- a/src/vtbackend/Image.cpp
++++ b/src/vtbackend/Image.cpp
+@@ -14,7 +14,7 @@
+     #include <simd>
+     namespace simd = std;
+     #define VTBACKEND_SIMD_FOUND 1
+-#elif __has_include(<experimental/simd>) && !defined(__APPLE__) && !defined(__FreeBSD__)
++#elif __has_include(<experimental/simd>) && !defined(__APPLE__) && !defined(__FreeBSD__) && !defined(_LIBCPP_VERSION)
+     #include <experimental/simd>
+     namespace simd = std::experimental;
+     #define VTBACKEND_SIMD_FOUND 1
+diff --git a/src/contour/platform/Announcer.hpp b/src/contour/platform/Announcer.hpp
+--- a/src/contour/platform/Announcer.hpp
++++ b/src/contour/platform/Announcer.hpp
+@@ -10,6 +10,12 @@
+ namespace contour::platform
+ {
+
++#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
++using AnnouncementPoliteness = QAccessible::AnnouncementPoliteness;
++#else
++enum class AnnouncementPoliteness { Polite, Assertive };
++#endif
++
+ /// Speaks a short message to whatever assistive technology is listening.
+ ///
+ /// Some things a terminal does have no representation in the accessibility tree at all: a bell rings,
+@@ -34,10 +40,10 @@ class Announcer
+     /// @param message    What to say. Empty messages are dropped by the implementations.
+     /// @param politeness Whether this may wait for the client to finish what it is saying (Polite), or
+     ///                   should interrupt it (Assertive).
+-    virtual void announce(QString const& message, QAccessible::AnnouncementPoliteness politeness) = 0;
++    virtual void announce(QString const& message, AnnouncementPoliteness politeness) = 0;
+
+     /// Says @p message politely -- the right choice for anything the user did not just ask for.
+-    void announce(QString const& message) { announce(message, QAccessible::AnnouncementPoliteness::Polite); }
++    void announce(QString const& message) { announce(message, AnnouncementPoliteness::Polite); }
+ };
+
+ /// Announces through Qt, against an anchor object that is already in the accessibility tree.
+@@ -53,8 +59,12 @@ class QtAnnouncer final: public Announcer
+     /// @param anchor The object an assistive client already knows about. Must outlive this announcer.
+     explicit QtAnnouncer(QObject* anchor): _anchor { anchor } {}
+
+-    void announce(QString const& message, QAccessible::AnnouncementPoliteness politeness) override
++    void announce(QString const& message, AnnouncementPoliteness politeness) override
+     {
++#if QT_VERSION < QT_VERSION_CHECK(6, 8, 0)
++        (void) message;
++        (void) politeness;
++#else
+         if (_anchor == nullptr || message.isEmpty())
+             return;
+
+@@ -67,6 +77,7 @@ class QtAnnouncer final: public Announcer
+                 QAccessible::updateAccessibility(&event);
+             },
+             Qt::QueuedConnection);
++#endif
+     }
+
+   private:
+@@ -80,6 +91,6 @@ class NullAnnouncer final: public Announcer
+ {
+   public:
+-    void announce(QString const& /*message*/, QAccessible::AnnouncementPoliteness /*politeness*/) override {}
++    void announce(QString const& /*message*/, AnnouncementPoliteness /*politeness*/) override {}
+ };
+
+ } // namespace contour::platform
+diff --git a/src/contour/session/TerminalSession.hpp b/src/contour/session/TerminalSession.hpp
+--- a/src/contour/session/TerminalSession.hpp
++++ b/src/contour/session/TerminalSession.hpp
+@@ -142,7 +142,7 @@ class TerminalSession: public QObject, public DisplaySurface, public std::enable
+     /// Announces @p message, unless the user switched announcements off.
+     void announce(
+         QString const& message,
+-        QAccessible::AnnouncementPoliteness politeness = QAccessible::AnnouncementPoliteness::Polite);
++        platform::AnnouncementPoliteness politeness = platform::AnnouncementPoliteness::Polite);
+
+   public:
+     /// The pointer left the terminal entirely.
+diff --git a/src/contour/session/TerminalSession.cpp b/src/contour/session/TerminalSession.cpp
+--- a/src/contour/session/TerminalSession.cpp
++++ b/src/contour/session/TerminalSession.cpp
+@@ -599,7 +599,7 @@ void TerminalSession::close()
+ }
+
+ // {{{ Events implementations
+-void TerminalSession::announce(QString const& message, QAccessible::AnnouncementPoliteness politeness)
++void TerminalSession::announce(QString const& message, platform::AnnouncementPoliteness politeness)
+ {
+     if (!_config.accessibilityAnnouncements.value())
+         return;
+@@ -2599,7 +2599,7 @@ bool TerminalSession::operator()(actions::ToggleReadOnlyMode)
+     // Assertive: this changes what typing does, so a client mid-sentence should be interrupted rather
+     // than tell the user about it after they have already typed into a terminal that ignored them.
+     announce(allowInput ? QObject::tr("Editable") : QObject::tr("Read-only"),
+-             QAccessible::AnnouncementPoliteness::Assertive);
++             platform::AnnouncementPoliteness::Assertive);
+     return true;
+ }
+
+diff --git a/src/contour/platform/XcbProperty.hpp b/src/contour/platform/XcbProperty.hpp
+--- a/src/contour/platform/XcbProperty.hpp
++++ b/src/contour/platform/XcbProperty.hpp
+@@ -8,7 +8,7 @@
+ // Defined HERE rather than in each translation unit that needs it, so the callers cannot disagree
+ // about it. Everything below is declared only inside the guard, which means a caller that forgets
+ // the guard fails to compile rather than silently linking against nothing.
+-#if !defined(Q_OS_WINDOWS) && !defined(Q_OS_DARWIN)
++#if !defined(Q_OS_WINDOWS) && !defined(Q_OS_DARWIN) && defined(CONTOUR_ENABLE_XCB)
+     #define CONTOUR_FRONTEND_XCB
+ #endif
+
+diff --git a/src/contour/platform/BlurBehind.cpp b/src/contour/platform/BlurBehind.cpp
+--- a/src/contour/platform/BlurBehind.cpp
++++ b/src/contour/platform/BlurBehind.cpp
+@@ -96,7 +96,7 @@ void setBlurBehind(QWindow* window, bool enable, QRegion const& region)
+     }
+ #endif
+
+-#if !defined(Q_OS_WINDOWS) && !defined(Q_OS_DARWIN)
++#ifdef CONTOUR_FRONTEND_XCB
+     // This #if should catch UNIX in general but not Mac, so we have not just Linux but also the BSDs and
+     // maybe others if one wants to.
+     //
+diff --git a/src/contour/window/PopupShadowImageProvider.cpp b/src/contour/window/PopupShadowImageProvider.cpp
+--- a/src/contour/window/PopupShadowImageProvider.cpp
++++ b/src/contour/window/PopupShadowImageProvider.cpp
+@@ -22,7 +22,7 @@ namespace
+             .blur = fields[0].toInt(&blurOk),
+             .offsetY = fields[1].toInt(&offsetOk),
+             .cornerRadius = fields[2].toInt(&radiusOk),
+-            .color = QColor::fromString(u"#" + fields[3]),
++            .color = QColor::fromString(QStringLiteral("#") + fields[3]),
+         };
+         if (!blurOk || !offsetOk || !radiusOk || !params.color.isValid())
+             return std::nullopt;

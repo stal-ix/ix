@@ -5,14 +5,14 @@ libunicode
 {% endblock %}
 
 {% block version %}
-0.6.0
+0.9.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/contour-terminal/libunicode/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-0c217f8264000f1b8c36e78969cb9cf91ac97de937cc141ab78e6b1ad7f404ef
-https://www.unicode.org/Public/16.0.0/ucd/UCD.zip
-c86dd81f2b14a43b0cc064aa5f89aa7241386801e35c59c7984e579832634eb2
+78b715bc2d929530bc89e47c1c6772b72f511e1831b14e7d6d92cceb62592920
+https://www.unicode.org/Public/17.0.0/ucd/UCD.zip
+2066d1909b2ea93916ce092da1c0ee4808ea3ef8407c94b4f14f5b7eb263d28e
 {% endblock %}
 
 {% block lib_deps %}
@@ -21,10 +21,10 @@ lib/c
 
 {% block unpack %}
 {{super()}}
-cp ${src}/UCD.zip ucd-16.0.0.zip
-mkdir ucd-16.0.0
-cd ucd-16.0.0
-unzip ../ucd-16.0.0.zip
+cp ${src}/UCD.zip ucd-17.0.0.zip
+mkdir ucd-17.0.0
+cd ucd-17.0.0
+unzip ../ucd-17.0.0.zip
 cd ..
 {% endblock %}
 

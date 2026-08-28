@@ -34,7 +34,6 @@ lib/shim/fake(lib_name=xcb)
 {% block bld_tool %}
 bin/tic
 bld/qt/6
-bld/prepend
 bld/qt/6/tools
 bld/qt/6/tools/qml
 bld/qt/6/tools/shader
@@ -43,17 +42,12 @@ bld/qt/6/tools/shader
 {% block cmake_flags %}
 CONTOUR_WITH_UTEMPTER=OFF
 CONTOUR_BUILD_STATIC=ON
+CONTOUR_USE_CPM=OFF
 {% endblock %}
 
 {% block patch %}
-sed -e 's|.*_3_3_.*||' -i src/contour/display/Blur.h
-prepend src/contour/display/OpenGLRenderer.cpp << EOF
-#include <GL/gl.h>
+base64 -d << EOF > compat.patch
+{% include 'compat.patch/base64' %}
 EOF
-base64 -d << EOF > src/contour/BlurBehind.cpp
-{% include 'BlurBehind.cpp/base64' %}
-EOF
-base64 -d << EOF > src/contour/ContourGuiApp.cpp
-{% include 'ContourGuiApp.cpp/base64' %}
-EOF
+patch -p1 < compat.patch
 {% endblock %}
