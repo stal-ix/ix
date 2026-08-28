@@ -17,12 +17,14 @@ https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v{{self.versi
 lib/c
 lib/z
 lib/c++
+lib/asio
 lib/png
 lib/munt
 lib/tracy
 lib/slirp
 lib/iir/1
 lib/sdl/2
+lib/sdl/2/image
 lib/expat
 lib/kernel
 lib/sdl/deps
@@ -53,4 +55,15 @@ use_opengl=false
 
 {% block bld_tool %}
 bld/bash
+{% endblock %}
+
+{% block patch %}
+sed -e "/'misc',/d" -i resources/shaders/meson.build
+sed -e "/src\/libs\/residfp/a subdir('src/libs/riffcpp')" -i meson.build
+sed -e '/^libriffcpp =/i )' -i src/libs/riffcpp/meson.build
+sed -e 's|libriffcpp,|libriffcpp_dep,|' -i src/hardware/meson.build
+sed -e "/'midi.cpp',/a \\    'midi_synth.cpp'," -i src/midi/meson.build
+sed -e 's|@version@|{{self.version().strip()}}|' \
+    -e '/#define DOSBOX_VERSION "/a #define DOSBOX_VERSION_SHORT "{{self.version().strip().split(".")[0]}}.{{self.version().strip().split(".")[1]}}"' \
+    -i src/dosbox_config.h.in
 {% endblock %}
