@@ -5,12 +5,12 @@ limine
 {% endblock %}
 
 {% block version %}
-9.5.2
+12.6.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/limine-bootloader/limine/releases/download/v{{self.version().strip()}}/limine-{{self.version().strip()}}.tar.xz
-ddc279a748732e4dc526b106874f0e361a1d09fc68a8b030522ac7e925c3c563
+102056a76e3cf526c0e76164780d8bbd0548982bf2b52b5833bcf1592e96bbe3
 {% endblock %}
 
 {% block bld_libs %}
