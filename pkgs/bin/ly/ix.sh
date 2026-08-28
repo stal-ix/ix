@@ -1,11 +1,13 @@
 {% extends '//die/c/make.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 ly
 {% endblock %}
 
 {% block version %}
-1.4.1
+0.6.0
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +19,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-ea1cfe217e8f650fd0528d709037e7698bb5d7d3043bfe19af11bd4cbe76a28f
+5d324e9f946d9c817467ae9d1d4a51611a08103b68707ef304068269a537320c
 {% endblock %}
 
 {% block bld_libs %}
