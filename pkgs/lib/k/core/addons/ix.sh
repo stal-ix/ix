@@ -17,6 +17,7 @@ e454f03732ef509e9cf52f100d9a3870e58cc390867721e914745e15633069ff
 lib/c
 lib/c++
 lib/k/ecm
+lib/linux/util
 lib/qt/6/base
 lib/qt/6/declarative
 {% endblock %}
@@ -25,6 +26,11 @@ lib/qt/6/declarative
 bld/qt/6
 bld/qt/6/tools
 bld/qt/6/tools/qml
+{% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -e 's|set(REQUIRED_QT_VERSION 6.9.0)|set(REQUIRED_QT_VERSION 6.7.0)|' -i CMakeLists.txt
 {% endblock %}
 
 {% block install %}
