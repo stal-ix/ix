@@ -5,7 +5,7 @@ LightGBM
 {% endblock %}
 
 {% block version %}
-4.6.0
+4.7.0
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-8a0308a2a0624ff4997eb5968a5767c31134c5346177b064e97e35b6a94a40dd
+e3a559493109a9e92f0f1181807ee67f09cdc89c2294e6a5d9f755b0d36054e7
 {% endblock %}
 
 {% block bld_libs %}
