@@ -16,6 +16,7 @@ https://ftp.gnu.org/gnu/libtasn1/libtasn1-{{self.version().strip()}}.tar.gz
 {% block bld_tool %}
 bld/m4
 bld/bison
+bld/texinfo
 {% endblock %}
 
 {% block lib_deps %}
