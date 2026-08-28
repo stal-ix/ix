@@ -5,12 +5,12 @@ libmicrohttpd
 {% endblock %}
 
 {% block version %}
-1.0.2
+1.0.10
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-{{self.version().strip()}}.tar.gz
-df324fcd0834175dab07483133902d9774a605bfa298025f69883288fd20a8c7
+04bfe8ef75db7d629a33de767599765cecadc56274a39822d5d081030d577685
 {% endblock %}
 
 {% block lib_deps %}
