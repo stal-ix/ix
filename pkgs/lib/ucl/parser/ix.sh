@@ -13,6 +13,8 @@ https://github.com/vstakhov/libucl/archive/refs/tags/{{self.version().strip()}}.
 319d8ff13441f55d91cd7f3708a54bd03779733e26958c2346c5109014520aaf
 {% endblock %}
 
+{% block conf_ver %}2/71{% endblock %}
+
 {% block lib_deps %}
 lib/c
 {% endblock %}
