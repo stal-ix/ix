@@ -5,12 +5,12 @@ libxmp
 {% endblock %}
 
 {% block version %}
-4.6.3
+4.7.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-{{self.version().strip()}}.tar.gz
-0871421a5ac54e7eefe4a5afc89f6411f6382aa7bbff8b916a9f243abe77e85f
+3a6ad7d154d931e21db79e1c0af3253998555c73706083ce9ab2b634180a6e99
 {% endblock %}
 
 {% block lib_deps %}
