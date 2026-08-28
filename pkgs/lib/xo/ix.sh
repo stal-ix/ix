@@ -18,6 +18,10 @@ lib/c
 lib/bsd
 {% endblock %}
 
+{% block bld_tool %}
+bld/byacc
+{% endblock %}
+
 {% block bld_libs %}
 lib/bsd/overlay
 {% endblock %}
@@ -34,4 +38,5 @@ sh bin/setup.sh
 find . -type f | while read l; do
     sed -e 's|.*sys/sysctl.h.*||' -i ${l}
 done
+sed -e 's|AC_MSG_FAILURE("could not find msgfmt tool")|AC_MSG_NOTICE("could not find msgfmt tool")|' -i configure.ac
 {% endblock %}
