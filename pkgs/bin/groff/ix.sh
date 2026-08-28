@@ -5,12 +5,12 @@ groff
 {% endblock %}
 
 {% block version %}
-1.23.0
+1.24.1
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/groff/groff-{{self.version().strip()}}.tar.gz
-6b9757f592b7518b4902eb6af7e54570bdccba37a871fddb2d30ae3863511c13
+74e2819795b6aff431aeac983d63a9c8968eeaba2a2eba7df8ba4c7b41e7cfd8
 {% endblock %}
 
 {% block bld_libs %}

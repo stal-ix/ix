@@ -5,12 +5,12 @@ atop
 {% endblock %}
 
 {% block version %}
-2.12.1
+2.13.0
 {% endblock %}
 
 {% block fetch %}
 https://www.atoptool.nl/download/atop-{{self.version().strip()}}.tar.gz
-4fdbe67c5dfaf89405639e18599f4eae77978073ffa54f3c78c368ab54bd12f6
+ea182f84c9f52ca922e5af4f17dff97ff424400a4f2f92393317a6af66e6a874
 {% endblock %}
 
 {% block bld_libs %}
@@ -28,6 +28,7 @@ bld/pkg/config
 
 {% block patch %}
 sed -e 's|/bin/systemctl|qqq|g' -i Makefile
+sed -e 's|^#define _XOPEN_SOURCE$|#define _XOPEN_SOURCE 700|' -i *.c
 {% endblock %}
 
 {% block cpp_missing %}

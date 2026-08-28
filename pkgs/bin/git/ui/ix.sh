@@ -5,7 +5,7 @@ gitui
 {% endblock %}
 
 {% block version %}
-0.28.0
+0.28.1
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/extrawurst/gitui/archive/refs/tags/v{{self.version().strip()}
 {% endblock %}
 
 {% block cargo_sha %}
-991936f06dfcd4b44c1f328a9af95018f97229df3a6bfcacc3949eb333759325
+81d4868cfef5068406c5dfc41c868b5c4a3984b64df3c53a44246e46df5694f7
 {% endblock %}
 
 {% block bld_libs %}

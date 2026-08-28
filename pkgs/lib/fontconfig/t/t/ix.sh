@@ -5,12 +5,12 @@ fontconfig
 {% endblock %}
 
 {% block version %}
-2.17.1
+2.18.3
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/{{self.version().strip()}}/fontconfig-{{self.version().strip()}}.tar.bz2
-bc1a90697eb8ec6c3eed118105ef9cbdfdd676e563905bf1cb571a705598300e
+8d28f79d2017cbe1fbb7da84b2502c86421b4f45860234d2f4ab5b35564c8d01
 {% endblock %}
 
 {% block bld_tool %}
@@ -31,13 +31,10 @@ bld/meson/6
 
 {% block meson_flags %}
 cache-build=disabled
-default-fonts-dirs=
+fontations=disabled
 {% endblock %}
 
-{% block patch %}
-find . -type f -name '*.c' | while read l; do
-    sed -e 's|.*/usr/share.*||' \
-        -e 's|.*/usr/local/share.*||' \
-        -i ${l}
-done
+{% block step_patch %}
+{{super()}}
+sed -e "s|meson_version : '>= 1.11.0'|meson_version : '>= 1.6.1'|" -i meson.build
 {% endblock %}

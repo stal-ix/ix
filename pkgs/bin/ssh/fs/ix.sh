@@ -1,19 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
-{% block git_repo %}
-https://github.com/libfuse/sshfs
-{% endblock %}
-
-{% block git_branch %}
-sshfs-{{self.version().strip()}}
-{% endblock %}
-
-{% block git_commit %}
-9e35c39ba83f54a49a9df4bf0a629f26c60cc38c
-{% endblock %}
-
-{% block git_sha %}
-3f17dc9409bb6f64d6b4fb30e7c64352e2a39517fddc391ca3355a7f41371cd6
+{% block fetch %}
+https://github.com/libfuse/sshfs/releases/download/sshfs-{{self.version().strip()}}/sshfs-{{self.version().strip()}}.tar.xz
+6a1bcb31450a077e9cb1b7ff158c71de34db697c3c0da6cb362502131e495893
 {% endblock %}
 
 {% block pkg_name %}
@@ -21,7 +10,7 @@ sshfs
 {% endblock %}
 
 {% block version %}
-3.7.5
+3.7.6
 {% endblock %}
 
 {% block bld_libs %}

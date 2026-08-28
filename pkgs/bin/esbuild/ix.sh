@@ -5,7 +5,7 @@ esbuild
 {% endblock %}
 
 {% block version %}
-0.27.3
+0.28.2
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/evanw/esbuild/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-66f3a7b811b8b6568547b98bc37218224aa2c14ad5b2e2999edda9a9fef40740
+e1edbf35a3be39a1f689bb876033601a8fe49986658ad94d77c540f3eef20fe2
 {% endblock %}
 
 {% block unpack %}

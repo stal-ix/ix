@@ -5,12 +5,12 @@ fetchmail
 {% endblock %}
 
 {% block version %}
-6.6.2
+6.6.6
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/fetchmail/branch_{{self.version().strip()[:3]}}/fetchmail-{{self.version().strip()}}.tar.xz
-a5109295ec3319e0e45edd009d2d977042a8326ab52c6a817a82fa987103e4f3
+da99f8c573c4d9e63f493c7e24447126aea25b53b4c076ec79266874e29b1975
 {% endblock %}
 
 {% block bld_libs %}

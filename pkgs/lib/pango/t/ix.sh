@@ -34,3 +34,8 @@ shut_up
 {% block bld_tool %}
 bld/glib
 {% endblock %}
+
+{% block step_patch %}
+{{super()}}
+sed -e '/#include <hb-ft.h>/a #include <fontconfig/fcfreetype.h>' -i pango/pangofc-fontmap.c
+{% endblock %}

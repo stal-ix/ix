@@ -1,5 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 fish-shell
 {% endblock %}

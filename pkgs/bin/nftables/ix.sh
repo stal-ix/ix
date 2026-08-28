@@ -1,7 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block git_repo %}
-git://git.netfilter.org/nftables
+https://git.netfilter.org/nftables
 {% endblock %}
 
 {% block version %}

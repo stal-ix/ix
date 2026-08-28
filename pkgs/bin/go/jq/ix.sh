@@ -5,7 +5,7 @@ gojq
 {% endblock %}
 
 {% block version %}
-0.12.9
+0.12.19
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/itchyny/gojq/archive/refs/tags/v{{self.version().strip()}}.ta
 {% endblock %}
 
 {% block go_sha %}
-f2c445a6e6df34239abe13b2180c8827e6f934a146ccc2ded4f0b81a7fcc56ea
+6d5795e9f50e0c7190e8cddf4ba95bd447b221ffd5ee676e9dd246cd568b8de3
 {% endblock %}
 
 {% block unpack %}
@@ -26,5 +26,5 @@ gojq
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/25
 {% endblock %}

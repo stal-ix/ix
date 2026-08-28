@@ -5,12 +5,12 @@ dnsmasq
 {% endblock %}
 
 {% block version %}
-2.92
+2.93
 {% endblock %}
 
 {% block fetch %}
 https://thekelleys.org.uk/dnsmasq/dnsmasq-{{self.version().strip()}}.tar.xz
-4bf50c2c1018f9fbc26037df51b90ecea0cb73d46162846763b92df0d6c3a458
+0c00d4e5c97c8306e5fb932b348b34269c9c29a0e7df0e8e82958b407092bc19
 {% endblock %}
 
 {% block bld_tool %}

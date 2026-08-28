@@ -39,3 +39,12 @@ BISON_LOCALEDIR_c_make=\\\"${out}/share/locale\\\"
 {{super()}}
 -Wno-incompatible-function-pointer-types
 {% endblock %}
+
+{% block install %}
+{{super()}}
+# gettext 0.25 stopped installing its m4 macros (iconv.m4, gettext.m4, ...)
+# into share/aclocal, keeping them only in the autopoint archive. Downstream
+# autoreconf needs them on ACLOCAL_PATH (AM_ICONV, AM_GNU_GETTEXT), so put
+# them back.
+cp ${out}/share/gettext/m4/*.m4 ${out}/share/aclocal/
+{% endblock %}

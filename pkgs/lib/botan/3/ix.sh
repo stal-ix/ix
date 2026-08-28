@@ -5,10 +5,10 @@ botan
 {% endblock %}
 
 {% block version %}
-3.10.0
+3.13.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/randombit/botan/archive/refs/tags/{{self.version().strip()}}.tar.gz
-28a98475e05dc2052654397207b4a78e36e6309b662f7f2888feb78cc948cea6
+9fbff1cd4fe7caff9bc146304dabf551e05a8beefdf03062b63d02cbb61f2e22
 {% endblock %}

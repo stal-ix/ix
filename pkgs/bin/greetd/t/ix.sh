@@ -5,7 +5,7 @@ greetd
 {% endblock %}
 
 {% block version %}
-0.9.0
+0.10.3
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,9 +13,9 @@ https://git.sr.ht/~kennylevinsen/greetd/archive/{{self.version().strip()}}.tar.g
 {% endblock %}
 
 {% block cargo_sha %}
-b85455ba2a558795c7e9b171122218520bcb0589268ea9bdb59fd27d1ed6d641
+81d4868cfef5068406c5dfc41c868b5c4a3984b64df3c53a44246e46df5694f7
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/86
+bld/cargo/91
 {% endblock %}

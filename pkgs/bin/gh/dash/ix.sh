@@ -5,7 +5,7 @@ gh-dash
 {% endblock %}
 
 {% block version %}
-4.9.1
+4.25.2
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/dlvhdr/gh-dash/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block go_sha %}
-3ee3ceb1fa69ca165a9513e8b16f770a646ba261a621028833bdf06836fa6872
+62d2412c9dae90de991a06adcd9cd9170b662f2ed6c9051cda5bcdd1bfaa7b03
 {% endblock %}
 
 {% block go_bins %}
@@ -21,5 +21,5 @@ gh-dash
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/25
 {% endblock %}

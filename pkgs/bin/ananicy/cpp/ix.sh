@@ -7,7 +7,7 @@ ananicy-cpp
 {% endblock %}
 
 {% block version %}
-1.1.1
+1.2.0
 {% endblock %}
 
 {% block git_repo %}
@@ -19,7 +19,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-e0e110890778f7bbe756e8d93c0f7b8b95af3f224f5e3b15bb477d7f48235916
+4866ff12768f5ecc9b1af92259c4045cbe80deb84e1cd24e9a4642d0ee96b7f2
 {% endblock %}
 
 {% block bld_libs %}

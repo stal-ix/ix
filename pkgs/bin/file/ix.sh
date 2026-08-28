@@ -36,3 +36,12 @@ FILE_COMPILE_DEP=
 --enable-libseccomp
 {% endif %}
 {% endblock %}
+
+{% block cpp_defines %}
+{% if linux %}
+# musl unistd.h defines pread64 as a macro for pread, so SCMP_SYS(pread64)
+# in seccomp.c pastes into __SNR_pread, which libseccomp does not know
+# (pread is not a syscall name). Point it at the real pread64 number.
+__SNR_pread=__NR_pread64
+{% endif %}
+{% endblock %}

@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block version %}
-0.7
+0.8
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,13 +10,13 @@ dwl
 
 {% block fetch %}
 https://codeberg.org/dwl/dwl/archive/v{{self.version().strip()}}.tar.gz
-401a572462fa89f6adf0d0cfe58d909ef334a2c7cd1357db86ec70f32bd4b4d3
+3080087e7f613bf6a350934231fd9ed478d04cd2a2f30da8a96cdf2066f59412
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/wayland
-lib/wlroots/18
+lib/wlroots/19
 lib/drivers/3d
 {% endblock %}
 

@@ -5,7 +5,7 @@ geesefs
 {% endblock %}
 
 {% block version %}
-0.43.3
+0.43.8
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/yandex-cloud/geesefs/archive/refs/tags/v{{self.version().stri
 {% endblock %}
 
 {% block go_sha %}
-ec712bce60170e588374f2b5ef28be8d7ef706866ce67fe2574c42d231bb04d2
+4d948a5983fedd84d6d4303d375c459d870f9919f794bbd8402b57a3e6be33d7
 {% endblock %}
 
 {% block go_bins %}

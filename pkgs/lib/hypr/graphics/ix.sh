@@ -5,12 +5,12 @@ hyprgraphics
 {% endblock %}
 
 {% block version %}
-0.1.5
+0.5.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hyprwm/hyprgraphics/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-03bdd5a6e456c31cc17f973656326220f94e58a5f4ab33b2450ccb5d6a697a4c
+861ecaad872835922dd5745a612d7a4cc7bfc4babb1d06bc92bc63c2ac013b74
 {% endblock %}
 
 {% block lib_deps %}
@@ -23,7 +23,14 @@ lib/spng
 lib/magic
 lib/cairo
 lib/pixman
+lib/drm
+lib/pango
+lib/opengl
 lib/hypr/utils
+{% endblock %}
+
+{% block bld_libs %}
+lib/hypr/rsvg
 {% endblock %}
 
 {% block build_flags %}

@@ -30,6 +30,10 @@ wrap_cc
 libgcc_link_flag=-lc
 {% endblock %}
 
+{% block make_target %}
+library
+{% endblock %}
+
 {% block configure %}
 sh ./configure --prefix=${out}
 {% endblock %}

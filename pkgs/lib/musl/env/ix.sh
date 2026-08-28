@@ -43,6 +43,7 @@ export ac_cv_c_strptime_works=yes
 export ac_cv_func_chown_works=yes
 export ac_cv_have_decl_memmem=yes
 export gl_cv_func_sigprocmask=yes
+export gl_cv_func_pthread_rwlock_good_waitqueue=yes
 export ac_cv_header_stdbool_h=yes
 export ac_cv_func_getaddrinfo=yes
 export ac_cv_buggy_getaddrinfo=no

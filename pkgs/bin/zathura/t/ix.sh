@@ -4,7 +4,7 @@
 lib/c
 lib/glib
 lib/cairo
-lib/girara
+lib/girara/gtk3
 {% endblock %}
 
 {% block build_flags %}

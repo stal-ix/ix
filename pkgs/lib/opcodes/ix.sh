@@ -23,4 +23,7 @@ lib/c
 
 {% block patch %}
 echo 0 > ../bfd/libtool-soversion
+sed -i '/assert (opcode->bin_opcode == bin);/a\      (void) bin;' avr-dis.c
+sed -i '/unsigned int bin = 0;/a\          (void) bin;' xgate-dis.c
+sed -i '/operand_variant_qualifier_p (aarch64_opnd_qualifier_t qualifier)/i\__attribute__ ((unused))' aarch64-opc.c
 {% endblock %}

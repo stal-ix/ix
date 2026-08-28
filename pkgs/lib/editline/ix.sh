@@ -5,12 +5,12 @@ editline
 {% endblock %}
 
 {% block version %}
-1.17.1
+2.1.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/troglobit/editline/archive/refs/tags/{{self.version().strip()}}.tar.gz
-d65c5739c8ca388fa71feabc5aae506d052e1a6d288ee4e7fcab7efb07a3be74
+79edb757aac2a092d46b7a2a30bc1edd9d020a9762974d8b548f044c73bd3b34
 {% endblock %}
 
 {% block lib_deps %}

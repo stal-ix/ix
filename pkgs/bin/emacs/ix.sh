@@ -5,16 +5,17 @@ emacs
 {% endblock %}
 
 {% block version %}
-30.2
+31.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-{{self.version().strip()}}.tar.gz
-67e6954e759f3602817e833a46d9f6383ae84ff96872c159601a3807dcc9f1d3
+59fc9b553526453f8d7ded9f8d3857c047f4670ff417f18d906f0f66c0563110
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
+lib/linux/headers
 lib/z
 lib/acl
 lib/gmp

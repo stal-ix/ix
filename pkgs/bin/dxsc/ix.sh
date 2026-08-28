@@ -7,7 +7,7 @@ DirectXShaderCompiler
 {% endblock %}
 
 {% block version %}
-1.8.2505.1
+1.10.2605.37
 {% endblock %}
 
 {% block git_repo %}
@@ -19,7 +19,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-6f9e1167acf329a46ac692f7aece8bca0c98568965bd5ad7e18109d5133b0d9a
+94601b00a8147c5c6a6453fd5909d5e751a52b9021dd4eaef4555c5dd7072a6d
 {% endblock %}
 
 {% block git_refine %}
@@ -72,14 +72,4 @@ LLVM_INCLUDE_TESTS=OFF
 {% block build_flags %}
 wrap_cc
 wrap_rdynamic
-{% endblock %}
-
-{% block patch %}
-sed -e 's|bool DxilLibIsEnabled|bool DxilLibIsEnabledXXX|' \
-    -i tools/clang/tools/dxcompiler/dxillib.cpp
-cat << EOF >> tools/clang/tools/dxcompiler/dxillib.cpp
-bool DxilLibIsEnabled() {
-    return false;
-}
-EOF
 {% endblock %}

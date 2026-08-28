@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block version %}
-2.7.0
+2.8.0
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ far2l
 
 {% block fetch %}
 https://github.com/elfmz/far2l/archive/refs/tags/v_{{self.version().strip()}}.tar.gz
-712ab8e5b40482ddd68e33f870e4c3d7e8f8c44b90fb9fe91288a00cb27dff48
+b0fddad2e3985f245f9e691e23b90fb97f7d29d9a0b131fe686aa3cbb2e4ea01
 {% endblock %}
 
 {% block bld_libs %}

@@ -5,7 +5,7 @@ alacritty
 {% endblock %}
 
 {% block version %}
-0.16.1
+0.17.0
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/alacritty/alacritty/archive/refs/tags/v{{self.version().strip
 {% endblock %}
 
 {% block cargo_sha %}
-d71a4d7df5c29d33b36f6acd0cd29c183f7174aa380b9f77e026aaa2c897b018
+81d4868cfef5068406c5dfc41c868b5c4a3984b64df3c53a44246e46df5694f7
 {% endblock %}
 
 {% block bld_libs %}
@@ -48,5 +48,5 @@ alacritty
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/86
+bld/cargo/91
 {% endblock %}

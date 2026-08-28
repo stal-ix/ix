@@ -5,12 +5,12 @@ celluloid
 {% endblock %}
 
 {% block version %}
-0.29
+0.30
 {% endblock %}
 
 {% block fetch %}
 https://github.com/celluloid-player/celluloid/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-c4fa8e21647f39253709bad1939fe3d376abd07e05c2c02fb235c23375aa810a
+75ff83f650180cf9fa2458a7015fa84fd3be014e9478d670f9cf94367720313e
 {% endblock %}
 
 {% block bld_libs %}

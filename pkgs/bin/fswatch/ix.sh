@@ -5,12 +5,12 @@ fswatch
 {% endblock %}
 
 {% block version %}
-1.18.3
+1.22.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/emcrisostomo/fswatch/archive/refs/tags/{{self.version().strip()}}.tar.gz
-07f9fec15138fe25ea92d869117811c7c4fba2e6c6231682d49b159bae2ebd53
+469bab7acb0405e1cead8a59576f8daa6fc720832db4baea20f1fa43edd66d38
 {% endblock %}
 
 {% block bld_libs %}

@@ -1,4 +1,4 @@
-{% extends '//die/c/meson.sh' %}
+{% extends '//die/c/configure.sh' %}
 
 {% block git_repo %}
 https://github.com/davmac314/dinit
@@ -9,7 +9,7 @@ dinit
 {% endblock %}
 
 {% block version %}
-0.19.4
+0.22.1
 {% endblock %}
 
 {% block git_branch %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-d17c1e9630ce2de65135f2772193d73195b2b3e263d8d070f500258feaef515c
+79be8d565f0cbaa04247a9eedebd9998871ffaa9e57c3686e2ae3b1504213ada
 {% endblock %}
 
 {% block bld_libs %}
@@ -29,7 +29,9 @@ lib/c++
 bld/m4
 {% endblock %}
 
-{% block meson_flags %}
-dinit-sbindir=${out}/bin
-dinit-control-socket-path=/var/run/dinit/ctl
+{% block configure_all_flags %}
+--prefix=${out}
+--bindir=${out}/bin
+--sbindir=${out}/bin
+--syscontrolsocket=/var/run/dinit/ctl
 {% endblock %}

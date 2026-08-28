@@ -5,14 +5,14 @@ gnome-keyring
 {% endblock %}
 
 {% block version %}
-48.0
+50.0
 {% endblock %}
 
 {# need to statlink plugins #}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gnome-keyring/-/archive/{{self.version().strip()}}/gnome-keyring-{{self.version().strip()}}.tar.bz2
-f0fb25865d13665c475cead8eb9ed6fee0780e04c7f7e8d2b3d18551b3aa0986
+081c2788df4d74b5217479b4ea1355c7d5216ccb417b517a3d5a9cf7384deac5
 {% endblock %}
 
 {% block bld_libs %}

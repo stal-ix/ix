@@ -2,6 +2,7 @@
 
 {% block bld_libs %}
 lib/c
+lib/kernel
 lib/z
 lib/curl
 lib/intl
@@ -25,6 +26,7 @@ COMPUTE_HEADER_DEPENDENCIES=no
 NO_FINK=1
 NO_DARWIN_PORTS=1
 NO_PERL=1
+NO_RUST=1
 NO_TCLTK=1
 uname_S={{target.uname_s}}
 uname_M={{target.uname_m}}

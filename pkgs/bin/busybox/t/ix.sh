@@ -5,12 +5,12 @@ busybox
 {% endblock %}
 
 {% block version %}
-1.37.0
+1.36.1
 {% endblock %}
 
 {% block fetch %}
 https://busybox.net/downloads/busybox-{{self.version().strip()}}.tar.bz2
-3311dff32e746499f4df0d5df04d7eb396382d7e108bb9250e7b519b837043a4
+b8cc24c9574d809e7279c3be349795c5d5ceb6fdf19ca709f80cde50e47de314
 {% endblock %}
 
 {% block bld_libs %}

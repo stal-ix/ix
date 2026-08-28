@@ -5,7 +5,7 @@ dyff
 {% endblock %}
 
 {% block version %}
-1.9.4
+1.12.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/homeport/dyff/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-55506f70b2a2e4acbec33d0050b41da0621bac2a7e61d63c341e7e6585145638
+477846ee7bb3ce817b806e21788ad2090a74e1c93d2849a5cf51f888b0c2a398
 {% endblock %}
 
 {% block unpack %}
@@ -26,5 +26,5 @@ dyff
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/25
 {% endblock %}

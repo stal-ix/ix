@@ -5,12 +5,12 @@ attr
 {% endblock %}
 
 {% block version %}
-2.5.2
+2.6.0
 {% endblock %}
 
 {% block fetch %}
-https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-{{self.version().strip()}}.tar.gz
-b266cf45e2256b4d85a86554b42c0218abce40356f5c3026f88e15dcf73df775
+https://download.savannah.gnu.org/releases/attr/attr-{{self.version().strip()}}.tar.gz
+d42fa374513180bb48cb11a46696f488240e5124ff1e6ad88b0abff706985612
 {% endblock %}
 
 {% block bld_tool %}
@@ -23,4 +23,5 @@ lib/c
 
 {% block bld_libs %}
 lib/shim/gnu/basename/overlay
+lib/linux/headers
 {% endblock %}

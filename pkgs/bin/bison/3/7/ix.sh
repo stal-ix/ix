@@ -39,6 +39,13 @@ bld/bison
 --enable-relocatable
 {% endblock %}
 
+{% block setup_target_flags %}
+{% if mingw32 %}
+export ac_cv_func_wcwidth=no
+{% endif %}
+{{super()}}
+{% endblock %}
+
 {% block c_rename_symbol %}
 error
 accept

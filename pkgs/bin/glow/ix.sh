@@ -1,5 +1,7 @@
 {% extends '//die/go/build.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 glow
 {% endblock %}

@@ -5,12 +5,12 @@ chrony
 {% endblock %}
 
 {% block version %}
-4.8
+4.9
 {% endblock %}
 
 {% block fetch %}
 https://github.com/mlichvar/chrony/archive/refs/tags/{{self.version().strip()}}.tar.gz
-21ca27feeef5009fbb3e170d0884a5fbcad248826608256a7e3bca43cd7cd1eb
+897ede3eb12106ab9f8ca1dbf0c13ca3ab57606eea8b5968ce5ba7b77ee4fb50
 {% endblock %}
 
 {% block bld_libs %}

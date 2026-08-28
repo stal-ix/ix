@@ -5,12 +5,12 @@ capstone
 {% endblock %}
 
 {% block version %}
-5.0.7
+5.0.9
 {% endblock %}
 
 {% block fetch %}
 https://github.com/capstone-engine/capstone/archive/refs/tags/{{self.version().strip()}}.tar.gz
-6427a724726d161d1e05fb49fff8cd0064f67836c04ffca3c11d6d859e719caa
+0619da31af08152600af95c481527ef6d756c0a8404fca7544a4fdf6dfc2c0f9
 {% endblock %}
 
 {% block lib_deps %}

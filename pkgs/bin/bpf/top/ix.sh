@@ -5,7 +5,7 @@ bpftop
 {% endblock %}
 
 {% block version %}
-0.6.0
+0.9.0
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/Netflix/bpftop/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block cargo_sha %}
-6a51e18981b57a4e35b4a88d8155a6b8f25c2113eacff1865970fe78153866d3
+e21d98a6a8c9550c5dd520d3c499f0e9ac712425ad05e6136d3d3d560f54fd4c
 {% endblock %}
 
 {% block bld_libs %}
@@ -38,5 +38,5 @@ bpftop
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/86
+bld/cargo/96
 {% endblock %}

@@ -1,5 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
+# noauto
+
 {% block git_repo %}
 https://github.com/CleverRaven/Cataclysm-DDA
 {% endblock %}

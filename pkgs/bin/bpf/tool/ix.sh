@@ -5,7 +5,7 @@ bpftool
 {% endblock %}
 
 {% block version %}
-7.6.0
+7.7.0
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-2c1e48ee9aaa8ca81d309e53a1e723e16113182619f5a02113b217347b57cecd
+77a365c119ef97021a4779e65f51004e35f968b7abed0f9c9f6dc6def771f59c
 {% endblock %}
 
 {% block bld_libs %}
@@ -25,6 +25,7 @@ lib/c
 lib/z
 lib/cap
 lib/bpf
+lib/openssl
 lib/bfd
 lib/llvm
 lib/iberty
@@ -43,7 +44,7 @@ V=1
 CLANG_BPF_CO_RE_PROBE_CMD='echo 1'
 bash_compdir=${out}/share/bash
 CC=clang
-CLANG=${FREESTANDING_CLANG}
+CLANG='${FREESTANDING_CLANG} -D_inline=_inline_'
 HOSTCC=cc
 {% endblock %}
 

@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block version %}
-26.00
+26.02
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@
 
 {% block fetch %}
 https://www.7-zip.org/a/7z{{self.version().strip().replace('.', '')}}-src.tar.xz
-3e596155744af055a77fc433c703d54e3ea9212246287b5b1436a6beac060f16
+cf967c98bca02a4b8b16375f441825a8e141362f14be1969bbec8e1ca0bff9dd
 {% endblock %}
 
 {% block lib_deps %}

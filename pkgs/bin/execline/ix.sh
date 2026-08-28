@@ -5,12 +5,12 @@ execline
 {% endblock %}
 
 {% block version %}
-2.9.7.0
+2.9.9.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/skarnet/execline/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-a2794477b31d66cc301d0e97f182e2be736ee763291335412792cbc7e301d964
+b856e1a0bc8113d7110627720b7ddab3b539bcd63d4bb901a6d88470ecbb2281
 {% endblock %}
 
 {% block lib_deps %}

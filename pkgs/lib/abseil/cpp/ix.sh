@@ -1,5 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
+# noauto
+
 # check bin/telegram/desktop
 
 {% block pkg_name %}

@@ -5,12 +5,12 @@ file
 {% endblock %}
 
 {% block version %}
-5.46
+5.48
 {% endblock %}
 
 {% block fetch %}
 https://astron.com/pub/file/file-{{self.version().strip()}}.tar.gz
-c9cc77c7c560c543135edc555af609d5619dbef011997e988ce40a3d75d86088
+ed14656883b23a364b4057c05595d93252da9bc473d30106519519d0da141283
 {% endblock %}
 
 {% block lib_deps %}

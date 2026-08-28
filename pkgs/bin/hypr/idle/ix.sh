@@ -5,12 +5,12 @@ hypridle
 {% endblock %}
 
 {% block version %}
-0.1.7
+0.1.8
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hyprwm/hypridle/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-c4ef2e2894fc2082cfdabe7db086b1f246e3f0de571f7f2c6b26d7c0d9a5f8f3
+08703613cc33cc796c2179bcaa6076e8618113f67b938daaf7535f90c7d39595
 {% endblock %}
 
 {% block bld_libs %}

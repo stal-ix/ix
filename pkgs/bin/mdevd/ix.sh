@@ -19,6 +19,10 @@ lib/kernel
 lib/skalibs
 {% endblock %}
 
+{% block patch %}
+sed -e 's|mkdirp|mdevd_mkdirp|g' -i src/mdevd/mdevd.c
+{% endblock %}
+
 {% block make_flags %}
 {{super()}}
 VPATH=${MAKE_VPATH}

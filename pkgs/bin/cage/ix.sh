@@ -1,5 +1,7 @@
 {% extends '//die/c/meson.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 cage-kiosk
 {% endblock %}

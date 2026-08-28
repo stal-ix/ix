@@ -9,7 +9,7 @@ libnfnetlink
 {% endblock %}
 
 {% block git_repo %}
-git://git.netfilter.org/libnfnetlink
+https://git.netfilter.org/libnfnetlink
 {% endblock %}
 
 {% block git_branch %}
