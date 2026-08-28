@@ -5,12 +5,12 @@ KDSingleApplication
 {% endblock %}
 
 {% block version %}
-1.2.0
+1.2.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-ff4ae6a4620beed1cdb3e6a9b78a17d7d1dae7139c3d4746d4856b7547d42c38
+e3254ce9dc5ecf6d61ef83264bc61d486a307f0e3c9ed1bb2176f068cdbcbe09
 {% endblock %}
 
 {% block lib_deps %}
