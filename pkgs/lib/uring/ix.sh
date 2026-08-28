@@ -43,5 +43,6 @@ aligned_alloc
 {% endblock %}
 
 {% block patch %}
+sed -e "s|/tmp/test_bpf_XXXXXX|${TMPDIR}/test_bpf_XXXXXX|" -i configure
 echo 'int main() {}' > examples/zcrx.c
 {% endblock %}
