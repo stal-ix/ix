@@ -1,16 +1,20 @@
 {% extends '//die/c/cmake.sh' %}
 
+# noauto
+
+# Newer releases require Qt APIs unavailable in Qt 6.7.
+
 {% block pkg_name %}
 kimageformats
 {% endblock %}
 
 {% block version %}
-6.29.0
+6.19.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/KDE/kimageformats/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-20274dc730d18b8fc0bcbe4faa1d7d236b0f7ad8e57899cc82c1af41d27cd247
+0cc9b8c0e87fba771a9e92da009702bdb753cf4cb9cda1e5cc838f3e46574c51
 {% endblock %}
 
 {% block lib_deps %}
