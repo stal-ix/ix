@@ -5,12 +5,12 @@ libxo
 {% endblock %}
 
 {% block version %}
-1.7.5
+2.0.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Juniper/libxo/archive/refs/tags/{{self.version().strip()}}.tar.gz
-a4d3bd1cbbbfe7de6dad7a7e6f87757f9881753eb32d6ce6894e00e6eb28f841
+11d1bf829051de3cffb47515d553f91e113a1eac14ac2a5a6e2ce2387f9c65f7
 {% endblock %}
 
 {% block lib_deps %}
