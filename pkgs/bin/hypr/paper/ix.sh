@@ -17,12 +17,15 @@ https://github.com/hyprwm/hyprpaper/archive/refs/tags/v{{self.version().strip()}
 {{super()}}
 lib/webp
 lib/hypr/lang
+lib/hypr/wire
 lib/hypr/graphics
+lib/hypr/toolkit
 {% endblock %}
 
 {% block bld_tool %}
 {{super()}}
 bin/hypr/wayland/scanner
+lib/hypr/wire
 {% endblock %}
 
 {% block install %}
