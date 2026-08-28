@@ -31,6 +31,7 @@ lib/bsd/overlay
 
 {% block configure_flags %}
 --disable-gssapi
+--enable-rpcdb
 {% endblock %}
 
 {% block env %}
