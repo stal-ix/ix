@@ -32,7 +32,6 @@ bld/pkg/config
 
 {% block patch %}
 sed -e "s|/etc/iproute2|${out}/etc/iproute2|" -i Makefile
-rm -rf include/uapi
 {% endblock %}
 
 {% block configure %}
