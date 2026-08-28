@@ -21,3 +21,9 @@ lib/curses
 {% block cpp_defines %}
 _GNU_SOURCE=1
 {% endblock %}
+
+{% block patch %}
+patch -p1 <<'EOF'
+{% include 'musl-stdin.patch' %}
+EOF
+{% endblock %}
