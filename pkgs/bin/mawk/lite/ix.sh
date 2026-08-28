@@ -19,3 +19,8 @@ bld/byacc
 {{super()}}
 --with-build-cc=${HOST_CC}
 {% endblock %}
+
+{% block build %}
+make parse.c
+{{super()}}
+{% endblock %}
