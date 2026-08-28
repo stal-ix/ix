@@ -3,7 +3,7 @@
 {% block cmake_flags %}
 {{super()}}
 ENABLE_DECODER=ON
-ENABLE_ENCODER=ON
+ENABLE_ENCODER=OFF
 {% endblock %}
 
 {% block patch %}
