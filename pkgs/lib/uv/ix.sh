@@ -17,6 +17,10 @@ https://github.com/libuv/libuv/archive/refs/tags/v{{self.version().strip()}}.tar
 lib/c
 {% endblock %}
 
+{% block bld_libs %}
+lib/linux/headers
+{% endblock %}
+
 {% block cmake_flags %}
 LIBUV_BUILD_TESTS=OFF
 LIBUV_BUILD_BENCH=OFF
