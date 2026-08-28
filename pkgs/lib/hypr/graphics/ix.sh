@@ -23,7 +23,14 @@ lib/spng
 lib/magic
 lib/cairo
 lib/pixman
+lib/drm
+lib/pango
+lib/opengl
 lib/hypr/utils
+{% endblock %}
+
+{% block bld_libs %}
+lib/hypr/rsvg
 {% endblock %}
 
 {% block build_flags %}
