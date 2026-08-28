@@ -49,4 +49,5 @@ shut_up
 {% block patch %}
 sed -e 's|190100|10005000|' \
     -i src/renderer/widgets/IWidget.cpp
+sed -i 's/return m_pSeat;/return !!m_pSeat;/' src/core/Seat.cpp
 {% endblock %}
