@@ -5,12 +5,12 @@ libcap
 {% endblock %}
 
 {% block version %}
-2.77
+2.78
 {% endblock %}
 
 {% block fetch %}
 https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-{{self.version().strip()}}.tar.gz
-f07fcec6f01edc4bb18373067494fdcb718186aed720b97ec6c7a5d67b218f69
+2a2c705e382c413643a458b837575c0eb0989477ab6fb99c87adbe9a259612ad
 {% endblock %}
 
 {% block host_libs %}
