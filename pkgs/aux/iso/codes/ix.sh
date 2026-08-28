@@ -5,12 +5,12 @@ iso-codes
 {% endblock %}
 
 {% block version %}
-4.19.0
+4.20.1
 {% endblock %}
 
 {% block fetch %}
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v{{self.version().strip()}}/iso-codes-v{{self.version().strip()}}.tar.gz
-4b143a891feb7d1bb64e44fe3ef253ef36ba1185d1d129c1425338dc6e46e27d
+2d7d9f6084ab9ce6c534ce71a3dd5144b6e474f3c97616459a88f73f44a64bff
 {% endblock %}
 
 {% block bld_tool %}
