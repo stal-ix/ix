@@ -18,6 +18,10 @@ lib/c
 lib/idn/2
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block patch %}
 sed -e 's|.*subdir.*tools.*||' -i meson.build
 {% endblock %}
