@@ -26,3 +26,9 @@ UTF8_SAMPLES=OFF
 {% block env %}
 export CPPFLAGS="-I${out}/include/utf8cpp \${CPPFLAGS}"
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mkdir -p ${out}/lib/cmake
+mv ${out}/share/utf8cpp/cmake ${out}/lib/cmake/utf8cpp
+{% endblock %}
