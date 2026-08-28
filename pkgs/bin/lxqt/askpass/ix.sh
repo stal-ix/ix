@@ -5,12 +5,12 @@ lxqt-openssh-askpass
 {% endblock %}
 
 {% block version %}
-2.2.0
+2.4.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/lxqt/lxqt-openssh-askpass/archive/refs/tags/{{self.version().strip()}}.tar.gz
-75ad29ebca4253aa8b0fe640fc4922fa859dfdfc40a6a51358f5ffc603009fda
+a5a03c3155ac3803e48f3d7966cf1db710ef90a7cabd4d66854db941565e4d49
 {% endblock %}
 
 {% block bld_libs %}
