@@ -24,3 +24,7 @@ lib/kernel
 {% block bld_tool %}
 bld/python
 {% endblock %}
+
+{% block patch %}
+sed -i '/#include <sys\/cdefs.h>/d' utils/gcc-attributes.h
+{% endblock %}
