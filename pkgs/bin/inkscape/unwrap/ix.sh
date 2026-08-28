@@ -5,7 +5,7 @@ inkscape
 {% endblock %}
 
 {% block version %}
-1.4.3
+1.4.4
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ INKSCAPE_{{self.version().strip().replace('.', '_')}}
 {% endblock %}
 
 {% block git_sha %}
-047bea059d5601d5edf29238174e347d52115896d4d02d6e837e181badb932dc
+73cd19fa171233daa4f0198c1782c231576b3dfcb85b8e7435e43acb48fad4b5
 {% endblock %}
 
 {% block bld_libs %}
