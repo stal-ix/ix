@@ -5,12 +5,12 @@ kcoreaddons
 {% endblock %}
 
 {% block version %}
-6.19.0
+6.29.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-fdbcb9fc58b530de961fa13f72765308c642d30f2583997733d27e7fc6b70f21
+e454f03732ef509e9cf52f100d9a3870e58cc390867721e914745e15633069ff
 {% endblock %}
 
 {% block lib_deps %}
