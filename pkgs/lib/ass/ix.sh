@@ -5,12 +5,12 @@ libass
 {% endblock %}
 
 {% block version %}
-0.17.4
+0.17.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libass/libass/archive/refs/tags/{{self.version().strip()}}.tar.gz
-c287d180d93dc9c9021872574b618ac49027e84cc90e1289318b1ee68bb42251
+fa286fc9ee1ba3b932703a3df7b8474d01dc8abe29ec69b6fa68781dc4bf7acc
 {% endblock %}
 
 {% block lib_deps %}
