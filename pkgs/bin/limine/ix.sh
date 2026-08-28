@@ -31,7 +31,6 @@ export CLANG_BINARY=$(dirname $(which llvm-addr2line))/clang
 
 {% block configure_flags %}
 --enable-uefi-{{target.gnu_arch}}
-TOOLCHAIN_FOR_TARGET=llvm
 CC_FOR_TARGET=${CLANG_BINARY}
 {% endblock %}
 
