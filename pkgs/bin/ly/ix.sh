@@ -5,7 +5,7 @@ ly
 {% endblock %}
 
 {% block version %}
-0.6.0
+1.4.1
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-5d324e9f946d9c817467ae9d1d4a51611a08103b68707ef304068269a537320c
+ea1cfe217e8f650fd0528d709037e7698bb5d7d3043bfe19af11bd4cbe76a28f
 {% endblock %}
 
 {% block bld_libs %}
