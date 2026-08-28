@@ -1,16 +1,18 @@
 {% extends '//die/c/cmake.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 kwindowsystem
 {% endblock %}
 
 {% block version %}
-6.29.0
+6.19.0
 {% endblock %}
 
 {% block fetch %}
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v{{self.version().strip()}}/kwindowsystem-v{{self.version().strip()}}.tar.bz2
-5bfc959cff452d40493110921c10fe039abe4f9b8c5ac54c0ce26cb71188229c
+48384ff2e2f3b28595c079ab11b5097991a3af3ca59096ef12819ed1ad21b624
 {% endblock %}
 
 {% block lib_deps %}
