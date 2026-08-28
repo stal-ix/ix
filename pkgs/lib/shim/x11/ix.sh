@@ -20,6 +20,9 @@ mkdir -p ${out}/include/X11/Xcursor
 cat << EOF > ${out}/include/X11/Xcursor/Xcursor.h
 #pragma once
 
+#include <stddef.h>
+#include <stdio.h>
+
 struct XImage {
     int width;
     int height;
@@ -108,6 +111,14 @@ cat << EOF > ${out}/include/xcb/xcb_icccm.h
 EOF
 
 cat << EOF > ${out}/include/xcb/res.h
+#pragma once
+EOF
+
+cat << EOF > ${out}/include/xcb/xfixes.h
+#pragma once
+EOF
+
+cat << EOF > ${out}/include/xcb/xproto.h
 #pragma once
 EOF
 
