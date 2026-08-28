@@ -5,12 +5,12 @@ libwacom
 {% endblock %}
 
 {% block version %}
-2.17.0
+2.19.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/linuxwacom/libwacom/releases/download/libwacom-{{self.version().strip()}}/libwacom-{{self.version().strip()}}.tar.xz
-41a0f239841567b101904df8ced81e1e0115334ccfd82a024412aa0903dae5a7
+a1e5b1e7ef60fa70ed05b55d888d980ec7e86bd15594857f3c48c529b661bf32
 {% endblock %}
 
 {% block lib_deps %}
