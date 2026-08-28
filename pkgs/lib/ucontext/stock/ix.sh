@@ -5,12 +5,12 @@ libucontext
 {% endblock %}
 
 {% block version %}
-1.5
+1.5.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-{{self.version().strip()}}.tar.gz
-b3ca8d7d3e5c926a90ddb691f8a52ccb364069a745304a40c29f3b0d39b80c93
+9230397327bbf580e04c9456d1509e9af19599c7f6deca7f75969ece6e9d598e
 {% endblock %}
 
 {% block lib_deps %}
