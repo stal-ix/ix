@@ -5,12 +5,12 @@ libevent
 {% endblock %}
 
 {% block version %}
-2.1.12
+2.1.13
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libevent/libevent/archive/refs/tags/release-{{self.version().strip()}}-stable.tar.gz
-7180a979aaa7000e1264da484f712d403fcf7679b1e9212c4e3d09f5c93efc24
+1a0885e17dc78afbaeddf13cf849f9238bbc24acdc178464a0d1934d7c5ffbd5
 {% endblock %}
 
 {% block lib_deps %}
