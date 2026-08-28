@@ -29,6 +29,9 @@ pacrunner-duktape=false
 {% endblock %}
 
 {% block patch %}
+sed -e 's|libproxy = shared_library(|libproxy = library(|' \
+    -e '/^libproxy_static = static_library(/,/^)/d' \
+    -i src/libproxy/meson.build
 cat << EOF > data/install-git-hook.sh
 #!/usr/bin/env sh
 EOF
