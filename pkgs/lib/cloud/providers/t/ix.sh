@@ -21,3 +21,7 @@ lib/glib
 {% block bld_tool %}
 bld/glib
 {% endblock %}
+
+{% block meson_tool %}
+bld/meson/9
+{% endblock %}
