@@ -5,12 +5,12 @@ libarchive
 {% endblock %}
 
 {% block version %}
-3.8.5
+3.8.9
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libarchive/libarchive/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-3877c692621d8fbe9512592cf824c98c4b393525ab96735616ff628086158777
+744346f6bca195c8f894f847bb32a16e9bcae6002624a58fadc81e80f595b3cb
 {% endblock %}
 
 {% block cmake_flags %}
