@@ -9,6 +9,7 @@ introspection=disabled
 {% block c_rename_symbol %}
 {{super()}}
 # conflict with gtk
+gtk_buildable_child_deprecation_warning
 _gtk_builder_parser_translate
 _gtk_builder_check_parent
 _gtk_builder_prefix_error
