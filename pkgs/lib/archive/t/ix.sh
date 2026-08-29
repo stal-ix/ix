@@ -17,10 +17,20 @@ https://github.com/libarchive/libarchive/archive/refs/tags/v{{self.version().str
 ENABLE_OPENSSL=OFF
 ENABLE_LIBXML2=OFF
 ENABLE_TEST=OFF
+{% if mingw32 %}
+CMAKE_RC_COMPILER={{target.gnu.three}}-windres
+{% endif %}
 {% endblock %}
 
 {% block bld_libs %}
 lib/shim/fake(lib_name=gcc)
+{% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+{% if mingw32 %}
+bld/windres(for_target={{target.gnu.three}})
+{% endif %}
 {% endblock %}
 
 {% block patch %}
