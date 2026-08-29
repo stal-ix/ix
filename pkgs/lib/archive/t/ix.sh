@@ -22,3 +22,8 @@ ENABLE_TEST=OFF
 {% block bld_libs %}
 lib/shim/fake(lib_name=gcc)
 {% endblock %}
+
+{% block patch %}
+sed -e 's|!defined(HAVE_LIBICONV)$|!defined(HAVE_LIBICONV) \&\& defined(ICONV_SET_ILSEQ_INVALID)|' \
+    -i libarchive/archive_string.c
+{% endblock %}
