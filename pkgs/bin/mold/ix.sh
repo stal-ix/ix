@@ -17,6 +17,7 @@ https://github.com/rui314/mold/archive/refs/tags/v{{self.version().strip()}}.tar
 lib/z
 lib/c
 lib/c++
+lib/linux/headers
 lib/zstd
 lib/xxhash
 lib/openssl
