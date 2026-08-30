@@ -35,11 +35,12 @@ lib/kernel
 WITH_ITT=OFF
 WITH_IPP=OFF
 WITH_OPENCL=OFF
+WITH_UNIFONT=OFF
 BUILD_TESTS=OFF
 BUILD_opencv_gapi=OFF
 WITH_ADE=OFF
-WITH_PROTOBUF=OFF
-BUILD_PROTOBUF=OFF
+WITH_PROTOBUF=ON
+BUILD_PROTOBUF=ON
 BUILD_PERF_TESTS=OFF
 OPENCV_ENABLE_NONFREE=ON
 OPENCV_GENERATE_PKGCONFIG=ON
@@ -52,9 +53,9 @@ shut_up
 {% block install %}
 {{super()}}
 sed -e 's|/../../../../../../|/../../../|' \
-    -i ${out}/lib/cmake/opencv4/OpenCVConfig.cmake
+    -i ${out}/lib/cmake/opencv5/OpenCVConfig.cmake
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include/opencv4 \${CPPFLAGS}"
+export CPPFLAGS="-I${out}/include/opencv5 \${CPPFLAGS}"
 {% endblock %}
