@@ -5,7 +5,7 @@ niri
 {% endblock %}
 
 {% block version %}
-25.11
+26.04
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/YaLTeR/niri/archive/refs/tags/v{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block cargo_sha %}
-09d0a30b1ce2bf2a0876a7acfed88284fbea4a17334db415607915887dbb8fdd
+3a92792ea13febf0e6149890f504599a600497a2aa9b51242a85430e3400c31b
 {% endblock %}
 
 {% block lib_deps %}
@@ -42,5 +42,5 @@ niri
 {% endblock %}
 
 {% block cargo_tool %}
-bld/rust/91
+bld/rust/96
 {% endblock %}
