@@ -9,8 +9,8 @@ dmidecode
 {% endblock %}
 
 {% block fetch %}
-http://git.savannah.nongnu.org/cgit/dmidecode.git/snapshot/dmidecode-{{self.version().strip()}}.tar.gz
-fe25e4fe567dedf213c5fed0978cb684613ad599d9a50d710476147f58cdb2c1
+https://download.savannah.nongnu.org/releases/dmidecode/dmidecode-{{self.version().strip().replace('-', '.')}}.tar.xz
+e40c65f3ec3dafe31ad8349a4ef1a97122d38f65004ed66575e1a8d575dd8bae
 {% endblock %}
 
 {% block bld_libs %}

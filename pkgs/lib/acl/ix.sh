@@ -9,8 +9,8 @@ acl
 {% endblock %}
 
 {% block fetch %}
-https://git.savannah.nongnu.org/cgit/acl.git/snapshot/acl-{{self.version().strip()}}.tar.gz
-0fc318808c1e91925398cbe41399a33b74dcf788a1c0af4feae8f7a322c6e6fd
+https://download.savannah.gnu.org/releases/acl/acl-{{self.version().strip()}}.tar.xz
+97203a72cae99ab89a067fe2210c1cbf052bc492b479eca7d226d9830883b0bd
 {% endblock %}
 
 {% block lib_deps %}
