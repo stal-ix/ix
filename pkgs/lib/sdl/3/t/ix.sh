@@ -65,6 +65,7 @@ wl_data_device_manager_interface
 wl_data_offer_interface
 wl_data_source_interface
 wl_display_interface
+wl_fixes_interface
 wl_keyboard_interface
 wl_output_interface
 wl_pointer_interface
