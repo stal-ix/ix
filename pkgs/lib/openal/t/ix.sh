@@ -5,12 +5,12 @@ openal-soft
 {% endblock %}
 
 {% block version %}
-1.24.3
+1.25.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/kcat/openal-soft/archive/refs/tags/{{self.version().strip()}}.tar.gz
-7e1fecdeb45e7f78722b776c5cf30bd33934b961d7fd2a11e0494e064cc631ce
+fb27e5839aa11f0e5b9d33756965291fad5d6909ab928ea1f796f4a1a6877894
 {% endblock %}
 
 {% block lib_deps %}
