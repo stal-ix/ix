@@ -5,12 +5,12 @@ Waybar
 {% endblock %}
 
 {% block version %}
-0.14.0
+0.15.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Alexays/Waybar/archive/refs/tags/{{self.version().strip()}}.tar.gz
-7f3859779bb3a5028a7215b2000c2e476c03453a52289164ba60a4bf1bb3772f
+21c2bbef88c40473c355003582f9331d2f9b8a01efdcce0935edfc5f6b023a3e
 {% endblock %}
 
 {% block bld_libs %}
