@@ -5,12 +5,12 @@ acl
 {% endblock %}
 
 {% block version %}
-2.3.2
+2.4.0
 {% endblock %}
 
 {% block fetch %}
 https://download.savannah.gnu.org/releases/acl/acl-{{self.version().strip()}}.tar.xz
-97203a72cae99ab89a067fe2210c1cbf052bc492b479eca7d226d9830883b0bd
+e661131456d2708a01c614a0f400e11d7d1bfaeb6f3e74b75bb980b72f0161a3
 {% endblock %}
 
 {% block lib_deps %}
