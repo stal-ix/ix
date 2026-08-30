@@ -5,12 +5,12 @@ seer
 {% endblock %}
 
 {% block version %}
-2.6
+2.7
 {% endblock %}
 
 {% block fetch %}
 https://github.com/epasveer/seer/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-79ab978ae456083d346e5604fdb503895f788577c72513598e4f1df4e98ba564
+de084162acc9093a877b29e61d1ad6a677131936fa926b578980d894c412be8f
 {% endblock %}
 
 {% block bld_libs %}
