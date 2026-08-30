@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block version %}
-5.0.2
+5.2.1
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ upx
 
 {% block fetch %}
 https://github.com/upx/upx/releases/download/v{{self.version().strip()}}/upx-{{self.version().strip()}}-src.tar.xz
-209b219bbcfa58c249ffe6eba3c244e0910fa8be792b5521e4daf938167f05cc
+a7d457be4ef942e46844ee8f301206b111394cbcbde3599747a6904c54ff116b
 {% endblock %}
 
 {% block bld_libs  %}
