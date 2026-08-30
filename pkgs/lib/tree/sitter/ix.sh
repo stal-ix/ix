@@ -7,12 +7,12 @@ tree-sitter
 {% endblock %}
 
 {% block version %}
-0.25.9
+0.26.13
 {% endblock %}
 
 {% block fetch %}
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-024a2478579acebbb8882d7c2c0f0e07fc0aa19a459b48d10469e4abb96cf16e
+ece24c3c5e2a76384075e830c7139b59fce8fb01e4ef8436fab08bbe10444c89
 {% endblock %}
 
 {% block lib_deps %}
