@@ -5,12 +5,12 @@ utfcpp
 {% endblock %}
 
 {% block version %}
-4.0.8
+4.2.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-f808b26d8c3a59def27fea207182ece77a8930bd121a69f80d328ecf3cfef925
+54a8e96ea835a7359e8e53d03e30e9833d51350cc4615ff53f8449ef19ee46ab
 {% endblock %}
 
 {% block lib_deps %}
