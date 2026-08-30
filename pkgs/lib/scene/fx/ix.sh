@@ -5,12 +5,12 @@ scenefx
 {% endblock %}
 
 {% block version %}
-0.1
+0.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/wlrfx/scenefx/archive/refs/tags/{{self.version().strip()}}.tar.gz
-f5c889f4c826a4216628bf1e7e48071fc33e7774b5e3d51e6fee6e571e420827
+0fa8ecca0e310f813efd052624c5ed7d9153d6a0fdead5cc957d34c07f9a86c6
 {% endblock %}
 
 {% block lib_deps %}
