@@ -28,6 +28,10 @@ lib/kernel
 lib/build/muldefs
 {% endblock %}
 
+{% block meson_flags %}
+vendordir=
+{% endblock %}
+
 {% block install %}
 {{super()}}
 cd ${out}/include
