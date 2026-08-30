@@ -27,5 +27,5 @@ bld/qt/6
 {% endblock %}
 
 {% block env %}
-export PlasmaWaylandProtocols_DIR="${out}/lib/cmake/PlasmaWaylandProtocols"
+export PlasmaWaylandProtocols_DIR="${out}/share/cmake/PlasmaWaylandProtocols"
 {% endblock %}
