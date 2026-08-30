@@ -5,7 +5,7 @@ procs
 {% endblock %}
 
 {% block version %}
-0.14.11
+0.14.12
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/dalance/procs/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block cargo_sha %}
-0cc512a33ec567b0ca230c9a4d5516baf0b41f9c9cd5057cd619efd64674f58a
+b6cbd17b3cc40276473263134a8f66450aa189d4e2b8d940354206dac50f025f
 {% endblock %}
 
 {% block cargo_features %}
@@ -24,5 +24,5 @@ procs
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/91
+bld/cargo/96
 {% endblock %}
