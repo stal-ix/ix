@@ -5,12 +5,12 @@ nghttp2
 {% endblock %}
 
 {% block version %}
-1.68.0
+1.70.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-07dfdadf670193baa7d6c23a007afa6ff2d3e4301b2a701c41dfd053e3468f09
+d38d641fb3877b4847c774ad88b5f3ab70daf1ae0e616079bbeec4691186fc6a
 {% endblock %}
 
 {% block lib_deps %}
