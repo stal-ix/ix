@@ -5,12 +5,12 @@ SDL
 {% endblock %}
 
 {% block version %}
-3.2.26
+3.4.14
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
-73eeeec0d3235ef75f310bd2bb758622157abfa05da65771656579a7dfeeba05
+9d57b178fb297e121ef2605275937b7afaa7cd24d99ce1f95953e69e7a2535d6
 {% endblock %}
 
 {% block lib_deps %}
