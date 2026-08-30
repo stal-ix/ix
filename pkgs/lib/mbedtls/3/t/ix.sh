@@ -5,7 +5,7 @@ mbedtls
 {% endblock %}
 
 {% block version %}
-3.6.4
+4.2.0
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-aeb291a29bc3094f528e9e354d575e023c58b4f22abb6fabfe4b274c91bb4f59
+d3c93b5764ddb1864593c589200c833e641b516f6f0686c479722894fd74591a
 {% endblock %}
 
 {% block lib_deps %}
