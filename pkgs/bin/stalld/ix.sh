@@ -5,12 +5,12 @@ stalld
 {% endblock %}
 
 {% block version %}
-1.19.6
+1.28.1
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.com/rt-linux-tools/stalld/-/archive/v{{self.version().strip()}}/stalld-v{{self.version().strip()}}.tar.bz2
-7ecbb8fd7b2efd928ecbd1b3ce2b72cb7c486885f09f5ead15e1a5e0891c40e2
+c6143b5a667c308fe6d5ac0bddcb70ee3416379a5dc42673ffe6b5f2d24e8fef
 {% endblock %}
 
 {% block bld_libs %}
