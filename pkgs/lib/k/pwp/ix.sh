@@ -5,12 +5,12 @@ plasma-wayland-protocols
 {% endblock %}
 
 {% block version %}
-1.19.0
+1.21.0
 {% endblock %}
 
 {% block fetch %}
 https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-{{self.version().strip()}}.tar.xz
-45679fe7a63c414f2c81793a62528fae6ccee584b6965719d7f9fc6dd48ba846
+698a7b28b711270314e396e248ae86087cfeaed01372009063995be6e1dc85ba
 {% endblock %}
 
 {% block lib_deps %}
