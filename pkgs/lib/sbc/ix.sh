@@ -5,7 +5,7 @@ sbc
 {% endblock %}
 
 {% block version %}
-2.1
+2.2
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ https://kernel.googlesource.com/pub/scm/bluetooth/sbc
 {% endblock %}
 
 {% block git_sha %}
-2af6b9b963c174e65a79d655ba8bf2a9441af9e24cb77f0c1df9058b50958e31
+66a6724933fd5466061cc85935b6f7388adf72f9e82dba72db96608b2a024c3c
 {% endblock %}
 
 {% block lib_deps %}
