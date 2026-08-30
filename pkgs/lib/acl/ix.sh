@@ -21,3 +21,7 @@ lib/attr
 {% block bld_tool %}
 bld/gettext
 {% endblock %}
+
+{% block bld_libs %}
+lib/linux/headers
+{% endblock %}
