@@ -24,7 +24,6 @@ lib/idn/2
 lib/gnutls
 lib/curses
 lib/pcre/2
-lib/openssl
 lib/sqlite/3
 {% endblock %}
 
@@ -33,7 +32,6 @@ sh ./configure \
     --prefix=${out} \
     --libexecdir=${out}/bin/bin_neomutt \
     --disable-doc \
-    --ssl \
     --pcre2 \
     --disable-idn \
     --idn2 \
