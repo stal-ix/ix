@@ -13,6 +13,12 @@ https://github.com/artemsen/swayimg/archive/refs/tags/v{{self.version().strip()}
 f84fec722cd0b4cfd86d0a8a820b15a95bbdb1d2cfcded7f67446a7a0c1d1c09
 {% endblock %}
 
+{% block patch %}
+# libc++ iterators are not necessarily raw pointers
+sed -i -e 's/const auto\* const kit/const auto kit/' \
+       -e 's/const auto\* const btnit/const auto btnit/' src/input.cpp
+{% endblock %}
+
 {% block bld_libs %}
 lib/c
 lib/png
@@ -28,6 +34,7 @@ lib/cairo
 lib/wayland
 lib/openexr
 lib/xkb/common
+lib/lua/openresty
 {% endblock %}
 
 {% block bld_tool %}
