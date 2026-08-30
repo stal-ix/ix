@@ -27,6 +27,13 @@ bld/pkg/config
 cd src
 {% endblock %}
 
+{% block patch %}
+# Redis only consumes xxHash's static archive.
+sed -i 's/$(MAKE) lib CFLAGS=/$(MAKE) libxxhash.a CFLAGS=/' ../deps/Makefile
+# The default target builds test modules that are not installed.
+sed -i 's/ $(TLS_MODULE) module_tests/ $(TLS_MODULE)/' Makefile
+{% endblock %}
+
 {% block make_flags %}
 MALLOC=libc
 USE_SYSTEMD=no
