@@ -5,12 +5,12 @@ opencv
 {% endblock %}
 
 {% block version %}
-4.12.0
+5.0.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/opencv/opencv/archive/refs/tags/{{self.version().strip()}}.tar.gz
-44c106d5bb47efec04e531fd93008b3fcd1d27138985c5baf4eafac0e1ec9e9d
+b0528f5a1d379d59d4701cb28c36e22214cc51cf64594e5b56f2d3e6c0233095
 {% endblock %}
 
 {% block lib_deps %}
