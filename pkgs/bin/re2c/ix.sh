@@ -5,12 +5,12 @@ re2c
 {% endblock %}
 
 {% block version %}
-4.3
+4.5.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/skvadrik/re2c/archive/refs/tags/{{self.version().strip()}}.tar.gz
-39cd7048a817cf3d7d0c2e58a52fb3597d6e1bc86b1df32b8a3cd755c458adfd
+d89c5d795e67423282fd1c8245eb37047eafabf78231a63d4c1c13aefcee9a2b
 {% endblock %}
 
 {% block bld_libs %}
