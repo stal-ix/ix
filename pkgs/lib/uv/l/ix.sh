@@ -7,11 +7,11 @@ luv
 {% endblock %}
 
 {% block version %}
-1.51.0.1
+1.52.1.0
 {% endblock %}
 
 {% block git_sha %}
-4424dea07bad49bedc62a9f6fd0bfb92275a017c7fe39d352b5b34a3fa364a98
+b0c02ad57b58d615e08e95ac33a3897433ca43eec421924a6a35ed24aaf5cb36
 {% endblock %}
 
 {% block git_repo %}

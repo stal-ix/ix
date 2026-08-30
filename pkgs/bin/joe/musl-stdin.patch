@@ -1,0 +1,8 @@
+diff --git a/joe/main.c b/joe/main.c
+index 5be2346..51bc613 100644
+--- a/joe/main.c
++++ b/joe/main.c
+@@ -758,2 +758 @@ int edloop(int flg)
+-			fclose(stdin);
+-			stdin = fopen("/dev/tty", "rb");
++			freopen("/dev/tty", "rb", stdin);

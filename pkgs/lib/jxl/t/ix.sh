@@ -5,12 +5,12 @@ libjxl
 {% endblock %}
 
 {% block version %}
-0.11.2
+0.12.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libjxl/libjxl/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-ab38928f7f6248e2a98cc184956021acb927b16a0dee71b4d260dc040a4320ea
+03e9be69a30be4011f559da75328b6d7cea8ad921fabfbd551ce10bf45cdc992
 {% endblock %}
 
 {% block lib_deps %}

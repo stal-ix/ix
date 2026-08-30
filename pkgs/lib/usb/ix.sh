@@ -5,12 +5,12 @@ libusb
 {% endblock %}
 
 {% block version %}
-1.0.29
+1.0.30
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libusb/libusb/releases/download/v{{self.version().strip()}}/libusb-{{self.version().strip()}}.tar.bz2
-5977fc950f8d1395ccea9bd48c06b3f808fd3c2c961b44b0c2e6e29fc3a70a85
+fea36f34f9156400209595e300840767ab1a385ede1dc7ee893015aea9c6dbaf
 {% endblock %}
 
 {% block lib_deps %}

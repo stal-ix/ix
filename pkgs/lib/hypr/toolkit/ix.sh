@@ -1,0 +1,153 @@
+{% extends '//die/c/cmake.sh' %}
+
+{% block pkg_name %}
+hyprtoolkit
+{% endblock %}
+
+{% block version %}
+0.4.1
+{% endblock %}
+
+{% block fetch %}
+https://github.com/hyprwm/hyprtoolkit/archive/refs/tags/v{{self.version().strip()}}.tar.gz
+4728566eaafcfb5cf14022642b5ae0e8dd8a38cba902e4b37857f6e5d86a5b19
+{% endblock %}
+
+{% block lib_deps %}
+lib/c
+lib/c++
+lib/gbm
+lib/cairo
+lib/pango
+lib/opengl
+lib/pixman
+lib/wayland
+lib/ini/parser
+lib/aqua/marine
+lib/hypr/lang
+lib/hypr/utils
+lib/hypr/graphics
+lib/xkb/common
+lib/shim/fake(lib_name=OpenGL)
+{% endblock %}
+
+{% block bld_tool %}
+bld/wayland
+bin/hypr/wayland/scanner
+{% endblock %}
+
+{% block c_rename_symbol %}
+# Upstream builds this shared; isolate its generated protocols for static consumers.
+CCExtSessionLockManagerV1
+ext_session_lock_manager_v1_interface
+CCExtSessionLockSurfaceV1
+ext_session_lock_surface_v1_interface
+CCExtSessionLockV1
+ext_session_lock_v1_interface
+CCWlBuffer
+wl_buffer_interface
+CCWlCallback
+wl_callback_interface
+CCWlCompositor
+wl_compositor_interface
+CCWlDataDevice
+wl_data_device_interface
+CCWlDataDeviceManager
+wl_data_device_manager_interface
+CCWlDataOffer
+wl_data_offer_interface
+CCWlDataSource
+wl_data_source_interface
+CCWlDisplay
+wl_display_interface
+CCWlFixes
+wl_fixes_interface
+CCWlKeyboard
+wl_keyboard_interface
+CCWlOutput
+wl_output_interface
+CCWlPointer
+wl_pointer_interface
+CCWlRegion
+wl_region_interface
+CCWlRegistry
+wl_registry_interface
+CCWlSeat
+wl_seat_interface
+CCWlShell
+wl_shell_interface
+CCWlShellSurface
+wl_shell_surface_interface
+CCWlShm
+wl_shm_interface
+CCWlShmPool
+wl_shm_pool_interface
+CCWlSubcompositor
+wl_subcompositor_interface
+CCWlSubsurface
+wl_subsurface_interface
+CCWlSurface
+wl_surface_interface
+CCWlTouch
+wl_touch_interface
+CCWpCursorShapeDeviceV1
+wp_cursor_shape_device_v1_interface
+CCWpCursorShapeManagerV1
+wp_cursor_shape_manager_v1_interface
+CCWpFractionalScaleManagerV1
+wp_fractional_scale_manager_v1_interface
+CCWpFractionalScaleV1
+wp_fractional_scale_v1_interface
+CCWpLinuxDrmSyncobjManagerV1
+wp_linux_drm_syncobj_manager_v1_interface
+CCWpLinuxDrmSyncobjSurfaceV1
+wp_linux_drm_syncobj_surface_v1_interface
+CCWpLinuxDrmSyncobjTimelineV1
+wp_linux_drm_syncobj_timeline_v1_interface
+CCWpViewport
+wp_viewport_interface
+CCWpViewporter
+wp_viewporter_interface
+CCXdgPopup
+xdg_popup_interface
+CCXdgPositioner
+xdg_positioner_interface
+CCXdgSurface
+xdg_surface_interface
+CCXdgToplevel
+xdg_toplevel_interface
+CCXdgWmBase
+xdg_wm_base_interface
+CCZwlrLayerShellV1
+zwlr_layer_shell_v1_interface
+CCZwlrLayerSurfaceV1
+zwlr_layer_surface_v1_interface
+CCZwpLinuxBufferParamsV1
+zwp_linux_buffer_params_v1_interface
+CCZwpLinuxDmabufFeedbackV1
+zwp_linux_dmabuf_feedback_v1_interface
+CCZwpLinuxDmabufV1
+zwp_linux_dmabuf_v1_interface
+CCZwpTabletManagerV2
+zwp_tablet_manager_v2_interface
+CCZwpTabletPadDialV2
+zwp_tablet_pad_dial_v2_interface
+CCZwpTabletPadGroupV2
+zwp_tablet_pad_group_v2_interface
+CCZwpTabletPadRingV2
+zwp_tablet_pad_ring_v2_interface
+CCZwpTabletPadStripV2
+zwp_tablet_pad_strip_v2_interface
+CCZwpTabletPadV2
+zwp_tablet_pad_v2_interface
+CCZwpTabletSeatV2
+zwp_tablet_seat_v2_interface
+CCZwpTabletToolV2
+zwp_tablet_tool_v2_interface
+CCZwpTabletV2
+zwp_tablet_v2_interface
+CCZwpTextInputManagerV3
+zwp_text_input_manager_v3_interface
+CCZwpTextInputV3
+zwp_text_input_v3_interface
+{% endblock %}

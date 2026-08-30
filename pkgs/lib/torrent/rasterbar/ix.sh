@@ -1,5 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+# noauto
+
+# qBittorrent 5.1.4 uses libtorrent 2.0 APIs that were removed in 2.1. Keep the
+# shared dependency on the latest compatible release until its consumers gain
+# libtorrent 2.1 support.
+
 {% block pkg_name %}
 libtorrent-rasterbar
 {% endblock %}

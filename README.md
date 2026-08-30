@@ -92,6 +92,9 @@ Examples from real usage:
 # Build a single package
 ./ix build bin/b64
 
+# Continue independent graph branches after a build failure
+IX_KEEP_GOING=yes ./ix build set/ci
+
 # Cross-target build example
 ./ix build bin/b64 --target=freebsd-x86_64
 ```

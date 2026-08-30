@@ -5,17 +5,21 @@ libpsl
 {% endblock %}
 
 {% block version %}
-0.21.5
+0.23.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/rockdaboot/libpsl/releases/download/{{self.version().strip()}}/libpsl-{{self.version().strip()}}.tar.gz
-1dcc9ceae8b128f3c0b3f654decd0e1e891afc6ff81098f227ef260449dae208
+93941f85a1e7bd593fa94f299233cb5dfc91cd144fd9a78a6ceb75001c5b03be
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/idn/2
+{% endblock %}
+
+{% block host_libs %}
+lib/c
 {% endblock %}
 
 {% block patch %}

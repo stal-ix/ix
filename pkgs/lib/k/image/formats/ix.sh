@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+# noauto
+
+# Newer releases require Qt APIs unavailable in Qt 6.7.
+
 {% block pkg_name %}
 kimageformats
 {% endblock %}

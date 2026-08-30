@@ -5,12 +5,12 @@ jemalloc
 {% endblock %}
 
 {% block version %}
-5.3.0
+5.3.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/jemalloc/jemalloc/archive/refs/tags/{{self.version().strip()}}.tar.gz
-ef6f74fd45e95ee4ef7f9e19ebe5b075ca6b7fbe0140612b2a161abafb7ee179
+7b30f6116f11d736badd48c903cba2b3344a88d62e3a7b892434f870e860b1c0
 {% endblock %}
 
 {% block autoreconf %}

@@ -5,12 +5,12 @@ libexif
 {% endblock %}
 
 {% block version %}
-0.6.25
+0.6.26
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libexif/libexif/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-b23af41f37019b8d591d4d9b42ba52fd30709b6767341aa887f9afe400c8408a
+32e591455339504b7d02f3e9b0a48f16f5455462a9059a7f47639980e82e4bc1
 {% endblock %}
 
 {% block lib_deps %}

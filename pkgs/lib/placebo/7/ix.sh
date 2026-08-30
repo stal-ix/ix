@@ -5,12 +5,12 @@ libplacebo
 {% endblock %}
 
 {% block version %}
-7.360.0
+7.360.1
 {% endblock %}
 
 {% block fetch %}
 https://code.videolan.org/videolan/libplacebo/-/archive/v{{self.version().strip()}}/libplacebo-v{{self.version().strip()}}.tar.bz2
-265a8888d4bc169b39c53315f1ba682249f2b0917e0438c1bb241aef822d8744
+937aa5eeea596798b3274d362de2e3bd32bc537a66d149dd85043349c74dffb6
 {% endblock %}
 
 {% block meson_flags %}

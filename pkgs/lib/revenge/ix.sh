@@ -5,12 +5,12 @@ librevenge
 {% endblock %}
 
 {% block version %}
-0.0.5
+0.0.6
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/libwpd/librevenge/librevenge-{{self.version().strip()}}/librevenge-{{self.version().strip()}}.tar.xz
-106d0c44bb6408b1348b9e0465666fa83b816177665a22cd017e886c1aaeeb34
+19eacf5ce55d7fe6a990a45142589cdf7da0c7b68701797f133482cb44f189fa
 {% endblock %}
 
 {% block lib_deps %}

@@ -1,5 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 ly
 {% endblock %}

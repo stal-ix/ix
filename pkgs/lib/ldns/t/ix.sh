@@ -5,12 +5,12 @@ ldns
 {% endblock %}
 
 {% block version %}
-1.9.0
+1.9.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/NLnetLabs/ldns/archive/refs/tags/{{self.version().strip()}}.tar.gz
-e882cdb6b30504623a799e724f77273c14d5f265c925a2884de9fbc94aa88d19
+29ed8cf10fb098291cbcbcf1725b480867035b59347ee03ec55d683d47a430f1
 {% endblock %}
 
 {% block lib_deps %}

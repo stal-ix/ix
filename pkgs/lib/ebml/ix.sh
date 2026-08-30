@@ -5,14 +5,21 @@ libebml
 {% endblock %}
 
 {% block version %}
-1.4.5
+1.4.7
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Matroska-Org/libebml/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
-86c99573cd0957884f26547d1a8fa0c979e4d6d57484dfd387345846e6720f49
+c55c5528e7510bc41b574dcac47bc6e3503fb3b9e78ad8c42541bf07d5ed71a9
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
+lib/utf8/cpp
+{% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e '/include.*EBMLTargets/i include(CMakeFindDependencyMacro)\
+find_dependency(utf8cpp CONFIG)' -i ${out}/lib/cmake/EBML/EBMLConfig.cmake
 {% endblock %}

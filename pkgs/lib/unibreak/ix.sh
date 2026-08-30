@@ -5,12 +5,12 @@ libunibreak
 {% endblock %}
 
 {% block version %}
-6.1
+7.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_{{self.version().strip().replace('.', '_')}}.tar.gz
-890674996168ef5ba143d80d49ab8b61594a4eb70198dcac76caf6e1bd264a41
+e4cb1a0d9aebb129c9856ec75e3d98e675997e385cce4e0106ef8f68e09afaa3
 {% endblock %}
 
 {% block lib_deps %}

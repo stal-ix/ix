@@ -5,12 +5,12 @@ iproute2
 {% endblock %}
 
 {% block version %}
-6.17.0
+7.2.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/iproute2/iproute2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-fcf83a51254fc3de6afe7a110c7a91e10e723898283ff232f319bbc90c9f0666
+30700923d57f05fa633065f89291ee49c6a8911a9578478c62eaf125470fbd22
 {% endblock %}
 
 {% block bld_libs %}
@@ -32,7 +32,6 @@ bld/pkg/config
 
 {% block patch %}
 sed -e "s|/etc/iproute2|${out}/etc/iproute2|" -i Makefile
-rm -rf include/uapi
 {% endblock %}
 
 {% block configure %}

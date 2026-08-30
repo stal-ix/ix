@@ -5,12 +5,12 @@ jansson
 {% endblock %}
 
 {% block version %}
-2.15.0
+2.15.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/akheron/jansson/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-73ac12bbc62ff536e40c7a3e15ed007993c5ca4d23897de23f1906f891b5a4bb
+dbf95cb0af903f4fb8b61507d96b45b67db7d1479688ede352e1d571394d06f7
 {% endblock %}
 
 {% block lib_deps %}

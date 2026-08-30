@@ -5,12 +5,12 @@ libcap-ng
 {% endblock %}
 
 {% block version %}
-0.9.1
+0.9.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-52418b8940f83dcc00dcd01d187e67c3399ff65f3fa558442e3a21b415cc46c0
+a2b4211f59b231d607c61ea2a13e9ecb38f446fe769b44e12da939d5af6d978a
 {% endblock %}
 
 {% block lib_deps %}
@@ -23,4 +23,8 @@ lib/kernel
 
 {% block bld_tool %}
 bld/python
+{% endblock %}
+
+{% block patch %}
+sed -i '/#include <sys\/cdefs.h>/d' utils/gcc-attributes.h
 {% endblock %}

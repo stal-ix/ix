@@ -5,13 +5,15 @@ libucl
 {% endblock %}
 
 {% block version %}
-0.9.2
+0.9.4
 {% endblock %}
 
 {% block fetch %}
 https://github.com/vstakhov/libucl/archive/refs/tags/{{self.version().strip()}}.tar.gz
-f63ddee1d7f5217cac4f9cdf72b9c5e8fe43cfe5725db13f1414b0d8a369bbe0
+319d8ff13441f55d91cd7f3708a54bd03779733e26958c2346c5109014520aaf
 {% endblock %}
+
+{% block conf_ver %}2/71{% endblock %}
 
 {% block lib_deps %}
 lib/c

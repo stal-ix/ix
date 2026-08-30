@@ -5,12 +5,12 @@ libcloudproviders
 {% endblock %}
 
 {% block version %}
-0.3.6
+0.4.0
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/World/libcloudproviders/-/archive/{{self.version().strip()}}/libcloudproviders-{{self.version().strip()}}.tar.bz2
-316975e2e04588e44808cc7e4ff2800444103843e9533bd17ac0f4964c094f83
+fb19d1874789c0ab527fad28bf68717ad6708ec4c3ad18696c316f1d168fb175
 {% endblock %}
 
 {% block lib_deps %}
@@ -20,4 +20,8 @@ lib/glib
 
 {% block bld_tool %}
 bld/glib
+{% endblock %}
+
+{% block meson_tool %}
+bld/meson/9
 {% endblock %}

@@ -5,12 +5,12 @@ jsoncpp
 {% endblock %}
 
 {% block version %}
-1.9.6
+1.9.8
 {% endblock %}
 
 {% block fetch %}
 https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/{{self.version().strip()}}.tar.gz
-f93b6dd7ce796b13d02c108bc9f79812245a82e577581c4c9aabe57075c90ea2
+51828cf3574281d2b79ec2a1c56a9e4c20cc1103711321ea96384cffb8d2d904
 {% endblock %}
 
 {% block lib_deps %}

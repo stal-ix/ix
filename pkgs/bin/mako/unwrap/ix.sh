@@ -5,12 +5,12 @@ mako
 {% endblock %}
 
 {% block version %}
-1.10.0
+1.11.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/emersion/mako/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-3ca44f6bb85c941a4f637a9787931c22ee9a7fe6b8039e6985baf863719b0f95
+72d11d3fca20a3dfbca0107ff875eace479751be0cf2ddd1dd5bafa131ac7282
 {% endblock %}
 
 {% block lib_deps %}

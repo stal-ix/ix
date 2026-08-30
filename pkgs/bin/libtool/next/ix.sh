@@ -5,10 +5,10 @@ libtool
 {% endblock %}
 
 {% block version %}
-2.5.4
+2.6.2
 {% endblock %}
 
 {% block fetch %}
 https://ftpmirror.gnu.org/libtool/libtool-{{self.version().strip()}}.tar.gz
-da8ebb2ce4dcf46b90098daf962cffa68f4b4f62ea60f798d0ef12929ede6adf
+24adb3aa9ae035c70faba344af57d73215eb89281045af6c7ccd307751f8b0bf
 {% endblock %}

@@ -5,11 +5,11 @@ libdisplay-info
 {% endblock %}
 
 {% block version %}
-0.3.0
+0.4.0
 {% endblock %}
 
 {% block version_sha %}
-915cc6713b7b2e173a90f9db248fb8994f9668171fecc1e9fded5e36bb34d890
+5b88699ca21dceb10ab8fb1b41d1cbd9eabeb3b775e11e86ce9d7d6a3158a318
 {% endblock %}
 
 {% block fetch %}

@@ -5,12 +5,12 @@ json-c
 {% endblock %}
 
 {% block version %}
-0.18
+0.19
 {% endblock %}
 
 {% block fetch %}
 https://s3.amazonaws.com/json-c_releases/releases/json-c-{{self.version().strip()}}.tar.gz
-876ab046479166b869afc6896d288183bbc0e5843f141200c677b3e8dfb11724
+37ad0249902e301bd9052bf712e511fcc6acff4ecaad4b5900aad9ce564e26de
 {% endblock %}
 
 {% block lib_deps %}

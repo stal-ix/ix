@@ -5,12 +5,12 @@ libjpeg-turbo
 {% endblock %}
 
 {% block version %}
-3.1.3
+3.2.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/{{self.version().strip()}}.tar.gz
-3a13a5ba767dc8264bc40b185e41368a80d5d5f945944d1dbaa4b2fb0099f4e5
+980dd81f425082aa6d7c9e47fef27554ce7a9ffc8e2f6e863b97d263c5c50858
 {% endblock %}
 
 {% block bld_tool %}

@@ -5,12 +5,12 @@ libvisio
 {% endblock %}
 
 {% block version %}
-0.1.10
+0.1.11
 {% endblock %}
 
 {% block fetch %}
 https://dev-www.libreoffice.org/src/libvisio/libvisio-{{self.version().strip()}}.tar.xz
-9e9eff75112d4d92d92262ad7fc2599c21e26f8fc5ba54900efdc83c0501e472
+2a6efd40b6d9dbcb70fba3be53112366882ba97b57151df3698dfa478c8d8dd3
 {% endblock %}
 
 {% block lib_deps %}

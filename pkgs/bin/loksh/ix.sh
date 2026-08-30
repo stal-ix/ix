@@ -5,7 +5,7 @@ loksh
 {% endblock %}
 
 {% block version %}
-7.8
+7.9
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ https://github.com/dimkr/loksh
 {% endblock %}
 
 {% block git_sha %}
-93635ccabea10f7b8fc5d77d54a562fe782dc82d15ccac1a403b4f41c37888cf
+3e046a38b747b072fe85e057f2e35932decdae329a445ac66d9523f1b131749b
 {% endblock %}
 
 {% block lib_deps %}

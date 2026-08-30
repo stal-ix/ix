@@ -5,12 +5,12 @@ libxkbcommon
 {% endblock %}
 
 {% block version %}
-1.13.1
+1.13.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-{{self.version().strip()}}.tar.gz
-aeb951964c2f7ecc08174cb5517962d157595e9e3f38fc4a130b91dc2f9fec18
+acc4d5f7c3cbba5f9f8d08d8bdbeede84ecede46792f47929aa9321873385528
 {% endblock %}
 
 {% block bld_tool %}

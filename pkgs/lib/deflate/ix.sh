@@ -5,12 +5,12 @@ libdeflate
 {% endblock %}
 
 {% block version %}
-1.25
+1.26
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-d11473c1ad4c57d874695e8026865e38b47116bbcb872bfc622ec8f37a86017d
+bba03fffc5538576213675ce6968fcff6ce2e67d82e4d5febea2d05f9f13cf85
 {% endblock %}
 
 {% block lib_deps %}

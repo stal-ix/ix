@@ -5,12 +5,12 @@ libcdr
 {% endblock %}
 
 {% block version %}
-0.1.8
+0.1.9
 {% endblock %}
 
 {% block fetch %}
 https://dev-www.libreoffice.org/src/libcdr/libcdr-{{self.version().strip()}}.tar.xz
-ced677c8300b29c91d3004bb1dddf0b99761bf5544991c26c2ee8f427e87193c
+f7bb6abdd7f226820f288a93dd8d07759833c0250d9e202af90f9b312c4665a3
 {% endblock %}
 
 {% block lib_deps %}

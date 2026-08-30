@@ -5,12 +5,12 @@ libunistring
 {% endblock %}
 
 {% block version %}
-1.4.1
+1.4.2
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/libunistring/libunistring-{{self.version().strip()}}.tar.xz
-67d88430892527861903788868c77802a217b0959990f7449f2976126a307763
+5b46e74377ed7409c5b75e7a96f95377b095623b689d8522620927964a41499c
 {% endblock %}
 
 {% block lib_deps %}
