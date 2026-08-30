@@ -5,12 +5,12 @@ nasm
 {% endblock %}
 
 {% block version %}
-3.01
+3.02
 {% endblock %}
 
 {% block fetch %}
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-{{self.version().strip()}}.tar.gz
-af2f241ecc061205d73ba4f781f075d025dabaeab020b676b7db144bf7015d6d
+39e251d3048c9f68678903c6b05b83942c66c71e467e8c5c3c1b26cff2ef1586
 {% endblock %}
 
 {% block bld_libs %}
