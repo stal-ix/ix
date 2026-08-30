@@ -5,12 +5,12 @@ qjackctl
 {% endblock %}
 
 {% block version %}
-1.0.4
+1.0.6
 {% endblock %}
 
 {% block fetch %}
 https://download.sourceforge.net/qjackctl/qjackctl-{{self.version().strip()}}.tar.gz
-e3eb6f989d947dcd97b4fe774294347106a0a6829c0480a965393ebca97514ae
+dfffef1ddc65df666a1f0eba89a1d6d85fab47c765a91de36a5ef6360472899a
 {% endblock %}
 
 {% block bld_libs %}
