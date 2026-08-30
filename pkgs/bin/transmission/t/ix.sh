@@ -9,15 +9,14 @@ transmission
 {% endblock %}
 
 {% block fetch %}
-https://github.com/transmission/transmission/archive/refs/tags/{{self.version().strip()}}.tar.gz
-03ebfded794656ded996b40a294f970abd37bd2aeb5610b00344823a453fe271
+https://github.com/transmission/transmission/releases/download/{{self.version().strip()}}/transmission-{{self.version().strip()}}.tar.xz
+ce7d2d8b101f7eb54bc3cf0bc55f52f7ebd4a25fa48e00bdca9a7e0fc02617da
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/b64
 lib/c++
-lib/fmt
 lib/dht
 lib/psl
 lib/curl
@@ -27,10 +26,7 @@ lib/kernel
 lib/deflate
 lib/openssl
 lib/utp/new
-lib/utf8/cpp
-lib/fast/float
 lib/mini/upnpc
-lib/wide/integer
 {% endblock %}
 
 {% block cmake_flags %}
@@ -45,12 +41,6 @@ USE_SYSTEM_DHT=ON
 USE_SYSTEM_UTP=ON
 USE_SYSTEM_NATPMP=ON
 USE_SYSTEM_MINIUPNPC=ON
-{% endblock %}
-
-{% block patch %}
-mkdir third-party/fast_float/include
-mkdir third-party/utfcpp/source
-mkdir third-party/fmt/include
 {% endblock %}
 
 {% block build_flags %}

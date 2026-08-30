@@ -37,6 +37,10 @@ bld/byacc
 {% block enable_static %}
 {% endblock %}
 
+{% block patch %}
+sed -i 's/^int[[:space:]]*optreset;/__attribute__((weak)) int optreset;/' compat/getopt_long.c
+{% endblock %}
+
 {% block configure %}
 {{super()}}
 sed -e 's|.*define.*BSD.*||' -i compat.h

@@ -13,6 +13,11 @@ lib/build/muldefs
 sed -e 's|.*No available application.*|return ix_xdg_open(path);|' \
     -e 's|.*Failed to get default app for MIME type.*|return ix_xdg_open(uri);|' \
     -i lib/ephy-file-helpers.c
+
+# Nettle 4 derives the digest size from the MAC context.
+sed -i '/hkdf_extract/,/in_len, in, prk);/ {
+    /SHA256_DIGEST_SIZE,/d
+}' lib/sync/ephy-sync-crypto.c
 {% endblock %}
 
 {% block c_rename_symbol %}
