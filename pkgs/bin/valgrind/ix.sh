@@ -5,12 +5,12 @@ valgrind
 {% endblock %}
 
 {% block version %}
-3.26.0
+3.27.1
 {% endblock %}
 
 {% block fetch %}
 https://sourceware.org/pub/valgrind/valgrind-{{self.version().strip()}}.tar.bz2
-8d54c717029106f1644aadaf802ab9692e53d93dd015cbd19e74190eba616bd7
+5d589152eb8071c02feab8ce6ab719e431a1fbc3e2b1700f5432632a8b9264dc
 {% endblock %}
 
 {% block bld_libs %}
