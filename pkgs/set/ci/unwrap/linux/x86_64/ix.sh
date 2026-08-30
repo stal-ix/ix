@@ -146,7 +146,6 @@ bin/dcraw
 bin/e2tools
 bin/httping
 bin/cast/text
-bin/mrustc/cargo
 #bin/mrustc
 #bin/mrustc/boot
 bin/curl/ngtcp2
@@ -194,7 +193,6 @@ bin/gcc/14
 bin/amixer
 bin/kms/con
 bin/g/bsd/dialog
-bin/shot/man
 bin/sway/fx
 bin/dns/proxy
 bin/openntpd
