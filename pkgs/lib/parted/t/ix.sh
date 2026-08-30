@@ -24,3 +24,8 @@ lib/device/mapper
 {% block bld_tool %}
 bld/gettext
 {% endblock %}
+
+{% block autoreconf %}
+sed -e 's/AM_GNU_GETTEXT_VERSION(\[0.18\])/AM_GNU_GETTEXT_VERSION([0.25.1])/' -i configure.ac
+{{super()}}
+{% endblock %}
