@@ -5,12 +5,12 @@ mcelog
 {% endblock %}
 
 {% block version %}
-208
+212
 {% endblock %}
 
 {% block fetch %}
 https://github.com/andikleen/mcelog/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-476a52fa93ba9e733e670b8398279fca7caa2d58738c9f65198acce5dfbf8dfa
+c98ede2d06f02c12d272dbb69da63d1f7160751d551664e190a8bb6a9138a206
 {% endblock %}
 
 {% block bld_libs %}
