@@ -52,6 +52,9 @@ use_sys_pcre2=enabled
 {% endblock %}
 
 {% block patch %}
+sed -e 's|libdemangle.get_static_lib()|libdemangle|g' \
+    -i subprojects/libdemangle/meson.build
+
 find . -type f | while read l; do
     sed -e 's|include <capstone.h>|include <capstone/capstone.h>|' -i "${l}"
 done
