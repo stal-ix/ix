@@ -5,12 +5,12 @@ upower
 {% endblock %}
 
 {% block version %}
-1.90.10
+1.91.3
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/upower/upower/-/archive/v{{self.version().strip()}}/upower-v{{self.version().strip()}}.tar.bz2
-c1baf418b685ffe4150c8a75c04da0cec70323fe094b5b257b287eea564d3f56
+12227b3dcd34c5097bbda25984b192ea0bd5e11dce479358d9ef70415a38e4b6
 {% endblock %}
 
 {% block lib_deps %}
