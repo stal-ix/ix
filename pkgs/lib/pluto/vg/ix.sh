@@ -18,6 +18,21 @@ lib/c
 lib/png
 {% endblock %}
 
+{% block patch %}
+patch -p1 <<'EOF'
+--- a/source/plutovg-font.c
++++ b/source/plutovg-font.c
+@@ -700,5 +700,4 @@
+-#ifdef __linux__
+-#include <linux/limits.h>
+-#else
+ #include <limits.h>
++#ifndef PATH_MAX
++#define PATH_MAX 4096
+ #endif
+EOF
+{% endblock %}
+
 {% block env %}
 export CPPFLAGS="-I${out}/include/plutovg \${CPPFLAGS}"
 {% endblock %}
