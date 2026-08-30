@@ -5,12 +5,12 @@ rizin
 {% endblock %}
 
 {% block version %}
-0.8.1
+0.9.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/rizinorg/rizin/releases/download/v{{self.version().strip()}}/rizin-src-v{{self.version().strip()}}.tar.xz
-ef2b1e6525d7dc36ac43525b956749c1cca07bf17c1fed8b66402d82010a4ec2
+7ac1cd7daca7afdda742e15478b1f747fc1f813e496fee71839d1e109e543dca
 {% endblock %}
 
 {% block bld_libs %}
