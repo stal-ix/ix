@@ -3,6 +3,7 @@ import json
 import shutil
 import functools
 
+import core.log as cl
 import core.utils as cu
 import core.error as ce
 
@@ -15,6 +16,9 @@ def parse_pkg_flags(v):
             yield a, c
 
     return dict(it())
+
+
+WARNED = set()
 
 
 @functools.lru_cache
@@ -44,6 +48,14 @@ class RenderContext:
 
     def error(self, msg):
         raise ce.Error(msg)
+
+    def warn(self, msg):
+        # templates render many times, report each message once
+        if msg not in WARNED:
+            WARNED.add(msg)
+            cl.log(f'WARN  {msg}', color='y')
+
+        return ''
 
     def template(self, path):
         pkg = self.package
