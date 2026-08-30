@@ -5,12 +5,12 @@ OpenNTPD
 {% endblock %}
 
 {% block version %}
-6.8p1
+7.9p1
 {% endblock %}
 
 {% block fetch %}
 https://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-{{self.version().strip()}}.tar.gz
-8582db838a399153d4a17f2a76518b638cc3020f58028575bf54127518f55a46
+091eeb3f4e358e28c3ab2ea58f93d7a0b5758a20d7c8a0418e162e9b2c27addc
 {% endblock %}
 
 {% block bld_libs %}
