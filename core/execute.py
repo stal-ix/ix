@@ -39,7 +39,11 @@ def move_to_trash(trash_dir, d):
             pass
 
 
-def execute_cmd(c, n, mt, ix_binary, mount_bin, trash_dir):
+def keep_going_enabled():
+    return os.environ.get('IX_KEEP_GOING') == 'yes'
+
+
+def execute_cmd(c, n, mt, ix_binary, mount_bin, trash_dir, keep_going):
     env = cu.dict_dict_update(c['env'], {
         'make_thrs': str(mt),
         'IX_RANDOM': str(random.randint(0, 1000000000)),
@@ -76,7 +80,11 @@ def execute_cmd(c, n, mt, ix_binary, mount_bin, trash_dir):
         cl.log(f'ERROR {descr}', color='r')
         for d in n['out_dir']:
             move_to_trash(trash_dir, d)
-        os.kill(0, signal.SIGKILL)
+
+        if not keep_going:
+            os.kill(0, signal.SIGKILL)
+
+        raise ce.Error(f'{descr} failed')
     except Exception as e:
         raise ce.Error(f'{descr} failed', exception=e)
 
@@ -116,6 +124,7 @@ def iter_nodes(nodes):
             'n': n,
             'l': asyncio.Lock(),
             'v': False,
+            'failed': False,
         }
 
 
@@ -141,6 +150,7 @@ class Executor:
         self.trash_dir = g['trash_dir']
         self.ix_binary = ix_binary
         self.mount_bin = detect_sandbox()
+        self.keep_going = keep_going_enabled()
 
         os.makedirs(self.trash_dir, exist_ok=True)
 
@@ -150,35 +160,63 @@ class Executor:
             cl.log('sandbox: disabled (Linux/os.unshare/mount missing)', color='y')
 
     async def visit_lst(self, l):
-        await gather(self.visit_node(self.o[n]) for n in l)
+        return await gather(self.visit_node(self.o[n]) for n in l)
 
     async def visit_all(self, l):
-        await self.visit_lst(l)
+        failed = await self.visit_lst(l)
 
         for x in self.l:
             await x
 
+        if any(failed):
+            raise ce.Error('one or more nodes failed')
+
     async def visit_node(self, n):
         async with n['l']:
             if not n['v']:
-                await self.do_visit(n['n'])
+                try:
+                    n['failed'] = await self.do_visit(n['n'])
+                except ce.Error as e:
+                    if not self.keep_going:
+                        raise
+
+                    n['failed'] = True
+                    cl.log(f'node failed: {e}', color='r')
+
                 assert not n['v']
                 n['v'] = True
 
+            return n['failed']
+
     async def do_visit(self, n):
-        await self.visit_node_impl(n)
+        failed = await self.visit_node_impl(n)
+
+        if failed:
+            return True
 
         for o in iter_out(n):
             cl.log(f'TOUCH {o}', color='g')
 
+        return False
+
     async def visit_node_impl(self, n):
         if all(os.path.isfile(x) for x in iter_out(n)):
-            return
+            return False
 
-        await self.visit_lst(iter_in(n))
+        inputs = list(iter_in(n))
+        dep_results = await self.visit_lst(inputs)
+
+        for dep, failed in zip(inputs, dep_results):
+            if failed:
+                for out in iter_out(n):
+                    cl.log(f'BROKEN BY DEP {dep} {out}', color='r')
+
+                return True
 
         async with self.s[n['pool']]:
             await to_thread(self.execute_node, n)
+
+        return False
 
     def prepare_dir(self, d):
         move_to_trash(self.trash_dir, d)
@@ -194,7 +232,15 @@ class Executor:
             self.prepare_dir(tmp)
 
         for c in iter_cmd(n):
-            execute_cmd(c, n, self.mt, self.ix_binary, self.mount_bin, self.trash_dir)
+            execute_cmd(
+                c,
+                n,
+                self.mt,
+                self.ix_binary,
+                self.mount_bin,
+                self.trash_dir,
+                self.keep_going,
+            )
 
         if tmp:
             move_to_trash(self.trash_dir, tmp)
