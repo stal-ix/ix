@@ -24,6 +24,8 @@ lib/kernel
 {% endblock %}
 
 {% block cmake_flags %}
+ALSOFT_ENABLE_MODULES=OFF
+CMAKE_CXX_SCAN_FOR_MODULES=OFF
 {% if x86_64 %}
 ALSOFT_REQUIRE_SSE=ON
 ALSOFT_REQUIRE_SSE2=ON
