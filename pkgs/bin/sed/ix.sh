@@ -16,6 +16,9 @@ b8e72182b2ec96a3574e2998c47b7aaa64cc20ce000d8e9ac313cc07cecf28c7
 {% block bld_libs %}
 lib/c
 lib/intl
+{% if linux %}
+lib/linux/headers
+{% endif %}
 {% if mingw32 %}
 lib/shim/dll(dll_name=bcrypt)
 {% endif %}
