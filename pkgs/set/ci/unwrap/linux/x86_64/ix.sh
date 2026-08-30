@@ -1024,4 +1024,8 @@ bin/pipes
 bin/warp
 bin/sync/thing
 bin/thingd
+bld/py/gobject
+bld/blueprint/compiler
+lib/gtk/layer/shell/4/dl
+lib/gtk/layer/shell/4/gir
 {% endblock %}
