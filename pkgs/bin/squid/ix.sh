@@ -38,4 +38,6 @@ bld/perl
 find . -name '*.cc' | while read l; do
     sed -e 's|xmlErrorPtr error =|auto error =|' -i ${l}
 done
+sed -e '/#define SquidMD5Final.*md5_digest/s|, MD5_DIGEST_SIZE||' \
+    -i include/md5.h
 {% endblock %}
