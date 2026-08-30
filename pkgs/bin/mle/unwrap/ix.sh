@@ -5,12 +5,12 @@ mle
 {% endblock %}
 
 {% block version %}
-1.7.2
+1.8.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/adsr/mle/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-5275fcfc58d3d4890d074077d94497db488b2648287b3e48e67b00ea517b02ba
+7ee33a695f801024254fc717b64aff6a7a4c274874fc4b83e1a23ccf1a74b9ca
 {% endblock %}
 
 {% block bld_libs %}
