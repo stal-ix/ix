@@ -5,12 +5,12 @@ shaderc
 {% endblock %}
 
 {% block version %}
-2025.4
+2026.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/google/shaderc/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-8a89fb6612ace8954470aae004623374a8fc8b7a34a4277bee5527173b064faf
+ee493ccf1b3038b4ef2fe024664c5eb2dc4bcc1f6b05b33e3909de0e19c81024
 {% endblock %}
 
 {% block lib_deps %}
