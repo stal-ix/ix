@@ -5,12 +5,12 @@ powertop
 {% endblock %}
 
 {% block version %}
-2.15
+2.16
 {% endblock %}
 
 {% block fetch %}
 https://github.com/fenrus75/powertop/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-e58ab3fd7b8ff5f4dd0d17f11848817e7d83c0a6918145ac81de03b5dccf8f49
+cf37e565b958a64f1e3086daeab82d7959566a372d01d40d3904cbca95cdf3d2
 {% endblock %}
 
 {% block bld_libs %}
