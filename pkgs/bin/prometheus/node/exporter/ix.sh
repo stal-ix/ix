@@ -5,7 +5,7 @@ node_exporter
 {% endblock %}
 
 {% block version %}
-1.10.2
+1.12.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/prometheus/node_exporter/archive/refs/tags/v{{self.version().
 {% endblock %}
 
 {% block go_sha %}
-ed2b9258037b49dadf2f62a2d4f43e80e71c3195d8ab88ed04402eb898c013f9
+fc968ed81018687cdc2db475b43e7b49d15a398184de3f3fbcf3f830218708b6
 {% endblock %}
 
 {% block go_bins %}
@@ -22,5 +22,5 @@ node_exporter
 
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/26
 {% endblock %}
