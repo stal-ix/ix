@@ -5,12 +5,12 @@ pango
 {% endblock %}
 
 {% block version %}
-1.57.0
+1.58.2
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/pango/-/archive/{{self.version().strip()}}/pango-{{self.version().strip()}}.tar.bz2
-981cdc6b0040a44e6f73fe084aa1be56d3070955fc7ffa10ec262b711a7da214
+57e535178a70927a6831f704c1b8baf391152f45a2cee6fb9d4d7cc6a309b840
 {% endblock %}
 
 {% block lib_deps %}
