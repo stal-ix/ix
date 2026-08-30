@@ -20,3 +20,7 @@ lib/sensors
 lib/yaml/cpp
 lib/shim/fake/pkg(pkg_name=yaml-cpp,pkg_ver=100500)
 {% endblock %}
+
+{% block patch %}
+sed -i 's|NAMES "libsensors.so" "libsensors.so.5"|NAMES sensors|' CMakeLists.txt
+{% endblock %}
