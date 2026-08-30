@@ -19,3 +19,7 @@ https://github.com/prometheus/prometheus/archive/refs/tags/v{{self.version().str
 {% block go_tool %}
 bin/go/lang/26
 {% endblock %}
+
+{% block setup_target_flags %}
+export GOWORK=off
+{% endblock %}
