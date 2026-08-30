@@ -34,6 +34,8 @@ bld/fake(tool_name=clang-format)
 {% endblock %}
 
 {% block cmake_flags %}
+CMAKE_CXX_SCAN_FOR_MODULES=OFF
+
 ENABLE_NSS3=OFF
 ENABLE_GPGME=OFF
 
@@ -60,4 +62,6 @@ shut_up
 
 {% block patch %}
 sed -e 's|.*static_assert.*Z_NULL.*||' -i poppler/FlateEncoder.cc
+sed -e 's|std::unique_ptr<Array> arrayA|std::unique_ptr<Array> \&\&arrayA|' \
+    -i poppler/Object.h
 {% endblock %}
