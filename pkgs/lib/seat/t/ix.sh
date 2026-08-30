@@ -5,12 +5,12 @@ seatd
 {% endblock %}
 
 {% block version %}
-0.9.1
+0.9.3
 {% endblock %}
 
 {% block fetch %}
 https://git.sr.ht/~kennylevinsen/seatd/archive/{{self.version().strip()}}.tar.gz
-819979c922a0be258aed133d93920bce6a3d3565a60588d6d372ce9db2712cd3
+302564d54d8e28191fadfd734f2675ecb0c9e0615a58011b89ef15dfa4dbaa96
 {% endblock %}
 
 {% block lib_deps %}
