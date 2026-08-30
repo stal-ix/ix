@@ -5,7 +5,7 @@ sniffnet
 {% endblock %}
 
 {% block version %}
-1.4.2
+1.5.1
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/GyulyVGC/sniffnet/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block cargo_sha %}
-52a3d297a3e1053164c3c2c79f88541619a9fac188439328dadc5d8f5b9693af
+81519a58bc826c8446d903ab3c896fc21952bd1bfc1712c7f5f209f0ae54a27d
 {% endblock %}
 
 {% block bld_libs %}
@@ -29,5 +29,5 @@ sniffnet
 {% endblock %}
 
 {% block cargo_tool %}
-bld/rust/91
+bld/rust/96
 {% endblock %}
