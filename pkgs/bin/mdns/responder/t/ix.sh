@@ -25,6 +25,9 @@ lib/mbedtls/2
 find . -type f | while read l; do
     sed -e 's|/var/run|/var/run/mdnsd|g' -i "${l}"
 done
+patch mDNSShared/uds_daemon.c << EOF
+{% include '0.diff' %}
+EOF
 cd mDNSPosix
 {% endblock %}
 
