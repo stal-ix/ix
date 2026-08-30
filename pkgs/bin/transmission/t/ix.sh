@@ -5,12 +5,12 @@ transmission
 {% endblock %}
 
 {% block version %}
-4.0.6
+4.1.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/transmission/transmission/archive/refs/tags/{{self.version().strip()}}.tar.gz
-bcc0e5f96497521e98fa7b224d1864f270484ad215a974f8dedeb818e6720d13
+03ebfded794656ded996b40a294f970abd37bd2aeb5610b00344823a453fe271
 {% endblock %}
 
 {% block bld_libs %}
