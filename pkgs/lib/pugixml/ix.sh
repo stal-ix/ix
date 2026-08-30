@@ -5,12 +5,12 @@ pugixml
 {% endblock %}
 
 {% block version %}
-1.15
+1.16
 {% endblock %}
 
 {% block fetch %}
 http://github.com/zeux/pugixml/releases/download/v{{self.version().strip()}}/pugixml-{{self.version().strip()}}.tar.gz
-655ade57fa703fb421c2eb9a0113b5064bddb145d415dd1f88c79353d90d511a
+4cee1ca4aad395170f4c7a07824f3bdd41f28316c6e1e1090a1425b278ec0b4b
 {% endblock %}
 
 {% block lib_deps %}
