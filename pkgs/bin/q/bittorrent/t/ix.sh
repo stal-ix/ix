@@ -5,12 +5,12 @@ qBittorrent
 {% endblock %}
 
 {% block version %}
-5.1.4
+5.2.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
-ab37deeb364049a308127c572f139bd5eb0535fa355db8821e5aa31990b5625e
+a5f540cdfb0053f0ce1a1c62ccd92d08214f16bcb2c512569ec54d81531e541f
 {% endblock %}
 
 {% block bld_libs %}
