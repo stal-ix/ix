@@ -5,12 +5,12 @@ opus
 {% endblock %}
 
 {% block version %}
-1.6
+1.6.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/xiph/opus/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-a9f9f04196174e4a1bdb5e0c5a85e36ebbd45a18cbbbb8be5024c59b3c001964
+bf0b97ec7a65890b8db90ef94c4d6c18de12584c3085031953a10986f5917745
 {% endblock %}
 
 {% block lib_deps %}
