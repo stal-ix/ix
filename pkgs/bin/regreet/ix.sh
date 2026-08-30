@@ -5,7 +5,7 @@ ReGreet
 {% endblock %}
 
 {% block version %}
-0.2.0
+0.5.0
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/rharish101/ReGreet/archive/refs/tags/{{self.version().strip()
 {% endblock %}
 
 {% block cargo_sha %}
-83f27ae53e2fdbe42607de896917cac399aba6b3ecc12c1b70e557f4ea365e01
+f3ed10a824977ca13626130167c7ff6a9d34daaa74e25804a9c4e47ce1ef45e4
 {% endblock %}
 
 {% block bld_libs %}
@@ -25,5 +25,5 @@ regreet
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/86
+bld/cargo/96
 {% endblock %}
