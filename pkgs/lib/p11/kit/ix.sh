@@ -5,12 +5,12 @@ p11-kit
 {% endblock %}
 
 {% block version %}
-0.25.10
+0.26.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/p11-glue/p11-kit/releases/download/{{self.version().strip()}}/p11-kit-{{self.version().strip()}}.tar.xz
-a62a137a966fb3a9bbfa670b4422161e369ddea216be51425e3be0ab2096e408
+f2cc09111e44bf3fea58f023180b33acea90aa82d042d6fbb623fbc5ba033bb7
 {% endblock %}
 
 {% block lib_deps %}
