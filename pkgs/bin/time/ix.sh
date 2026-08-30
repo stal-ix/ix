@@ -5,12 +5,12 @@ time
 {% endblock %}
 
 {% block version %}
-1.9
+1.10
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/time/time-{{self.version().strip()}}.tar.gz
-fbacf0c81e62429df3e33bda4cee38756604f18e01d977338e23306a3e3b521e
+e8c29fb4ab599d8478e41e8618f50db8aede9c90af27d0d2ef28ae50d5de09c3
 {% endblock %}
 
 {% block bld_libs %}
