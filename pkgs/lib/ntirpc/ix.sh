@@ -30,6 +30,10 @@ wrap_cc
 wrap_rdynamic
 {% endblock %}
 
+{% block cmake_flags %}
+USE_MONITORING=OFF
+{% endblock %}
+
 {% block patch %}
 sed -e 's|.*pthread_mutexattr_settype.*||' -i ntirpc/reentrant.h
 sed -e 's|__FreeBSD__|__linux__|' -i ntirpc/rpc/rpcent.h
