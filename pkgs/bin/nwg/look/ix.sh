@@ -5,7 +5,7 @@ nwg-look
 {% endblock %}
 
 {% block version %}
-1.0.6
+1.1.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v{{self.version().strip(
 {% endblock %}
 
 {% block go_sha %}
-7a774199ec08dc102915f7011aebd946c046a0f5d16b2cad131f6af46a0eebcf
+b03e79c040554a963f9cf1f3e825ac7506f65d64f9ab8294051ee99528ac778a
 {% endblock %}
 
 {% block bld_tool %}
@@ -34,5 +34,5 @@ make DESTDIR=${out} install
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/26
 {% endblock %}
