@@ -16,7 +16,3 @@ a32d9dd8fc3d1179d0755df471a561842a0f2475013da9c5cf86e38215a61380
 {% block bld_libs %}
 lib/c
 {% endblock %}
-
-{% block meson_flags %}
-tests=disabled
-{% endblock %}
