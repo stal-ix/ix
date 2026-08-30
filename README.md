@@ -9,9 +9,6 @@
 <br>
 <br>
 
-**This repository is a stable branch. All development activities are carried out on https://github.com/pg83/ix.<br> 
-Kindly submit all PRs there.**
-
 # stal/ix
 
 **stal/ix** is a Linux distribution (**Stalix**) built around a custom, source-based package/build system (**IX**).
