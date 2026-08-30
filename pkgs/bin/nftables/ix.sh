@@ -36,6 +36,10 @@ bld/bison
 bld/fake(tool_name=a2x)
 {% endblock %}
 
+{% block patch %}
+sed -i 's/for ((i = 56; i >= 0; i-= 8)); do/for i in 56 48 40 32 24 16 8 0; do/' configure.ac
+{% endblock %}
+
 {% block configure_flags %}
 --with-json
 {% endblock %}
