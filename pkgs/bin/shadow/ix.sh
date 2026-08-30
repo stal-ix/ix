@@ -26,6 +26,10 @@ bld/bison
 bld/gettext
 {% endblock %}
 
+{% block configure_flags %}
+--disable-logind
+{% endblock %}
+
 {% block patch %}
 rm autogen.sh
 {% endblock %}
