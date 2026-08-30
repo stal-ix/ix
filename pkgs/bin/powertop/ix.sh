@@ -1,4 +1,4 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block pkg_name %}
 powertop
@@ -19,14 +19,15 @@ lib/nl
 lib/kernel
 lib/curses
 lib/pci/utils
+lib/trace/fs
 {% endblock %}
 
 {% block bld_tool %}
 bld/gettext
-bld/auto/archive
 {% endblock %}
 
 {% block patch %}
-rm autogen.sh
-sed -e 's|0.18.2|0.24|' -i configure.ac
+(base64 -d | patch -p1) <<'EOF'
+{% include 'chrono.patch.base64' %}
+EOF
 {% endblock %}
