@@ -5,12 +5,12 @@ tcpdump
 {% endblock %}
 
 {% block version %}
-4.99.5
+4.99.6
 {% endblock %}
 
 {% block fetch %}
 https://www.tcpdump.org/release/tcpdump-{{self.version().strip()}}.tar.gz
-8c75856e00addeeadf70dad67c9ff3dd368536b2b8563abf6854d7c764cd3adb
+5839921a0f67d7d8fa3dacd9cd41e44c89ccb867e8a6db216d62628c7fd14b09
 {% endblock %}
 
 {% block lib_deps %}
