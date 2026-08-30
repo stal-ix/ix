@@ -19,6 +19,22 @@ lib/pcap
 lib/kernel
 {% endblock %}
 
+{% block patch %}
+patch -p1 <<'EOF'
+--- a/src/common/txring.h
++++ b/src/common/txring.h
+@@ -41,8 +41,2 @@
+-#if __GLIBC__ >= 2 && __GLIBC_MINOR__ >= 1
+ #include <net/ethernet.h> /* the L2 protocols */
+ #include <linux/if_packet.h>
+-#else
+-#include <asm/types.h>
+-#include <linux/if_ether.h> /* The L2 protocols */
+-#include <linux/if_packet.h>
+-#endif
+EOF
+{% endblock %}
+
 {% block configure_flags %}
 --enable-pcapconfig=no
 --enable-static-link=yes
