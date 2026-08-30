@@ -25,6 +25,7 @@ lib/c
 lib/cap
 lib/acl
 lib/dbus
+lib/openssl
 lib/urcu
 lib/kernel
 lib/ntirpc
@@ -44,13 +45,16 @@ cd src
 
 {% block cmake_flags %}
 USE_GSS=OFF
+USE_MONITORING=OFF
 USE_SYSTEM_NTIRPC=ON
 NTIRPC_INCLUDE_DIR=${NTIRPC_PREFIX}/include/ntirpc
 NTIRPC_LIBRARY_DIR=${NTIRPC_PREFIX}/lib
 {% endblock %}
 
 {% block patch %}
-sed -e 's|typedef.*_t;||' -i include/nlm4.h
+sed -e 's|typedef.*_t;||' -i include/nlm4.h include/cqos.h
+sed -e 's|__gid_t|gid_t|g' -i idmapper/pwnam_wrappers.c
+sed -e 's|add_executable(sm_notify.ganesha |add_executable(sm_notify.ganesha EXCLUDE_FROM_ALL |' -i CMakeLists.txt
 #sed -e 's|innetgr.*;|0;|' -i support/netgroup_cache.c
 {% endblock %}
 
