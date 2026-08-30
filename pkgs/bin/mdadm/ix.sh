@@ -5,12 +5,12 @@ mdadm
 {% endblock %}
 
 {% block version %}
-4.4
+4.6
 {% endblock %}
 
 {% block fetch %}
 https://git.kernel.org/pub/scm/utils/mdadm/mdadm.git/snapshot/mdadm-{{self.version().strip()}}.tar.gz
-680fed532857088e0cd87c56c00033ae35eae0a3f9cb7e1523b345ba8717fb93
+e89f24994f403cea90068d03f3c1ee49957303c7a092cc5b2ed2c603df9649a7
 {% endblock %}
 
 {% block bld_libs %}
