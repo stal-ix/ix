@@ -21,7 +21,7 @@ lib/pango
 lib/pcre/2
 lib/json/c
 lib/wayland
-lib/wlroots/19
+lib/wlroots/{{wlroots_ver or '19'}}{{'(opengl=1)' if sway_wlroots_opengl else ''}}
 lib/gdk/pixbuf
 {% endblock %}
 
