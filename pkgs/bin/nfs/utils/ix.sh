@@ -52,6 +52,10 @@ udev_rulesdir=${out}/share/udev
 
 {% block patch %}
 echo 'int main() {}' > utils/nfsidmap/nfsidmap.c
+cat - support/nfs/getport.c << EOF > _
+#include <stddef.h>
+EOF
+mv _ support/nfs/getport.c
 for l in support/reexport/*.c; do
     cat - ${l} << EOF > _
 #include <unistd.h>
