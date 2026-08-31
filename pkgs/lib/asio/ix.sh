@@ -5,7 +5,7 @@ asio
 {% endblock %}
 
 {% block version %}
-1.32.0
+1.38.2
 {% endblock %}
 
 {% block fetch %}
