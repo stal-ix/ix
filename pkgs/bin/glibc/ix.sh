@@ -5,12 +5,12 @@ glibc
 {% endblock %}
 
 {% block version %}
-2.43
+2.44
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/glibc/glibc-{{self.version().strip()}}.tar.xz
-d9c86c6b5dbddb43a3e08270c5844fc5177d19442cf5b8df4be7c07cd5fa3831
+37f600f2bef3c5e8300147059568b2a2e40a7ad6ccc65ce942556d49429cc667
 {% endblock %}
 
 # glibc links libc.so/rtld with -lgcc for the compiler builtins; supply the
