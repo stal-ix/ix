@@ -28,6 +28,7 @@ lib/notify
 
 {% block cmake_flags %}
 wxUSE_XLOCALE=OFF
+wxBUILD_INSTALL_USE_SYMLINK=OFF
 {% endblock %}
 
 {% block cpp_defines %}
