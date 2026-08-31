@@ -20,3 +20,8 @@ lib/c
 {% block cmake_flags %}
 ZLIB_ENABLE_TESTS=OFF
 {% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e '/^bindir=/d' -i ${out}/lib/pkgconfig/*.pc
+{% endblock %}
