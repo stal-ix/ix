@@ -27,7 +27,6 @@ lib/stemmer
 {% block meson_flags %}
 systemd=false
 gir=false
-svg-support=false
 apidocs=false
 install-docs=false
 display-detection=none
