@@ -5,12 +5,12 @@ libei
 {% endblock %}
 
 {% block version %}
-1.4.0
+1.6.0
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/libinput/libei/-/archive/{{self.version().strip()}}/libei-{{self.version().strip()}}.tar.bz2
-4346b471d9635e64aff8ac3be7e07aaf2c0456d8332ab5934d53aae0e0f34162
+5ed6078fa63afd554cc04b1001675615da0ed8fe23b80492ab63403140b5a830
 {% endblock %}
 
 {% block lib_deps %}
