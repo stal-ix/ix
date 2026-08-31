@@ -5,7 +5,7 @@ wf-shell
 {% endblock %}
 
 {% block version %}
-0.10.0
+0.11.0
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-b3af12d8a07f15d77abd66746e10899fb21e2875be7d33774e2a6bd4f15c8105
+46c0bab3b37aa7a1896eae63529efaa3f8acd5e12e44662bd4421c1dc61482ac
 {% endblock %}
 
 {% block bld_libs %}
