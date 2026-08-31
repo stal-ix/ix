@@ -29,4 +29,5 @@ lib/kernel
 {% block c_rename_symbol %}
 strv_from_string
 strv_join
+strv_find
 {% endblock %}
