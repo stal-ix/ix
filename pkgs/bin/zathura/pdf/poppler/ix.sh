@@ -5,12 +5,12 @@ zathura-pdf-poppler
 {% endblock %}
 
 {% block version %}
-0.3.3
+2026.07.18
 {% endblock %}
 
 {% block fetch %}
-https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-{{self.version().strip()}}.tar.xz
-c812f2f4446fd5de16734e13c02ea9aa25ba4e3ba9f72b732c0ff90f9ba34935
+https://github.com/pwmt/zathura-pdf-poppler/archive/refs/tags/{{self.version().strip()}}.tar.gz
+93003f41d8d2dc4c3c5d5ee076012563d1836ab0043debe741945881fb62d2ca
 {% endblock %}
 
 {% block lib_deps %}

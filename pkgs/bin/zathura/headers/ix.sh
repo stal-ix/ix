@@ -16,15 +16,22 @@ https://github.com/pwmt/zathura/archive/refs/tags/{{self.version().strip()}}.tar
 {% block bld_libs %}
 lib/c
 lib/glib
-lib/gtk/3
+lib/gtk/4
 lib/cairo
-lib/girara/gtk3
+lib/girara
+lib/json/glib
+lib/magic
 lib/sqlite/3
+lib/xxhash
 {% endblock %}
 
 {% block bld_tool %}
 bld/glib
 bld/gettext
+{% endblock %}
+
+{% block meson_tool %}
+bld/meson/6
 {% endblock %}
 
 {% block build_flags %}
