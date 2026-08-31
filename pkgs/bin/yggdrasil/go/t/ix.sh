@@ -5,7 +5,7 @@ yggdrasil-go
 {% endblock %}
 
 {% block version %}
-0.5.12
+0.5.14
 {% endblock %}
 
 {% block go_url %}
@@ -13,9 +13,9 @@ https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v{{self.vers
 {% endblock %}
 
 {% block go_sha %}
-c59bcdd803cc3380bca50fb5c6a50e3980955416ed425c36851259dcc731ea20
+d3d0172d428e49056b4fc6ead7b44f1e8b7ab3bfa52adcdc577cf937cacd3389
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/26
 {% endblock %}
