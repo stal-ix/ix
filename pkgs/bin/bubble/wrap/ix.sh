@@ -1,4 +1,4 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block pkg_name %}
 bubblewrap
@@ -18,10 +18,14 @@ lib/c
 lib/cap
 {% endblock %}
 
-{% block configure_flags %}
---disable-selinux
---disable-man
---with-priv-mode=none
---with-bash-completion-dir=no
---with-zsh-completion-dir=no
+{% block cpp_missing %}
+limits.h
+{% endblock %}
+
+{% block meson_flags %}
+selinux=disabled
+man=disabled
+tests=false
+bash_completion=disabled
+zsh_completion=disabled
 {% endblock %}
