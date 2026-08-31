@@ -5,12 +5,12 @@ zlib-ng
 {% endblock %}
 
 {% block version %}
-2.2.4
+2.3.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/{{self.version().strip()}}.tar.gz
-a73343c3093e5cdc50d9377997c3815b878fd110bf6511c2c7759f2afb90f5a3
+f9c65aa9c852eb8255b636fd9f07ce1c406f061ec19a2e7d508b318ca0c907d1
 {% endblock %}
 
 {% block lib_deps %}
