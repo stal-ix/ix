@@ -1,7 +1,7 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block version %}
-1.5.1
+1.5.3
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ wofi
 
 {% block fetch %}
 https://hg.sr.ht/~scoopta/wofi/archive/v{{self.version().strip()}}.tar.gz
-d432d8f2c3f1d66716dc29e9fea7bb52cd319377c7faddf326491a9e92c188cb
+6216dc14d93cdb6170f89c1ca3aaacdeaa44862fbc9be947d614be266a9c49f6
 {% endblock %}
 
 {% block bld_libs %}
