@@ -60,5 +60,5 @@ wrap_rdynamic
 
 {% block patch %}
 sed -e 's|.*if.*dlinfo.*|{|' \
-    -i arclite/src/Patch7zCP.cpp
+    -i plugins/arclite/src/Patch7zCP.cpp
 {% endblock %}
