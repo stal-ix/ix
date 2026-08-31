@@ -5,12 +5,12 @@ bubblewrap
 {% endblock %}
 
 {% block version %}
-0.9.0
+0.12.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/containers/bubblewrap/releases/download/v{{self.version().strip()}}/bubblewrap-{{self.version().strip()}}.tar.xz
-c6347eaced49ac0141996f46bba3b089e5e6ea4408bc1c43bab9f2d05dd094e1
+9760d007363e3abba7c747489910f9f82d9fca53ba3bd3282e396fa3c97a3314
 {% endblock %}
 
 {% block bld_libs %}
