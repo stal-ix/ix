@@ -5,12 +5,12 @@ msgpack-c
 {% endblock %}
 
 {% block version %}
-6.1.0
+7.0.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-{{self.version().strip()}}.tar.gz
-c23c4070dbe01f46044bf70c5349f29453d655935b6dc710714c008bca0825a7
+f720af974b72cda874c2c347d4bafef5385c4e7942a27b3c87d6fa482412d08c
 {% endblock %}
 
 {% block lib_deps %}

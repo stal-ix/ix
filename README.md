@@ -4,13 +4,10 @@
 <img alt="logo" src="https://raw.githubusercontent.com/stal-ix/stal-ix.github.io/main/images/ixpm_01.png" width="250px" height="94px">
 </picture>
 <a href="https://repology.org/repository/stalix">
-    <img src="https://repology.org/badge/repository-big/stalix.svg" alt="Repository status">
+    <img src="https://repology.org/badge/repository-big/stalix_dev.svg" alt="Repository status">
 </a>
 <br>
 <br>
-
-**This repository is a stable branch. All development activities are carried out on https://github.com/pg83/ix.<br> 
-Kindly submit all PRs there.**
 
 # stal/ix
 

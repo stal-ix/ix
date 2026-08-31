@@ -1,7 +1,7 @@
 {% extends '//bin/zathura/headers/ix.sh' %}
 
 {% block ver %}
-6_7
+8_9
 {% endblock %}
 
 {% block plugins %}

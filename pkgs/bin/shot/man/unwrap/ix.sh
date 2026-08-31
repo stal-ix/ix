@@ -5,7 +5,7 @@ shotman
 {% endblock %}
 
 {% block version %}
-0.4.10
+0.5.1
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://git.sr.ht/~whynothugo/shotman/archive/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-50484ee97cb2f675ab57072dc02c6435b00dc47d93d5b624868bfb5e485d47f9
+945f9686e37e6918447887878ea7fcc0dce61af6ba0d87e771f5ed0efc6bd43b
 {% endblock %}
 
 {% block bld_libs %}
@@ -25,5 +25,5 @@ shotman
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/86
+bld/cargo/96
 {% endblock %}

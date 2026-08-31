@@ -52,4 +52,7 @@ bld/gettext
 sed -e 's|0.18|0.24|' -i configure.ac
 sed -e 's|std::end(buf_)|buf_.data() + buf_.size()|' \
     -i src/SocketRecvBuffer.cc
+sed -e 's|#include <nettle/nettle-meta.h>|&\n#include <nettle/version.h>|' \
+    -e 's|    hash->digest(ctx_.get(), getDigestLength(), md);|#if NETTLE_VERSION_MAJOR > 3\n    hash->digest(ctx_.get(), md);\n#else\n&\n#endif|' \
+    -i src/LibnettleMessageDigestImpl.cc
 {% endblock %}

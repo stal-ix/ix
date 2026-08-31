@@ -5,12 +5,12 @@ tesseract
 {% endblock %}
 
 {% block version %}
-5.5.1
+5.5.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/{{self.version().strip()}}.tar.gz
-a7a3f2a7420cb6a6a94d80c24163e183cf1d2f1bed2df3bbc397c81808a57237
+9218e62793116d42a9f6d14cd9348518b27f382096eea3d0f2d1a24616bb5884
 {% endblock %}
 
 {% block lib_deps %}

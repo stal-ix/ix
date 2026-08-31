@@ -13,3 +13,10 @@ bin/neo/vim/unwrap/nlua0/dl
 {{super()}}
 bin/neo/vim/1(lua_ver={{lua_ver}})
 {% endblock %}
+
+{% block cmake_flags %}
+{{super()}}
+{% if lua_ver == 'openresty' %}
+COMPILE_LUA=OFF
+{% endif %}
+{% endblock %}

@@ -1,16 +1,16 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block pkg_name %}
 powertop
 {% endblock %}
 
 {% block version %}
-2.15
+2.16
 {% endblock %}
 
 {% block fetch %}
 https://github.com/fenrus75/powertop/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-e58ab3fd7b8ff5f4dd0d17f11848817e7d83c0a6918145ac81de03b5dccf8f49
+cf37e565b958a64f1e3086daeab82d7959566a372d01d40d3904cbca95cdf3d2
 {% endblock %}
 
 {% block bld_libs %}
@@ -19,14 +19,15 @@ lib/nl
 lib/kernel
 lib/curses
 lib/pci/utils
+lib/trace/fs
 {% endblock %}
 
 {% block bld_tool %}
 bld/gettext
-bld/auto/archive
 {% endblock %}
 
 {% block patch %}
-rm autogen.sh
-sed -e 's|0.18.2|0.24|' -i configure.ac
+(base64 -d | patch -p1) <<'EOF'
+{% include 'chrono.patch.base64' %}
+EOF
 {% endblock %}

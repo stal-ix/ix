@@ -5,12 +5,12 @@ thinkfan
 {% endblock %}
 
 {% block version %}
-1.3.1
+2.0.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/vmatare/thinkfan/archive/refs/tags/{{self.version().strip()}}.tar.gz
-9466c8c82b7c4333b280fa66445ab26185ffbb4aada6bcb4a164eed742f8d78c
+0fc94eb378dcba8c889e91f41dab3a8d6eebc7324a59a0704cc39aa66551987e
 {% endblock %}
 
 {% block bld_libs %}
@@ -19,4 +19,8 @@ lib/kernel
 lib/sensors
 lib/yaml/cpp
 lib/shim/fake/pkg(pkg_name=yaml-cpp,pkg_ver=100500)
+{% endblock %}
+
+{% block patch %}
+sed -i 's|NAMES "libsensors.so" "libsensors.so.5"|NAMES sensors|' CMakeLists.txt
 {% endblock %}

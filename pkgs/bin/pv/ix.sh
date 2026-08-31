@@ -5,12 +5,12 @@ pv
 {% endblock %}
 
 {% block version %}
-1.10.2
+1.11.0
 {% endblock %}
 
 {% block fetch %}
 https://www.ivarch.com/programs/sources/pv-{{self.version().strip()}}.tar.gz
-3f7b47f0eaf66f9c2a487fc5dbc409cd00bfe5ecd8a9b198d76f1ed39f792dc9
+fc02c9fc2b82b20a92cc8d98f844be63f22abd98751a8e4abc875e1d803662eb
 {% endblock %}
 
 {% block bld_libs %}

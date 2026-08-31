@@ -5,12 +5,12 @@ squashfs-tools
 {% endblock %}
 
 {% block version %}
-4.7.4
+4.7.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/plougher/squashfs-tools/archive/refs/tags/{{self.version().strip()}}.tar.gz
-91c49f9a1ed972ad00688a38222119e2baf49ba74cf5fda05729a79d7d59d335
+547b7b7f4d2e44bf91b6fc554664850c69563701deab9fd9cd7e21f694c88ea6
 {% endblock %}
 
 {% block unpack %}

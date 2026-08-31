@@ -5,12 +5,12 @@ GSL
 {% endblock %}
 
 {% block version %}
-4.2.1
+5.0.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/microsoft/GSL/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-d959f1cb8bbb9c94f033ae5db60eaf5f416be1baa744493c32585adca066fe1f
+e646da6ac00a885cfae33dc935e52bb42bd1d05e41b8437cbc25ca3d74930f35
 {% endblock %}
 
 {% block lib_deps %}

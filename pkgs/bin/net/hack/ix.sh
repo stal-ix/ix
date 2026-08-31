@@ -21,7 +21,7 @@ nethack
 {% endblock %}
 
 {% block version %}
-3.6.7
+5.0.0
 {% endblock %}
 
 {% block bld_libs %}

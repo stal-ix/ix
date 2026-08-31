@@ -5,12 +5,12 @@ wpa_supplicant
 {% endblock %}
 
 {% block version %}
-2.11
+2.12
 {% endblock %}
 
 {% block fetch %}
 https://w1.fi/releases/wpa_supplicant-{{self.version().strip()}}.tar.gz
-912ea06f74e30a8e36fbb68064d6cdff218d8d591db0fc5d75dee6c81ac7fc0a
+08e23937e16d0155e55cab2b51f51fbe10d80a1aa91c4e15442645059b737ef6
 {% endblock %}
 
 {% block bld_libs %}

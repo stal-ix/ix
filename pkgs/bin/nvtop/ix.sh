@@ -5,12 +5,12 @@ nvtop
 {% endblock %}
 
 {% block version %}
-3.2.0
+3.3.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Syllo/nvtop/archive/refs/tags/{{self.version().strip()}}.tar.gz
-d26df685455023cedc4dda033862dcddb67402fbdb685da70da78492f73c41d0
+48a295f3b3a917cc851d1aa8b185c09fde3a1b1e741fc57d7fa96b3671271630
 {% endblock %}
 
 {% block bld_libs %}

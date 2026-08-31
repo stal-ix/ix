@@ -239,6 +239,8 @@ def build_wirez(cfg, env):
     if cfg.get("quiet", True):
         cmd.append("-q")
 
+    cmd.extend(['-D', '127.0.0.1'])
+
     for value in as_list(cfg.get("forward")):
         cmd.extend(["-F", str(value)])
 

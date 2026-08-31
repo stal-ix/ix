@@ -5,7 +5,7 @@ senpai
 {% endblock %}
 
 {% block version %}
-0.4.1
+0.5.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://git.sr.ht/~delthas/senpai/archive/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-c574f740fd8173e5ecfff7584f6721a63e0c75dda05b854c180cc8afd3d5657f
+7bea2eb865b27219d0afa328f677a0da1283bfe0a1020f63a865d6c0e097ffc1
 {% endblock %}
 
 {% block go_refine %}
@@ -31,5 +31,5 @@ senpai
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/26
 {% endblock %}

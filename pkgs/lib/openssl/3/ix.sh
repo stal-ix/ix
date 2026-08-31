@@ -1,5 +1,7 @@
 {% extends 't/ix.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 openssl
 {% endblock %}

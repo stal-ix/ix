@@ -1,7 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block version %}
-7.3
+7.7
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ squid
 
 {% block fetch %}
 https://github.com/squid-cache/squid/archive/refs/tags/SQUID_{{self.version().strip().replace('.', '_')}}.tar.gz
-a1f04c08a06568f16962f4e2855b778bf8bff2f52665cc2510b39097910d7372
+f227d3cb7bee61b443dc904407e58b09249d6617330b1953d09e4369662cd665
 {% endblock %}
 
 {% block bld_libs %}
@@ -38,4 +38,6 @@ bld/perl
 find . -name '*.cc' | while read l; do
     sed -e 's|xmlErrorPtr error =|auto error =|' -i ${l}
 done
+sed -e '/#define SquidMD5Final.*md5_digest/s|, MD5_DIGEST_SIZE||' \
+    -i include/md5.h
 {% endblock %}

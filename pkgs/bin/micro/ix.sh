@@ -5,7 +5,7 @@ micro
 {% endblock %}
 
 {% block version %}
-2.0.14
+2.0.15
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/zyedidia/micro/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block go_sha %}
-b4ea01909023fea11fe66faf4b8a14d170e22dfb2bd3d6f326b66902eb618ddb
+e089b7f13140cfcfe0c74ca2c7819b1bc3b2798edb9a10928004f2f206e0424d
 {% endblock %}
 
 {% block unpack %}
@@ -23,4 +23,8 @@ cd cmd/micro
 
 {% block go_bins %}
 micro
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/26
 {% endblock %}

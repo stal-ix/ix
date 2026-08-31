@@ -5,12 +5,12 @@ neovim
 {% endblock %}
 
 {% block version %}
-0.11.5
+0.12.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/neovim/neovim/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-c63450dfb42bb0115cd5e959f81c77989e1c8fd020d5e3f1e6d897154ce8b771
+a810c95332317bd0017e1ca07e376a8472c79075cbed00fa3737d190a8a0a45a
 {% endblock %}
 
 {% block bld_libs %}

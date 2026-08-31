@@ -5,12 +5,12 @@ uthash
 {% endblock %}
 
 {% block version %}
-2.3.0
+2.4.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/troydhanson/uthash/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-e10382ab75518bad8319eb922ad04f907cb20cccb451a3aa980c9d005e661acc
+387ba027946d7c64e9aa19cc53b2edcd714f8f9dca9fa8e3aaef17e0e8e3d736
 {% endblock %}
 
 {% block install %}

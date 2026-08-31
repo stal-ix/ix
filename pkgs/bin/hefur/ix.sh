@@ -12,6 +12,10 @@ https://github.com/abique/hefur
 4a4d5214e03aadc0fe47c48aef102f3500f243dcffbe253f45b2b91099a78937
 {% endblock %}
 
+{% block patch %}
+sed -e 's|, sizeof (digest_)||' -i mimosa/mimosa/stream/hash.hh
+{% endblock %}
+
 {% block bld_libs %}
 lib/c
 lib/c++

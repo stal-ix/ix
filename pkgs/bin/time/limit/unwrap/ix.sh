@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block version %}
-1.9.2
+1.9.5
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ timelimit
 
 {% block fetch %}
 https://devel.ringlet.net/files/sys/timelimit/timelimit-{{self.version().strip()}}.tar.xz
-9cdd1f06049b9e1a4b7a8a93a0d4d0e1920bd617e7cd005525261a3f91386796
+96b39c61a850d3395eaf4dde5fd22c290854d42ff69f192b12aef05d99d5ddbb
 {% endblock %}
 
 {% block bld_libs %}

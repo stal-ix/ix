@@ -5,7 +5,7 @@ webhook
 {% endblock %}
 
 {% block version %}
-2.8.2
+2.8.3
 {% endblock %}
 
 {% block go_url %}
@@ -13,9 +13,13 @@ https://github.com/adnanh/webhook/archive/refs/tags/{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-15ae99d4b2ddf4642e5c3dca5f63bf1da6e333c8dfe0f4e5191b17f165512fd1
+fbfb0c222f8d7d3d05261f1ce329560a4f1bb3516deed691ef1432825a00c046
 {% endblock %}
 
 {% block go_bins %}
 webhook
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/26
 {% endblock %}

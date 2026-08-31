@@ -1,7 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block version %}
-3.5a
+3.7c
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ tmux
 
 {% block fetch %}
 https://github.com/tmux/tmux/archive/refs/tags/{{self.version().strip()}}.tar.gz
-49e68b41dec0bf408990160ee12fa29b06dee8f74c1f0b4b71c9d2a1477dd910
+5e7b0f533b66e5633e2b72a9d483f9534a343ab7011eb2621b6309dfba553daa
 {% endblock %}
 
 {% block bld_libs %}
@@ -35,6 +35,10 @@ bld/byacc
 {% endblock %}
 
 {% block enable_static %}
+{% endblock %}
+
+{% block patch %}
+sed -i 's/^int[[:space:]]*optreset;/__attribute__((weak)) int optreset;/' compat/getopt_long.c
 {% endblock %}
 
 {% block configure %}

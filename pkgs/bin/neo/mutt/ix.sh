@@ -5,12 +5,12 @@ neomutt
 {% endblock %}
 
 {% block version %}
-20250905
+20260616
 {% endblock %}
 
 {% block fetch %}
 https://github.com/neomutt/neomutt/archive/refs/tags/{{self.version().strip()}}.tar.gz
-f409fa3803bfc540869b78719400bceda216842e4da024f83ca3060241d9c516
+2c34fdd2166d5765e6bfdc21d1248bc4e92ddc0a33537b9418c17cd90e2dda80
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,7 +24,6 @@ lib/idn/2
 lib/gnutls
 lib/curses
 lib/pcre/2
-lib/openssl
 lib/sqlite/3
 {% endblock %}
 
@@ -33,7 +32,6 @@ sh ./configure \
     --prefix=${out} \
     --libexecdir=${out}/bin/bin_neomutt \
     --disable-doc \
-    --ssl \
     --pcre2 \
     --disable-idn \
     --idn2 \

@@ -5,12 +5,12 @@ pangomm
 {% endblock %}
 
 {% block version %}
-2.56.1
+2.56.2
 {% endblock %}
 
 {% block fetch %}
 https://download.gnome.org/sources/pangomm/2.56/pangomm-{{self.version().strip()}}.tar.xz
-539f5aa60e9bdc6b955bb448e2a62cc14562744df690258040fbb74bf885755d
+f1e984c85a85b6a0e61616366521f51dd8282a072bb45d15b5084762b62f4c0e
 {% endblock %}
 
 {% block lib_deps %}

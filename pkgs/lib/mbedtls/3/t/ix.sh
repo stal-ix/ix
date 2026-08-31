@@ -1,5 +1,7 @@
 {% extends '//lib/mbedtls/t/ix.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 mbedtls
 {% endblock %}

@@ -5,12 +5,18 @@ swayimg
 {% endblock %}
 
 {% block version %}
-4.6
+5.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/artemsen/swayimg/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-030ac867501f4d10a2d85bb47d65d51f31c75282f3805079e0aaf9ac05bfb1df
+f84fec722cd0b4cfd86d0a8a820b15a95bbdb1d2cfcded7f67446a7a0c1d1c09
+{% endblock %}
+
+{% block patch %}
+# libc++ iterators are not necessarily raw pointers
+sed -i -e 's/const auto\* const kit/const auto kit/' \
+       -e 's/const auto\* const btnit/const auto btnit/' src/input.cpp
 {% endblock %}
 
 {% block bld_libs %}
@@ -28,6 +34,7 @@ lib/cairo
 lib/wayland
 lib/openexr
 lib/xkb/common
+lib/lua/openresty
 {% endblock %}
 
 {% block bld_tool %}

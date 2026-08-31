@@ -5,12 +5,12 @@ zathura-djvu
 {% endblock %}
 
 {% block version %}
-0.2.10
+2026.07.18
 {% endblock %}
 
 {% block fetch %}
-https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-{{self.version().strip()}}.tar.xz
-32e9d89929a76cd7d3fcbaf79f441868bdabedf17317d1d1843faa1f19338d95
+https://github.com/pwmt/zathura-djvu/archive/refs/tags/{{self.version().strip()}}.tar.gz
+f28d5cdeba17f84c6b60d37a642fff1889033207c5757d79ef7e00d519122329
 {% endblock %}
 
 {% block lib_deps %}

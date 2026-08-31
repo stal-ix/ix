@@ -18,8 +18,12 @@ cat << EOF > ${out}/include/sys/cdefs.h
 #define PTHREAD_ADAPTIVE_MUTEX_INITIALIZER_NP PTHREAD_MUTEX_INITIALIZER
 
 #define bool char
+#define __off_t off_t
 
 #define rresvport_af(a, b) -1
+#define mtrace()
+#define muntrace()
+#define malloc_info(...) 0
 #define malloc_trim(x)
 #define innetgr(...) 1
 
@@ -39,5 +43,5 @@ EOF
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-include sys/cdefs.h \${CPPFLAGS}"
+export CPPFLAGS="-D_GNU_SOURCE -include sys/cdefs.h \${CPPFLAGS}"
 {% endblock %}

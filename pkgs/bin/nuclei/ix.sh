@@ -5,7 +5,7 @@ nuclei
 {% endblock %}
 
 {% block version %}
-3.7.1
+3.11.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/projectdiscovery/nuclei/archive/refs/tags/v{{self.version().s
 {% endblock %}
 
 {% block go_sha %}
-42f57a813533b4ed1f6337a4129d39a8297d448ba5a592c400fc4e52e8f0bbfd
+e4285ba07e168a2b2ec5f427b7199cd403adbeca692fbe51565e450b2a66743a
 {% endblock %}
 
 {% block unpack %}

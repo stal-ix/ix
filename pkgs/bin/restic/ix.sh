@@ -5,7 +5,7 @@ restic
 {% endblock %}
 
 {% block version %}
-0.18.1
+0.19.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/restic/restic/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-5fd3bb3e73de474c85e518eeec1915f6f4fd48fa4252b474d2c06a3ab08cf507
+2387d204262a61cf54f577b231ff6af00fcb2f53a06c439182336bf65a94e3f6
 {% endblock %}
 
 {% block unpack %}
@@ -26,5 +26,5 @@ restic
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/25
+bin/go/lang/26
 {% endblock %}

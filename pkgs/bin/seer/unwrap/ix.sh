@@ -5,12 +5,19 @@ seer
 {% endblock %}
 
 {% block version %}
-2.6
+2.7
 {% endblock %}
 
-{% block fetch %}
-https://github.com/epasveer/seer/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-79ab978ae456083d346e5604fdb503895f788577c72513598e4f1df4e98ba564
+{% block git_repo %}
+https://github.com/epasveer/seer
+{% endblock %}
+
+{% block git_branch %}
+v{{self.version().strip()}}
+{% endblock %}
+
+{% block git_sha %}
+d1d39d30fa8ac29f27c08533bab06be89f1f5ffcfc351edae3a2daf6fbdc98bd
 {% endblock %}
 
 {% block bld_libs %}
@@ -27,7 +34,7 @@ bld/qt/6
 bld/qt/6/tools
 {% endblock %}
 
-{% block unpack %}
+{% block step_unpack %}
 {{super()}}
 cd src
 {% endblock %}

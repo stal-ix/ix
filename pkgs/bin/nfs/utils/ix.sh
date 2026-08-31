@@ -5,12 +5,12 @@ nfs-utils
 {% endblock %}
 
 {% block version %}
-2.8.4
+2.9.2
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/nfs/nfs-utils/{{self.version().strip()}}/nfs-utils-{{self.version().strip()}}.tar.xz
-9170efa89fef71af5b5f49fce47ee2891ff63ee0fd52f9935863de7fc71df35b
+a249707613a45f0f74dfaaa5b5f58600bfd4b191ab171afb93cb1601bcc484b9
 {% endblock %}
 
 {% block bld_libs %}
@@ -52,6 +52,10 @@ udev_rulesdir=${out}/share/udev
 
 {% block patch %}
 echo 'int main() {}' > utils/nfsidmap/nfsidmap.c
+cat - support/nfs/getport.c << EOF > _
+#include <stddef.h>
+EOF
+mv _ support/nfs/getport.c
 for l in support/reexport/*.c; do
     cat - ${l} << EOF > _
 #include <unistd.h>

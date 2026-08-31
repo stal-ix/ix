@@ -1,18 +1,21 @@
 {% extends '//die/c/meson.sh' %}
 
-{# data/meson.build:40:4: ERROR: Program 'blueprint-compiler' not found or not executable #}
-
 {% block pkg_name %}
 SwayNotificationCenter
 {% endblock %}
 
 {% block version %}
-0.11.0
+0.12.6
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ErikReider/SwayNotificationCenter/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-7f69fe248994404af4115d335929b3bd2faf8c6321374b5b3e3fa2c97d169c90
+0c844eb5c9524f924495bd4145e5db575096de36f3ec87fb37e4c1ed6eacb897
+{% endblock %}
+
+{% block patch %}
+# Vala does not infer the Blueprint custom target's output directory.
+sed -i "/'--target-glib=2.82',/a\\  '--gresourcesdir=' + join_paths(meson.project_build_root(), 'data')," src/meson.build
 {% endblock %}
 
 {% block lib_deps %}
@@ -21,7 +24,7 @@ lib/gtk
 lib/gee
 lib/dbus
 lib/glib
-lib/handy
+lib/adwaita
 lib/notify
 lib/granite
 lib/json/glib
@@ -31,8 +34,9 @@ lib/gtk/layer/shell
 {% block bld_data %}
 lib/gee/gir
 lib/glib/gir
-lib/handy/gir
+lib/adwaita/vapi
 lib/pango/gir
+lib/graphene/gir
 lib/harfbuzz/gir
 lib/gdk/pixbuf/gir
 lib/gi/repository/gir
@@ -45,6 +49,7 @@ lib/gtk/layer/shell/{{gtk_ver}}/gir
 bin/vala
 bin/sassc
 bld/gnome
+bld/blueprint/compiler
 bin/scdoc
 bld/wayland
 {% endblock %}

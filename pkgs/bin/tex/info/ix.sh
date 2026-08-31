@@ -5,12 +5,12 @@ texinfo
 {% endblock %}
 
 {% block version %}
-7.2
+7.3
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/texinfo/texinfo-{{self.version().strip()}}.tar.xz
-0329d7788fbef113fa82cb80889ca197a344ce0df7646fe000974c5d714363a6
+51f74eb0f51cfa9873b85264dfdd5d46e8957ec95b88f0fb762f63d9e164c72e
 {% endblock %}
 
 {% block bld_libs %}

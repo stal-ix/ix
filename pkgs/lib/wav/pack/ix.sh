@@ -5,12 +5,12 @@ WavPack
 {% endblock %}
 
 {% block version %}
-5.8.1
+5.9.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/dbry/WavPack/releases/download/{{self.version().strip()}}/wavpack-{{self.version().strip()}}.tar.xz
-7322775498602c8850afcfc1ae38f99df4cbcd51386e873d6b0f8047e55c0c26
+b5291bc4e6d69ebbd3da3800c5bf4a70f19bb92679b23e09b3b612c1e648d1ff
 {% endblock %}
 
 {% block lib_deps %}

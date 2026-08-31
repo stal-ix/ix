@@ -235,4 +235,12 @@ extract_tables_csv_format
 extract_write
 extract_write_content
 extract_write_template
+cmsGetTagOffsetAndSize
+cmsGetHeaderCMM
+_cmsSetHeaderCMM
+cmsGetTransformPipeline
+cmsGetTransformGamutCheckPipeline
+cmsGetTransformInputColorants
+cmsGetTransformOutputColorants
+_cmsAvoidTypeCheckOnTags
 {% endblock %}

@@ -5,12 +5,12 @@ linux-pam
 {% endblock %}
 
 {% block version %}
-1.7.1
+1.7.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/linux-pam/linux-pam/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-82aadd97eb697965b577069c12046a4dd1be68361a9978c708698d2a1ee9b6d1
+d7ce5cb6e07ee8603d8af41a672bcb515b9d27079ee309fb3f729a8020166694
 {% endblock %}
 
 {% block bld_tool %}
@@ -26,6 +26,10 @@ lib/c
 {% block bld_libs %}
 lib/kernel
 lib/build/muldefs
+{% endblock %}
+
+{% block meson_flags %}
+vendordir=
 {% endblock %}
 
 {% block install %}

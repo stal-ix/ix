@@ -5,12 +5,12 @@ zutils
 {% endblock %}
 
 {% block version %}
-1.15
+1.16
 {% endblock %}
 
 {% block fetch %}
 https://download.savannah.gnu.org/releases/zutils/zutils-{{self.version().strip()}}.tar.lz
-05e6b03f333eabd78a1055139557e8ada6b634f1a58e8501f3b8f111a705cb87
+5bb953700e72e7088e2fce13c6224b8ee478bd6ac90197183f85f544189eb37d
 {% endblock %}
 
 {% block bld_libs %}

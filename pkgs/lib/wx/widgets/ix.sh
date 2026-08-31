@@ -9,12 +9,12 @@ wxWidgets
 {% endblock %}
 
 {% block version %}
-3.2.8.1
+3.2.11
 {% endblock %}
 
 {% block fetch %}
 https://github.com/wxWidgets/wxWidgets/releases/download/v{{self.version().strip()}}/wxWidgets-{{self.version().strip()}}.tar.bz2
-ad0cf6c18815dcf1a6a89ad3c3d21a306cd7b5d99a602f77372ef1d92cb7d756
+6a129015bce2e914e4bf61ec4411854ad962801d47e92f2eb8340adb6a90af08
 {% endblock %}
 
 {% block lib_deps %}
@@ -28,6 +28,7 @@ lib/notify
 
 {% block cmake_flags %}
 wxUSE_XLOCALE=OFF
+wxBUILD_INSTALL_USE_SYMLINK=OFF
 {% endblock %}
 
 {% block cpp_defines %}

@@ -10,5 +10,6 @@ tiff-tools=OFF
 
 {% block install %}
 {{super()}}
-sed -e 's|.*INTERFACE_LINK_LIBRARIES.*||' -i ${out}/lib/cmake/tiff/TiffTargets.cmake
+sed -e 's|INTERFACE_LINK_LIBRARIES .*|INTERFACE_LINK_LIBRARIES ""|' \
+    -i ${out}/lib/cmake/tiff/tiff-targets.cmake
 {% endblock %}

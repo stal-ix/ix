@@ -44,4 +44,8 @@ class Ops:
         return os.environ['PATH']
 
     def flags(self):
-        return co.flags_from_env()
+        result = co.flags_from_env()
+        # local builds default to system tools, IX_FLAGS=all_system= opts out
+        result.setdefault('all_system', '1')
+
+        return result

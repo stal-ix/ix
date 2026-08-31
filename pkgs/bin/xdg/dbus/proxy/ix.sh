@@ -5,12 +5,12 @@ xdg-dbus-proxy
 {% endblock %}
 
 {% block version %}
-0.1.6
+0.1.8
 {% endblock %}
 
 {% block fetch %}
 https://github.com/flatpak/xdg-dbus-proxy/archive/refs/tags/{{self.version().strip()}}.tar.gz
-ee9c1d665f4e3b025a83d522d478ff7930070f2817fc2cb446db0dca93c990b1
+722e2a327acd2cd053b864e65f2f507ba02f966d3622a50040f4e3486f50c9c4
 {% endblock %}
 
 {% block bld_libs %}

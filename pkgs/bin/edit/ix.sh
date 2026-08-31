@@ -5,7 +5,7 @@ microsoft-edit
 {% endblock %}
 
 {% block version %}
-1.2.1
+2.0.0
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/microsoft/edit/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block cargo_sha %}
-5fe665348c73eb7f840b707fb4589d70c5e7e6fac242edfc9e7aa1ce3365b79d
+0052cfb2fd5aef7e94a9b166d855c7483b57daf7ede3ad60798c0c620fffcce7
 {% endblock %}
 
 {% block cargo_bins %}
@@ -21,7 +21,7 @@ edit
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/87
+bld/cargo/96
 {% endblock %}
 
 {% block bld_libs %}

@@ -5,7 +5,7 @@ https://git.netfilter.org/nftables
 {% endblock %}
 
 {% block version %}
-1.1.5
+1.1.6
 {% endblock %}
 
 {% block pkg_name %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-e682b1ac9a19aa9fef6b37e7518b168a352517c62c425d59961d1c88c749a784
+d2a13eb222c49561f58c093ccb297c5150e92b11b58b86f97389b0bc28029655
 {% endblock %}
 
 {% block bld_libs %}
@@ -34,6 +34,10 @@ lib/jansson
 bld/flex
 bld/bison
 bld/fake(tool_name=a2x)
+{% endblock %}
+
+{% block patch %}
+sed -i 's/for ((i = 56; i >= 0; i-= 8)); do/for i in 56 48 40 32 24 16 8 0; do/' configure.ac
 {% endblock %}
 
 {% block configure_flags %}

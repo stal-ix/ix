@@ -5,12 +5,12 @@ swayfx
 {% endblock %}
 
 {% block version %}
-0.4
+0.6
 {% endblock %}
 
 {% block fetch %}
 https://github.com/WillPower3309/swayfx/archive/refs/tags/{{self.version().strip()}}.tar.gz
-fa164734a7b32fd82f31e54c407b147e92247ef275de9df4a87b6198a36f20e2
+854f9d1468b8706718210e026d0bb0ddbc8370f750345fbbdd163f130c1b922d
 {% endblock %}
 
 {% block bld_libs %}

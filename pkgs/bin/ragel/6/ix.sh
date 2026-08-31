@@ -5,12 +5,12 @@ ragel
 {% endblock %}
 
 {% block version %}
-6.10
+6.11
 {% endblock %}
 
 {% block fetch %}
 http://www.colm.net/files/ragel/ragel-{{self.version().strip()}}.tar.gz
-5f156edb65d20b856d638dd9ee2dfb43285914d9aa2b6ec779dac0270cd56c3f
+47653e376554adbb617d2f1da15394b6a163264e2410c2bff3581347a14890e3
 {% endblock %}
 
 {% block bld_libs %}

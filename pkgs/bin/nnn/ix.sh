@@ -5,12 +5,12 @@ nnn
 {% endblock %}
 
 {% block version %}
-5.1
+5.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/jarun/nnn/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-9faaff1e3f5a2fd3ed570a83f6fb3baf0bfc6ebd6a9abac16203d057ac3fffe3
+79ee69f3ced7c0778d207df76b4d4d680636975ccda002eeb19d0917fcba3d36
 {% endblock %}
 
 {% block bld_libs %}

@@ -5,12 +5,12 @@ pcmanfm
 {% endblock %}
 
 {% block version %}
-1.3.2
+1.4.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/lxde/pcmanfm/archive/refs/tags/{{self.version().strip()}}.tar.gz
-66ee6b1a5907bb519d5b175e379f975acfcdaa68b6cbbc72d168b3ff935e6fea
+cda4f5ad7e049dcdf3b051b9de4c779adcd55bd720e9c96c45275389aa84264e
 {% endblock %}
 
 {% block bld_libs %}

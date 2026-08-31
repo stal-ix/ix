@@ -5,12 +5,12 @@ vala
 {% endblock %}
 
 {% block version %}
-0.56.18
+0.56.19
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/vala/-/archive/{{self.version().strip()}}/vala-{{self.version().strip()}}.tar.bz2
-702e82db5cd462870a5d30ac3da415dd7156b084920b2e41e7ec61d36e2b5b98
+69240bbf64c38f366cc31d40f038e694f9254c60ed32b8aed086e8686ba78016
 {% endblock %}
 
 {% block bld_libs %}

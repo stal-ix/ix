@@ -5,12 +5,12 @@ which
 {% endblock %}
 
 {% block version %}
-2.23
+2.25
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/which/which-{{self.version().strip()}}.tar.gz
-a2c558226fc4d9e4ce331bd2fd3c3f17f955115d2c00e447618a4ef9978a2a73
+1cb83e4f702e60b8211ab5ec4c2afbab1b1dec80209456a7d2faf7584ed225ea
 {% endblock %}
 
 {% block bld_libs %}

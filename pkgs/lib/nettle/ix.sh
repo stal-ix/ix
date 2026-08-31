@@ -5,12 +5,12 @@ nettle
 {% endblock %}
 
 {% block version %}
-3.10.2
+4.0
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/nettle/nettle-{{self.version().strip()}}.tar.gz
-fe9ff51cb1f2abb5e65a6b8c10a92da0ab5ab6eaf26e7fc2b675c45f1fb519b5
+3addbc00da01846b232fb3bc453538ea5468da43033f21bb345cb1e9073f5094
 {% endblock %}
 
 {% block lib_deps %}

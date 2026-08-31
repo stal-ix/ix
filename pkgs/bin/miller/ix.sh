@@ -5,7 +5,7 @@ miller
 {% endblock %}
 
 {% block version %}
-6.15.0
+6.21.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/johnkerl/miller/archive/refs/tags/v{{self.version().strip()}}
 {% endblock %}
 
 {% block go_sha %}
-02c7004abbb2a9f780bbc17233a0b3d020f7cde5e489248a04020338e3bab427
+5ce296149499a533c01bdfff7f75f920cf6500161f92070350a2542c42bc5fa6
 {% endblock %}
 
 {% block unpack %}
@@ -26,5 +26,5 @@ mlr
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/26
 {% endblock %}

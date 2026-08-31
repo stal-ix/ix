@@ -5,12 +5,12 @@ screen
 {% endblock %}
 
 {% block version %}
-5.0.1
+5.0.2
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/screen/screen-{{self.version().strip()}}.tar.gz
-2dae36f4db379ffcd14b691596ba6ec18ac3a9e22bc47ac239789ab58409869d
+ca9a2c7e240919bc7ac12124593ae4529bb4eb5f7349d8857829b7e3f0b3b332
 {% endblock %}
 
 {% block bld_libs %}

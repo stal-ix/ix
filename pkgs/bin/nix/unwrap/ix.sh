@@ -5,12 +5,12 @@ nix
 {% endblock %}
 
 {% block version %}
-2.32.4
+2.35.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/NixOS/nix/archive/refs/tags/{{self.version().strip()}}.tar.gz
-b3a63dab4fc3c89a1a746c6debdef1675ed27530969459e5beb8ce6b3c0d9099
+f71711db9831d1e58d0fccf01cf2db83315b58da00300334d214e4de90b1759e
 {% endblock %}
 
 {% block bld_libs %}
@@ -36,7 +36,7 @@ lib/rapidcheck
 lib/google/test
 lib/boehmgc/c++
 lib/bsd/overlay
-lib/json/nlohmann
+lib/json/nlohmann(libnlohmann_json_ver=12)
 {% endblock %}
 
 {% block bld_tool %}
@@ -57,7 +57,7 @@ wrap_cc
 {% endblock %}
 
 {% block meson_tool %}
-bld/meson/6
+bld/meson/9
 {% endblock %}
 
 {% block meson_strip_dirs %}
@@ -68,16 +68,13 @@ find . -type f | while read l; do
     sed -e 's|-Werror=suggest-override||g' \
         -e 's|-Werror=switch-enum||g' \
         -e 's|-Werror=undef||g' \
+        -e 's|-Werror=weak-vtables||g' \
+        -e 's|-Werror=sign-compare||g' \
+        -e 's|-Werror=non-virtual-dtor||g' \
         -e 's|.*prelink.*true.*||' \
         -i ${l}
 done
 
-sed -i \
-    -e "/^readline_flavor =/i\\configdata.set(" \
-    -e "/^readline_flavor =/i\\  'HAVE_LOWDOWN_3'," \
-    -e "/^readline_flavor =/i\\  lowdown.version().version_compare('>= 3.0.0').to_int()," \
-    -e "/^readline_flavor =/i\\)" \
-    src/libcmd/meson.build
 sed -i \
     -e 's|return std::string(s.begin(), i);|return std::string(s.substr(0, i));|' \
     src/libutil/args.cc
@@ -98,26 +95,12 @@ sed -i \
     -e 's|const std::csub_match & match)|const std::sub_match<Iterator> \& match)|' \
     src/libexpr/primops.cc
 
-patch -p1 <<'EOF'
---- a/src/libcmd/markdown.cc
-+++ b/src/libcmd/markdown.cc
-@@ -38,7 +38,9 @@ static std::string doRenderMarkdownToTerminal(std::string_view markdown)
- #  endif
-         .feat = LOWDOWN_COMMONMARK | LOWDOWN_FENCED | LOWDOWN_DEFLIST | LOWDOWN_TABLES,
-         .oflags =
--#  if HAVE_LOWDOWN_1_4
-+#  if HAVE_LOWDOWN_3
-+            LOWDOWN_NORELLINK
-+#  elif HAVE_LOWDOWN_1_4
-             LOWDOWN_TERM_NORELLINK // To render full links while skipping relative ones
- #  else
-             LOWDOWN_TERM_NOLINK
-EOF
 {% endblock %}
 
 {% block meson_flags %}
 unit-tests=false
-bindings=false
+functional-tests=false
+json-schema-checks=false
 {% endblock %}
 
 {% block cpp_defines %}

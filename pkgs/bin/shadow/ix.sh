@@ -5,12 +5,12 @@ shadow
 {% endblock %}
 
 {% block version %}
-4.18.0
+4.20.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/shadow-maint/shadow/archive/refs/tags/{{self.version().strip()}}.tar.gz
-3f431df0caa13cd351edfa851d127afa4146f6a31129915ef9b79d40eccd4aea
+61a7c9052a3b0ddc3d449e4e833c9ef90069ee944adab223080443adc1a91637
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,6 +24,10 @@ lib/bsd/overlay
 {% block bld_tool %}
 bld/bison
 bld/gettext
+{% endblock %}
+
+{% block configure_flags %}
+--disable-logind
 {% endblock %}
 
 {% block patch %}

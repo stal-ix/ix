@@ -1,7 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block version %}
-10.2p1
+10.5p1
 {% endblock %}
 
 {% block xver %}
@@ -14,7 +14,7 @@ openssh
 
 {% block fetch %}
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_{{self.xver().strip()}}.tar.gz
-8d3083bca4864cbc760bfcc3e67d86d401e27faa5eaafa1482c2316f5d5186b3
+494c0624ed743a4eecc1bdd83d2aab9456bdb4cabc511e00599e71493537e258
 {% endblock %}
 
 {% block bld_libs %}

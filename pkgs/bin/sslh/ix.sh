@@ -5,12 +5,12 @@ sslh
 {% endblock %}
 
 {% block version %}
-2.3.0
+2.3.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/yrutschle/sslh/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-d9e1ca6a392ace2aad9e9b9df8a6391c9332c95df81790df944488b7011a37a0
+416b401cf8f0a43b575f7a1571bafd5375401d741833b27918aaecb200445f92
 {% endblock %}
 
 {% block bld_libs %}

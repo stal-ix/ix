@@ -11,15 +11,16 @@ def flags_from_env():
 
     result = dict(items())
 
-    if result.get('all_system'):
-        result.setdefault('system_path', os.environ['PATH'])
+    # harmless when all_system is off, templates only read these under it,
+    # and this way a backend may enable all_system after the fact
+    result.setdefault('system_path', os.environ['PATH'])
 
-        for name in ('CPPFLAGS', 'CFLAGS', 'CXXFLAGS', 'LDFLAGS'):
-            if value := os.environ.get(name):
-                result.setdefault(f'system_{name.lower()}', value)
+    for name in ('CPPFLAGS', 'CFLAGS', 'CXXFLAGS', 'LDFLAGS'):
+        if value := os.environ.get(name):
+            result.setdefault(f'system_{name.lower()}', value)
 
-        if value := os.environ.get('ACLOCAL_PATH'):
-            result.setdefault('system_aclocal_path', value)
+    if value := os.environ.get('ACLOCAL_PATH'):
+        result.setdefault('system_aclocal_path', value)
 
     return result
 

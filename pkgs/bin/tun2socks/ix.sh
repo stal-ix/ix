@@ -5,7 +5,7 @@ tun2socks
 {% endblock %}
 
 {% block version %}
-2.6.0
+2.7.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,11 +13,11 @@ https://github.com/xjasonlyu/tun2socks/archive/refs/tags/v{{self.version().strip
 {% endblock %}
 
 {% block go_sha %}
-52b257ee7a7912b5c4daa996cc4f4eb7cfc825ca319abbecc0eae4cfa33d8caf
+caac72060e7e569d17a1ed1d9035f448bf26c6e660c2d26a3e159e8b33967345
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/26
 {% endblock %}
 
 {% block build %}

@@ -5,12 +5,12 @@ squashfuse
 {% endblock %}
 
 {% block version %}
-0.6.1
+0.6.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/vasi/squashfuse/archive/refs/tags/{{self.version().strip()}}.tar.gz
-7730066d1e9baf0084c71674d168331296921e0d7ae0f34de7307744be4ed568
+4fda456c0f28f64db7e97f259069e747ffe29dcd13d4e2327350997b32eac914
 {% endblock %}
 
 {% block lib_deps %}

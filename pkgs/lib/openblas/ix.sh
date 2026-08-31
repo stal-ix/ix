@@ -5,12 +5,12 @@ OpenBLAS
 {% endblock %}
 
 {% block version %}
-0.3.30
+0.3.34
 {% endblock %}
 
 {% block fetch %}
 https://github.com/OpenMathLib/OpenBLAS/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-27342cff518646afb4c2b976d809102e368957974c250a25ccc965e53063c95d
+cd7e129868320cc2d033afa920e31202dfe0b8066a5b66661900ccc0f197dfed
 {% endblock %}
 
 {% block lib_deps %}

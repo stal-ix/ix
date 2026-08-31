@@ -5,7 +5,7 @@ age
 {% endblock %}
 
 {% block version %}
-1.3.1
+1.3.2
 {% endblock %}
 
 {% block go_url %}
@@ -13,9 +13,9 @@ https://github.com/FiloSottile/age/archive/refs/tags/v{{self.version().strip()}}
 {% endblock %}
 
 {% block go_sha %}
-9988e89af327031431f8438d497231e0df9b90613d00f00a8a9f39b992e266cc
+9eb2714b4c7ac59539a5ef0d62e9cf48a8a3d05b5cd3cd68a304ff216b397f51
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/25
+bin/go/lang/26
 {% endblock %}
