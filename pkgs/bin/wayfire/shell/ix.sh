@@ -23,14 +23,30 @@ v{{self.version().strip()}}
 {% block bld_libs %}
 lib/c
 lib/gtk/deps
-lib/gtk/3/mm
+lib/pam
+lib/epoxy
+lib/gbm
+lib/openssl
+lib/xkb/common
+lib/json/yy
+lib/gtk/4/mm
 lib/wf/config
 lib/dbus/menu
-lib/gtk/layer/shell/3
+lib/gtk/layer/shell/4
 {% endblock %}
 
 {% block patch %}
-sed -e 's|.*dep.*wayfire.*||' -i meson.build
+sed -e "/^wayfire = dependency('wayfire')$/d" -i meson.build
+sed -e "s|wayfire.get_pkgconfig_variable.*|'wayfire-shell-unstable-v2.xml',|" -i proto/meson.build
+sed -e '/#include <pulse\/proplist.h>/d' -i src/panel/widgets/brightness/brightness.cpp
+sed -e 's|switch (hide_animation)|switch (hide_animation.value())|' -i src/locker/timedrevealer.cpp
+sed \
+    -e "s|install_dir:'/etc/pam.d/'|install_dir: join_paths(get_option('prefix'), 'etc', 'pam.d')|" \
+    -e "s|install_dir: '/etc/xdg/xdg-desktop-portal-wlr/'|install_dir: join_paths(get_option('prefix'), 'etc', 'xdg', 'xdg-desktop-portal-wlr')|" \
+    -i data/meson.build
+base64 -d << EOF > proto/wayfire-shell-unstable-v2.xml
+{% include 'wayfire-shell-unstable-v2.xml/base64' %}
+EOF
 {% endblock %}
 
 {% block bld_tool %}
@@ -38,6 +54,6 @@ bld/wayland
 {% endblock %}
 
 {% block meson_flags %}
-pulse=disabled
+volume-widget=disabled
 wayland-logout=false
 {% endblock %}
