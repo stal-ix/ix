@@ -5,12 +5,12 @@ wvkbd
 {% endblock %}
 
 {% block version %}
-0.18
+0.20
 {% endblock %}
 
 {% block fetch %}
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-4cd4e32490fba7913a9053645ce2a8d453c596bb3dd780631b8656d746327de6
+b5fee580f826190fda94c06267e52e7c09f0fbbec2b02e5d140fe62a10a6c3b0
 {% endblock %}
 
 {% block bld_libs %}
