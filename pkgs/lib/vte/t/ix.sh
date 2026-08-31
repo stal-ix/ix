@@ -5,12 +5,12 @@ vte
 {% endblock %}
 
 {% block version %}
-0.84.0
+0.84.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/vte/archive/refs/tags/{{self.version().strip()}}.tar.gz
-a7f3a0ea17554ca643729c3502d3bfc76b20b53c97e81ddf6e099b16486df7e2
+9f73468982a339cd1eb942beb7d348a5564c9ed48473ad1690c791f8474916ec
 {% endblock %}
 
 {% block lib_deps %}
