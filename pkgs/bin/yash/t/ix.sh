@@ -5,12 +5,12 @@ yash
 {% endblock %}
 
 {% block version %}
-2.60
+2.61
 {% endblock %}
 
 {% block fetch %}
 https://github.com/magicant/yash/releases/download/{{self.version().strip()}}/yash-{{self.version().strip()}}.tar.xz
-cc152f65221916c508e3ec013edda40028d1f77a9ca3dcf2489ee825fd746f75
+a214966f4ff8b293aa5521a4d3ef6e87d707579eee616aa2f8218edaa920d447
 {% endblock %}
 
 {% block c_rename_symbol %}
