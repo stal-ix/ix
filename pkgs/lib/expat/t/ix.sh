@@ -5,12 +5,12 @@ libexpat
 {% endblock %}
 
 {% block version %}
-2.8.3
+2.8.4
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libexpat/libexpat/archive/refs/tags/R_{{self.version().strip().replace('.', '_')}}.tar.gz
-533659a16e0184035a99fd8e783f1ad61a887a7bf8586a8681740b9d7ed42389
+a8a9c5cbba9110000b13cc9943f50fcd7e552a5cbad49cb191142c500a0a11b7
 {% endblock %}
 
 {% block lib_deps %}
