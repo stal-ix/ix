@@ -9,7 +9,7 @@ https://github.com/pg83/assemble/archive/refs/tags/3.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-20a74e5e31550377e4e5f782b72a61511c0b5e87ee84336506d89bc69a8fd6a1
+1f19984d4a774ee364144b48e82a7cddf362085be0c6773621c0c904dc02e90a
 {% endblock %}
 
 {% block go_bins %}

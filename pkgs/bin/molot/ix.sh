@@ -9,7 +9,7 @@ https://github.com/pg83/molot/archive/refs/tags/29.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-f1a91a190a24cd0f934355e12daa5bd158b6d060fe69c3b5c5c3d646a2c08842
+a970ccbd8ddc8abccf2239c743915ce3941f3f964a2857d6ed4ac217a31d465f
 {% endblock %}
 
 {% block go_bins %}
