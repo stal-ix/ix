@@ -7,6 +7,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDGZ3aEKhxpG9JHG3uso/gUuUKe9NzHOXKAenZIDiDq
 {% block run_deps %}
 etc/tmpfs
 set/stalix
+set/pg/system/env
 set/pg/vpn
 bin/thingd
 set/pg/secrets
