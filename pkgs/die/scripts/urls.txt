@@ -6768,6 +6768,7 @@ https://libisl.sourceforge.io/isl-0.28.tar.xz
 https://libmpeg2.sourceforge.io/files/libmpeg2-0.5.1.tar.gz
 https://libnice.freedesktop.org/releases/libnice-0.1.22.tar.gz
 https://libnice.freedesktop.org/releases/libnice-0.1.23.tar.gz
+https://libnice.freedesktop.org/releases/libnice-0.1.24.tar.gz
 https://libopenraw.freedesktop.org/download/exempi-2.6.5.tar.xz
 https://libopenraw.freedesktop.org/download/libopenraw-0.3.5.tar.bz2
 https://libspectre.freedesktop.org/releases/libspectre-0.2.12.tar.gz

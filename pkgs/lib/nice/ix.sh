@@ -5,12 +5,12 @@ libnice
 {% endblock %}
 
 {% block version %}
-0.1.23
+0.1.24
 {% endblock %}
 
 {% block fetch %}
 https://libnice.freedesktop.org/releases/libnice-{{self.version().strip()}}.tar.gz
-618fc4e8de393b719b1641c1d8eec01826d4d39d15ade92679d221c7f5e4e70d
+cfb5e8e778534f2f5b3c6f4958a1eb057c6b95c537c0f100817a537cf5d64fcc
 {% endblock %}
 
 {% block lib_deps %}
