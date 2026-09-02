@@ -6748,6 +6748,7 @@ https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v3.1/libcerf-v3.1.tar.bz2
 https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v3.2/libcerf-v3.2.tar.bz2
 https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v3.3/libcerf-v3.3.tar.bz2
 https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v3.4/libcerf-v3.4.tar.bz2
+https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v3.5/libcerf-v3.5.tar.bz2
 https://launchpad.net/icontool/trunk/0.1/+download/icontool-0.1.0.tar.gz
 https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
 https://launchpad.net/libappindicator/12.10/12.10.0/+download/libappindicator-12.10.0.tar.gz
