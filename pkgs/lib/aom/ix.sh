@@ -1,6 +1,7 @@
 {% extends 't/ix.sh' %}
 
 {% block cmake_flags %}
+ENABLE_APPS=OFF
 ENABLE_TOOLS=OFF
 ENABLE_EXAMPLES=OFF
 {{super()}}

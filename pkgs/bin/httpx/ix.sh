@@ -5,7 +5,7 @@ httpx
 {% endblock %}
 
 {% block version %}
-1.10.0
+1.11.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/projectdiscovery/httpx/archive/refs/tags/v{{self.version().st
 {% endblock %}
 
 {% block go_sha %}
-22083680f68bb0a0afe3f0fb41d037034471ee85ee8fd5b4d53b0eb2cf196d1a
+6b70459303ab14142eb587a3ccd36dcf4126b33c05afe0a9433dd1f90d6f442b
 {% endblock %}
 
 {% block unpack %}

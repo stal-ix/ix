@@ -5,12 +5,12 @@ dos2unix
 {% endblock %}
 
 {% block version %}
-7.5.6
+7.5.7
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/dos2unix/dos2unix-{{self.version().strip()}}.tar.gz
-63650acbd0c7fa8623429bcbf93a888e3351a1cad0f556cf41876f5673dd7d0b
+669ee27120ae71589f638fe3a167d6ea54f8633f5ab1b282551bd7a7c9510dfa
 {% endblock %}
 
 {% block bld_libs %}

@@ -5,12 +5,12 @@ libbluray
 {% endblock %}
 
 {% block version %}
-1.5.0
+1.5.1
 {% endblock %}
 
 {% block fetch %}
 https://code.videolan.org/videolan/libbluray/-/archive/{{self.version().strip()}}/libbluray-{{self.version().strip()}}.tar.bz2
-0a70f8c63aa1c64c0d3fc743d0a0e7071ac6c68f69b49e596505a3f64c71cf0a
+0f415b559d7f074ba78db259f61c3c61458057263a0181aaafdee1856b0fb17f
 {% endblock %}
 
 {% block lib_deps %}

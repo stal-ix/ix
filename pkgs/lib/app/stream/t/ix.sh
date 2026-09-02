@@ -5,12 +5,12 @@ appstream
 {% endblock %}
 
 {% block version %}
-1.1.6
+1.2.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ximion/appstream/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-f9b79193d2620474bb48d0cd32abd76e002939fce3daa991a1b60642eecbb67f
+02f723cb1afa372d434896e138503163a44ad49e4a813d0d30713fc38ccb8d0c
 {% endblock %}
 
 {% block lib_deps %}
@@ -27,7 +27,6 @@ lib/stemmer
 {% block meson_flags %}
 systemd=false
 gir=false
-svg-support=false
 apidocs=false
 install-docs=false
 display-detection=none

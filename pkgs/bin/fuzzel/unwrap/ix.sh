@@ -5,12 +5,12 @@ fuzzel
 {% endblock %}
 
 {% block version %}
-1.14.1
+1.15.0
 {% endblock %}
 
 {% block fetch %}
 https://codeberg.org/dnkl/fuzzel/archive/{{self.version().strip()}}.tar.gz
-4b8a914d7a065e34da7db4cc6ae4f02c773445e41b724b28b8b7385636b449ee
+95b6c022fc1f1c7ab586d47c1594417cc311bf41ea8f5f8b5641478da7b5cf3b
 {% endblock %}
 
 {% block bld_libs %}

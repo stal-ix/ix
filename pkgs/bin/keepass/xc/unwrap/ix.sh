@@ -13,7 +13,7 @@ keepassxc
 {% block fetch %}
 https://github.com/keepassxreboot/keepassxc/releases/download/{{self.version().strip()}}/keepassxc-{{self.version().strip()}}-src.tar.xz
 a58074509fa8e90f152c6247f73e75e126303081f55eedb4ea0cbb6fa980d670
-https://raw.githubusercontent.com/orsonteodoro/oiledmachine-overlay/master/app-admin/keepassxc/files/keepassxc-2.7.6-qt6-support.patch
+https://raw.githubusercontent.com/orsonteodoro/oiledmachine-overlay/8b1ba379ee536397a77cf12156edce5b36bdeb56/app-admin/keepassxc/files/keepassxc-2.7.6-qt6-support.patch
 0814865e9273223a33c22548850c38fbe49a9fff561a7a032a5be0236e44f0af
 {% endblock %}
 

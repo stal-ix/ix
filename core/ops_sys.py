@@ -66,7 +66,12 @@ class Ops:
             self.loc = co.Ops(self.cfg)
 
     def execute_graph(self, graph):
-        run_cmd([self.assemble], input=json.dumps(graph))
+        cmd = [self.assemble]
+
+        if package_cache := os.environ.get('IX_PACKAGE_CACHE'):
+            cmd = ['/bin/env', f'IX_PACKAGE_CACHE={package_cache}', *cmd]
+
+        run_cmd(cmd, input=json.dumps(graph))
 
     def gc(self, kind):
         run_cmd(['/bin/env', 'IX_EXEC_KIND=local', sys.executable, self.cfg.binary, 'gc'] + kind, user='root')

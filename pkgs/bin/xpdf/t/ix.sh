@@ -9,7 +9,7 @@ xpdf
 {% endblock %}
 
 {% block fetch %}
-https://dl.xpdfreader.com/xpdf-{{self.version().strip()}}.tar.gz
+https://dl.xpdfreader.com/old/xpdf-{{self.version().strip()}}.tar.gz
 92707ed5acb6584fbd73f34091fda91365654ded1f31ba72f0970022cf2a5cea
 {% endblock %}
 

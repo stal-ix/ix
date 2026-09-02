@@ -9,8 +9,8 @@ papki
 {% endblock %}
 
 {% block fetch %}
-https://github.com/cppfw/papki/archive/refs/tags/{{self.version().strip()}}.tar.gz
-12604fede195d101b2ca1ed50c88c424b686b54bc92a0bbe7bd7c2993f4ce29c
+https://github.com/cppfw/papki/archive/97395b82577b9ceb458d95c5ea5687e572cb948b.tar.gz
+86d1ea779b9422b040e108a1530b81e2e4e9bbd64f04c202781346e063c4d1cd
 {% endblock %}
 
 {% block lib_deps %}

@@ -5,12 +5,12 @@ libcloudproviders
 {% endblock %}
 
 {% block version %}
-0.4.0
+0.4.1
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/World/libcloudproviders/-/archive/{{self.version().strip()}}/libcloudproviders-{{self.version().strip()}}.tar.bz2
-fb19d1874789c0ab527fad28bf68717ad6708ec4c3ad18696c316f1d168fb175
+ca597f88a59fa775a4ad5c64ef5be9b92de01a58608989cd38d48ce075bb2768
 {% endblock %}
 
 {% block lib_deps %}
