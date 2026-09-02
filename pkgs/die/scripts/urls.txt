@@ -1116,6 +1116,7 @@ https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.4.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.5.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.6.tar.gz
 https://ftp.icm.edu.pl/packages/ImageMagick/archive/releases/ImageMagick-7.1.2-15.tar.xz
+https://ftp.icm.edu.pl/packages/ImageMagick/archive/releases/ImageMagick-7.1.2-30.tar.xz
 https://ftp.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1.tar.gz
 https://ftp.isc.org/isc/dhcp/4.4.3-P1/dhcp-4.4.3-P1.tar.gz
 https://ftp.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
