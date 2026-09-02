@@ -6198,6 +6198,7 @@ https://gitlab.exherbo.org/sydbox/sydbox/-/archive/v3.39.0/sydbox-v3.39.0.tar.bz
 https://gitlab.exherbo.org/sydbox/sydbox/-/archive/v3.39.2/sydbox-v3.39.2.tar.bz2
 https://gitlab.exherbo.org/sydbox/sydbox/-/archive/v3.40.0/sydbox-v3.40.0.tar.bz2
 https://gitlab.exherbo.org/sydbox/sydbox/-/archive/v3.57.0/sydbox-v3.57.0.tar.bz2
+https://gitlab.exherbo.org/sydbox/sydbox/-/archive/v3.59.0/sydbox-v3.59.0.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.17.8/cairo-1.17.8.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.0/cairo-1.18.0.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.2/cairo-1.18.2.tar.bz2
