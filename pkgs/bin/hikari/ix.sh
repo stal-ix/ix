@@ -9,8 +9,8 @@ hikari
 {% endblock %}
 
 {% block fetch %}
-https://hikari.acmelabs.space/releases/hikari-{{self.version().strip()}}.tar.gz
-40736ff326e11a51128c1739051a692ad2c79173fc4b695c8be5ec7a614b4de2
+https://github.com/antaz/hikari/archive/refs/tags/{{self.version().strip()}}.tar.gz
+f9ca23c79944738894411de3f5c2afe5e81a48f3de8eb03ecd2bc85590ad99d0
 {% endblock %}
 
 {% block bld_libs %}

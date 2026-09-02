@@ -9,7 +9,7 @@ giflib
 {% endblock %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/giflib/giflib-{{self.version().strip()}}.tar.gz
+https://downloads.sourceforge.net/giflib/giflib-{{self.version().strip()}}.tar.gz
 be7ffbd057cadebe2aa144542fd90c6838c6a083b5e8a9048b8ee3b66b29d5fb
 {% endblock %}
 

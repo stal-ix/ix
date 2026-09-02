@@ -376,6 +376,7 @@ https://code.videolan.org/videolan/libplacebo/-/archive/v7.360.0/libplacebo-v7.3
 https://code.videolan.org/videolan/libplacebo/-/archive/v7.360.1/libplacebo-v7.360.1.tar.bz2
 https://code.videolan.org/videolan/libudfread/-/archive/1.2.0/libudfread-1.2.0.tar.bz2
 https://codeberg.org/adnano/wmenu/archive/0.2.0.tar.gz
+https://codeberg.org/dcantrell/bsdutils/archive/v13.2.tar.gz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.10.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.6.tar.gz
@@ -509,7 +510,10 @@ https://dist.torproject.org/tor-0.4.8.21.tar.gz
 https://dist.torproject.org/tor-0.4.9.11.tar.gz
 https://distfiles.gentoo.org/distfiles/79/libmetalink-0.1.3.tar.bz2
 https://distfiles.macports.org/bsdiff/bsdiff-4.3.tar.gz
+https://distfiles.macports.org/chmlib/chmlib-0.40.tar.bz2
+https://distfiles.macports.org/libmpeg2/libmpeg2-0.5.1.tar.gz
 https://dl.suckless.org/tools/9base-6.tar.gz
+https://dl.xpdfreader.com/old/xpdf-4.05.tar.gz
 https://dl.xpdfreader.com/xpdf-4.04.tar.gz
 https://dl.xpdfreader.com/xpdf-4.05.tar.gz
 https://dotat.at/prog/unifdef/unifdef-2.12.tar.xz
@@ -653,6 +657,7 @@ https://download.sourceforge.net/qjackctl/qjackctl-1.0.6.tar.gz
 https://download.tuxfamily.org/chrony/chrony-4.4.tar.gz
 https://download.tuxfamily.org/chrony/chrony-4.5.tar.gz
 https://download.videolan.org/pub/videolan/libbluray/1.3.4/libbluray-1.3.4.tar.bz2
+https://download.videolan.org/pub/videolan/x265/x265_4.1.tar.gz
 https://downloadmirror.intel.com/783534/acpica-unix-20230628.tar.gz
 https://downloads.python.org/pypy/pypy3.10-v7.3.17-src.tar.bz2
 https://downloads.scummvm.org/frs/scummvm/2.7.1/scummvm-2.7.1.tar.xz
@@ -660,6 +665,7 @@ https://downloads.scummvm.org/frs/scummvm/2.8.0/scummvm-2.8.0.tar.xz
 https://downloads.scummvm.org/frs/scummvm/2.8.1/scummvm-2.8.1.tar.xz
 https://downloads.scummvm.org/frs/scummvm/2.9.0/scummvm-2.9.0.tar.xz
 https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.7.tar.gz
+https://downloads.sourceforge.net/giflib/giflib-5.2.2.tar.gz
 https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
 https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.9.tar.gz
 https://downloads.sourceforge.net/hdparm/hdparm-9.64.tar.gz
@@ -1108,6 +1114,7 @@ https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.19.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.4.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.5.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.6.tar.gz
+https://ftp.icm.edu.pl/packages/ImageMagick/archive/releases/ImageMagick-7.1.2-15.tar.xz
 https://ftp.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1.tar.gz
 https://ftp.isc.org/isc/dhcp/4.4.3-P1/dhcp-4.4.3-P1.tar.gz
 https://ftp.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
@@ -2249,6 +2256,7 @@ https://github.com/anrieff/libcpuid/archive/refs/tags/v0.7.0.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.7.1.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.8.1.tar.gz
+https://github.com/antaz/hikari/archive/refs/tags/2.3.3.tar.gz
 https://github.com/antonmedv/fx/archive/refs/tags/39.2.0.tar.gz
 https://github.com/antonmedv/llama/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.10.0.tar.gz
@@ -2617,6 +2625,7 @@ https://github.com/cppfw/cssom/archive/refs/tags/0.2.8.tar.gz
 https://github.com/cppfw/mikroxml/archive/refs/tags/0.1.53.tar.gz
 https://github.com/cppfw/mikroxml/archive/refs/tags/0.1.58.tar.gz
 https://github.com/cppfw/myci/archive/refs/tags/0.1.147.tar.gz
+https://github.com/cppfw/papki/archive/97395b82577b9ceb458d95c5ea5687e572cb948b.tar.gz
 https://github.com/cppfw/papki/archive/refs/tags/1.0.122.tar.gz
 https://github.com/cppfw/papki/archive/refs/tags/1.0.134.tar.gz
 https://github.com/cppfw/prorab-extra/archive/refs/tags/0.2.43.tar.gz
@@ -6084,6 +6093,7 @@ https://github.com/zellij-org/zellij/archive/refs/tags/v0.41.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.42.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.43.1.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.45.1.tar.gz
+https://github.com/zeux/pugixml/releases/download/v1.16/pugixml-1.16.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.290.0.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.4.309.0.tar.gz
@@ -7007,6 +7017,7 @@ https://raw.githubusercontent.com/AppImageCommunity/libappimage/9c1fae809dedbb30
 https://raw.githubusercontent.com/Homebrew/patches/1860b0a745f1fe726900974845d1b0dd3c3398d6/openssh/patch-sandbox-darwin.c-apple-sandbox-named-external.diff
 https://raw.githubusercontent.com/Homebrew/patches/d8b2d8c2612fd251ac6de17bf0cc5174c3aab94c/openssh/patch-sshd.c-apple-sandbox-named-external.diff
 https://raw.githubusercontent.com/macports/macports-ports/edf0ee1e2cf/devel/m4/files/secure_snprintf.patch
+https://raw.githubusercontent.com/orsonteodoro/oiledmachine-overlay/8b1ba379ee536397a77cf12156edce5b36bdeb56/app-admin/keepassxc/files/keepassxc-2.7.6-qt6-support.patch
 https://raw.githubusercontent.com/orsonteodoro/oiledmachine-overlay/master/app-admin/keepassxc/files/keepassxc-2.7.6-qt6-support.patch
 https://releases.pagure.org/libaio/libaio-0.3.113.tar.gz
 https://releases.pagure.org/xmlto/xmlto-0.0.28.tar.bz2
@@ -7088,6 +7099,7 @@ https://sourceforge.net/projects/joe-editor/files/JOE%20sources/joe-4.6/joe-4.6.
 https://sourceforge.net/projects/joe-editor/files/JOE%20sources/joe-4.8/joe-4.8.tar.gz
 https://sourceforge.net/projects/libtimidity/files/libtimidity/0.2.7/libtimidity-0.2.7.tar.gz
 https://sourceforge.net/projects/s-tar/files/star-1.6.tar.bz2
+https://sourceware.org/elfutils/ftp/0.196/elfutils-0.196.tar.bz2
 https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
 https://sourceware.org/pub/valgrind/valgrind-3.19.0.tar.bz2
 https://sourceware.org/pub/valgrind/valgrind-3.22.0.tar.bz2

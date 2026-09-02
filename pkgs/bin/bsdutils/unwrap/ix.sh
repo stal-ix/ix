@@ -9,8 +9,8 @@ bsdutils
 {% endblock %}
 
 {% block fetch %}
-https://github.com/dcantrell/bsdutils/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-eebd30141ff0d92b77627f4286fd21f8d22d01d175eb28e31daab1857e654b48
+https://codeberg.org/dcantrell/bsdutils/archive/v{{self.version().strip()}}.tar.gz
+c3ff4c669a3906e1aa221b87c26802bb698bdf44509a91057137868130c9c818
 {% endblock %}
 
 {% block bld_libs %}
