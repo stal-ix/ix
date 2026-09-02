@@ -38,6 +38,7 @@ parse_range
 {% block patch %}
 fix_shebangs ./tools/all_syscalls
 fix_shebangs ./tools/all_errnos
+sed -i '/#include "all-io.h"/a#include "fileutils.h"' libmount/src/hook_idmap.c
 cat - libmount/src/hook_mount.c << EOF > _
 #pragma once
 #define statx musl_statx
