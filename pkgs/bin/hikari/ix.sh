@@ -34,6 +34,14 @@ lib/drivers/3d
 bld/bmake
 bld/wayland
 bld/pkg/config
+bin/lowdown
+{% endblock %}
+
+{% block patch %}
+sed -i \
+    -e 's#pandoc -M title:"HIKARI(1) ${VERSION} | hikari - Wayland Compositor" -s \\#lowdown -s -t man -M title:HIKARI -M section:1 \\#' \
+    -e 's#--to man -o#-M date:${VERSION} -M "source:hikari - Wayland Compositor" -o#' \
+    Makefile
 {% endblock %}
 
 {% block make_flags %}
