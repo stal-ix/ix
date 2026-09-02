@@ -409,6 +409,7 @@ https://codeberg.org/dnkl/foot/archive/1.23.1.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.24.0.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.25.0.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.27.0.tar.gz
+https://codeberg.org/dnkl/foot/archive/1.28.0.tar.gz
 https://codeberg.org/dnkl/fuzzel/archive/1.10.0.tar.gz
 https://codeberg.org/dnkl/fuzzel/archive/1.10.2.tar.gz
 https://codeberg.org/dnkl/fuzzel/archive/1.11.0.tar.gz
