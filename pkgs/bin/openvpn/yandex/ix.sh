@@ -31,7 +31,7 @@ d1b4636e32ac6d3b95d583ac05ac548b1aa248414bae1c51b14f54be0f8fd7bc
 {% endblock %}
 
 {% block lib_deps %}
-bin/openvpn/yandex/stub(kind=bin,libdlfcn_ver=solo)
+bin/openvpn/yandex/stub(kind=bin,libdlfcn_ver=solo,libc_lite=)
 {% endblock %}
 
 {% block bld_tool %}
