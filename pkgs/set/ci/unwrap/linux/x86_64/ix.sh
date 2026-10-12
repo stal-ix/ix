@@ -1037,7 +1037,8 @@ lib/gtk/layer/shell/4/gir
 lib/image/magick/wasm/c(kind=lib)
 lib/simd/e(kind=lib)
 bin/openvpn/yandex
-bin/openvpn/yandex/runit
-bin/openvpn/yandex/scripts
-bin/openvpn/yandex/runit/script(srv_deps=bin/openvpn/yandex/scripts,srv_dir=yandex_vpn)
+set/pg/yandex/vpn
+set/pg/yandex/vpn/scripts
+set/pg/yandex/vpn/runit(srv_deps=set/pg/yandex/vpn/scripts,srv_dir=yandex_vpn)
+set/pg/yandex/vpn/dns(srv_deps=bin/dns/proxy,srv_dir=dnsproxy)
 {% endblock %}
