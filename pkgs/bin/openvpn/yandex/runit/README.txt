@@ -1,0 +1,44 @@
+Host VPN with split DNS, opt-in through the system realm's yandex_vpn=1 flag.
+
+The service is yandex_vpn. It runs the bundled client and an SSH management
+bridge under the regular Stalix supervisor. Reconnects use the Mac Keychain;
+the Mac SSH server and approved signer must remain available. Private keys
+are not exported. Only signature requests pass through the Mac.
+
+Persistent, root-only configuration is /home/pg/.config/yandex-vpn/:
+  client.ovpn  trusted CA/tls-auth material and management authentication
+  config.json  signer_command argv, dns, routes; optional executable overrides
+  openvpn.log  protected upstream log (may contain an authentication token)
+The controller's public state is /var/run/yandex_vpn/status.json.
+
+The profile must use dev tun-yandex, dev-type tun, management-hold,
+management-external-cert, management-external-key, ifconfig-noexec,
+route-noexec, script-security 2, up-restart, and these push filters:
+  pull-filter ignore "redirect-gateway"
+  pull-filter ignore "route "
+  pull-filter ignore "route-ipv6 "
+Do not add persist-tun: process exit removes its interface and active routes.
+The controller supplies the local management socket and up hook.
+
+Only config.json's explicit routes and the corporate DNS /32 are installed.
+The initial home trial lists merlin's IPv6 /128. This is not an inventory of
+every internal Yandex network. Expand the route list explicitly when needed;
+the server's broad full-tunnel routes are deliberately ignored.
+Unreachable routes at metric 42760 remain while disconnected; active tunnel
+routes at metric 100 take precedence. This prevents corporate DNS falling
+back through the LAN default route. The LAN and mesh routes are preserved.
+
+The existing dnsproxy retains port 53, enables AAAA, and forwards yandex.net
+and yandex-team.ru to 84.252.160.1. ovpn.net.yandex.net and yanet.org use public
+DNS to bootstrap the VPN. mesh/local retain their existing resolvers. There
+is no public fallback for corporate zones. Valid cached records may survive
+an outage until their normal TTL; optimistic stale caching is disabled.
+The corporate DNS address in config.json must match the dnsproxy recipe.
+
+Run route validation tests with:
+  python3 pkgs/bin/openvpn/yandex/runit/test_routes.py
+
+To deploy: build/test, commit, then ./ix mut system --yandex_vpn=1.
+To disable: ./ix mut system --yandex_vpn=-. This restores normal DNS and
+removes the supervised VPN service. Remove its remaining unreachable routes
+only after the corporate DNS forwarding rules have been removed.
