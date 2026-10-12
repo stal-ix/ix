@@ -4,5 +4,5 @@
 bin/fusermount/sud/scripts
 bin/fusermount/sud/backend
 bin/python
-bin/sud
+{# Use the host's existing sud service and policy; do not replace them. #}
 {% endblock %}

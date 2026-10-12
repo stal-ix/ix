@@ -1041,4 +1041,11 @@ set/pg/yandex/vpn
 set/pg/yandex/vpn/scripts
 set/pg/yandex/vpn/runit(srv_deps=set/pg/yandex/vpn/scripts,srv_dir=yandex_vpn)
 set/pg/yandex/vpn/dns(srv_deps=bin/dns/proxy,srv_dir=dnsproxy)
+bin/fusermount/sud
+bin/fusermount/sud/backend
+bin/fusermount/sud/scripts
+{% if isfile('/home/pg/arc-musl/arc') %}
+set/pg/arc
+set/pg/arc/client
+{% endif %}
 {% endblock %}
