@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/bin/python3
 """Supervise a host VPN using a remote Keychain for TLS signatures."""
 import asyncio
 import base64
@@ -48,14 +48,11 @@ def prepare_signature(encoded, algorithm):
 
 
 def config():
-    defaults = Path(__file__).with_name('executables.json')
-    value = json.loads(defaults.read_text()) if defaults.exists() else {}
-    value.update(json.loads((BASE / 'config.json').read_text()))
-    return value
+    return json.loads((BASE / 'config.json').read_text())
 
 
 def ip(*args, check=True):
-    return subprocess.run([config()['ip'], *args], check=check, capture_output=True, text=True)
+    return subprocess.run(['/bin/ip', *args], check=check, capture_output=True, text=True)
 
 
 def destinations():
@@ -97,7 +94,8 @@ def network_up():
         if (v6.version != 6 or v6.network.prefixlen < 64
                 or not v6.ip in ipaddress.ip_network('2a02:6b8::/29')):
             raise ValueError('Unexpected VPN IPv6 assignment')
-        ip('-6', 'address', 'replace', str(v6), 'dev', DEVICE, 'nodad')
+        # TUN is NOARP; Linux skips DAD without the iproute2-only nodad option.
+        ip('-6', 'address', 'replace', str(v6), 'dev', DEVICE)
     guards()
     for net in destinations():
         ip('-4' if net.version == 4 else '-6', 'route', 'replace', str(net),
@@ -137,9 +135,9 @@ async def session():
         env.pop('LD_LIBRARY_PATH', None)
         env['YANDEX_VPN_DIR'] = str(BASE)
         vpn = await asyncio.create_subprocess_exec(
-            cfg['openvpn'], '--config', str(BASE / 'client.ovpn'),
+            '/bin/openvpn-yandex', '--config', str(BASE / 'client.ovpn'),
             '--management', str(management), 'unix',
-            '--up', str(Path(__file__).with_name('network-up')),
+            '--up', '/bin/yandex-vpn-up',
             '--log-append', str(BASE / 'openvpn.log'), env=env)
         for _ in range(100):
             try:
