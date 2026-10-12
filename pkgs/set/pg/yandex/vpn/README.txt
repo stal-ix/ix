@@ -8,7 +8,7 @@ are not exported. Only signature requests pass through the Mac.
 
 Persistent, root-only configuration is /home/pg/.config/yandex-vpn/:
   client.ovpn  trusted CA/tls-auth material and management authentication
-  config.json  signer_command argv, dns, routes
+  config.json  signer_command argv, dns, routes, route_yandex_networks
   openvpn.log  protected upstream log (may contain an authentication token)
 The controller's public state is /var/run/yandex_vpn/status.json.
 
@@ -21,10 +21,25 @@ route-noexec, script-security 2, up-restart, and these push filters:
 Do not add persist-tun: process exit removes its interface and active routes.
 The controller supplies the local management socket and up hook.
 
-Only config.json's explicit routes and the corporate DNS /32 are installed.
-The initial home trial lists merlin's IPv6 /128. This is not an inventory of
-every internal Yandex network. Expand the route list explicitly when needed;
-the server's broad full-tunnel routes are deliberately ignored.
+With route_yandex_networks=true, routes include the Yandex and Yandex.Cloud
+prefixes in scripts/networks.json, installed under share/yandex-vpn in the
+system realm. The snapshot records its date and RIPEstat sources (AS13238,
+AS200350). It includes the entire allocated 2a02:6b8::/29 IPv6 range. New
+hosts inside these networks need no individual route additions. Refresh
+the snapshot when the organizations announce new address ranges; do not
+blindly import prefixes from unrelated operators. config.json's routes can
+add explicit exceptions/destinations. Corporate DNS is included as well.
+The server's 2000::/3 full-IPv6 route remains deliberately ignored.
+
+IPv4 destinations live in table 186. Policy rule 18600 selects that table
+for packets WITHOUT fwmark 186. OpenVPN explicitly uses udp4 and marks its
+encrypted outer packets 186, so VPN gateways use the normal main/default
+route even when they belong to a routed Yandex prefix. This also follows
+changes to the normal WAN gateway without per-VPN-server bypass routes.
+IPv6 destinations use main: home's kernel lacks IPV6_MULTIPLE_TABLES, and
+the outer VPN connection is IPv4. LAN, mesh and other Internet addresses
+continue using the ordinary routes. Public services in these Yandex ranges
+also use the VPN, as selected by pg.
 Unreachable routes at metric 42760 remain while disconnected; active tunnel
 routes at metric 100 take precedence. This prevents corporate DNS falling
 back through the LAN default route. The LAN and mesh routes are preserved.
@@ -41,8 +56,9 @@ Run route validation tests with:
 
 To deploy: build/test, commit, then ./ix mut system +set/pg/yandex/vpn.
 To disable: ./ix mut system -set/pg/yandex/vpn. This restores normal DNS and
-removes the supervised VPN service. Remove its remaining unreachable routes
-only after the corporate DNS forwarding rules have been removed.
+removes the supervised VPN service. Remove policy rule 18600, table 186 and
+the remaining IPv6 unreachable routes only after corporate DNS forwarding
+has been removed.
 
 Package layout:
   set/pg/yandex/vpn/scripts  controller and network hook executables

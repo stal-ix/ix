@@ -18,6 +18,10 @@ BASE = Path(os.environ.get('YANDEX_VPN_DIR', '/home/pg/.config/yandex-vpn'))
 STATUS = Path('/var/run/yandex_vpn/status.json')
 DEVICE = 'tun-yandex'
 PROTOCOL = '186'
+TABLE = '186'
+MARK = '186'
+RULE_PRIORITY = '18600'
+NETWORKS = Path('/ix/realm/system/share/yandex-vpn/networks.json')
 
 
 def prepare_signature(encoded, algorithm):
@@ -59,24 +63,54 @@ def destinations():
     cfg = config()
     nets = [ipaddress.ip_network(cfg['dns'] + '/32')]
     nets.extend(ipaddress.ip_network(value, strict=True) for value in cfg['routes'])
+    if cfg.get('route_yandex_networks'):
+        nets.extend(ipaddress.ip_network(value, strict=True)
+                    for value in json.loads(NETWORKS.read_text())['routes'])
     for net in nets:
         # A typo must not create a default or cover LAN/mesh networks.
-        if net.prefixlen < (16 if net.version == 4 else 32):
+        aggregates = {'2a02:6b8::/29', '2a0d:d6c0::/31'}
+        if net.prefixlen < (16 if net.version == 4 else 32) and str(net) not in aggregates:
             raise ValueError('VPN route is too broad')
         if net.version == 4 and any(net.overlaps(ipaddress.ip_network(local))
                                    for local in ('10.0.0.0/24', '192.168.100.0/24', '127.0.0.0/8')):
             raise ValueError('VPN route overlaps a local network')
-    return nets
+    return [net for family in (4, 6) for net in
+            ipaddress.collapse_addresses(net for net in nets if net.version == family)]
+
+
+def route_command(net):
+    # This host has IPv4 policy routing but no IPV6_MULTIPLE_TABLES. The outer
+    # OpenVPN transport is explicitly udp4, so IPv6 destinations can use main.
+    return ('-4', 'route') if net.version == 4 else ('-6', 'route')
+
+
+def route_table(net):
+    return ('table', TABLE) if net.version == 4 else ()
+
+
+def policy_rules():
+    rules = json.loads(ip('-4', '-j', 'rule', 'show').stdout)
+    for rule in rules:
+        if rule.get('priority') != int(RULE_PRIORITY):
+            continue
+        if (str(rule.get('table')) == TABLE and 'not' in rule and rule['not'] is not False
+                and str(rule.get('fwmark')) in (MARK, hex(int(MARK)))
+                and str(rule.get('fwmask', '0xffffffff')) in ('0xffffffff', '4294967295')):
+            return
+        raise ValueError('VPN policy priority is already occupied')
+    ip('-4', 'rule', 'add', 'priority', RULE_PRIORITY, 'not', 'fwmark', MARK,
+       'lookup', TABLE)
 
 
 def guards():
     for net in destinations():
-        family = '-4' if net.version == 4 else '-6'
         # Keep these routes while disconnected, so corporate DNS cannot escape
         # through the normal default route. Connected routes have lower metrics.
-        existing = ip(family, 'route', 'show', 'exact', str(net)).stdout
+        existing = ip(*route_command(net), 'show', *route_table(net), 'exact', str(net),
+                      check=False).stdout
         if not any('unreachable' in line and 'metric 42760' in line for line in existing.splitlines()):
-            ip(family, 'route', 'add', 'unreachable', str(net), 'metric', '42760', 'proto', PROTOCOL)
+            ip(*route_command(net), 'add', 'unreachable', str(net), *route_table(net),
+               'metric', '42760', 'proto', PROTOCOL)
 
 
 def network_up():
@@ -96,9 +130,10 @@ def network_up():
             raise ValueError('Unexpected VPN IPv6 assignment')
         # TUN is NOARP; Linux skips DAD without the iproute2-only nodad option.
         ip('-6', 'address', 'replace', str(v6), 'dev', DEVICE)
+    policy_rules()
     guards()
     for net in destinations():
-        ip('-4' if net.version == 4 else '-6', 'route', 'replace', str(net),
+        ip(*route_command(net), 'replace', str(net), *route_table(net),
            'dev', DEVICE, 'metric', '100', 'proto', PROTOCOL)
 
 
@@ -136,6 +171,7 @@ async def session():
         env['YANDEX_VPN_DIR'] = str(BASE)
         vpn = await asyncio.create_subprocess_exec(
             '/bin/openvpn-yandex', '--config', str(BASE / 'client.ovpn'),
+            '--proto', 'udp4', '--mark', MARK,
             '--management', str(management), 'unix',
             '--up', '/bin/yandex-vpn-up',
             '--log-append', str(BASE / 'openvpn.log'), env=env)
@@ -214,6 +250,7 @@ async def serve():
     task = asyncio.current_task()
     for sig in (signal.SIGTERM, signal.SIGINT):
         asyncio.get_running_loop().add_signal_handler(sig, task.cancel)
+    policy_rules()
     guards()
     while True:
         try:

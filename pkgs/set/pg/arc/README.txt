@@ -30,5 +30,6 @@ Corporate DNS and explicit VPN routes must reach these service endpoints:
   pulld.arc-vcs.yandex-team.ru:7059
   crypto.arc-vcs.yandex-team.ru:5629
   arcanum.yandex.net:443
-Their current addresses are recorded in home's VPN config.json routes.
-Update those routes if the endpoint addresses change.
+Home's VPN uses route_yandex_networks=true, covering the Yandex/Yandex.Cloud
+address ranges rather than individual service addresses. DNS and ordinary
+endpoint changes within those networks require no manual route additions.
