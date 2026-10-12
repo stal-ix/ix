@@ -11,9 +11,16 @@ the separately obtained artifact. It was built on merlin with ya make -r
 bin/fusermount/sud provides the non-setuid helper bridge using existing sud.
 No dependency or configuration is added to set/pg/system.
 
-On the actual home host, as pg:
-  arc mount /home/pg/1
-  arc unmount /home/pg/1
+The arc_mount servant runs arc mount -F /home/pg/1 as pg. The root launcher
+sets RLIMIT_NOFILE to 65536 before dropping privileges. Logs are in
+/var/run/arc_mount/std/current. The ordinary background arc mount is not
+suitable here: Stalix pid1 kills unregistered adopted children (killStale).
+The foreground mount stays in the supervised process tree and is restarted
+after exit. No SSH session is needed to keep it alive.
+
+To stop the supervised mount, remove this overlay with
+  ./ix mut system -set/pg/arc
+An arc unmount alone will be followed by the servant starting it again.
 
 Arc uses its existing user credentials and store under /home/pg/.arc.
 Do not recursively scan the mounted repository; inspect known paths only.
