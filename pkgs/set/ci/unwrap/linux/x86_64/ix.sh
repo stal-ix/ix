@@ -1038,4 +1038,6 @@ lib/image/magick/wasm/c(kind=lib)
 lib/simd/e(kind=lib)
 bin/openvpn/yandex
 bin/openvpn/yandex/runit
+bin/openvpn/yandex/scripts
+bin/openvpn/yandex/runit/script(srv_deps=bin/openvpn/yandex/scripts,srv_dir=yandex_vpn)
 {% endblock %}
