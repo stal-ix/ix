@@ -1037,4 +1037,5 @@ lib/gtk/layer/shell/4/gir
 lib/image/magick/wasm/c(kind=lib)
 lib/simd/e(kind=lib)
 bin/openvpn/yandex
+bin/openvpn/yandex/runit
 {% endblock %}
