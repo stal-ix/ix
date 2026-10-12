@@ -477,6 +477,7 @@ https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.7.0.tar.gz
 https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.8.1.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.3.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.4.tar.gz
+https://codeberg.org/tenacityteam/libmad/archive/0.16.5.tar.gz
 https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz
 https://common-lisp.net/project/ecl/static/files/release/ecl-23.9.9.tgz
 https://common-lisp.net/project/ecl/static/files/release/ecl-24.5.10.tgz

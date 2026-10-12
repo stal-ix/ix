@@ -5,12 +5,12 @@ libmad
 {% endblock %}
 
 {% block version %}
-0.16.4
+0.16.5
 {% endblock %}
 
 {% block fetch %}
 https://codeberg.org/tenacityteam/libmad/archive/{{self.version().strip()}}.tar.gz
-f4eb229452252600ce48f3c2704c9e6d97b789f81e31c37b0c67dd66f445ea35
+e32320a010e3cc00bfa66e0cde523a969313cddfd81e07ec4e3ef06d10ad3fe0
 {% endblock %}
 
 {% block lib_deps %}
