@@ -1,4 +1,5 @@
-Host VPN with split DNS, opt-in through the system realm's yandex_vpn=1 flag.
+Personal host VPN and split-DNS overlay, installed as set/pg/yandex/vpn.
+Shared system and DNS packages do not contain VPN-specific settings.
 
 The service is yandex_vpn. It runs the bundled client and an SSH management
 bridge under the regular Stalix supervisor. Reconnects use the Mac Keychain;
@@ -36,15 +37,21 @@ an outage until their normal TTL; optimistic stale caching is disabled.
 The corporate DNS address in config.json must match the dnsproxy recipe.
 
 Run route validation tests with:
-  python3 pkgs/bin/openvpn/yandex/scripts/test_routes.py
+  python3 pkgs/set/pg/yandex/vpn/scripts/test_routes.py
 
-To deploy: build/test, commit, then ./ix mut system --yandex_vpn=1.
-To disable: ./ix mut system --yandex_vpn=-. This restores normal DNS and
+To deploy: build/test, commit, then ./ix mut system +set/pg/yandex/vpn.
+To disable: ./ix mut system -set/pg/yandex/vpn. This restores normal DNS and
 removes the supervised VPN service. Remove its remaining unreachable routes
 only after the corporate DNS forwarding rules have been removed.
 
 Package layout:
-  bin/openvpn/yandex/scripts       controller and network hook executables
-  bin/openvpn/yandex/runit/script  supervised service launcher
-  bin/openvpn/yandex/runit         hub collecting scripts and runtime packages
+  set/pg/yandex/vpn/scripts  controller and network hook executables
+  set/pg/yandex/vpn/runit    supervised service launcher
+  set/pg/yandex/vpn/dns      personal override of the dnsproxy launcher
+  set/pg/yandex/vpn          hub collecting the overlay and runtime packages
 The executables use stable system paths under /bin.
+
+Prepare without activation: ./ix let system +set/pg/yandex/vpn.
+Install the overlay as a separate top-level package in the system realm;
+it takes precedence over the shared dnsproxy launcher. Removing the overlay
+restores the base launcher. No flag or dependency is added to set/pg/system.

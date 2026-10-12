@@ -8,9 +8,6 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDGZ3aEKhxpG9JHG3uso/gUuUKe9NzHOXKAenZIDiDq
 etc/tmpfs
 set/stalix
 set/pg/system/env
-{% if yandex_vpn %}
-bin/openvpn/yandex/runit
-{% endif %}
 {% if pg_host != 'note' %}
 set/pg/vpn
 {% endif %}
