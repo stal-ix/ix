@@ -17,6 +17,10 @@ e32320a010e3cc00bfa66e0cde523a969313cddfd81e07ec4e3ef06d10ad3fe0
 lib/c
 {% endblock %}
 
+{% block cmake_flags %}
+EXAMPLE=OFF
+{% endblock %}
+
 {% block test %}
 # for vkquake
 test -f ${out}/lib/pkgconfig/mad.pc
