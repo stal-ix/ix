@@ -4,6 +4,14 @@
 lib/c
 {% endblock %}
 
+{% block bld_libs %}
+lib/lz4/dl
+lib/lzo/dl
+lib/cap/ng/dl
+lib/openssl/dl
+lib/pkcs11/helper/dl
+{% endblock %}
+
 {% block sources %}
 stub.c
 {% endblock %}
