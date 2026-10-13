@@ -1,12 +1,15 @@
 Personal Arc client overlay, installed as an additional system-realm package:
   ./ix mut system +set/pg/arc
 
-set/pg/arc/client imports a COPY of /home/pg/arc-musl/arc into the package and
-checks the expected SHA256. This is a local artifact import, so its build
-needs access to that file outside the normal source isolation. The binary
-is not stored in this repository and cannot be rebuilt by public CI without
-the separately obtained artifact. It was built on merlin with ya make -r
---musl at fb40f49c3c90952ad54c896c9ad83f13239eab82.
+set/pg/arc/client fetches the arc binary from the lab's private s3, bucket pg
+(https://s3.lab.mesh/pg/arc/<sha256>/arc), and checks its SHA256 like any
+other source. s3.lab.mesh answers only inside our networks. The binary was
+built on merlin with ya make -r --musl (arc version 21637152); it is not a
+public source, so the recipe assembles the URL with Jinja to keep it out of
+pkgs/die/scripts/urls.txt (whose entries the lab mirrors into the public
+pkgsrc CAS), and set/pg/arc stays out of set/ci (CI results go to the public
+package cache). To update: PUT the new binary to pg/arc/<sha256>/arc on
+s3.lab.mesh and change arc_sha in client/ix.sh.
 
 bin/fusermount/sud provides the non-setuid helper bridge using existing sud.
 No dependency or configuration is added to set/pg/system.
