@@ -63,6 +63,8 @@ has been removed.
 Package layout:
   set/pg/yandex/vpn/scripts  controller and network hook executables
   set/pg/yandex/vpn/runit    supervised service launcher
+  set/pg/yandex/vpn/runit/deps  what the service executes; its uid is in the
+                             run file, so a rebuild of any of them restarts it
   set/pg/yandex/vpn/dns      personal override of the dnsproxy launcher
   set/pg/yandex/vpn          hub collecting the overlay and runtime packages
 The executables use stable system paths under /bin.
