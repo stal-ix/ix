@@ -1,10 +1,7 @@
 {% extends '//die/inline/program.sh' %}
 
-{% block lib_deps %}
-lib/c
-{% endblock %}
-
 {% block bld_libs %}
+lib/c
 lib/lz4/dl
 lib/lzo/dl
 lib/cap/ng/dl

@@ -1032,28 +1032,7 @@ bin/thingd
 bin/pypy
 bld/py/gobject
 bld/blueprint/compiler
-lib/gtk/layer/shell/4/dl(kind=lib)
-lib/gtk/layer/shell/4/gir
-lib/image/magick/wasm/c(kind=lib)
-lib/simd/e(kind=lib)
 bin/openvpn/yandex
-lib/pkcs11/helper(kind=lib)
-lib/pkcs11/helper/dl(kind=lib)
-lib/openssl/dl(kind=lib)
-lib/lzo/dl(kind=lib)
-lib/lz4/dl(kind=lib)
-lib/cap/ng/dl(kind=lib)
 set/pg/yandex/vpn
-set/pg/yandex/vpn/scripts
-set/pg/yandex/vpn/runit(srv_deps=set/pg/yandex/vpn/scripts,srv_dir=yandex_vpn)
-set/pg/yandex/vpn/dns(srv_deps=bin/dns/proxy,srv_dir=dnsproxy)
 bin/fusermount/sud
-bin/fusermount/sud/backend
-bin/fusermount/sud/scripts
-set/pg/arc/scripts
-set/pg/arc/runit(srv_deps=set/pg/arc/scripts,srv_dir=arc_mount,srv_user=pg)
-{% if isfile('/home/pg/arc-musl/arc') %}
-set/pg/arc
-set/pg/arc/client
-{% endif %}
 {% endblock %}
