@@ -16,7 +16,9 @@ sets RLIMIT_NOFILE to 65536 before dropping privileges. Logs are in
 /var/run/arc_mount/std/current. The ordinary background arc mount is not
 suitable here: Stalix pid1 kills unregistered adopted children (killStale).
 The foreground mount stays in the supervised process tree and is restarted
-after exit. No SSH session is needed to keep it alive.
+after exit. No SSH session is needed to keep it alive. Its srv_deps is
+set/pg/arc/runit/deps (scripts, client, fusermount bridge): the hub's uid is in
+the run file, so a rebuilt arc client restarts the mount on the new binary.
 
 To stop the supervised mount, remove this overlay with
   ./ix mut system -set/pg/arc
