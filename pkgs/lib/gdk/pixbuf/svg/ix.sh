@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-lib/{{svg_loader or 'svgren/gdk'}}/dl
+lib/svg/gdk/dl
 {% endblock %}

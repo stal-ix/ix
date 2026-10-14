@@ -1,7 +1,7 @@
 {% extends '//die/dl/fix.sh' %}
 
 {% block lib_deps %}
-lib/svgren/gdk
+lib/svg/gdk
 {% endblock %}
 
 {% block export_symbols %}
