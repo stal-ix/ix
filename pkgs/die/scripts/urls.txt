@@ -3769,6 +3769,7 @@ https://github.com/imneme/pcg-cpp/archive/refs/tags/v0.98.1.tar.gz
 https://github.com/impulse-desktop/portal/archive/refs/tags/2.tar.gz
 https://github.com/impulse-desktop/suite/archive/refs/tags/4.tar.gz
 https://github.com/impulse-desktop/svg/releases/download/1/svg-1.tar.gz
+https://github.com/impulse-desktop/svg/releases/download/2/svg-2.tar.gz
 https://github.com/imsnif/bandwhich/archive/refs/tags/v0.23.1.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/3.20.11.0.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.23.9.0.tar.gz
@@ -4135,6 +4136,7 @@ https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.8.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.9.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.8.0.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.8.1.tar.gz
+https://github.com/libarchive/libarchive/archive/refs/tags/v3.8.10.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.8.2.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.8.3.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.8.4.tar.gz
