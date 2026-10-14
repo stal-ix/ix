@@ -2042,6 +2042,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.32.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.32.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.32.4.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.35.2.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.35.3.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.19.1.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.19.2.tar.gz
@@ -2061,6 +2062,7 @@ https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.3.2.tar.gz
 https://github.com/OpenMathLib/OpenBLAS/archive/refs/tags/v0.3.30.tar.gz
 https://github.com/OpenMathLib/OpenBLAS/archive/refs/tags/v0.3.34.tar.gz
 https://github.com/OpenPrinting/cups/archive/refs/tags/v2.4.8.tar.gz
+https://github.com/OpenSC/pkcs11-helper/archive/refs/tags/pkcs11-helper-1.31.0.tar.gz
 https://github.com/OpenTTD/OpenTTD/archive/refs/tags/13.4.tar.gz
 https://github.com/OpenTTD/OpenTTD/archive/refs/tags/14.0.tar.gz
 https://github.com/OpenTTD/OpenTTD/archive/refs/tags/14.1.tar.gz
@@ -5019,6 +5021,7 @@ https://github.com/pg83/std/archive/refs/tags/3.tar.gz
 https://github.com/pg83/ted/archive/refs/tags/v6.tar.gz
 https://github.com/pg83/wirez/archive/refs/tags/2.tar.gz
 https://github.com/pg83/wirez/archive/refs/tags/6.tar.gz
+https://github.com/pg83/wirez/archive/refs/tags/8.tar.gz
 https://github.com/pg83/yaboot/archive/refs/tags/1.tar.gz
 https://github.com/pg83/yaboot/archive/refs/tags/2.tar.gz
 https://github.com/phase1geo/Minder/archive/refs/tags/1.16.4.tar.gz
