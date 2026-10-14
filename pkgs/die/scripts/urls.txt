@@ -3768,6 +3768,7 @@ https://github.com/illiliti/libudev-zero/archive/refs/tags/1.0.5.tar.gz
 https://github.com/imneme/pcg-cpp/archive/refs/tags/v0.98.1.tar.gz
 https://github.com/impulse-desktop/portal/archive/refs/tags/2.tar.gz
 https://github.com/impulse-desktop/suite/archive/refs/tags/4.tar.gz
+https://github.com/impulse-desktop/svg/releases/download/1/svg-1.tar.gz
 https://github.com/imsnif/bandwhich/archive/refs/tags/v0.23.1.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/3.20.11.0.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.23.9.0.tar.gz
@@ -6427,6 +6428,7 @@ https://gitlab.com/freetype/freetype/-/archive/VER-2-13-3/freetype-VER-2-13-3.ta
 https://gitlab.com/freetype/freetype/-/archive/VER-2-14-0/freetype-VER-2-14-0.tar.bz2
 https://gitlab.com/freetype/freetype/-/archive/VER-2-14-1/freetype-VER-2-14-1.tar.bz2
 https://gitlab.com/freetype/freetype/-/archive/VER-2-14-3/freetype-VER-2-14-3.tar.bz2
+https://gitlab.com/freetype/freetype/-/archive/VER-2-15-0/freetype-VER-2-15-0.tar.bz2
 https://gitlab.com/giomasce/flex/-/raw/506e9605baf4638ba47d37133c348df1385ef06c/scan.lex.l
 https://gitlab.com/graphviz/graphviz/-/archive/10.0.1/graphviz-10.0.1.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/11.0.0/graphviz-11.0.0.tar.bz2
