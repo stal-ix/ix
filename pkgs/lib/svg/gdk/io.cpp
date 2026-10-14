@@ -1,10 +1,10 @@
 /*
  * The SVG loader of gdk-pixbuf, on impulse-desktop/svg: the file whole,
  * then the drawing at the size the caller asks, as an <img> of that size
- * shows it. A GTK symbolic icon, an SVG that includes the icon as base64
- * through xi:include, is drawn from the icon inside, its pixels turned
- * black where they are drawn, as GTK's symbolic loader expects. The
- * document's raster images decode through gdk-pixbuf's own loaders.
+ * shows it. A GTK symbolic icon is a plain SVG to it: GTK includes the
+ * icon through xi:include in a document that fills it with the theme's
+ * colors, which the library draws as librsvg does. The document's raster
+ * images decode through gdk-pixbuf's own loaders.
  */
 
 #include <svg.h>
@@ -116,49 +116,16 @@ namespace {
         return library;
     }
 
-    std::string parseField(std::string s, const std::string& f) {
-        if (auto p = s.find(f); p != std::string::npos) {
-            s = s.substr(p + f.length(), std::string::npos);
-
-            if (auto q = s.find('"'); q != std::string::npos) {
-                return s.substr(0, q);
-            }
-        }
-
-        throw std::runtime_error("malformed svg");
-    }
-
-    std::string b64decode(std::string s) {
-        gsize len = 0;
-
-        g_base64_decode_inplace(s.data(), &len);
-        s.resize(len);
-
-        return s;
-    }
-
     struct Document {
         SvgDocument* doc = nullptr;
         int width = 0;
         int height = 0;
-        bool symbolic = false;
 
-        explicit Document(const std::string& file) {
-            std::string inner = file;
-
-            if (file.find("<xi:include") != std::string::npos) {
-                width = std::stoi(parseField(file, "width=\""));
-                height = std::stoi(parseField(file, "height=\""));
-                inner = b64decode(parseField(file, "data:text/xml;base64,"));
-                symbolic = true;
-            }
-
-            doc = svg_library_parse(library(), inner.data(), inner.size());
-
-            if (!symbolic) {
-                width = (int)std::ceil(svg_document_width(doc));
-                height = (int)std::ceil(svg_document_height(doc));
-            }
+        explicit Document(const std::string& file)
+            : doc(svg_library_parse(library(), file.data(), file.size()))
+            , width((int)std::ceil(svg_document_width(doc)))
+            , height((int)std::ceil(svg_document_height(doc)))
+        {
         }
 
         ~Document() {
@@ -195,15 +162,6 @@ namespace {
             float sy = (float)height / svg_document_height(d.doc);
             SvgImage* image = svg_document_render(d.doc, (uint32_t)width, (uint32_t)height, std::min(sx, sy));
             unsigned char* rgba = (unsigned char*)svg_image_data(image);
-
-            if (d.symbolic) {
-                for (size_t i = 0; i < (size_t)width * height * 4; i += 4) {
-                    rgba[i] = 0;
-                    rgba[i + 1] = 0;
-                    rgba[i + 2] = 0;
-                }
-            }
-
             GdkPixbuf* pixbuf = gdk_pixbuf_new_from_data(rgba, GDK_COLORSPACE_RGB, true, 8, width, height, width * 4, imageDeleter, image);
 
             if (!pixbuf) {

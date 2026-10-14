@@ -80,6 +80,7 @@ static const char *const names[] = {
     "SVG_NOT_SVG",
     "SVG_RENDER_SIZE",
     "SVG_RENDER_SCALE",
+    "SVG_XML_INCLUDE_PARSE",
 };
 
 static const char *cause = "";
