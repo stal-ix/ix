@@ -157,10 +157,8 @@ namespace {
             width = std::max(width, 1);
             height = std::max(height, 1);
 
-            // the drawing at the scale that fits it into the asked size
-            float sx = (float)width / svg_document_width(d.doc);
-            float sy = (float)height / svg_document_height(d.doc);
-            SvgImage* image = svg_document_render(d.doc, (uint32_t)width, (uint32_t)height, std::min(sx, sy));
+            // the drawing stretched into the asked size
+            SvgImage* image = svg_document_render(d.doc, (uint32_t)width, (uint32_t)height);
             unsigned char* rgba = (unsigned char*)svg_image_data(image);
             GdkPixbuf* pixbuf = gdk_pixbuf_new_from_data(rgba, GDK_COLORSPACE_RGB, true, 8, width, height, width * 4, imageDeleter, image);
 

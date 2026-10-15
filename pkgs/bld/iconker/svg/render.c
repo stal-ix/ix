@@ -125,10 +125,17 @@ int main(int argc, char **argv) {
     SvgDocument *document = svg_library_parse(library, data, length);
     float width = svg_document_width(document);
     float height = svg_document_height(document);
+
+    // a document that draws nothing past the origin has a side of zero
+    if (!(width > 0.f && height > 0.f)) {
+        fprintf(stderr, "render_icon: %s: draws nothing\n", path);
+        exit(1);
+    }
+
     float scale = 192.f / (width > height ? width : height);
     uint32_t w = (uint32_t) ceilf(width * scale - 1e-3f);
     uint32_t h = (uint32_t) ceilf(height * scale - 1e-3f);
-    SvgImage *image = svg_document_render(document, w ? w : 1, h ? h : 1, scale);
+    SvgImage *image = svg_document_render(document, w ? w : 1, h ? h : 1);
     png_image png;
 
     memset(&png, 0, sizeof(png));

@@ -13,11 +13,12 @@
  *
  * The host puts the file into linear memory through the exported malloc;
  * the document keeps a copy of it, so the host may free it once open
- * returns. The page's size is the drawing's own, in CSS pixels. A render
- * is the drawing scaled to fit width by height pixels, as an <img> of that
- * size shows it, as one block in linear memory, to be freed with the
- * exported free: 8-bit RGBA, not premultiplied, transparent where nothing
- * is drawn.
+ * returns. The page's size is the drawing's own, in CSS pixels: what its
+ * root gives, or the edges of what it draws. A render is the drawing
+ * stretched to width by height pixels, a viewBox fitting them as its
+ * preserveAspectRatio says, as one block in linear memory, to be freed
+ * with the exported free: 8-bit RGBA, not premultiplied, transparent where
+ * nothing is drawn.
  *
  *     struct image { uint32_t width; uint32_t height; uint8_t rgba[]; }
  *
@@ -125,11 +126,7 @@ struct image *svg_render(SvgDocument *doc, uint32_t page, uint32_t width, uint32
         return NULL;
     }
 
-    // the drawing at the scale that fits it: the layout box is the
-    // drawing's own size in the fitting axis and at least that in the other
-    float sx = (float) width / svg_document_width(doc);
-    float sy = (float) height / svg_document_height(doc);
-    SvgImage *drawn = svg_document_render(doc, width, height, sx < sy ? sx : sy);
+    SvgImage *drawn = svg_document_render(doc, width, height);
     struct image *out = malloc(sizeof(*out) + (size_t) width * height * 4);
 
     if (out) {
