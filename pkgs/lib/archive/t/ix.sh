@@ -19,6 +19,7 @@ ENABLE_LIBXML2=OFF
 ENABLE_TEST=OFF
 {% if mingw32 %}
 CMAKE_RC_COMPILER={{target.gnu.three}}-windres
+HAVE_EXPLICIT_BZERO=OFF
 {% endif %}
 {% endblock %}
 
