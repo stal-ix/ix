@@ -36,4 +36,10 @@ bld/windres(for_target={{target.gnu.three}})
 {% block patch %}
 sed -e 's|!defined(HAVE_LIBICONV)$|!defined(HAVE_LIBICONV) \&\& defined(ICONV_SET_ILSEQ_INVALID)|' \
     -i libarchive/archive_string.c
+sed -e 's|__archive_read_seek(a, 0, SEEK_SET) < 0|__archive_read_seek(a, 0, SEEK_SET) == ARCHIVE_FATAL|' \
+    -i libarchive/archive_read.c
+sed -e '/^FILE_seek(/,/^}/ s|return (ARCHIVE_FATAL);|return (errno == ESPIPE ? ARCHIVE_FAILED : ARCHIVE_FATAL);|' \
+    -i libarchive/archive_read_open_file.c
+sed -e '/^file_seek(/,/^}/ s|return (ARCHIVE_FATAL);|return (errno == ESPIPE ? ARCHIVE_FAILED : ARCHIVE_FATAL);|' \
+    -i libarchive/archive_read_open_filename.c
 {% endblock %}
