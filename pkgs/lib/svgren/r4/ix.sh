@@ -5,12 +5,12 @@ r4
 {% endblock %}
 
 {% block version %}
-1.0.77
+1.0.112
 {% endblock %}
 
 {% block fetch %}
 https://github.com/cppfw/r4/archive/refs/tags/{{self.version().strip()}}.tar.gz
-f80543e2519a22c25a453b2e5450a9ab82a2b5c4e93d0e6d70ad042081458b21
+44123d99512f4a7fbf1b7bde8803c9a23732b2c477a083b97741192a95e17b55
 {% endblock %}
 
 {% block lib_deps %}

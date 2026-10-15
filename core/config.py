@@ -49,6 +49,9 @@ def enrich(d):
     if 'arch' not in d:
         d['arch'] = d['gnu_arch']
 
+        if d['os'] == 'darwin':
+            d['arch'] = {'aarch64': 'arm64'}.get(d['arch'], d['arch'])
+
     if 'bits' not in d:
         kk = d.get('arch', '') + d.get('gnu_arch', '')
 
@@ -134,6 +137,17 @@ def get_raw_arch(n):
             'cmake_system_name': 'WASI', # wild guess
         }
 
+    if n == 'none':
+        # wasm32-none: the wasi ABI and libc, but no host behind the
+        # syscalls; lib/c answers them in-module and the result imports
+        # nothing (see lib/wasi/null)
+        return {
+            'os': 'wasi',
+            'kernel': 'none',
+            'obj_fmt': 'wasm',
+            'cmake_system_name': 'WASI',
+        }
+
     if n == 'freebsd':
         return {
             'os': 'freebsd',
@@ -193,7 +207,7 @@ def get_raw_arch(n):
         }
 
     if n == 'arm64':
-        return du(a('darwin-aarch64'), {'arch': 'arm64'})
+        return a('darwin-aarch64')
 
     if n == 'aarch64':
         return {'gnu_arch': 'aarch64', 'family': 'arm'}

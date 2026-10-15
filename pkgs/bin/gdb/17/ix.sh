@@ -5,12 +5,12 @@ gdb
 {% endblock %}
 
 {% block version %}
-17.2
+18.1
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/gdb/gdb-{{self.version().strip()}}.tar.xz
-1c036c0d72e4b3d1fb5c94c88632add6f9d76f4d7c4d2ea793c12a9f19a3228c
+cd9fc3fe2b47743840e42c1592d3d87f8302eb18639c0b8b4ba0898002e2348f
 {% endblock %}
 
 {% block host_libs %}

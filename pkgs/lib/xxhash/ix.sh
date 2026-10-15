@@ -9,10 +9,14 @@ lib/shim/alloc
 lib/compiler_rt/builtins
 {% endblock %}
 
-{% block build %}
->libxxhash.so.0
->libxxhash.so.{{self.version().strip()}}
-{{super()}}
+{% block make_target %}
+libxxhash.a
+{% endblock %}
+
+{% block make_install_target %}
+install_libxxhash.a
+install_libxxhash.includes
+install_libxxhash.pc
 {% endblock %}
 
 {% block env %}

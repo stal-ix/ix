@@ -10,6 +10,5 @@ lib/darwin/c
 {% endblock %}
 {% endset %}
 
-export CPPFLAGS="-F${OSX_SDK}/System/Library/Frameworks -framework {{framework.strip()}} ${CPPFLAGS}"
-export LDFLAGS="-F${OSX_SDK}/System/Library/Frameworks -framework {{framework.strip()}} ${LDFLAGS}"
+export LDFLAGS="-framework {{framework.strip()}} ${LDFLAGS}"
 {% endblock %}

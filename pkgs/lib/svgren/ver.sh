@@ -1,2 +1,2 @@
-https://github.com/cppfw/svgren/archive/refs/tags/0.6.10.tar.gz
-f95c2e894c8137798d10368ed791c78e6eee03af4eb07aabb38362b2eb7539f1
+https://github.com/cppfw/svgren/archive/refs/tags/0.6.30.tar.gz
+572a25ffe389a50bd7b40d4be698e06403dd986aae81248bed1b82bf95ea2bb4

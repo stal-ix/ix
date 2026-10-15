@@ -27,6 +27,9 @@ bld/fake/binutils
 {% block configure %}
 sh ./configure \
     --prefix=${out} \
+{% if darwin %}
+    --target={{target.arch}}-darwin20-gcc \
+{% endif %}
     --disable-install-docs \
     --disable-install-srcs \
     --enable-postproc \

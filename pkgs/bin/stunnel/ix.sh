@@ -5,12 +5,12 @@ stunnel
 {% endblock %}
 
 {% block version %}
-5.80
+5.82
 {% endblock %}
 
 {% block fetch %}
-https://www.stunnel.org/downloads/stunnel-{{self.version().strip()}}.tar.gz
-6d0841d48de07cbbaf4a055919065bf7bb5ebc63cc15c97a2c76caa2bf285513
+https://www.stunnel.org/downloads/archive/5.x/stunnel-{{self.version().strip()}}.tar.gz
+8e7438ccd6b3a2ab05182d0846e112a56a7f557ecdee40de07bf67820008bef7
 {% endblock %}
 
 {% block bld_libs %}

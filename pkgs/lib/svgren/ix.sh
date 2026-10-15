@@ -9,6 +9,7 @@ lib/c
 lib/c++
 lib/svgren/dom
 lib/svgren/agg
+lib/svgren/veg
 lib/svgren/rasterimage
 {% endblock %}
 

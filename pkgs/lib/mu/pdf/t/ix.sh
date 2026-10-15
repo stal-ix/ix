@@ -5,12 +5,12 @@ mupdf
 {% endblock %}
 
 {% block version %}
-1.28.3
+1.28.5
 {% endblock %}
 
 {% block fetch %}
 https://mupdf.com/downloads/archive/mupdf-{{self.version().strip()}}-source.tar.gz
-37c3209dc0e06fa4f3781ed44839ad933a9e6143eb4731f99e069204715bcef2
+98a5c10cda20c3992cdf76ff6b2a1149c32bd79cc796d3f703230b1185b7e934
 {% endblock %}
 
 {% block lib_deps %}

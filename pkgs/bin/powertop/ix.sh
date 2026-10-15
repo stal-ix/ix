@@ -5,12 +5,12 @@ powertop
 {% endblock %}
 
 {% block version %}
-2.16
+2.16.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/fenrus75/powertop/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-cf37e565b958a64f1e3086daeab82d7959566a372d01d40d3904cbca95cdf3d2
+73d5e96d992ed7f040e17c6c9130deebcf42c38990711840981c7afac6f7832f
 {% endblock %}
 
 {% block bld_libs %}
@@ -29,5 +29,8 @@ bld/gettext
 {% block patch %}
 (base64 -d | patch -p1) <<'EOF'
 {% include 'chrono.patch.base64' %}
+EOF
+(base64 -d | patch -p1) <<'EOF'
+{% include 'charconv.patch.base64' %}
 EOF
 {% endblock %}

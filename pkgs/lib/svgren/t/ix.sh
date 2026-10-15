@@ -15,6 +15,10 @@ bld/fake(tool_name=lsb_release)
 bld/fake(tool_name=clang-tidy)
 {% endblock %}
 
+{% block cxx_flags %}
+-Wno-unknown-warning-option
+{% endblock %}
+
 {% block make_flags %}
 -I ${PRORAB_DIR}
 -I ${PRORAB_EXTRA_DIR}

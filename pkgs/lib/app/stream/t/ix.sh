@@ -5,12 +5,12 @@ appstream
 {% endblock %}
 
 {% block version %}
-1.2.0
+1.2.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ximion/appstream/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-02f723cb1afa372d434896e138503163a44ad49e4a813d0d30713fc38ccb8d0c
+2bc53d1d63ae28e7409a15747d4ae23a557409249461aab87a7947640402d1bd
 {% endblock %}
 
 {% block lib_deps %}

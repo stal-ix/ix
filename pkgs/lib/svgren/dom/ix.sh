@@ -5,12 +5,12 @@ svgdom
 {% endblock %}
 
 {% block version %}
-0.4.11
+0.4.35
 {% endblock %}
 
 {% block fetch %}
 https://github.com/cppfw/svgdom/archive/refs/tags/{{self.version().strip()}}.tar.gz
-47b8040c1182017669dc72f9a97849f3aa2c0238c3bd09724a5a5b3d27351752
+38fcbd075dd527f911a211da6f3aa1e0e7a7c0166171136cd557bd908c9faab8
 {% endblock %}
 
 {% block lib_deps %}
@@ -19,4 +19,5 @@ lib/c++
 lib/svgren/r4
 lib/svgren/cssom
 lib/svgren/mikroxml
+lib/svgren/fsif
 {% endblock %}

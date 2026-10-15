@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bld/iconker/tool
-bld/iconker/skia
+bld/iconker/svg
 {% endblock %}

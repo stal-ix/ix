@@ -5,12 +5,12 @@ adwaita-icon-theme
 {% endblock %}
 
 {% block version %}
-50.0
+51.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/{{self.version().strip()}}.tar.gz
-57df20a3ed2edf1381b4b9e32856036fdce821c302c673cb632e52a35a4536e2
+adda5270c67ecdeb9604d24202fd8558b193379f9a9488179591cd4cdd99593b
 {% endblock %}
 
 {% block bld_tool %}

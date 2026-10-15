@@ -1,37 +1,47 @@
-{% extends '//die/c/ix.sh' %}
+{# PyPy with the JIT, and with its cffi stdlib modules linked in.
 
-{% block fetch %}
-https://downloads.python.org/pypy/pypy3.10-v7.3.17-src.tar.bz2
-6ad74bc578e9c6d3a8a1c51503313058e3c58c35df86f7485453c4be6ab24bf7
+   Upstream builds those after translation, as shared objects loaded
+   by dlopen. Here each one is an archive from lib/pypy/cffi, linked
+   into the binary, with its entry point registered in the dl table by
+   the matching /dl package, and named here so the frozen importlib
+   knows to look for it there rather than on disk.
+
+   _tkinter and _gdbm are left out: one wants a Tcl runtime this
+   distribution does not carry, the other a library nothing else here
+   uses. #}
+
+{% extends 't/ix.sh' %}
+
+{% block pypy_opt %}
+jit
 {% endblock %}
 
-{% block bld_tool %}
-bin/pypy/py2
-bld/pkg/config
+{% block pypy_cffi_libs %}
+lib/pypy/cffi/util/dl
+lib/pypy/cffi/pwdgrp/dl
+lib/pypy/cffi/resource/dl
+lib/pypy/cffi/syslog/dl
+lib/pypy/cffi/posix/shmem/dl
+lib/pypy/cffi/lzma/dl
+lib/pypy/cffi/sha/3/dl
+lib/pypy/cffi/blake/2/b/dl
+lib/pypy/cffi/blake/2/s/dl
+lib/pypy/cffi/curses/dl
+lib/pypy/cffi/sqlite/3/dl
+lib/pypy/cffi/ssl/dl
 {% endblock %}
 
-{% block bld_libs %}
-lib/c
-lib/ffi
-lib/kernel
-pip/pycparser
-{% endblock %}
-
-{% block build_flags %}
-shut_up
-wrap_cc
-{% endblock %}
-
-{% block build %}
-cd pypy/goal
-python2 ../../rpython/bin/rpython \
-    --opt=jit \
-    --make-jobs=${make_thrs} \
-    --cc=clang \
-    targetpypystandalone
-{% endblock %}
-
-{% block patch %}
-sed -e 's|IS_SUPPORTED = (|IS_SUPPORTED = False and (|' \
-    -i rpython/rlib/rvmprof/cintf.py
+{% block pypy_cffi_modules %}
+_pypy_util_cffi_inner
+_pwdgrp_cffi
+_resource_cffi
+_syslog_cffi
+_posixshmem_cffi
+_lzma_cffi
+_sha3._sha3_cffi
+_blake2._blake2b_cffi
+_blake2._blake2s_cffi
+_curses_cffi
+_sqlite3_cffi
+_pypy_openssl
 {% endblock %}

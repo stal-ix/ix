@@ -16,7 +16,7 @@ bin/sassc
 {% endblock %}
 
 {% block meson_tool %}
-bld/meson/6
+bld/meson/9
 {% endblock %}
 
 {% block meson_flags %}

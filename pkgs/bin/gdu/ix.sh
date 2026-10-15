@@ -5,7 +5,7 @@ gdu
 {% endblock %}
 
 {% block version %}
-5.37.0
+5.38.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/dundee/gdu/archive/refs/tags/v{{self.version().strip()}}.tar.
 {% endblock %}
 
 {% block go_sha %}
-2450b5d5703a6de2388d82bfe8ef835c60dfbab593bebeba09491941a9171dc2
+1191fd286e9cc74538db7fbb6e8f05238d9966abbb68dcf7567ff28cf13f34ad
 {% endblock %}
 
 {% block unpack %}
@@ -26,5 +26,5 @@ gdu
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/25
+bin/go/lang/26
 {% endblock %}

@@ -5,7 +5,7 @@ direnv
 {% endblock %}
 
 {% block version %}
-2.37.1
+2.38.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/direnv/direnv/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-635d92a1d4fe60d539d6604792006b765ce61f67ba894f8acbf6f41f1352a8e2
+130dffa4ded56e61acf60f9a3b698be8399269fc9717f01a2d9eddc616e3779e
 {% endblock %}
 
 {% block go_bins %}
@@ -21,5 +21,5 @@ direnv
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/25
+bin/go/lang/26
 {% endblock %}

@@ -5,12 +5,12 @@ lmdbxx
 {% endblock %}
 
 {% block version %}
-1.0.0
+1.0.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hoytech/lmdbxx/archive/refs/tags/{{self.version().strip()}}.tar.gz
-5e12eb3aefe9050068af7df2c663edabc977ef34c9e7ba7b9d2c43e0ad47d8df
+3ae81209dbcf274002309c538f0cace34f3cb51e75568b2f64aaa30f0d50ac28
 {% endblock %}
 
 {% block lib_deps %}

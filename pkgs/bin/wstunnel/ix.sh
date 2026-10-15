@@ -5,7 +5,7 @@ wstunnel
 {% endblock %}
 
 {% block version %}
-10.7.1
+11.0.0
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/erebe/wstunnel/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block cargo_sha %}
-a3604129c2d1ef78c5ea81b321339dfacf587dee7eaa8335fc0c52ece2a59cb6
+7694961b1051337beb0697d7be8ec7233ed3ade075b5dfbf84615219e8c19fd4
 {% endblock %}
 
 {% block bld_libs %}

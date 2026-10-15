@@ -18,7 +18,14 @@ a31699c6a89806b74b0151e5e6a7df65de4b49050482fe5ebf8a4379d7af8f29
 cd source
 {% endblock %}
 
+{% block patch %}
+sed -e 's|SET CMP0025 OLD|SET CMP0025 NEW|' \
+    -e 's|SET CMP0054 OLD|SET CMP0054 NEW|' \
+    -i CMakeLists.txt
+{% endblock %}
+
 {% block cmake_flags %}
+CMAKE_POLICY_VERSION_MINIMUM=3.5
 ENABLE_SHARED=OFF
 {% if mingw32 %}
 ENABLE_ASSEMBLY=OFF

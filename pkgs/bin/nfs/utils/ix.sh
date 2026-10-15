@@ -5,12 +5,12 @@ nfs-utils
 {% endblock %}
 
 {% block version %}
-2.9.2
+3.1.1
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/nfs/nfs-utils/{{self.version().strip()}}/nfs-utils-{{self.version().strip()}}.tar.xz
-a249707613a45f0f74dfaaa5b5f58600bfd4b191ab171afb93cb1601bcc484b9
+945babebedf62f2ef426ea9bd82e7c6631022e5648cc9a4ef8db9ab49b692573
 {% endblock %}
 
 {% block bld_libs %}

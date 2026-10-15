@@ -35,4 +35,7 @@ endif()  # NOT CMAKE_CROSSCOMPILING' \
 
 {% block cmake_flags %}
 HWY_ENABLE_EXAMPLES=OFF
+{% if wasi %}
+HWY_ENABLE_CONTRIB=OFF
+{% endif %}
 {% endblock %}

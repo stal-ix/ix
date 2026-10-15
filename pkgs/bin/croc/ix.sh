@@ -15,7 +15,7 @@ https://github.com/schollz/croc/archive/refs/tags/v{{self.version().strip()}}.ta
 {% endblock %}
 
 {% block go_sha %}
-b14d2280182b0a2385da8a583975a86af68360485009ef4fb0b5af7f33e94711
+9fc1e50fdbf50b4bf21741f24ae8896d0530904894beb92a6b8b6c62a23ed570
 {% endblock %}
 
 {% block go_bins %}

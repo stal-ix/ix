@@ -5,12 +5,12 @@ libmd
 {% endblock %}
 
 {% block version %}
-1.2.0
+1.3.0
 {% endblock %}
 
 {% block fetch %}
 https://libbsd.freedesktop.org/releases/libmd-{{self.version().strip()}}.tar.xz
-ac15ffb8430502fbaccdec66c5a82ee0eab0b0f36220df56710feadfeb13d0a0
+fc0f1eb6b6766470326f2c014693809190e67dba84274a6fbae9d4912d066706
 {% endblock %}
 
 {% block lib_deps %}

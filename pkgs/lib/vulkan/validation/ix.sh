@@ -5,12 +5,12 @@ Vulkan-ValidationLayers
 {% endblock %}
 
 {% block version %}
-1.4.321.0
+1.4.357.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/vulkan-sdk-{{self.version().strip()}}.tar.gz
-80f929ac4e9a1810401064fcd3a789a98006c7916b73b215c235a5f538daa5e9
+73180b11992a3554e97ebc18e6bf2b45ff9790ded9d87fc526c7bab865d1303f
 {% endblock %}
 
 {% block lib_deps %}
@@ -32,6 +32,7 @@ lib/spirv/tools
 
 {% block cmake_flags %}
 BUILD_WERROR=OFF
+UPDATE_DEPS=OFF
 BUILD_WSI_XCB_SUPPORT=OFF
 BUILD_WSI_XLIB_SUPPORT=OFF
 BUILD_WSI_WAYLAND_SUPPORT=ON

@@ -3,9 +3,12 @@
 {% block lib_deps %}
 {% if wasi %}
 lib/wasi/c
+{% if target.kernel == 'none' %}
+lib/wasi/null
+{% endif %}
 {% else %}
 lib/c/naked
-lib/c/alloc
 {% endif %}
+lib/c/alloc
 lib/compiler_rt/builtins
 {% endblock %}

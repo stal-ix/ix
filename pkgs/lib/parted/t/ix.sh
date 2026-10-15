@@ -5,12 +5,12 @@ parted
 {% endblock %}
 
 {% block version %}
-3.7
+3.8
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/parted/parted-{{self.version().strip()}}.tar.xz
-008de57561a4f3c25a0648e66ed11e7b30be493889b64334a6d70f2c1951ef7b
+a2b7811f47b0ddb1f7b1d0aa456f7c1270da70708ce231c2fe054c7199eafa63
 {% endblock %}
 
 {% block conf_ver %}2/71{% endblock %}

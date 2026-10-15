@@ -1,7 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block version %}
-0.14.0
+0.14.1
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ gumbo-parser
 
 {% block fetch %}
 https://codeberg.org/grisha/gumbo-parser/archive/{{self.version().strip()}}.tar.gz
-eac82480b916d520e4c7938cbd593ceda34c9241cba04022a078550d0d324cfe
+ba5d13b9b508ec693613b3b61518163aced38f8e885f7e28dc047348a4e61365
 {% endblock %}
 
 {% block lib_deps %}

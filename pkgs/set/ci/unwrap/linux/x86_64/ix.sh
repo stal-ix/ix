@@ -102,7 +102,7 @@ bin/contour
 bin/nix
 bin/coreutils/9/6
 bin/inkscape
-bin/imway
+bin/im/pulse
 bin/shitty
 bin/solo
 bin/gdb/16
@@ -1029,8 +1029,10 @@ bin/pipes
 bin/warp
 bin/sync/thing
 bin/thingd
+bin/pypy
 bld/py/gobject
 bld/blueprint/compiler
-lib/gtk/layer/shell/4/dl(kind=lib)
-lib/gtk/layer/shell/4/gir
+bin/openvpn/yandex
+set/pg/yandex/vpn
+bin/fusermount/sud
 {% endblock %}

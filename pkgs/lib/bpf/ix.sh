@@ -5,12 +5,12 @@ libbpf
 {% endblock %}
 
 {% block version %}
-1.7.0
+1.8.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libbpf/libbpf/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-7ab5feffbf78557f626f2e3e3204788528394494715a30fc2070fcddc2051b7b
+b7a1e685f90f6a63ead0dd85d053694b222975da8d09c1a966041cff6f0055ff
 {% endblock %}
 
 {% block lib_deps %}

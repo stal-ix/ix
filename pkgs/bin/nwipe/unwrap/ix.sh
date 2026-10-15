@@ -5,12 +5,12 @@ nwipe
 {% endblock %}
 
 {% block version %}
-0.42
+0.43
 {% endblock %}
 
 {% block fetch %}
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-0e38474495cc6c86043a1de0460cf0dc009ad68e079ee23d71569e80e55cd2e6
+b1e9d94e1879934db688bce9515111ef6b0599b2244fdca2625a2e87e2d8e221
 {% endblock %}
 
 {% block conf_ver %}
@@ -25,5 +25,6 @@ lib/curses
 lib/parted
 lib/e2fsprogs
 lib/device/mapper
+lib/nvme
 lib/shim/fake(lib_name=libconfig)
 {% endblock %}

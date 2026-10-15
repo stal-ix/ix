@@ -9,7 +9,11 @@ https://github.com/google/bloaty
 {% endblock %}
 
 {% block git_sha %}
-f9670cd3faa88090de03bef8a8c3a994f4fae0b17b3d18c74ef418f4690d3fe6
+e5718cb646ab262aa9c10ee623f75bf60f0107e3534b3c908c368216d8e7d40e
+{% endblock %}
+
+{% block git_version %}
+v4
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,4 +27,3 @@ lib/protobuf
 {% block bld_tool %}
 bin/protoc
 {% endblock %}
-

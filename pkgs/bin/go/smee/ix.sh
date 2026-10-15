@@ -13,7 +13,7 @@ https://github.com/chmouel/gosmee/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+f9ee3e6c011ad078e336d3b5952d1fb1198dfedda17b967deab23e009562ddcc
 {% endblock %}
 
 {% block go_bins %}

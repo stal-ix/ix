@@ -5,12 +5,12 @@ prorab-extra
 {% endblock %}
 
 {% block version %}
-0.2.43
+0.2.61
 {% endblock %}
 
 {% block fetch %}
 https://github.com/cppfw/prorab-extra/archive/refs/tags/{{self.version().strip()}}.tar.gz
-2bd27a510b2451cc799a1928c66b47102241cd603c08a15798de4920e079c4da
+2c65df3efee0905277180f47e3b08c2cca7952820f9118decc99e24c51590975
 {% endblock %}
 
 {% block bld_tool %}

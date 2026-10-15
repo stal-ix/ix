@@ -13,7 +13,7 @@ https://github.com/wagoodman/dive/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block go_sha %}
-b110bfe7b8d9da89bcf085b68251c44d50201ff9f169842ef6d110f6ab24d201
+7b94068a6257567178e8d6cda717d485f5b5c51cebefd4831afa190780fe9aee
 {% endblock %}
 
 {% block go_build_flags %}

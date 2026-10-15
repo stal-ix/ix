@@ -8,6 +8,11 @@
 lib/c/naked
 {% endblock %}
 
+{% block bld_libs %}
+{# the allocator is not part of the naked libc; cmake's link checks need one #}
+lib/shim/alloc
+{% endblock %}
+
 {% block cmake_flags %}
 {{super()}}
 

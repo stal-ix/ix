@@ -9,7 +9,7 @@ a2b295420d899be60c6a27ced21eb172bf51f675
 {% endblock %}
 
 {% block fetch %}
-https://github.com/pg83/glfw/archive/{{self.version().strip()}}.tar.gz
+https://codeload.github.com/glfw/glfw/tar.gz/{{self.version().strip()}}
 069e8d784766ea77685f19031a3d0f699afef0f8a9e577c3ec641ccaea26bbcd
 {% endblock %}
 

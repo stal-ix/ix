@@ -21,6 +21,7 @@ done
 cd pkgconfig
 
 cp ncursesw.pc ncurses.pc
+cp panelw.pc panel.pc
 {% endblock %}
 
 {% block env %}

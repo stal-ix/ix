@@ -5,12 +5,12 @@ xorgproto
 {% endblock %}
 
 {% block version %}
-2025.1
+2026.1
 {% endblock %}
 
 {% block fetch %}
 https://www.x.org/releases/individual/proto/xorgproto-{{self.version().strip()}}.tar.xz
-56898c716c0578df8a2d828c9c3e5c528277705c0484381a81960fe1a67668e8
+f9bfe4a9ed8c8ab9d2a3b0d49797f046052dadd06b7a8b45dbffaffb137e8290
 {% endblock %}
 
 {% block bld_libs %}

@@ -9,7 +9,11 @@ https://github.com/desktop-app/tg_owt
 {% endblock %}
 
 {% block git_sha %}
-580779537a63d8f04d441539841c68a7ea9114f774d427809175b0a8671e0fc4
+bf07e7f2549993ce6a88b139c43939f90e93a2bab6cfce1932e4218b2e3f18ba
+{% endblock %}
+
+{% block git_version %}
+v4
 {% endblock %}
 
 {% block lib_deps %}
@@ -71,6 +75,14 @@ done
 
 sed -e 's|ABSL_ATTRIBUTE_LIFETIME_BOUND||' \
     -i src/api/candidate.h
+
+sed -e '/av_frame->reordered_opaque = context->reordered_opaque;/d' \
+    -e '/int64_t frame_timestamp_us =/d' \
+    -e '/av_context_->reordered_opaque = frame_timestamp_us;/d' \
+    -e '/We don.t expect reordering/d' \
+    -e '/Decoded frame timestamp should match/d' \
+    -e '/RTC_DCHECK_EQ(av_frame_->reordered_opaque, frame_timestamp_us);/d' \
+    -i src/modules/video_coding/codecs/h264/h264_decoder_impl.cc
 {% endblock %}
 
 {% block install %}

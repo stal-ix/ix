@@ -4,50 +4,42 @@
 shitty
 {% endblock %}
 
-{% block git_repo %}
-https://github.com/pg83/shitty
+{% block version %}
+18
 {% endblock %}
 
-{% block git_commit %}
-59f69588b0161f41425e3c33bf0a257a06c39bc0
-{% endblock %}
-
-{% block git_sha %}
-3cc8264c1970d72dccf030b2e579f46a2e3d6b342813a7ba70af86924a966dca
+{% block fetch %}
+https://github.com/pg83/shitty/archive/refs/tags/{{self.version().strip()}}.tar.gz
+3761578b327abbed4a4ca5e6d8d799e932753b16f183736b5cd09c56a1113922
 {% endblock %}
 
 {% block pybuild_target %}
-st
-{% endblock %}
-
-{% block git_hook_1 %}
-git config submodule.third_party/libstd.url https://github.com/pg83/std.git
+st pt
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
-lib/glfw
+lib/c++
 lib/freetype
 lib/harfbuzz
-lib/utf8/proc
 lib/simd/utf
-lib/linux/headers
-lib/glfw/deps
+lib/wayland
 lib/fontconfig
+lib/xkb/common
+lib/linux/headers
 lib/vulkan/loader
 lib/vulkan/drivers
 lib/vulkan/headers
+lib/wayland/protocols
 {% endblock %}
 
 {% block bld_tool %}
+bld/wayland
 bin/glslang
+bin/svg2png
+bin/ragel/6
 {% endblock %}
 
 {% block install %}
-mkdir -p ${out}/bin
-mkdir -p ${out}/share/applications
-mkdir -p ${out}/share/icons/hicolor/scalable/apps
-cp st ${out}/bin/
-cp shitty.desktop ${out}/share/applications/
-cp shitty.svg ${out}/share/icons/hicolor/scalable/apps/
+sh dev/install.sh ${out}
 {% endblock %}

@@ -81,4 +81,12 @@ sed -e 's|PAGE_SIZE|X_PAGE_SIZE|' -i src/attributes.cpp
 sed -e 's|PAGE_SIZE|X_PAGE_SIZE|' -i src/attributes.h
 sed -e 's|PAGE_SIZE|X_PAGE_SIZE|' -i src/object/sp-page.cpp
 sed -e 's|other.p|other._p|' -i src/util/gobjectptr.h
+for x in src/inkscape-main.cpp src/inkview-main.cpp; do
+cat << EOF >> ${x}
+extern "C" void gobject_init(void);
+__attribute__((constructor(101))) static void gobject_init_first() {
+    gobject_init();
+}
+EOF
+done
 {% endblock %}

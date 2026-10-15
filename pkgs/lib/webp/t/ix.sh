@@ -16,3 +16,13 @@ e4ab7009bf0629fd11982d4c2aa83964cf244cffba7347ecd39019a9e38c4564
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block cmake_flags %}
+{% if wasi %}
+{# no threads on wasi; with them libwebp is compiled -pthread, that is
+   +atomics, and under LTO that one feature turns the whole module's
+   atomic operations into real atomics, which a runtime without shared
+   memory refuses #}
+WEBP_USE_THREAD=OFF
+{% endif %}
+{% endblock %}

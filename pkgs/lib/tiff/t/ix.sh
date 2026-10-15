@@ -26,6 +26,12 @@ lib/webp
 lib/deflate
 {% endblock %}
 
+{% block bld_libs %}
+{% if wasi %}
+lib/shim/setjmp
+{% endif %}
+{% endblock %}
+
 {% block cmake_flags %}
 tiff-contrib=OFF
 tiff-docs=OFF

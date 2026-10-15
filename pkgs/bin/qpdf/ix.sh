@@ -5,12 +5,12 @@ qpdf
 {% endblock %}
 
 {% block version %}
-12.4.1
+12.4.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/qpdf/qpdf/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-ebab3840fa8f370a1d4a1b4b7b08fad5baebeb5b5fa3cbbda88cd81e4fccecc9
+88ddeb5f25c6e9156f3113fc3994d3a5e0cdfeee398cd09dd00fabc9dac9f573
 {% endblock %}
 
 {% block bld_libs %}

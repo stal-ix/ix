@@ -5,12 +5,12 @@ libsrtp
 {% endblock %}
 
 {% block version %}
-2.8.0
+2.8.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/cisco/libsrtp/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-d123dcff5c56d4f1a9006f2b311ea99a85016cbf3bb24b1007885d422237db85
+ef5569220749529d778013aae1178391d972570a2b4f7288dda22effa875b07c
 {% endblock %}
 
 {% block lib_deps %}

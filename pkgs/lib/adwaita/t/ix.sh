@@ -5,12 +5,12 @@ libadwaita
 {% endblock %}
 
 {% block version %}
-1.9.3
+1.10.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/libadwaita/archive/refs/tags/{{self.version().strip()}}.tar.gz
-3e4cf25e389a81ad2b73b6f43721b268acd77e393090af06e4dc477c4b39c523
+bd517433a327c216e5f4598c3e0e5e7ec2a4300c0ab7efca6481a44e7768a8e1
 {% endblock %}
 
 {% block lib_deps %}
@@ -18,7 +18,7 @@ lib/c
 lib/glib
 lib/gtk/4
 lib/fribidi
-lib/app/stream
+lib/ministream
 {% endblock %}
 
 {% block bld_tool %}

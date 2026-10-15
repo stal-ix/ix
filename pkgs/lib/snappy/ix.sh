@@ -5,12 +5,12 @@ snappy
 {% endblock %}
 
 {% block version %}
-1.2.2
+1.3.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/google/snappy/archive/refs/tags/{{self.version().strip()}}.tar.gz
-90f74bc1fbf78a6c56b3c4a082a05103b3a56bb17bca1a27e052ea11723292dc
+893f708a0bf4b5529d555ffcee390e940e932fcf90261f682604475a76cd0247
 {% endblock %}
 
 {% block lib_deps %}

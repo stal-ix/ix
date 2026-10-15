@@ -5,12 +5,12 @@ FreeRDP
 {% endblock %}
 
 {% block version %}
-3.31.1
+3.32.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/{{self.version().strip()}}.tar.gz
-254de9fe176758e9787347469fb310523782f03c61130508b51b266e374eb6c1
+0453420dc3d9c3c03952e4e3f52e5b213ce0eae37346cd9a08bbd30c30a23c21
 {% endblock %}
 
 {% block bld_libs %}

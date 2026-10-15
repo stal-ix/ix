@@ -5,7 +5,7 @@ hysteria
 {% endblock %}
 
 {% block version %}
-2.12.2
+2.12.3
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v{{self.version().stri
 {% endblock %}
 
 {% block go_sha %}
-8309537d7afa776e87463fc3c1969ef0bb483d6651522bb0b77de6a642a6a9ad
+e289f7e3246b80b8965953ec7dc9fa3a2f5f20537b36ddf28993b92e70778623
 {% endblock %}
 
 {% block go_tool %}

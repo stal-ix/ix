@@ -1,47 +1,48 @@
-{% extends '//die/c/cmake.sh' %}
+{% extends '//die/rust/cargo.sh' %}
 
 {% block pkg_name %}
 mold
 {% endblock %}
 
 {% block version %}
-2.42.1
+3.0.0
 {% endblock %}
 
-{% block fetch %}
+{% block cargo_url %}
 https://github.com/rui314/mold/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-0580221bfdad7148ceeafd0ad3c1c7b3ca9e66b45950405230cc3f81a205c816
+{% endblock %}
+
+{% block cargo_fetch_sha %}
+1dee837e227b0c3f2661def602ef8ddc0b889ae5b1d28c1ddec5f29e08e5ceb5
+{% endblock %}
+
+{% block cargo_sha %}
+7b69a72a37ab4ca09717391468d55a870a3f8705ef695b60c1155740a7f5f6d5
 {% endblock %}
 
 {% block bld_libs %}
 lib/z
-lib/c
-lib/c++
-lib/linux/headers
 lib/zstd
-lib/xxhash
-lib/openssl
-lib/blake3/c
-lib/intel/tbb
 {% endblock %}
 
-{% block cmake_flags %}
-MOLD_LTO=OFF
-MOLD_USE_MOLD=OFF
-MOLD_USE_MIMALLOC=OFF
-MOLD_USE_SYSTEM_TBB=ON
+{% block ld_flags %}
+-lz
+-lzstd
 {% endblock %}
 
-{% block patch %}
-rm -r third-party/tbb
-rm -r third-party/xxhash
-rm -r third-party/mimalloc
+{% block cargo_features %}
+__default__
+system-allocator
+{% endblock %}
 
-find . -type f | while read l; do
-    sed -e 's|mold-wrapper SHARED|mold-wrapper STATIC|' \
-        -e 's|xxhash/xxhash.h|xxhash.h|' \
-        -e 's|third-party/xxhash.h|xxhash.h|' \
-        -e 's|../xxhash.h|xxhash.h|' \
-        -i ${l}
-done
+{% block cargo_bins %}
+mold
+{% endblock %}
+
+{% block install %}
+PREFIX=${out} CARGO_TARGET_DIR=${tmp}/{{target.rust}} ./install-mold.sh
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/96
 {% endblock %}

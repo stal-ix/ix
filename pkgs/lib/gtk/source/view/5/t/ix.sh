@@ -5,12 +5,12 @@ gtksourceview
 {% endblock %}
 
 {% block version %}
-5.20.0
+5.22.0
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/{{self.version().strip()}}/gtksourceview-{{self.version().strip()}}.tar.bz2
-baf9d4dd98a8611aab00be77d511aebaca0c63a00d9c9abb2d80164e5ac317ac
+f10f79865234b7c277b419a9647e78f329371d5ec3f5010dd0befbe75f3f123e
 {% endblock %}
 
 {% block lib_deps %}

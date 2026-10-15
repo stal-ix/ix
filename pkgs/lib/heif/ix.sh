@@ -1,11 +1,9 @@
-{% extends 't/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block cmake_flags %}
-WITH_EXAMPLES=OFF
-{{super()}}
-{% endblock %}
-
-{% block install %}
-{{super()}}
-sed -e 's|.*Libs.*stdc.*||' -i ${out}/lib/pkgconfig/libheif.pc
+{% block lib_deps %}
+{% if wasi %}
+lib/heif/wasi
+{% else %}
+lib/heif/common
+{% endif %}
 {% endblock %}

@@ -5,12 +5,12 @@ volk
 {% endblock %}
 
 {% block version %}
-1.4.357.0
+1.4.363.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-{{self.version().strip()}}.tar.gz
-6400c7b23e24d17e4f04bac49b55b06c4e87677d33398e90344743ec73560ca6
+1547d8d74395d4048fb3f4a6313da56db626e89b55db238d0d7e8944c8a645f3
 {% endblock %}
 
 {% block lib_deps %}

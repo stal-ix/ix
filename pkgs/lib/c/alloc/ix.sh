@@ -7,6 +7,8 @@ lib/{{force_allocator}}
 {# AddressSanitizer already has a built-in allocator #}
 {% elif linux %}
 lib/{{allocator or default_allocator}}
+{% elif wasi %}
+lib/{{allocator or 'trustme/malloc'}}
 {% elif darwin %}
 lib/reallocarray
 lib/reallocarray/headers

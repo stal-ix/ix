@@ -1,10 +1,10 @@
 {% extends '//bin/cmake/ix.sh' %}
 
 {% block version %}
-4.4.3
+4.4.4
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Kitware/CMake/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-bfd14c62cf4bfb2fd10525449ea59007d3325e7641349e5b7e69cee1127f2e7d
+4f6917fcdbd07517917acff9e9ce20d597a6477bdab1aab00210790620b17848
 {% endblock %}

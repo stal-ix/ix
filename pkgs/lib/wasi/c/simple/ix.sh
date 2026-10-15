@@ -1,13 +1,7 @@
 {% extends '//lib/wasi/c/t/ix.sh' %}
 
-{% block make_flags %}
-{{super()}}
-THREAD_MODEL=simple
-{% endblock %}
-
-{% block build %}
-mkdir -p build/wasm32-wasi
-{{super()}}
+{% block wasi_target %}
+TARGET_TRIPLE=wasm32-wasi
 {% endblock %}
 
 {% block env %}

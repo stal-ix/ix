@@ -9,7 +9,11 @@ https://github.com/magiblot/turbo
 {% endblock %}
 
 {% block git_sha %}
-3781ad60fbc57e37c9a2fc8fd2fbcb1f78ffb459396f03ed16884022cb5fe386
+2b91faa0420222f83dbe51d707e69e9d419846e728320b517cad7fd98d1d9fe1
+{% endblock %}
+
+{% block git_version %}
+v4
 {% endblock %}
 
 {% block bld_libs %}

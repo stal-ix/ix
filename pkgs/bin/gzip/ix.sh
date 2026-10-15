@@ -5,12 +5,12 @@ gzip
 {% endblock %}
 
 {% block version %}
-1.14
+1.15
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/gzip/gzip-{{self.version().strip()}}.tar.xz
-01a7b881bd220bfdf615f97b8718f80bdfd3f6add385b993dcf6efd14e8c0ac6
+9aa0cc780dec156b8282844833b342ab7cb08c25d2cd9a1869cdd0df31deff48
 {% endblock %}
 
 {% block bld_libs %}

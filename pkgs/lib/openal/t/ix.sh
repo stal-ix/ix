@@ -16,7 +16,13 @@ fb27e5839aa11f0e5b9d33756965291fad5d6909ab928ea1f796f4a1a6877894
 {% block lib_deps %}
 lib/c
 lib/c++
+{% if darwin %}
+lib/darwin/framework/CoreAudio
+lib/darwin/framework/AudioToolbox
+lib/darwin/framework/CoreFoundation
+{% else %}
 lib/sndio
+{% endif %}
 {% endblock %}
 
 {% block bld_libs %}
@@ -37,6 +43,14 @@ ALSOFT_BACKEND_SNDIO=ON
 ALSOFT_BACKEND_WAVE=ON
 ALSOFT_DLOPEN=OFF
 ALSOFT_EXAMPLES=OFF
+{% endblock %}
+
+{% block cxx_flags %}
+{{super()}}
+{% if darwin %}
+-Wno-undef
+-Wno-elaborated-enum-base
+{% endif %}
 {% endblock %}
 
 {% block build_flags %}

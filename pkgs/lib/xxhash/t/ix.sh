@@ -5,10 +5,10 @@ xxHash
 {% endblock %}
 
 {% block version %}
-0.8.3
+0.8.4
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-aae608dfe8213dfd05d909a57718ef82f30722c392344583d3f39050c7f29a80
+5738270935e7c3d38a79b3adf7c9692566ce7895a25f67de43ad52ab504acd32
 {% endblock %}

@@ -1,7 +1,8 @@
 #!/ix/realm/pg/bin/bash
 
-export PATH=/home/pg/monorepo/imway:/home/pg/monorepo/shitty:/ix/realm/pg/bin:/bin
+export PATH=/ix/realm/pg/bin:/bin
 
+export IM_SCALE=2.5
 export XDG_SESSION_ID=$$
 export XDG_DATA_DIRS="/ix/realm/${USER}/share"
 export XDG_RUNTIME_DIR="${TMPDIR}"
@@ -15,4 +16,4 @@ eval $(ssh-agent)
 
 ssh-add ~/.ssh/*
 
-imway-session --mode "${1:-3840x2160@120}" --scale 2.5 --hdr 300 "${@:2}" >& ~/slog
+impulse-session --mode "${1:-3840x2160@120}" --scale 2.5 --hdr 300 "${@:2}" >& ~/slog

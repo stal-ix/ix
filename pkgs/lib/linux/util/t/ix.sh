@@ -5,12 +5,12 @@ util-linux
 {% endblock %}
 
 {% block version %}
-2.42.3
+2.42.4
 {% endblock %}
 
 {% block fetch %}
 https://github.com/util-linux/util-linux/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-23cff3e5df43b4bc9ce309e0ed4bc0071acb4f5016bc005fe0f8a1359372cede
+e1d38037dab761a2d39114d88a6744ffd5a4576efa29fe41e1dfbd8453891fe7
 {% endblock %}
 
 {% block lib_deps %}

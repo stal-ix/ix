@@ -5,12 +5,12 @@ mikroxml
 {% endblock %}
 
 {% block version %}
-0.1.58
+0.1.75
 {% endblock %}
 
 {% block fetch %}
 https://github.com/cppfw/mikroxml/archive/refs/tags/{{self.version().strip()}}.tar.gz
-1ff6b8c677b6de0838c5ad97d7cf83042345ce4d6d97d914ee082c1c9f9544bc
+d68d66235c3fa3020f5da367c27352d0e159d5117a19a2cb50757f0f5fc63e1e
 {% endblock %}
 
 {% block lib_deps %}

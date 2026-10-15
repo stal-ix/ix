@@ -5,12 +5,12 @@ WasmEdge
 {% endblock %}
 
 {% block version %}
-0.17.1
+0.17.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/{{self.version().strip()}}.tar.gz
-b2da5bc43a6e11305ddffc7afa1d67c647fd49e34d334fc810ff63783fb52a25
+0c7617ac8bbfd4db768dc59f5b466375d442a57a14c3d86d3d04e391799cb255
 {% endblock %}
 
 {% block bld_libs %}

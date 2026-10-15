@@ -5,12 +5,12 @@ fsearch
 {% endblock %}
 
 {% block version %}
-0.3.1
+0.3.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/{{self.version().strip()}}.tar.gz
-b16ab75556d841bf858633710d71c92f35d34362614b8584b0a5b71690a72c39
+2c9bc7de9ac1ba72232cb4d66a750fe04210fdae96273f04316b6616fc098308
 {% endblock %}
 
 {% block bld_libs %}

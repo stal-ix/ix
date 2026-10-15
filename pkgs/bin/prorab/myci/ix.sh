@@ -5,12 +5,12 @@ myci
 {% endblock %}
 
 {% block version %}
-0.1.147
+0.1.231
 {% endblock %}
 
 {% block fetch %}
 https://github.com/cppfw/myci/archive/refs/tags/{{self.version().strip()}}.tar.gz
-1ab8a33005130b84ca7b7f4a7faca7540cff2a02421e06631c1d3c8893fde334
+899a6614876cf2a470988ec0f5d2ea5ea58c406f78a32c89acfb3d9a8528561e
 {% endblock %}
 
 {% block bld_tool %}

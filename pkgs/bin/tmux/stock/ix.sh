@@ -1,7 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block version %}
-3.7c
+3.8
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ tmux
 
 {% block fetch %}
 https://github.com/tmux/tmux/archive/refs/tags/{{self.version().strip()}}.tar.gz
-5e7b0f533b66e5633e2b72a9d483f9534a343ab7011eb2621b6309dfba553daa
+f873f9379c9cf30d3d66b642a955118c4fbb0019d046d13e6012340811e5dcb7
 {% endblock %}
 
 {% block bld_libs %}

@@ -18,6 +18,12 @@ lib/c
 lib/z
 {% endblock %}
 
+{% block bld_libs %}
+{% if wasi %}
+lib/shim/setjmp
+{% endif %}
+{% endblock %}
+
 {% block patch %}
 rm autogen.sh
 {% endblock %}

@@ -12,7 +12,7 @@ lib/svgren
 {% endblock %}
 
 {% block patch %}
-sed -e 's|M_OS == M_OS_LINUX|0|' -i tests/render/main.cpp
+sed -e 's|CFG_OS == CFG_OS_LINUX|0|' -i tests/render/main.cpp
 {% endblock %}
 
 {% block build %}

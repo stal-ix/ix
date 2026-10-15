@@ -17,7 +17,11 @@ https://github.com/quotient-im/Quaternion
 {% endblock %}
 
 {% block git_sha %}
-a3f3afa8bf99a231fd85f477570be25da50ed574af6be116c946c721fcdea653
+18b60a64504d426c180db47490ba143f337254489aef8ea24207796c2ab0297c
+{% endblock %}
+
+{% block git_version %}
+v4
 {% endblock %}
 
 {% block bld_libs %}

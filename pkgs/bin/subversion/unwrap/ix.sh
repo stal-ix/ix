@@ -5,12 +5,12 @@ subversion
 {% endblock %}
 
 {% block version %}
-1.14.5
+1.15.0
 {% endblock %}
 
 {% block fetch %}
 https://archive.apache.org/dist/subversion/subversion-{{self.version().strip()}}.tar.bz2
-e78a29e7766b8b7b354497d08f71a55641abc53675ce1875584781aae35644a1
+dfb7b1e5270c7def971ccbd5938b0c03b1b5bd60b6674a2d8a74a9560839fb8c
 {% endblock %}
 
 {% block bld_libs %}
@@ -29,7 +29,7 @@ lib/utf8/proc
 
 {% block bld_tool %}
 bld/python
-bin/libtool/prev
+bin/libtool
 bld/redir(from=python,to=python3)
 {% endblock %}
 

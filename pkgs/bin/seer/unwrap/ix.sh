@@ -5,7 +5,7 @@ seer
 {% endblock %}
 
 {% block version %}
-2.7
+2.8.1
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-d1d39d30fa8ac29f27c08533bab06be89f1f5ffcfc351edae3a2daf6fbdc98bd
+7a6735013447c5019c83fe68eb5b4678275797ec9e264e3480aca18468514e19
 {% endblock %}
 
 {% block bld_libs %}

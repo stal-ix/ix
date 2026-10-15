@@ -5,12 +5,12 @@ cairo
 {% endblock %}
 
 {% block version %}
-1.18.4
+1.18.6
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/{{self.version().strip()}}/cairo-{{self.version().strip()}}.tar.bz2
-6d9281e786fd289d382324d4588d59973a36911e1865b40e64f9ec39936ceba8
+42b785e00ef97a687c9e32ad26dde55b4371215c0ee20b39cab63294a9fe8f0c
 {% endblock %}
 
 {% block lib_deps %}

@@ -22,6 +22,12 @@ lib/lcms/2
 lib/highway
 {% endblock %}
 
+{% block patch %}
+{% if wasi %}
+sed -e '/include(jxl_threads.cmake)/d' -i lib/CMakeLists.txt
+{% endif %}
+{% endblock %}
+
 {% block cmake_flags %}
 JPEGXL_STATIC=ON
 JPEGXL_EMSCRIPTEN=OFF
@@ -34,6 +40,11 @@ JPEGXL_ENABLE_SJPEG=OFF
 #JPEGXL_ENABLE_JPEGLI=OFF
 JPEGXL_ENABLE_VIEWERS=OFF
 JPEGXL_ENABLE_FUZZERS=OFF
+JPEGXL_ENABLE_MANPAGES=OFF
+{% if wasi %}
+JPEGXL_ENABLE_TOOLS=OFF
+JPEGXL_ENABLE_OPENEXR=OFF
+{% endif %}
 
 JPEGXL_BUNDLE_LIBPNG=OFF
 

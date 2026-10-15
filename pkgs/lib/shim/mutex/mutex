@@ -1,0 +1,52 @@
+#pragma once
+
+/*
+ * <mutex> for single-threaded sandboxes (wasm32-none): the libc++ header as
+ * it is, and then std::mutex and std::recursive_mutex, which a libc++ built
+ * without threads leaves out, as locks of nothing. There is one thread, and
+ * nothing to lock against.
+ */
+
+#include_next <mutex>
+
+#ifdef _LIBCPP_HAS_NO_THREADS
+
+_LIBCPP_BEGIN_NAMESPACE_STD
+
+class mutex {
+public:
+    constexpr mutex() noexcept = default;
+    mutex(const mutex&) = delete;
+    mutex& operator=(const mutex&) = delete;
+
+    void lock() {
+    }
+
+    bool try_lock() {
+        return true;
+    }
+
+    void unlock() {
+    }
+};
+
+class recursive_mutex {
+public:
+    recursive_mutex() = default;
+    recursive_mutex(const recursive_mutex&) = delete;
+    recursive_mutex& operator=(const recursive_mutex&) = delete;
+
+    void lock() {
+    }
+
+    bool try_lock() {
+        return true;
+    }
+
+    void unlock() {
+    }
+};
+
+_LIBCPP_END_NAMESPACE_STD
+
+#endif

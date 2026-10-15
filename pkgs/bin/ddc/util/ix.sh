@@ -5,12 +5,12 @@ ddcutil
 {% endblock %}
 
 {% block version %}
-3.0.0
+3.0.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/rockowitz/ddcutil/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-08f35d6773a37b44ce300ee0ac167e8daf1cc81a81e3429286588d62314e9c25
+d6b2a42378233aaff6188a0a5ff9fa0e959cb95742367e2cdfa2c6a023c7fe26
 {% endblock %}
 
 {% block bld_libs %}

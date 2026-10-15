@@ -5,12 +5,12 @@ kcachegrind
 {% endblock %}
 
 {% block version %}
-26.08.1
+26.08.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/KDE/kcachegrind/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-fea90208dbe12e8951f15e280cf90c65260aba087e935707f599889a0611707d
+79af2c9d021e83a8e03291ae89b7b762bc93e77df64f1751bf4493f8f0fa3979
 {% endblock %}
 
 {% block bld_libs %}

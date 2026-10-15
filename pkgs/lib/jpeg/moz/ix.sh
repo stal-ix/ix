@@ -21,6 +21,8 @@ lib/c
 {{super()}}
 PNG_SUPPORTED=OFF
 CMAKE_INSTALL_LIBDIR=${out}/lib
+{# mozjpeg still says cmake_minimum_required 2.8.12; CMake 4 refuses that #}
+CMAKE_POLICY_VERSION_MINIMUM=3.5
 {% endblock %}
 
 {% block bld_tool %}

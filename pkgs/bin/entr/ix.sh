@@ -5,12 +5,12 @@ entr
 {% endblock %}
 
 {% block version %}
-5.8
+5.9
 {% endblock %}
 
 {% block fetch %}
 https://github.com/eradman/entr/archive/refs/tags/{{self.version().strip()}}.tar.gz
-dc9a2bdc556b2be900c1d8cdf432de26492de5af3ffade000d4bfd97f3122bfb
+0ef2ce7db728167844a91904944cd07c7ccc6fd3041b849cad861224d106a845
 {% endblock %}
 
 {% block bld_libs %}

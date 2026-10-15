@@ -5,12 +5,12 @@ dht
 {% endblock %}
 
 {% block version %}
-0.27
+0.28
 {% endblock %}
 
 {% block fetch %}
 https://github.com/jech/dht/archive/refs/tags/dht-{{self.version().strip()}}.tar.gz
-caba469a784a5c359c084099fdc025cfe09b1faec2ba9ba257b7384351c43c0a
+2f91db29636ca84503b4bb59d7a4a6a681c3a547e12ef775f83e99b69be92f2d
 https://github.com/transmission/dht/commit/b02da598.patch
 91fb75029bf04456bb7fd9c7cc14d544e906d35a309cc8de5be081049aeb7649
 {% endblock %}

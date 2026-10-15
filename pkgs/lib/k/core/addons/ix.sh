@@ -5,12 +5,12 @@ kcoreaddons
 {% endblock %}
 
 {% block version %}
-6.30.0
+6.31.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-63f898824f23fdddb175b5d4f2c31d9584c238b5f005b9505b06fc7545f1a79a
+c5b4e79d1ea0ff3ad0c45db9b5ea6170f81e4d4db0f5c4693a3c1e92a1016694
 {% endblock %}
 
 {% block lib_deps %}
@@ -30,7 +30,8 @@ bld/qt/6/tools/qml
 
 {% block patch %}
 {{super()}}
-sed -e 's|set(REQUIRED_QT_VERSION 6.9.0)|set(REQUIRED_QT_VERSION 6.7.0)|' -i CMakeLists.txt
+sed -e 's|set(REQUIRED_QT_VERSION 6.10.0)|set(REQUIRED_QT_VERSION 6.7.0)|' -i CMakeLists.txt
+sed -e '/#include <array>/a#include <span>' -i src/lib/util/ksafestringerror.cpp
 {% endblock %}
 
 {% block install %}

@@ -5,12 +5,12 @@ knot-resolver
 {% endblock %}
 
 {% block version %}
-6.4.2
+6.5.0
 {% endblock %}
 
 {% block fetch %}
 https://secure.nic.cz/files/knot-resolver/knot-resolver-{{self.version().strip()}}.tar.xz
-854ad23367bab66392f7d74f142f2219e3090ae81126b635430fce7b1916f1a3
+84599bbf889ecc7892aeabc088753355d63326354e5992b53a5ec82306224ee6
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,6 +24,7 @@ lib/cap/ng
 lib/lua/jit
 lib/ng/http/2
 lib/protobuf/c
+lib/execinfo
 {% endblock %}
 
 {% block bld_tool %}

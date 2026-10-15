@@ -5,12 +5,12 @@ xCHM
 {% endblock %}
 
 {% block version %}
-1.39
+1.40
 {% endblock %}
 
 {% block fetch %}
 https://github.com/rzvncj/xCHM/archive/refs/tags/{{self.version().strip()}}.tar.gz
-e806a6daa6db115406f75f6c1e969734db62dd000b39bb7d55e0ba4c1a88ec16
+b07e6459c90af4067d0c128cc86e8905c976b200e32cdb7cea64134609885ac3
 {% endblock %}
 
 {%block bld_libs %}
