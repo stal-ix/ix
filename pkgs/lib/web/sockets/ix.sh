@@ -26,6 +26,7 @@ lib/kernel
 
 {% block c_flags %}
 -Wno-implicit-int-conversion
+-Wno-sign-compare
 {% endblock %}
 
 {% block cmake_flags %}
