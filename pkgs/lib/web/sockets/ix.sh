@@ -5,12 +5,12 @@ libwebsockets
 {% endblock %}
 
 {% block version %}
-5.0.0
+5.1.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/warmcat/libwebsockets/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-f853c6582101cfcee3a5a9e28ae92ab19d9735c5f31f0bb2e9794b5106123962
+9acbba00aaa9e6178ae09c6f920d95449b527c1417e81d2cdd4103bc6d64d13f
 {% endblock %}
 
 {% block lib_deps %}
