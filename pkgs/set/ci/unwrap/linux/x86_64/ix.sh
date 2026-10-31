@@ -100,7 +100,8 @@ bin/solo
 bin/gdb/16
 bin/gdb/18
 bin/ddc/util
-bin/ya/final
+bin/ay
+bin/ya/bootstrap
 bin/ya
 bin/gg
 bin/pixman

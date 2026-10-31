@@ -1,5 +1,9 @@
 {% extends '//die/gen.sh' %}
 
+{% block run_deps %}
+bin/python
+{% endblock %}
+
 {% block install %}
 mkdir ${out}/bin
 base64 -d << EOF > ${out}/bin/ya

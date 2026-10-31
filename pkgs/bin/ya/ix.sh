@@ -1,5 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/ya/gg
+bin/ya/unwrap
+bin/ya/tools/wrapper
 {% endblock %}
