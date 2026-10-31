@@ -6371,6 +6371,7 @@ https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.8.tar.gz
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.9.tar.gz
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-1.0.2.tar.gz
+https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-1.0.3.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.40.1.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.40.2.tar.gz
