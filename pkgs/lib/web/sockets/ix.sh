@@ -30,6 +30,7 @@ lib/kernel
 {% endblock %}
 
 {% block cmake_flags %}
+DISABLE_WERROR=ON
 LWS_IPV6=ON
 LWS_WITH_HTTP3=OFF
 LWS_WITH_LIBUV=ON
