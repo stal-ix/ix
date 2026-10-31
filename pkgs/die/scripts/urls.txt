@@ -1205,6 +1205,7 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.25.1.tar.gz
 https://ftp.gnu.org/pub/gnu/guile/guile-3.0.10.tar.gz
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.18.tar.gz
+https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.19.1.tar.gz
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.19.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.4.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.5.tar.gz
