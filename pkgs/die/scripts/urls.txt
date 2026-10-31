@@ -53,6 +53,7 @@ http://ftp.gnu.org/gnu/mtools/mtools-4.0.46.tar.lz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.47.tar.lz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.48.tar.lz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.49.tar.lz
+http://ftp.gnu.org/gnu/mtools/mtools-4.0.50.tar.lz
 http://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
 http://ftp.gnu.org/gnu/screen/screen-5.0.0.tar.gz
 http://ftp.gnu.org/gnu/screen/screen-5.0.1.tar.gz

@@ -5,12 +5,12 @@ mtools
 {% endblock %}
 
 {% block version %}
-4.0.49
+4.0.50
 {% endblock %}
 
 {% block fetch %}
 http://ftp.gnu.org/gnu/mtools/mtools-{{self.version().strip()}}.tar.lz
-76dfea98d923dfc9806ce34bd1786aa9b5a39d70f56f26c0670a348c664f1d2a
+6adccaf371081efb6cf2fe687c88746c0978bafeb9deed5c2b03992704a1a6ab
 {% endblock %}
 
 {% block bld_libs %}
