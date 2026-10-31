@@ -3329,6 +3329,7 @@ https://github.com/fastfloat/fast_float/archive/refs/tags/v8.2.10.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v8.2.3.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v8.3.0.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v8.3.2.tar.gz
+https://github.com/fastfloat/fast_float/archive/refs/tags/v8.3.3.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.15.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.16.1.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.16.tar.gz
