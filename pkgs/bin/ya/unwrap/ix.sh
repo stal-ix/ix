@@ -5,7 +5,10 @@ bin/ya/bootstrap
 {{super()}}
 {% endblock %}
 
-{% block ya_make_options %}{{super()}} -k{% endblock %}
+{% block ya_make_options %}
+{{super()}}
+-k
+{% endblock %}
 
 {% block ya_make_flags %}
 {{super()}}

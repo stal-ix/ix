@@ -9,5 +9,16 @@ bin/ay
 bin/ya/tools/wrapper
 {% endblock %}
 
-{% block ya_bootstrap %}yes{% endblock %}
-{% block ya_builder %}ay{% endblock %}
+{% block ya_make_bin %}
+ay
+{% endblock %}
+
+{% block ya_make_options %}
+-r
+--build-dir=${tmp}/ya-build
+--install=${tmp}/result
+{% endblock %}
+
+{% block configure_flags %}
+--local-resources
+{% endblock %}

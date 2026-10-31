@@ -1,4 +1,4 @@
-{% extends '//die/std/ix.sh' %}
+{% extends '//die/c/ya.sh' %}
 
 {% block fetch %}
 https://github.com/yandex/yatool/archive/c475e0f238ddd60d119e977c77347da670773daf.tar.gz
@@ -6,19 +6,12 @@ https://github.com/yandex/yatool/archive/c475e0f238ddd60d119e977c77347da670773da
 {% endblock %}
 
 {% block bld_tool %}
-bld/python
+{{super()}}
 bld/java/25
-bin/ya/tools/clang(ya_c_flags=-Wno-error)
 {% endblock %}
 
-{% block script_init_env %}
-{{super()}}
-export CFLAGS=
-export CXXFLAGS=
-export CPPFLAGS=
-export LDFLAGS=
-export CTRFLAGS=
-export CONLYFLAGS=
+{% block ya_c_flags %}
+-Wno-error
 {% endblock %}
 
 {% block ya_make_targets %}
@@ -46,15 +39,23 @@ BUILD_PYTHON_BIN=${YA_BUILD_PYTHON}
 USE_SYSTEM_JDK=${JAVA_HOME}
 {% endblock %}
 
-{% block ya_bootstrap %}no{% endblock %}
-{% block ya_builder %}ya{% endblock %}
-{% block ya_make_options %}-r{% endblock %}
+{% block ya_make_options %}
+-r
+--build-root=${tmp}/ya-build
+--output=${tmp}/result
+{% endblock %}
 
 {% block configure %}
 base64 -d << EOF > ix-configure.py
 {% include 'configure.py/base64' %}
 EOF
-python3 ix-configure.py {{self.ya_bootstrap().strip()}} {{host.os}} {{host.gnu_arch}} {{target.os}} {{target.gnu_arch}}
+{% set command_args %}
+python3 ix-configure.py
+{% block configure_flags %}
+{% endblock %}
+{{host.os}} {{host.gnu_arch}} {{target.os}} {{target.gnu_arch}}
+{% endset %}
+{{command_args | fix_list}}
 {% endblock %}
 
 {% block build %}
@@ -62,29 +63,13 @@ export CFLAGS=
 export CXXFLAGS=
 export CPPFLAGS=
 export LDFLAGS=
-export ENFORCE_TTY=1
 export YA_BUILD_PYTHON=$(command -v python3)
-{{self.ya_builder().strip()}} make {{self.ya_make_options().strip()}} -j ${make_thrs} \
-{% if self.ya_bootstrap().strip() == 'yes' %}
-    --build-dir=${tmp}/ya-build --install=${tmp}/result \
-{% else %}
-    --build-root=${tmp}/ya-build --output=${tmp}/result \
-{% endif %}
-{% for flag in self.ya_make_flags() | parse_list %}
-    -D{{flag}} --host-platform-flag={{flag}} \
-{% endfor %}
-{% for target in self.ya_make_targets() | parse_list %}
-    {{target | dirname}} \
-{% endfor %}
-    --host-platform=default-{{host.os}}-{{host.gnu_arch}} \
-    --target-platform=default-{{target.os}}-{{target.gnu_arch}}
+{{super()}}
 {% endblock %}
 
 {% block install %}
 mkdir -p ${out}/bin
-{% for target in self.ya_make_targets() | parse_list %}
-cp ${tmp}/result/{{target}} ${out}/bin/
+{% for x in self.ya_make_targets() | parse_list %}
+cp ${tmp}/result/{{x}} ${out}/bin/
 {% endfor %}
 {% endblock %}
-
-{% block task_pool %}full{% endblock %}

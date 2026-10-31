@@ -1,15 +1,22 @@
 """Use ix tools for both bootstrap stages, without downloaded tool binaries."""
+import argparse
 import json
 import os
 from pathlib import Path
 import re
 import shutil
 import subprocess
-import sys
 
 
-bootstrap, host_os, host_arch, target_os, target_arch = sys.argv[1:]
-bootstrap = bootstrap == 'yes'
+parser = argparse.ArgumentParser()
+parser.add_argument('--local-resources', action='store_true')
+parser.add_argument('host_os')
+parser.add_argument('host_arch')
+parser.add_argument('target_os')
+parser.add_argument('target_arch')
+args = parser.parse_args()
+host_os, host_arch = args.host_os, args.host_arch
+target_os, target_arch = args.target_os, args.target_arch
 clang = Path(os.environ['YA_CLANG_DIR'])
 java = Path(os.environ['JAVA_HOME'])
 python = Path(shutil.which('python3')).resolve().parent.parent
@@ -19,7 +26,7 @@ version = re.search(r'clang version (\d+)', subprocess.check_output(
 
 def resource(module, entries, extra=''):
     lines = ['RESOURCES_LIBRARY()', extra]
-    if bootstrap:
+    if args.local_resources:
         for name, directory in entries.items():
             lines.append(f'DECLARE_EXTERNAL_RESOURCE({name} file://{directory})')
     lines.append('END()')
