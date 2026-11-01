@@ -4023,6 +4023,7 @@ https://github.com/isc-projects/bind9/archive/refs/tags/v9.20.8.tar.gz
 https://github.com/isc-projects/bind9/archive/refs/tags/v9.20.9.tar.gz
 https://github.com/ispc/ispc/archive/refs/tags/v1.18.1.tar.gz
 https://github.com/itchyny/gojq/archive/refs/tags/v0.12.19.tar.gz
+https://github.com/itchyny/gojq/archive/refs/tags/v0.12.20.tar.gz
 https://github.com/itchyny/gojq/archive/refs/tags/v0.12.9.tar.gz
 https://github.com/ivmai/bdwgc/archive/refs/tags/v8.2.10.tar.gz
 https://github.com/ivmai/bdwgc/archive/refs/tags/v8.2.12.tar.gz
