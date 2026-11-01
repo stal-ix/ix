@@ -1,2 +1,2 @@
-https://github.com/KhronosGroup/SPIRV-Headers/archive/575b6512579ebde466ed3dfc04e413439d14d95d.tar.gz
-775ee89eb77d067df3f5736e2b4bb2f5f3e39ead915f11f3d366139dcb42209d
+https://github.com/KhronosGroup/SPIRV-Headers/archive/cb42dec3830d3ac67fa449ecdc0c0f73d5e74498.tar.gz
+117010e525fe36b1ce006e0e58a6e0a3b415aabc9179d912b92737f41f3f994f
