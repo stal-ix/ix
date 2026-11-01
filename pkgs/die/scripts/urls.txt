@@ -4044,6 +4044,7 @@ https://github.com/janmojzis/tinyssh/archive/refs/tags/20250501.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20260601.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20260906.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20261001.tar.gz
+https://github.com/janmojzis/tinyssh/archive/refs/tags/20261101.tar.gz
 https://github.com/jarun/nnn/archive/refs/tags/v4.9.tar.gz
 https://github.com/jarun/nnn/archive/refs/tags/v5.0.tar.gz
 https://github.com/jarun/nnn/archive/refs/tags/v5.1.tar.gz

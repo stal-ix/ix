@@ -5,12 +5,12 @@ tinyssh
 {% endblock %}
 
 {% block version %}
-20261001
+20261101
 {% endblock %}
 
 {% block fetch %}
 https://github.com/janmojzis/tinyssh/archive/refs/tags/{{self.version().strip()}}.tar.gz
-f79b1b4b8db16d3b1ecc339828d48c3754e354634ac28d2fbf82c85da56e503e
+eb06d86c5858cfece45b9c02b7338ef0e24dfd84a39c1a963d461d022237f639
 {% endblock %}
 
 {% block bld_libs %}
