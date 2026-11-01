@@ -1882,6 +1882,7 @@ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v21.1.1.
 https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v21.1.12.tar.gz
 https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v22.1.7.tar.gz
 https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v23.1.2.tar.gz
+https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v23.1.3.tar.gz
 https://github.com/KhronosGroup/SPIRV-Tools/archive/0d6fd73ca73830ccab5fa1f00ed5ed40124e2c55.zip
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/sdk-1.3.261.1.zip
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2023.2.tar.gz
