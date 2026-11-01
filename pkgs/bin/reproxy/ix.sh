@@ -5,7 +5,7 @@ reproxy
 {% endblock %}
 
 {% block version %}
-1.7.2
+1.7.5
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/umputun/reproxy/archive/refs/tags/v{{self.version().strip()}}
 {% endblock %}
 
 {% block go_sha %}
-295c3fb53fa029360c5c5697f23ea3be63f39e2d84b63e9b3eb34fca74a62431
+bf64d3cc63e581c958216f1b4e8211a38332b0cb7994d0ff7be9e2d8c42fd5c5
 {% endblock %}
 
 {% block go_tool %}

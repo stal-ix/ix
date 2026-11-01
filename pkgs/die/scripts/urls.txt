@@ -6348,6 +6348,7 @@ https://github.com/umputun/reproxy/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/umputun/reproxy/archive/refs/tags/v1.2.3.tar.gz
 https://github.com/umputun/reproxy/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/umputun/reproxy/archive/refs/tags/v1.7.2.tar.gz
+https://github.com/umputun/reproxy/archive/refs/tags/v1.7.5.tar.gz
 https://github.com/uncrustify/uncrustify/archive/refs/tags/uncrustify-0.80.0.tar.gz
 https://github.com/uncrustify/uncrustify/archive/refs/tags/uncrustify-0.80.1.tar.gz
 https://github.com/uncrustify/uncrustify/archive/refs/tags/uncrustify-0.81.0.tar.gz
