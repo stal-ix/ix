@@ -24,3 +24,22 @@ wrap_cc
 {% block bld_tool %}
 bld/fake/er(tool_name=convert)
 {% endblock %}
+
+{# wasm has no mkstemp for the utilities: the library and its header
+   alone #}
+{% block make_target %}
+{% if wasi %}
+libgif.a
+{% else %}
+{{super()}}
+{% endif %}
+{% endblock %}
+
+{% block make_install_target %}
+{% if wasi %}
+install-include
+install-static-lib
+{% else %}
+{{super()}}
+{% endif %}
+{% endblock %}

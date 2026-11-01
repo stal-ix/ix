@@ -5,12 +5,12 @@ catimg
 {% endblock %}
 
 {% block version %}
-2.7.0
+2.8.0
 {% endblock %}
 
 {% block fetch %}
-https://github.com/posva/catimg/archive/refs/tags/{{self.version().strip()}}.tar.gz
-3a6450316ff62fb07c3facb47ea208bf98f62abd02783e88c56f2a6508035139
+https://github.com/posva/catimg/archive/refs/tags/v{{self.version().strip()}}.tar.gz
+1f4f54c237cd3b70c8a125044eb2578e8263c12b42d401a42c02c32f10f62548
 {% endblock %}
 
 {% block bld_libs %}

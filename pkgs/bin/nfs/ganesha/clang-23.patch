@@ -1,0 +1,5 @@
+--- a/FSAL/FSAL_PROXY_V4/handle.c
++++ b/FSAL/FSAL_PROXY_V4/handle.c
+@@ -1046 +1046 @@ static fsal_status_t proxyv4_open2(struct fsal_obj_handle *obj_hdl,
+-	if (getsockname(rpc->rpc_sock, &sin, &slen))
++	if (getsockname(rpc->rpc_sock, (struct sockaddr *)&sin, &slen))

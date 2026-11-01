@@ -5,12 +5,12 @@ contour
 {% endblock %}
 
 {% block version %}
-0.7.0.8982
+0.8.0.9335
 {% endblock %}
 
 {% block fetch %}
 https://github.com/contour-terminal/contour/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-9afaaed7f705c56e413938f43d338c7700ca69122a531d94c10c8eb9f5a44c28
+068ba98c3c803fc9639c26b1f91c6faa9fc96e1c7b5637bbf338c240fc36be46
 {% endblock %}
 
 {% block bld_libs %}
@@ -41,6 +41,7 @@ bld/qt/6/tools/shader
 
 {% block cmake_flags %}
 CONTOUR_WITH_UTEMPTER=OFF
+CONTOUR_WITH_SYSTEMD=OFF
 CONTOUR_BUILD_STATIC=ON
 CONTOUR_USE_CPM=OFF
 {% endblock %}

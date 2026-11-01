@@ -5,7 +5,7 @@ u-root
 {% endblock %}
 
 {% block version %}
-0.15.0
+0.16.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,14 @@ https://github.com/u-root/u-root/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-6c1c7e0a876e99dc4e95b00dd321395d50a1cfbc8eb77524ee1094b1e423b69f
+e5061e6005ca0ac1ffab8304b4693d956225a0cbcb2cfbf080a140c7de8019ab
+{% endblock %}
+
+{% block go_refine %}
+# cmd2pkg test fixtures are modules of their own whose replace-less
+# pseudo-version requirements make go mod tidy shell out to git; aux/go/v3
+# tidies every go.mod, so drop the fixtures.
+rm -rf cmds/exp/cmd2pkg/test
 {% endblock %}
 
 {% block go_bins %}
@@ -21,5 +28,5 @@ u-root
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/26
 {% endblock %}

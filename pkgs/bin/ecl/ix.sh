@@ -20,6 +20,11 @@ lib/ffi
 lib/boehmgc
 {% endblock %}
 
+{% block patch %}
+{# Clang 23 still has the x86_64 stack-frame miscompile from ECL#838. #}
+sed -e 's/__clang_major__ <= 22/__clang_major__ <= 23/' -i ../src/c/stacks.d
+{% endblock %}
+
 {% block unpack %}
 {{super()}}
 mkdir build

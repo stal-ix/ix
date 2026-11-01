@@ -5,12 +5,12 @@ icu
 {% endblock %}
 
 {% block version %}
-78.3
+79.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/unicode-org/icu/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
-f06bcab72736ee9d55689033b8198a178562354128cf38edb2afc2e67e3fd931
+195b1dbb083321cc097e8cf88eca73de34fb41418f091748f7b6a829a4d40f1d
 {% endblock %}
 
 {% block unpack %}

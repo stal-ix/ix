@@ -5,7 +5,7 @@ syncthing
 {% endblock %}
 
 {% block version %}
-2.1.6
+2.1.7
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/syncthing/syncthing/releases/download/v{{self.version().strip
 {% endblock %}
 
 {% block go_sha %}
-66d7bf368ed4b8e0dc8e874c3a16fcd9758d42120038978224cd504019186689
+a3484b83af9450a75988b51ad4a88ff9b664a0cf7db297e25067fc68fa45bf55
 {% endblock %}
 
 {% block unpack %}
@@ -44,7 +44,7 @@ syncthing
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/26
+bin/go/lang/27
 {% endblock %}
 
 {% block step_setup %}

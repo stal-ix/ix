@@ -1,7 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+# noauto: pngquant 3.x is written in Rust; this is the last C line
+
 {% block version %}
-2.9.1
+2.18.0
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +12,7 @@ pngquant
 
 {% block fetch %}
 https://pngquant.org/pngquant-{{self.version().strip()}}-src.tar.gz
-ac2138207ef40acd4e5fdae18798139a9d75dae4f1d0837aea918a2a8c433481
+e72194b52b36f040deaec49a1ddd5dcd8d4feecc3a5fe6c5e9589a9707b233d4
 {% endblock %}
 
 {% block shell %}
@@ -25,4 +27,5 @@ lib/png
 {% block patch %}
 sed -e 's|/tmp|${TMPDIR}/|' -i configure
 sed -e 's|/tmp|${TMPDIR}/|' -i lib/configure
+sed -e 's|; ./configure |; sh ./configure |' -i Makefile
 {% endblock %}

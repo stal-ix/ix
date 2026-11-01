@@ -1,0 +1,30 @@
+--- a/src/hotspot/os/linux/os_linux.cpp
++++ b/src/hotspot/os/linux/os_linux.cpp
+@@ -2333,8 +2333,25 @@
+   if (ret && dli_fname[0] != '\0') {
+     rp = os::Posix::realpath(dli_fname, buf, buflen);
+   }
+-  if (rp == NULL) {
+-    return;
++  if (rp == NULL || strlen(rp) < 10 || strcmp(rp + strlen(rp) - 10, "/libjvm.so") != 0) {
++    // statically linked into the launcher, <java.home>/bin/<launcher>,
++    // which is what the lookup above finds; the layout puts libjvm at
++    // <java.home>/lib/server
++    char exe[MAXPATHLEN];
++    ssize_t len = readlink("/proc/self/exe", exe, sizeof(exe) - 1);
++    char* slash;
++    if (len <= 0) {
++      return;
++    }
++    exe[len] = '\0';
++    for (int i = 0; i < 2; i++) {
++      if ((slash = strrchr(exe, '/')) == NULL) {
++        return;
++      }
++      *slash = '\0';
++    }
++    jio_snprintf(buf, buflen, "%s/lib/server/libjvm.so", exe);
++    rp = buf;
+   }
+ 
+   if (Arguments::sun_java_launcher_is_altjvm()) {

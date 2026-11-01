@@ -5,12 +5,12 @@ webkitgtk
 {% endblock %}
 
 {% block version %}
-2.48.3
+2.54.1
 {% endblock %}
 
 {% block fetch %}
 https://webkitgtk.org/releases/webkitgtk-{{self.version().strip()}}.tar.xz
-d4dc5970f0fc6a529ff7fd67bcbfab2bbb5e91be789b2e9279640b3217a782c3
+ea0bbb02dbdbc596874a4e7ad35b66645b3e0a232bd0e4081de5ed92eb0a397d
 {% endblock %}
 
 {% block lib_deps %}
@@ -20,6 +20,7 @@ lib/atk
 lib/icu
 lib/c++
 lib/gtk
+lib/gbm
 lib/png
 lib/jxl
 lib/avif
@@ -53,9 +54,7 @@ lib/harfbuzz/icu
 {% block cmake_flags %}
 {{super()}}
 PORT=GTK
-USE_GBM=OFF
 USE_JPEGXL=ON
-USE_LIBDRM=OFF
 ENABLE_WEBDRIVER=OFF
 USE_GSTREAMER_TRANSCODER=OFF
 USE_SYSTEM_SYSPROF_CAPTURE=OFF

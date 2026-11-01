@@ -1,7 +1,7 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block version %}
-1.0_beta16
+1.0_beta17
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ sfwbar
 
 {% block fetch %}
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-238d6394650dfdfc2f36374ec25702bbef57e2cff1d9a149ecb9a52f887c3cdf
+a4915bc7dd0873c45d0d6b01b070e39a91fd16cfadf730d6a9e48db68a8cd09e
 {% endblock %}
 
 {% block bld_libs %}

@@ -27,8 +27,13 @@ bin/bash/lite/sh
 bin/zip
 bld/bash
 bin/unzip
+{% block boot_jdk %}
 bld/java/7
+{% endblock %}
 bld/devendor
+# libjsig is compiled and linked in one command; split it, so liblink
+# gets an object to archive
+bld/wrap/cc/plugins/compile
 {% endblock %}
 
 {% block parts %}
@@ -85,6 +90,12 @@ HAS_GLIBC_GETHOSTBY_R=1
 
 {% block c_flags %}
 -Wno-implicit-function-declaration
+# hotspot is not clean C++: it tests this against NULL, overflows signed
+# ints and type-puns; with optimization clang would take all of it at face
+# value
+-fno-delete-null-pointer-checks
+-fno-strict-aliasing
+-fwrapv
 {% endblock %}
 
 {% block cxx_flags %}
@@ -102,6 +113,12 @@ HAS_GLIBC_GETHOSTBY_R=1
 {% endblock %}
 
 {% block patch %}
+# a mark word is an integer carried in a markOopDesc*: clang assumes the
+# pointer is 8-aligned and folds every lock-bit test on value() into a
+# constant; hide the provenance from it
+sed -e 's|uintptr_t value() const { return (uintptr_t) this; }|uintptr_t value() const { uintptr_t v = (uintptr_t) this; __asm__("" : "+r"(v)); return v; }|' \
+    -i hotspot/src/share/vm/oops/markOop.hpp
+grep -q '__asm__("" : "+r"(v))' hotspot/src/share/vm/oops/markOop.hpp
 devendor jdk/src/share/native/sun/font
 devendor jdk/src/solaris/native/sun/font
 devendor jdk/src/share/native/sun/awt

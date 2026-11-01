@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bld/python
-bld/java/boot/iced(opt=O0)
+bld/java/boot/iced
 {% endblock %}

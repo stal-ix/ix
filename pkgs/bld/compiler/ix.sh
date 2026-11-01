@@ -10,8 +10,8 @@ bld/compiler/system
 {% elif clang_ver %}
 bld/compiler/unwrap
 {% elif native %}
-bld/compiler/unwrap(clang_ver={{default_clang}},std_env=bld/boot/10/clang/env,execinfo_ver=fake)
+bld/compiler/unwrap(clang_ver={{default_clang}},multicall=1,std_env=bld/boot/10/clang/env,execinfo_ver=fake)
 {% else %}
-bld/compiler/unwrap(clang_ver={{default_clang}})
+bld/compiler/unwrap(clang_ver={{default_clang}},multicall=1)
 {% endif %}
 {% endblock %}

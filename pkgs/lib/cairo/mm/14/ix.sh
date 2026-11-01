@@ -5,12 +5,12 @@ cairomm
 {% endblock %}
 
 {% block version %}
-1.14.0
+1.14.6
 {% endblock %}
 
 {% block fetch %}
 https://www.cairographics.org/releases/cairomm-{{self.version().strip()}}.tar.xz
-b64400a78304b2fba13036130d78ebf7588675546714fd5329d97ec80ed01217
+7e0d5c7f29175d573a03ab5c45aef63f48dd91a5caf335a404cd763e4b7cea4a
 {% endblock %}
 
 {% block lib_deps %}

@@ -5,12 +5,12 @@ hikari
 {% endblock %}
 
 {% block version %}
-2.3.3
+3.0.0
 {% endblock %}
 
 {% block fetch %}
-https://github.com/antaz/hikari/archive/refs/tags/{{self.version().strip()}}.tar.gz
-f9ca23c79944738894411de3f5c2afe5e81a48f3de8eb03ecd2bc85590ad99d0
+https://codeberg.org/thomasadam/hikari/archive/{{self.version().strip()}}.tar.gz
+db3cb9572aa847f55a2fd51c7cb73ea6f51f956aa9a707c15d4b6d6a5b7b1d78
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,7 +23,7 @@ lib/cairo
 lib/input
 lib/wayland
 lib/xkb/common
-lib/wlroots/15
+lib/wlroots/19
 lib/ucl/parser
 lib/drivers/3d
 {% endblock %}

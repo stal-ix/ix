@@ -5,10 +5,10 @@ gcc
 {% endblock %}
 
 {% block version %}
-13.3.0
+13.5.0
 {% endblock %}
 
 {% block fetch %}
 http://mirror.koddos.net/gcc/releases/gcc-{{self.version().strip()}}/gcc-{{self.version().strip()}}.tar.xz
-0845e9621c9543a13f484e94584a49ffc0129970e9914624235fc1d061a0c083
+ec3df0015ed01411f91f9a9cd5b4da3070eb1222b02fadf4133c30c090399855
 {% endblock %}

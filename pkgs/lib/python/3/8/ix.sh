@@ -5,12 +5,12 @@ python
 {% endblock %}
 
 {% block version %}
-3.8.17
+3.8.20
 {% endblock %}
 
 {% block fetch %}
 https://www.python.org/ftp/python/{{self.version().strip()}}/Python-{{self.version().strip()}}.tgz
-def428fa6cf61b66bcde72e3d9f7d07d33b2e4226f04f9d6fce8384c055113ae
+9f2d5962c2583e67ef75924cd56d0c1af78bf45ec57035cf8a2cc09f74f4bf78
 {% endblock %}
 
 {% block patch %}

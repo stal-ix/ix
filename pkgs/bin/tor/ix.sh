@@ -5,12 +5,12 @@ tor
 {% endblock %}
 
 {% block version %}
-0.4.9.13
+0.4.9.15
 {% endblock %}
 
 {% block fetch %}
 https://deb.debian.org/debian/pool/main/t/tor/tor_{{self.version().strip()}}.orig.tar.gz
-5e748d3272cdf44a7d7741173f371c8def3d96eecb77e93c89c50663ce9cc792
+1911f5b216a6814ed143a08bbcff1c6dc96d2ca3b505df9a21876080a92963f3
 {% endblock %}
 
 {% block bld_libs %}

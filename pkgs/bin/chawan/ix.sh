@@ -1,11 +1,13 @@
 {% extends '//die/nim/base.sh' %}
 
 {% block pkg_name %}chawan{% endblock %}
-{% block version %}0.4.4{% endblock %}
+{% block version %}
+0.5.1
+{% endblock %}
 
 {% block fetch %}
 https://git.sr.ht/~bptato/chawan/archive/v{{self.version().strip()}}.tar.gz
-e0a06e1504e10a51c6009751d79b798c98d8274e559fe195d4b4b7ddadf91bb8
+67a54f10acd2dcda6c62bca825ccaf228f94d04ba9dc85c9369930c58d12ec21
 {% endblock %}
 
 {% block bld_tool %}
@@ -26,7 +28,7 @@ lib/c
 {% endblock %}
 
 {% block patch %}
-sed -e 's|$(NIMC) -o:$@ $<|$(NIMH) -o:$@ $<|' -i Makefile
+sed -e '/chac_cache/s|$(NIMC)|$(NIMH)|' -i Makefile
 {% endblock %}
 
 {% block build %}

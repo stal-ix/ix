@@ -1,13 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
-# noauto
-
 {% block pkg_name %}
 glow
 {% endblock %}
 
 {% block version %}
-2.1.1
+3.0.0
 {% endblock %}
 
 {% block go_url %}
@@ -15,7 +13,7 @@ https://github.com/charmbracelet/glow/archive/refs/tags/v{{self.version().strip(
 {% endblock %}
 
 {% block go_sha %}
-1c95500e7f1313f684d0af1ddb53a7616e12b264cdcf5b498c53b5c1cd1d991d
+5b4d842c651c6b2e28522c2c24d05f7fc62bb744892fe6917dbc644595978bb0
 {% endblock %}
 
 {% block go_bins %}
@@ -23,5 +21,5 @@ glow
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/25
+bin/go/lang/27
 {% endblock %}

@@ -5,12 +5,12 @@ hyprland-protocols
 {% endblock %}
 
 {% block version %}
-0.7.1
+0.8.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hyprwm/hyprland-protocols/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-178fa406a1c76e94efeed5d1488abd6029427865f6fd4caf296c71ffaf0d069e
+e41ab206d89259fdf2059fdc523c39133e23ed9efa8b0ef0de9aeed61be96e72
 {% endblock %}
 
 {% block strip_pc %}

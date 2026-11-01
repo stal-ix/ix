@@ -5,12 +5,12 @@ libtraceevent
 {% endblock %}
 
 {% block version %}
-1.9.0
+1.9.1
 {% endblock %}
 
 {% block fetch %}
 https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-{{self.version().strip()}}.tar.gz
-e6d82cb2392d04866203387fa092692e4282ccc36c8235dc129afd1ceba12684
+3bc19dd940914260ba591b5276723bf84bb43f82c7c3d4267622bee4d016ea55
 {% endblock %}
 
 {% block lib_deps %}

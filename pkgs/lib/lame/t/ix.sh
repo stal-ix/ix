@@ -9,7 +9,7 @@ lame
 {% endblock %}
 
 {% block conf_ver %}
-2/72
+2/73
 {% endblock %}
 
 {% block fetch %}

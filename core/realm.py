@@ -2,6 +2,7 @@
 
 import os
 import json
+import errno
 import string
 import getpass
 import subprocess
@@ -240,8 +241,25 @@ class Realm(BaseRealm):
         tmp = path + '.tmp'
 
         try:
+            self.install_here(path, tmp)
+        except OSError as e:
+            if e.errno not in (errno.EROFS, errno.EACCES, errno.EPERM):
+                raise
+
+            # /ix/realm is not writable here (sandbox with a read-only /ix):
+            # let root on the host swap the symlink, owned by us as before.
+            cl.log(f'ROOTLN {path} ({os.strerror(e.errno)})', color='y')
+            helper = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'realm_link.py')
+            subprocess.check_call(['/bin/sudo', 'python3', helper, self.path, tmp, path, str(os.getuid()), str(os.getgid())])
+
+        cu.sync()
+
+        cl.log(f'SYMLN {path}', color='y', bright=True)
+
+    def install_here(self, path, tmp):
+        try:
             os.unlink(tmp)
-        except Exception:
+        except FileNotFoundError:
             pass
 
         os.symlink(self.path, tmp)
@@ -254,10 +272,6 @@ class Realm(BaseRealm):
             u = getpass.getuser()
             subprocess.check_call(['sudo', 'chown', '-h', f'{u}:{u}', path])
             os.rename(tmp, path)
-
-        cu.sync()
-
-        cl.log(f'SYMLN {path}', color='y', bright=True)
 
 
 class RORealm:

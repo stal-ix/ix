@@ -1,0 +1,39 @@
+diff --git a/meson-1.5.2/mesonbuild/compilers/mixins/clang.py b/meson-1.5.2/mesonbuild/compilers/mixins/clang.py
+--- a/meson-1.5.2/mesonbuild/compilers/mixins/clang.py
++++ b/meson-1.5.2/mesonbuild/compilers/mixins/clang.py
+@@ -104,6 +104,2 @@ class ClangCompiler(GnuLikeCompiler):
+         myargs: T.List[str] = ['-Werror=implicit-function-declaration']
+-        if mode is CompileCheckMode.COMPILE:
+-            myargs.extend(['-Werror=unknown-warning-option', '-Werror=unused-command-line-argument'])
+-            if mesonlib.version_compare(self.version, '>=3.6.0'):
+-                myargs.append('-Werror=ignored-optimization-argument')
+         return super().get_compiler_check_args(mode) + myargs
+diff --git a/meson-1.5.2/mesonbuild/compilers/mixins/clike.py b/meson-1.5.2/mesonbuild/compilers/mixins/clike.py
+--- a/meson-1.5.2/mesonbuild/compilers/mixins/clike.py
++++ b/meson-1.5.2/mesonbuild/compilers/mixins/clike.py
+@@ -86,8 +86,9 @@ class CLikeCompilerArgs(arglist.CompilerArgs):
+                     group_start = i
+             if group_start >= 0:
+                 # Last occurrence of a library
+-                new.insert(group_end + 1, '-Wl,--end-group')
+-                new.insert(group_start, '-Wl,--start-group')
++                # new.insert(group_end + 1, '-Wl,--end-group')
++                # new.insert(group_start, '-Wl,--start-group')
++                pass
+         # Remove system/default include paths added with -isystem
+         default_dirs = self.compiler.get_default_include_dirs()
+         if default_dirs:
+diff --git a/meson-1.5.2/mesonbuild/linkers/linkers.py b/meson-1.5.2/mesonbuild/linkers/linkers.py
+--- a/meson-1.5.2/mesonbuild/linkers/linkers.py
++++ b/meson-1.5.2/mesonbuild/linkers/linkers.py
+@@ -900,9 +900,3 @@ class LLVMDynamicLinker(GnuLikeDynamicLinkerMixin, PosixDynamicLinkerMixin, Dyna
+     def _supports_flag(self, flag: str, always_args: T.List[str]) -> bool:
+         _, _, e = mesonlib.Popen_safe(self.exelist + always_args + self._apply_prefix(flag))
+-        return (
+-            # Versions < 9 do not have a quoted argument
+-            (f'unknown argument: {flag}' not in e) and
+-            (f"unknown argument: '{flag}'" not in e) and
+-            # TI Arm Clang uses a different message
+-            (f'invalid option:  {flag}' not in e)
+-        )
++        return flag not in e

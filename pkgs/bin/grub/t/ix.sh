@@ -5,12 +5,12 @@ grub
 {% endblock %}
 
 {% block version %}
-2.14
+2.16
 {% endblock %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/grub/grub-{{self.version().strip()}}.tar.xz
-bc8d3c73535b8838d8c8e2654d73edc4e6ae8c8acdb45d5df5dc9a1547446d43
+https://gitlab.freedesktop.org/api/v4/projects/26558/packages/generic/source-assets/grub-{{self.version().strip()}}/grub-{{self.version().strip()}}.tar.xz
+f0db0104927df0b9a48bc41b735c702936190d17eb2d73d3018fa77474a0cabe
 {% endblock %}
 
 {% block bld_libs %}
@@ -41,7 +41,7 @@ export TARGET_STRIP=$(which llvm-strip)
 {% endblock %}
 
 {% block patch %}
-sed -i 's/^#if 1$/#if 0/' grub-core/lib/gnulib/getopt-cdefs.h
+sed -i 's/^#if @HAVE_SYS_CDEFS_H@$/#if 0/' grub-core/lib/gnulib/getopt-cdefs.in.h
 >grub-core/extra_deps.lst
 {% endblock %}
 

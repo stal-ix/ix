@@ -21,3 +21,11 @@ export ac_cv_func_wcwidth=no
 {% endif %}
 {{super()}}
 {% endblock %}
+
+{% block patch %}
+{% if mingw32 %}
+patch -p1 <<'EOF'
+{% include 'mingw-time.patch' %}
+EOF
+{% endif %}
+{% endblock %}

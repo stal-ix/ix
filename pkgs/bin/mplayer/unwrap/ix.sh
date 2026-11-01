@@ -40,6 +40,12 @@ lib/fontconfig
 bin/yasm
 {% endblock %}
 
+{% block patch %}
+patch -p1 <<'EOF'
+{% include 'clang-23.patch' %}
+EOF
+{% endblock %}
+
 {% block configure_all_flags %}
 --disable-ffmpeg_a
 --disable-ossaudio

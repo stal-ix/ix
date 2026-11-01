@@ -5,12 +5,12 @@ Vulkan-Utility-Libraries
 {% endblock %}
 
 {% block version %}
-1.4.357.0
+1.4.363.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/refs/tags/vulkan-sdk-{{self.version().strip()}}.tar.gz
-6d450436aea4a821d7b0d8bb914c2e375088d98eeeaad0fbf059fdb06ac937f4
+a5308b62e3bac84cf45c4d7dd5b830aabace4847fdb71f4fd7db3be034c2bebf
 {% endblock %}
 
 {% block lib_deps %}

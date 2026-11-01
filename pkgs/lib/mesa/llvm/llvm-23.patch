@@ -1,0 +1,12 @@
+--- a/src/amd/llvm/ac_llvm_helper.cpp
++++ b/src/amd/llvm/ac_llvm_helper.cpp
+@@ -72,5 +72,9 @@ bool ac_is_llvm_processor_supported(LLVMTargetMachineRef tm, const char *process
+ bool ac_is_llvm_processor_supported(LLVMTargetMachineRef tm, const char *processor)
+ {
+    TargetMachine *TM = reinterpret_cast<TargetMachine *>(tm);
++#if LLVM_VERSION_MAJOR >= 23
++   return TM->getMCSubtargetInfo().isCPUStringValid(processor);
++#else
+    return TM->getMCSubtargetInfo()->isCPUStringValid(processor);
++#endif
+ }

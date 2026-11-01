@@ -14,6 +14,12 @@ lib/c++
 cd source
 {% endblock %}
 
+{% block patch %}
+sed -e 's|__stop_callback_base|__jthread_stop_callback_base|g' \
+    -e 's|__stop_state|__jthread_stop_state|g' \
+    -i stop_token.hpp
+{% endblock %}
+
 {% block install %}
 mkdir ${out}/include
 cp *.hpp ${out}/include/

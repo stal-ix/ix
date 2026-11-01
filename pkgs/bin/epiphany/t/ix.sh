@@ -5,12 +5,12 @@ epiphany
 {% endblock %}
 
 {% block version %}
-48.3
+51.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/epiphany/archive/refs/tags/{{self.version().strip()}}.tar.gz
-76f35b69b9acb2d055d8927a618686e91886c301407881c237a239043420bda8
+8a3392d7e7d436bf16ab4b3e787a518dba9eabccdb17c863d5c7dadb259c8144
 {% endblock %}
 
 {% block bld_libs %}
@@ -25,6 +25,7 @@ lib/portal
 lib/soup/3
 lib/nettle
 lib/secret
+lib/pwquality
 lib/archive
 lib/sqlite/3
 lib/gtk/deps
@@ -38,6 +39,21 @@ lib/{{allocator}}/trim(delay=5,bytes=10000000)
 
 {% block use_data %}
 aux/iso/codes
+{% endblock %}
+
+{% block bld_data %}
+lib/glib/gir
+lib/adwaita/vapi
+lib/pango/gir
+lib/graphene/gir
+lib/harfbuzz/gir
+lib/gdk/pixbuf/gir
+lib/gi/repository/gir
+lib/gtk/4/gir
+{% endblock %}
+
+{% block bld_tool %}
+bld/blueprint/compiler
 {% endblock %}
 
 {% block meson_flags %}

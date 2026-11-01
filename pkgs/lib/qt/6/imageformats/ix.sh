@@ -5,12 +5,12 @@ qtimageformats
 {% endblock %}
 
 {% block version %}
-6.7.2
+6.12.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/qt/qtimageformats/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-24c250ab9de80366ede458038833b253de6d3bba02b4691d75f849b06bbebc16
+9848d06aa4453cf583dc6ec4ec148ade05f3981c0f91b0961297385d3297b02a
 {% endblock %}
 
 {% block lib_deps %}

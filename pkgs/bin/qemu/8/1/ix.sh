@@ -10,11 +10,11 @@ https://github.com/qemu/qemu
 {% endblock %}
 
 {% block git_branch %}
-v8.1.3
+v8.1.5
 {% endblock %}
 
 {% block git_sha %}
-aa8d39a5094ce4a9b1f2431056327821531763ced5d65eecb7ac60651596680e
+c104182920c06e0270c524bda1596a45502ee1f2779a56eae3c9e5956b4d30f9
 {% endblock %}
 
 {% block step_unpack %}

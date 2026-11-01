@@ -37,6 +37,12 @@ DIR_INSTALL=${out}
 {% endblock %}
 
 {% block patch %}
+patch -p1 <<'EOF'
+{% include 'pointer-types.patch' %}
+EOF
+sed -e 's|PKTestFactory_CreateCodec(pIID, ppIE)|PKTestFactory_CreateCodec(pIID, (void **)ppIE)|' \
+    -e 's|CreateCodec(&IID_PKImageWmpEncode, &pEncoder)|CreateCodec(\&IID_PKImageWmpEncode, (void **)\&pEncoder)|' \
+    -i jxrencoderdecoder/JxrDecApp.c jxrencoderdecoder/JxrEncApp.c
 sed -e 's|$(DIR_BUILD)/libjxrjava.$(LIBSUFFIX)||' \
     -e 's|@python|python3|' \
     -i Makefile

@@ -1,5 +1,7 @@
 {% extends '//lib/portal/t/ix.sh' %}
 
+# check bin/elementary/files bin/elementary/screenshot
+
 {% block bld_tool %}
 {{super()}}
 bld/gir

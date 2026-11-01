@@ -1,5 +1,7 @@
 {% extends '//bin/wireshark/t/ix.sh' %}
 
+# check bin/wireshark
+
 {% block bld_libs %}
 {{super()}}
 lib/qt/6/base

@@ -48,6 +48,7 @@ WITH_XC_FDOSECRETS=ON
 
 {% block patch %}
 patcher patch -p1 --fuzz 10 < ${src}/keepassxc-2.7.6-qt6-support.patch
+sed -i '/#include <QCoreApplication>/a #include <QHash>' src/format/KeePass1Reader.h
 sed -e 's|.*QXcbIntegrationPlugin.*||' -i src/main.cpp
 >src/core/Alloc.cpp
 {% endblock %}

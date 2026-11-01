@@ -5,12 +5,12 @@ LMDB
 {% endblock %}
 
 {% block version %}
-1.0.2
+1.0.3
 {% endblock %}
 
 {% block fetch %}
 https://git.openldap.org/openldap/openldap/-/archive/LMDB_{{self.version().strip()}}/openldap-LMDB_{{self.version().strip()}}.tar.bz2
-f35a2eb3a8e51650397604bbb49a1295221cd4739ff787d324f6c442c138a3ee
+015f482ba647e926fbddc9cea49ed59281229c12896cd18675484c36712b98bd
 {% endblock %}
 
 {% block unpack %}

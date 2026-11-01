@@ -5,12 +5,12 @@ yaml-cpp
 {% endblock %}
 
 {% block version %}
-0.8.0
+0.9.0
 {% endblock %}
 
 {% block fetch %}
-https://github.com/jbeder/yaml-cpp/archive/refs/tags/{{self.version().strip()}}.tar.gz
-fbe74bbdcee21d656715688706da3c8becfd946d92cd44705cc6098bb23b3a16
+https://github.com/jbeder/yaml-cpp/archive/refs/tags/yaml-cpp-{{self.version().strip()}}.tar.gz
+25cb043240f828a8c51beb830569634bc7ac603978e0f69d6b63558dadefd49a
 {% endblock %}
 
 {% block lib_deps %}

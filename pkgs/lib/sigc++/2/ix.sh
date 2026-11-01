@@ -7,12 +7,12 @@ libsigc++
 {% endblock %}
 
 {% block version %}
-2.10.7
+2.12.2
 {% endblock %}
 
 {% block fetch %}
-https://download.gnome.org/sources/libsigc++/2.10/libsigc%2B%2B-{{self.version().strip()}}.tar.xz
-d082a2ce72c750f66b1a415abe3e852df2eae1e8af53010f4ac2ea261a478832
+https://github.com/libsigcplusplus/libsigcplusplus/releases/download/{{self.version().strip()}}/libsigc%2B%2B-{{self.version().strip()}}.tar.xz
+7d4cdf1e4332ebfee8085ad960075045e7763cb291b3ccf4744d7cbf08a22b75
 {% endblock %}
 
 {% block lib_deps %}

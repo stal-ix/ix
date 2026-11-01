@@ -5,12 +5,12 @@ libssh
 {% endblock %}
 
 {% block version %}
-0.11.3
+0.12.2
 {% endblock %}
 
 {% block fetch %}
-https://www.libssh.org/files/0.11/libssh-{{self.version().strip()}}.tar.xz
-7d8a1361bb094ec3f511964e78a5a4dba689b5986e112afabe4f4d0d6c6125c3
+https://www.libssh.org/files/{{self.version().strip() | field(0)}}.{{self.version().strip() | field(1)}}/libssh-{{self.version().strip()}}.tar.xz
+49560f677d96e3706a904ac2de1116e25f3680937d51e5c92198fcba4a1c1e9f
 {% endblock %}
 
 {% block lib_deps %}

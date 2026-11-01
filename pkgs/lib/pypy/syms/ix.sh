@@ -33,6 +33,14 @@ wrap_cc
 lib/c
 {% endblock %}
 
+{% block patch %}
+{# PyPy renames its vendored expat.h to __expat.h, but the new
+   hash_table.h added with Expat 2.8.5 still uses the original name. #}
+sed -e 's|#  include "expat.h"|#  include "__expat.h"|' \
+    -i pypy/module/pyexpat/src/expat/hash_table.h
+grep -n '__expat.h' pypy/module/pyexpat/src/expat/hash_table.h
+{% endblock %}
+
 {% block cpp_defines %}
 RPYTHON_LL2CTYPES=1
 PYPY_SIGINT_INTERRUPT_EVENT=1

@@ -5,7 +5,7 @@ xh
 {% endblock %}
 
 {% block version %}
-0.26.2
+0.26.3
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/ducaale/xh/archive/refs/tags/v{{self.version().strip()}}.tar.
 {% endblock %}
 
 {% block cargo_sha %}
-9cedba72c6341dc3056b266ae298aadab811361e701ecd7c39649fa44e8f783b
+126b6da48c73fce882c99cf57c28bb929e2e5ba16e12037e89ebc205174530ce
 {% endblock %}
 
 {% block bld_libs %}

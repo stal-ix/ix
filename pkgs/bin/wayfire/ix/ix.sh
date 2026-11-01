@@ -6,6 +6,8 @@ base64 -d << EOF > src/api/wayfire/option-wrapper.hpp1
 EOF
 
 sed -e 's|plugin_name.at.*|true)|' -i src/core/plugin-loader.cpp
+sed -e 's|^std::string get_app_id|inline std::string get_app_id|' \
+    -i plugins/protocols/toplevel-common.hpp
 {% endblock %}
 
 {% block build %}

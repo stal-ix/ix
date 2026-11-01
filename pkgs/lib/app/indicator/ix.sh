@@ -1,5 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
+# noauto: upstream stopped at 12.10.0; newer versions are Ubuntu snapshots
+
 {% block pkg_name %}
 libappindicator
 {% endblock %}

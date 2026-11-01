@@ -5,12 +5,12 @@ sl
 {% endblock %}
 
 {% block version %}
-5.02
+5.05
 {% endblock %}
 
 {% block fetch %}
-https://github.com/mtoyoda/sl/archive/refs/tags/{{self.version().strip()}}.tar.gz
-1e5996757f879c81f202a18ad8e982195cf51c41727d3fea4af01fdcbbb5563a
+https://github.com/eyJhb/sl/archive/refs/tags/{{self.version().strip()}}.tar.gz
+6c941b526e3d01be7f91a3af4ae20a89d1e5d66b3b2d804c80123b1b1be96384
 {% endblock %}
 
 {% block bld_libs %}

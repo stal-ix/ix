@@ -1,0 +1,29 @@
+--- a/jdk/src/solaris/demo/jvmti/hprof/hprof_md.c
++++ b/jdk/src/solaris/demo/jvmti/hprof/hprof_md.c
+@@ -326,6 +326,26 @@
+         }
+ #endif /* __APPLE__ */
+     }
++    if ( libdir[0] == 0 ) {
++        /* statically linked into the launcher, <jdk>/bin/<launcher> or
++         *  <jdk>/jre/bin/<launcher>: the file is in <jre>/lib
++         */
++        ssize_t len = readlink("/proc/self/exe", libdir, sizeof(libdir) - 1);
++        int i;
++
++        libdir[len > 0 ? len : 0] = 0;
++        for ( i = 0; i < 2; i++ ) {
++            char * lastSlash = strrchr(libdir, '/');
++            if ( lastSlash != NULL ) {
++                *lastSlash = '\0';
++            }
++        }
++        (void)snprintf(path, path_len, "%s/jre/lib/%s", libdir, filename);
++        if ( access(path, F_OK) == 0 ) {
++            return;
++        }
++        (void)strcat(libdir, "/lib");
++    }
+     (void)snprintf(path, path_len, "%s/%s", libdir, filename);
+ }
+ 

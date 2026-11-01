@@ -5,12 +5,12 @@ bash
 {% endblock %}
 
 {% block version %}
-5.2.37
+5.3
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bash/bash-{{self.version().strip()}}.tar.gz
-9599b22ecd1d5787ad7d3b7bf0c59f312b3396d1e281175dd1f8a4014da621ff
+0d5cd86965f869a26cf64f4b71be7b96f90a3ba8b3d74e27e8e9d9d5550f31ba
 {% endblock %}
 
 {% block patch %}

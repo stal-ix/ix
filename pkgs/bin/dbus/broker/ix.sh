@@ -29,3 +29,9 @@ lib/c/util/shquote
 launcher=false
 linux-4-17=true
 {% endblock %}
+
+{% block patch %}
+patch -p1 <<'EOF'
+{% include 'clang-23.patch' %}
+EOF
+{% endblock %}

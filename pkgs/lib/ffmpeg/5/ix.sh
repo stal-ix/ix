@@ -7,10 +7,10 @@ ffmpeg
 {% endblock %}
 
 {% block version %}
-5.1.2
+5.1.10
 {% endblock %}
 
 {% block fetch %}
 https://ffmpeg.org/releases/ffmpeg-{{self.version().strip()}}.tar.xz
-619e706d662c8420859832ddc259cd4d4096a48a2ce1eefd052db9e440eef3dc
+392306d6fc45dab0e9e0ea55381e071842e83a2fb31d320aeda40477a7766293
 {% endblock %}

@@ -121,7 +121,7 @@ int main(int argc, char **argv) {
 
     path = argv[1];
 
-    SvgLibrary *library = svg_library_create(decode, fail, NULL);
+    SvgLibrary *library = svg_library_create(decode, NULL, fail, NULL);
     SvgDocument *document = svg_library_parse(library, data, length);
     float width = svg_document_width(document);
     float height = svg_document_height(document);

@@ -1,7 +1,9 @@
 {% extends '//die/nim/build.sh' %}
 
 {% block pkg_name %}nitter{% endblock %}
-{% block version %}1{% endblock %}
+{% block version %}
+1
+{% endblock %}
 
 {% block nim_url %}
 https://github.com/pg83/nitter/archive/refs/tags/1.tar.gz
@@ -41,6 +43,7 @@ EOF
 {{super()}}
 --mm:refc
 --dynlibOverrideAll
+-d:useOpenssl3
 --passL:-lpcre
 --passL:-lssl
 --passL:-lcrypto
@@ -50,7 +53,7 @@ EOF
 {{super()}}
 nimhost --dynlibOverrideAll --passL:-lsass --out:${tmp}/gencss tools/gencss.nim
 ${tmp}/gencss
-nimhost -d:usePcreHeader --dynlibOverrideAll --passL:-lpcre \
+nimhost --dynlibOverrideAll --passL:-lpcre \
     --out:${tmp}/rendermd tools/rendermd.nim
 ${tmp}/rendermd
 {% endblock %}

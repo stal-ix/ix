@@ -5,12 +5,12 @@ fribidi
 {% endblock %}
 
 {% block version %}
-1.0.17
+1.0.18
 {% endblock %}
 
 {% block fetch %}
 https://github.com/fribidi/fribidi/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-ab015bb040b2ff4bf815813c21948947dad1e0186473359e99a8881c79878d5d
+01f15887e32a9d84503121e2da031f166ac07ca8e0c350aef2dbbeaad0f75b1d
 {% endblock %}
 
 {% block lib_deps %}

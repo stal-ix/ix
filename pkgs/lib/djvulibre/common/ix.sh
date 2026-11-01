@@ -5,12 +5,19 @@ djvu
 {% endblock %}
 
 {% block version %}
-3.5.29
+3.5.30.1
 {% endblock %}
 
-{% block fetch %}
-http://downloads.sourceforge.net/djvu/djvulibre-{{self.version().strip()}}.tar.gz
-d3b4b03ae2bdca8516a36ef6eb27b777f0528c9eda26745d9962824a3fdfeccf
+{% block git_repo %}
+https://git.code.sf.net/p/djvu/djvulibre-git
+{% endblock %}
+
+{% block git_branch %}
+release.{{self.version().strip()}}
+{% endblock %}
+
+{% block git_sha %}
+c5a73d327b1f5806f67035deaec4e5d09907eb9deea12e741baec5725bcb2261
 {% endblock %}
 
 {% block lib_deps %}

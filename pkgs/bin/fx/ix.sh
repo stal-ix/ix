@@ -5,7 +5,7 @@ fx
 {% endblock %}
 
 {% block version %}
-40.0.0
+40.0.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/antonmedv/fx/archive/refs/tags/{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block go_sha %}
-ef13554eac8e2632bb3bfb787f3daf50564c26a8a431fce500a52292e00db56a
+65c60531287c6d9529e2aaae5902329d853f333566612527c8ceef222a9aa915
 {% endblock %}
 
 {% block go_bins %}
@@ -21,5 +21,5 @@ fx
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/26
+bin/go/lang/27
 {% endblock %}

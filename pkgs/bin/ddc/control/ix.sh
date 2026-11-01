@@ -1,18 +1,18 @@
 {% extends '//die/c/autorehell.sh' %}
 
-# noauto
+# noauto: from 3.1 the core is Rust
 
 {% block pkg_name %}
 ddccontrol
 {% endblock %}
 
 {% block version %}
-1.0.3
+3.0.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ddccontrol/ddccontrol/archive/refs/tags/{{self.version().strip()}}.tar.gz
-4f3a3d9a00e09b07423d2aed308b21dccfe57642f5d9bbf79802a0656dd11d1e
+15a40781faefc2505346d686c931d10cd6a972b001e9998c5b8368f148f0bebf
 {% endblock %}
 
 {% block bld_libs %}

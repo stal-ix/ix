@@ -5,12 +5,12 @@ x265
 {% endblock %}
 
 {% block version %}
-4.1
+4.3
 {% endblock %}
 
 {% block fetch %}
-https://download.videolan.org/pub/videolan/x265/x265_{{self.version().strip()}}.tar.gz
-a31699c6a89806b74b0151e5e6a7df65de4b49050482fe5ebf8a4379d7af8f29
+https://github.com/Multicorewareinc/x265/archive/refs/tags/{{self.version().strip()}}.tar.gz
+fb157f809b74dabbef5002af99489fcaebb4d0073724beffdaaf2be15cbaf7ac
 {% endblock %}
 
 {% block unpack %}

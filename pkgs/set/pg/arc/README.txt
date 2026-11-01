@@ -14,9 +14,12 @@ s3.lab.mesh and change arc_sha in client/ix.sh.
 bin/fusermount/sud provides the non-setuid helper bridge using existing sud.
 No dependency or configuration is added to set/pg/system.
 
-The arc_mount servant runs arc mount -F /home/pg/1 as pg. The root launcher
-sets RLIMIT_NOFILE to 65536 before dropping privileges. Logs are in
-/var/run/arc_mount/std/current. The ordinary background arc mount is not
+The arc_mount servant runs arc mount -F /home/pg/1 as pg, the arc_mount_2
+servant mounts a second, independent working copy at /home/pg/2 (its own
+store, ~/.arc/stores/_home_pg_2). set/pg/arc/runit takes the directory under
+/home/pg as the arc_dir flag; pg-arc-mount takes it as its argument. The root
+launcher sets RLIMIT_NOFILE to 65536 before dropping privileges. Logs are in
+/var/run/arc_mount/std/current and /var/run/arc_mount_2/std/current. The ordinary background arc mount is not
 suitable here: Stalix pid1 kills unregistered adopted children (killStale).
 The foreground mount stays in the supervised process tree and is restarted
 after exit. No SSH session is needed to keep it alive. Its srv_deps is

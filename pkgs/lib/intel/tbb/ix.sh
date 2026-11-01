@@ -5,12 +5,12 @@ oneTBB
 {% endblock %}
 
 {% block version %}
-2023.1.0
+2023.2.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-191288b52e1e6b17198000b64d77d194bb65e791be46ebc606e9b091781e2070
+80cb62e62defeee67ea1885a6f72d97ac81404f8fde9cded62fb51524808a30c
 {% endblock %}
 
 {% block lib_deps %}

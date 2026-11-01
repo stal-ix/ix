@@ -5,12 +5,12 @@ Vulkan-Loader
 {% endblock %}
 
 {% block version %}
-1.4.321.0
+1.4.363.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/vulkan-sdk-{{self.version().strip()}}.tar.gz
-9e0315bd13d8def7d130524d0b69d0bef3e967374327ac69dd9c54cd2b716e8f
+941eff558fc74f248745fb7df367640cf89a8457f216dae498a74ae14b6ba6f7
 {% endblock %}
 
 {% block lib_deps %}

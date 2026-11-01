@@ -5,12 +5,12 @@ libmikmod
 {% endblock %}
 
 {% block version %}
-3.3.15
+3.3.16
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/mikmod/libmikmod/{{self.version().strip()}}/libmikmod-{{self.version().strip()}}.tar.gz
-dc27b338154b8f88dc9e6317196d42c6abc13bf63c4e055257a18d4e38e1afa2
+7b24e41468b0dfe7fae1104ae6a0d7c52e04a65e1851b268c7074e4d06685a53
 {% endblock %}
 
 {% block lib_deps %}

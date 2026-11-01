@@ -60,3 +60,12 @@ bin/python/huge
 wrap_cc
 wrap_rdynamic
 {% endblock %}
+
+{% block patch %}
+# ICU 79's Unicode 18 data adds a supplementary code point to the case
+# closure of BMP characters.  Legacy regexp matching operates on UTF-16 code
+# units, so exclude supplementary characters before V8 canonicalizes it.
+sed -e '/current.closeOver(USET_CASE_INSENSITIVE);/a\
+    current.remove(kNonBmpStart, 0x10ffff);' \
+    -i deps/v8/src/regexp/gen-regexp-special-case.cc
+{% endblock %}

@@ -5,12 +5,12 @@ xpdf
 {% endblock %}
 
 {% block version %}
-4.05
+4.06
 {% endblock %}
 
 {% block fetch %}
-https://dl.xpdfreader.com/old/xpdf-{{self.version().strip()}}.tar.gz
-92707ed5acb6584fbd73f34091fda91365654ded1f31ba72f0970022cf2a5cea
+https://dl.xpdfreader.com/xpdf-{{self.version().strip()}}.tar.gz
+1c38f527c46caee0f712386d42a885b96a31ed9ce11904e872559859894d137e
 {% endblock %}
 
 {% block lib_deps %}

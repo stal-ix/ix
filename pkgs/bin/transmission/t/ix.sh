@@ -5,12 +5,12 @@ transmission
 {% endblock %}
 
 {% block version %}
-4.1.3
+4.1.4
 {% endblock %}
 
 {% block fetch %}
 https://github.com/transmission/transmission/releases/download/{{self.version().strip()}}/transmission-{{self.version().strip()}}.tar.xz
-ce7d2d8b101f7eb54bc3cf0bc55f52f7ebd4a25fa48e00bdca9a7e0fc02617da
+86e7aa020cdf64826447034bc85f4d3b7c848d8c0891d9dc9b9fddfb2c805d22
 {% endblock %}
 
 {% block bld_libs %}

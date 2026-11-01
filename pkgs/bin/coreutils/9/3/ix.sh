@@ -12,3 +12,8 @@ coreutils
 https://ftp.gnu.org/gnu/coreutils/coreutils-{{self.version().strip()}}.tar.gz
 a33d2c0bc49be3c79a4794944dcd87103bf497b53a14bafcd431c8ca53975252
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -e 's|t, t, leapsec|t, t, (int)leapsec|' -i lib/posixtm.c
+{% endblock %}

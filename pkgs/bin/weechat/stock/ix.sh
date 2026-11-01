@@ -5,12 +5,12 @@ weechat
 {% endblock %}
 
 {% block version %}
-4.10.1
+4.10.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/weechat/weechat/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-84207fc87f19274e2d9efb3f229b3594af6ca5d54e2ee25b10f07015e681b8d1
+bdb0dfdfb1123d09223fb8a0dbb3689f6afaa6c483560a1225c4e576252cee02
 {% endblock %}
 
 {% block bld_libs %}

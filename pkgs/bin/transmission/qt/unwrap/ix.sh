@@ -12,6 +12,11 @@ ENABLE_QT=ON
 USE_QT_VERSION=6
 {% endblock %}
 
+{% block patch %}
+{{super()}}
+rm third-party/rpavlik-cmake-modules/FindWayland.cmake
+{% endblock %}
+
 {% block bld_tool %}
 {{super()}}
 bld/qt/6

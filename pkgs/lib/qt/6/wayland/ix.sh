@@ -7,7 +7,6 @@ lib/qt/6/declarative
 
 {% block bld_tool %}
 {{super()}}
-bld/qt/6/wayland
 bld/qt/6/tools/qml
 {% endblock %}
 
@@ -29,7 +28,5 @@ export QT_PATH="\${QT_PATH}:${out}"
 
 {% block install %}
 {{super()}}
-llvm-ar d ${out}/lib/libQt6WlShellIntegration.a wayland-wayland-protocol.c.o
 llvm-ar d ${out}/lib/libQt6WaylandCompositor.a wayland-wayland-protocol.c.o
-llvm-ar d ${out}/lib/libQt6WaylandClient.a wayland-wayland-protocol.c.o
 {% endblock %}

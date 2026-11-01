@@ -5,10 +5,10 @@ meson
 {% endblock %}
 
 {% block version %}
-1.8.2
+1.8.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/mesonbuild/meson/archive/refs/tags/{{self.version().strip()}}.tar.gz
-6b878fb0f6f0318cbd54e13539f89a1a8305791668e8e93ffd59d82722888dac
+1cd0b5b013b4208ab450f5aca93b592b707f3fb2afe96b101dc710e6e5a8245c
 {% endblock %}

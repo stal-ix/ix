@@ -3,8 +3,8 @@
 # noauto
 
 {% block fetch %}
-https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n4.4.2.tar.gz
-2378c6ec0b0b7b4df4f87411afe72997e9d6803b1884398c1ef665c69e01eaea
+https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n4.4.8.tar.gz
+533bf9dd1b07134558490743c12aaf5b3ba3b521a46862b9c3fd764c2d3dd2b2
 {% endblock %}
 
 {% block lib_deps %}

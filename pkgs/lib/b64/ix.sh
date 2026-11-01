@@ -5,17 +5,26 @@ libb64
 {% endblock %}
 
 {% block version %}
-1.2
+2.0.0.1
 {% endblock %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/libb64/libb64/libb64/libb64-{{self.version().strip()}}.src.zip
-343d8d61c5cbe3d3407394f16a5390c06f8ff907bd8d614c16546310b689bfd3
+https://github.com/libb64/libb64/archive/refs/tags/v{{self.version().strip()}}.tar.gz
+ce8e578a953a591bd4a6f157eec310b9a4c2e6f10ade2fdda6ae6bafaf798b98
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/c++
+{% endblock %}
+
+{% block patch %}
+# 2.0.0.1 ships a typo that clang rejects
+sed -e 's|#elseif|#elif|' -i include/b64/ccommon.h
+{% endblock %}
+
+{% block make_target %}
+all_src
 {% endblock %}
 
 {% block install %}

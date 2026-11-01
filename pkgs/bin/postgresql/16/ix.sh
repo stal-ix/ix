@@ -5,10 +5,10 @@ postgresql
 {% endblock %}
 
 {% block version %}
-16.4
+16.15
 {% endblock %}
 
 {% block fetch %}
 https://ftp.postgresql.org/pub/source/v{{self.version().strip()}}/postgresql-{{self.version().strip()}}.tar.bz2
-971766d645aa73e93b9ef4e3be44201b4f45b5477095b049125403f9f3386d6f
+c1575341fa7bd40f5274ea465b34390f4dc64cdd0770af327005caaeb9f6b7ed
 {% endblock %}

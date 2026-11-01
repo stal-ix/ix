@@ -5,12 +5,12 @@ iir1
 {% endblock %}
 
 {% block version %}
-1.10.0
+1.11.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/berndporr/iir1/archive/refs/tags/{{self.version().strip()}}.tar.gz
-13b53f14d276adf6cafd3564fcda1d4b3e72342108d1c40ec4b4f0c7fc3ac95a
+ee3ffd1c8b7d406cd5610d537a9e033d93e00f5db208ea0341f0dbd0472e486a
 {% endblock %}
 
 {% block lib_deps %}

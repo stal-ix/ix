@@ -15,12 +15,12 @@ mujs
 {% endblock %}
 
 {% block version %}
-1.3.6
+1.3.11
 {% endblock %}
 
 {% block fetch %}
-https://github.com/ccxvii/mujs/archive/refs/tags/{{self.version().strip()}}.tar.gz
-7cf3a5e622cff41903efff0334518fc94af063256752c38ba4618a5191e44f18
+https://mujs.com/downloads/mujs-{{self.version().strip()}}.tar.gz
+456a395769daf110a30f9bf6f793044261e261481d5dca33b63cdc8714774ca4
 {% endblock %}
 
 {% block lib_deps %}

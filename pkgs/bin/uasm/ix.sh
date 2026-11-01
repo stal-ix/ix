@@ -32,6 +32,7 @@ inline=
 {% endblock %}
 
 {% block c_flags %}
+-Wno-incompatible-pointer-types
 -Wno-incompatible-function-pointer-types
 {% endblock %}
 

@@ -5,12 +5,12 @@ qtbase
 {% endblock %}
 
 {% block version %}
-6.7.2
+6.12.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/qt/qtbase/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-96b96e4fd0fc306502ed8b94a34cfa0bacc8a25d43c2e958dd6772b28f6b0e42
+dff6570582c272cbe744d2e460700318262af505460f4215276459970ae31b46
 {% endblock %}
 
 {% block lib_deps %}
@@ -18,6 +18,10 @@ lib/c
 lib/z
 lib/c++
 lib/double/conversion
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block cmake_flags %}
@@ -52,4 +56,10 @@ QT_FEATURE_systemsemaphore=ON
 #QT_FEATURE_systemtrayicon
 #QT_FEATURE_textmarkdownreader
 #QT_FEATURE_xcb
+{% endblock %}
+
+{% block install %}
+{{super()}}
+# do not force find-only tools on what builds on top: bld/qt/6/tools* build them
+sed -e '/QT_FORCE_FIND_TOOLS/d' -i ${out}/lib/cmake/Qt6BuildInternals/QtBuildInternalsExtra.cmake
 {% endblock %}

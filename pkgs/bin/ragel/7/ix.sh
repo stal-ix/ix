@@ -17,3 +17,11 @@ https://github.com/adrian-thurston/ragel/archive/refs/tags/{{self.version().stri
 lib/c
 lib/c++
 {% endblock %}
+
+{% block bld_tool %}
+bin/colm
+{% endblock %}
+
+{% block configure_flags %}
+--disable-manual
+{% endblock %}

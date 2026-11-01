@@ -9,7 +9,6 @@
 #bin/wez/term
 #bin/rqbit
 #bin/iron/bar
-bin/mrustc/cargo
 bin/shot/man
 bin/brush
 bin/edit

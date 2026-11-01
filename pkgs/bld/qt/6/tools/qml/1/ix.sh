@@ -14,6 +14,8 @@ tools/qmltyperegistrar/install
 sed -e 's|$<T.*qmltyperegistrar>|qmltyperegistrar|' \
     -e 's|$<T.*qmllint>|qmllint|' \
     -e 's|$<T.*cachegen_name}>|qmlcachegen|' \
+    -e 's|$<T.*qmlaotstats>|qmlaotstats|' \
+    -e 's|$<T.*qmlcontextpropertydump>|qmlcontextpropertydump|' \
     -i src/qml/Qt6QmlMacros.cmake
 sed -e 's|$<T.*qmltyperegistrar>|qmltyperegistrar|' \
     -e 's|$<T.*qmllint>|qmllint|' \

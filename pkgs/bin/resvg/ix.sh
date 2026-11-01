@@ -5,7 +5,7 @@ resvg
 {% endblock %}
 
 {% block version %}
-0.48.1
+0.49.0
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/RazrFalcon/resvg/archive/refs/tags/v{{self.version().strip()}
 {% endblock %}
 
 {% block cargo_sha %}
-8a1b7627e7bceca2d559a41844c035db9bca11089112303c0470349a3724413d
+ee66869638f321f3e55e1875aa49882df08b389b793ff9bcb0e7a745e4be4c52
 {% endblock %}
 
 {% block unpack %}

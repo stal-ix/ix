@@ -25,6 +25,7 @@ set/pg/system/thingd
 set/pg/system/logovo
 {% if pg_host != 'note' %}
 set/pg/system/initrd
+etc/zram/0(zram_size=12288)
 {% endif %}
 bin/dropbear/runit(dropbear_flags=-p 192.168.100.{{67 if pg_host == 'note' else 64}}:22{% if pg_host == 'note' %} -s{% endif %})
 etc/user/0(hash={{pg_hash}},user=pg,pubkey={{self.pg_pubkey().strip()}},login_shell=/ix/realm/pg/bin/bash)

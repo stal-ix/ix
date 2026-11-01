@@ -1,0 +1,24 @@
+--- a/jxrtestlib/JXRTest.c
++++ b/jxrtestlib/JXRTest.c
+@@ -201 +201 @@
+-    PKIID* pIID = NULL;
++    const PKIID* pIID = NULL;
+@@ -217 +217 @@
+-    Call(PKTestFactory_CreateCodec(pIID, ppDecoder));
++    Call(PKTestFactory_CreateCodec(pIID, (void **)ppDecoder));
+@@ -235 +235 @@
+-    Call(PKAlloc(ppCFactory, sizeof(**ppCFactory)));
++    Call(PKAlloc((void **)ppCFactory, sizeof(**ppCFactory)));
+@@ -290 +290 @@
+-    return PKFree(ppID);
++    return PKFree((void **)ppID);
+@@ -299 +299 @@
+-    Call(PKAlloc(ppID, sizeof(**ppID)));
++    Call(PKAlloc((void **)ppID, sizeof(**ppID)));
+--- a/jxrtestlib/JXRTestTif.c
++++ b/jxrtestlib/JXRTestTif.c
+@@ -912,2 +912,2 @@
+-    Call(WMPFree(&pID->EXT.TIF.uStripOffsets));
+-    Call(WMPFree(&pID->EXT.TIF.uStripByteCounts));
++    Call(WMPFree((void **)(&pID->EXT.TIF.uStripOffsets)));
++    Call(WMPFree((void **)(&pID->EXT.TIF.uStripByteCounts)));

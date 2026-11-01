@@ -5,10 +5,10 @@ wlroots
 {% endblock %}
 
 {% block version %}
-0.18.2
+0.18.3
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/{{self.version().strip()}}/wlroots-{{self.version().strip()}}.tar.bz2
-a28061f7778f28f7be377fd4d6f0ebd58cb2a63b52460e9fde28e2ab43e80cab
+17420d4e6fa3fe9c3c5022af2706ec25c3fbd861688d69052b7ef0e77dfb1f90
 {% endblock %}

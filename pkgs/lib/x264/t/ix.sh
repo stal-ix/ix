@@ -19,11 +19,8 @@ lib/c
 {% block bld_tool %}
 bld/nasm
 bld/bash
-{% endblock %}
-
-{% block configure %}
-export STRINGS=llvm-strings
-{{super()}}
+# configure's endian test runs `strings -a conftest.o`
+bld/strings
 {% endblock %}
 
 {% block configure_shell %}

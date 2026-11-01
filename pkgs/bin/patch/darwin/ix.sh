@@ -37,6 +37,16 @@ __APPLE__
 
 {% block patch %}
 sed -e 's|util.c|util.c vcs.c|' -i Makefile
+# getopt_long's flag field is int *, while verbose is bool. Return a unique
+# option code and update the boolean in the switch instead.
+sed -e '/^[[:space:]]*QUOTE_OPT,$/a\
+\tVERBOSE_OPT,' \
+    -e 's|&verbose, 1|0, VERBOSE_OPT|' \
+    -e '/^[[:space:]]*quoting_style = optarg;$/a\
+\t\t\tbreak;\
+\t\tcase VERBOSE_OPT:\
+\t\t\tverbose = true;' \
+    -i patch.c
 {% endblock %}
 
 {% block setup_target_flags %}

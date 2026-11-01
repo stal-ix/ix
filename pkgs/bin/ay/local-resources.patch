@@ -1,0 +1,23 @@
+--- a/fetch.go
++++ b/fetch.go
+@@ -121,6 +121,20 @@
+ 	throw(forceRemoveAll(out))
+ 	throw(os.MkdirAll(out, 0o755))
+ 
++	// ix supplies immutable, content-addressed tool directories. Keep their
++	// identity in the resource URI instead of downloading a second toolchain.
++	if strings.HasPrefix(uri, "file://") {
++		root := strings.TrimPrefix(uri, "file://")
++		if !filepath.IsAbs(root) || stripPrefix != 0 {
++			throwFmt("local resource requires an absolute directory and no strip prefix: %s", uri)
++		}
++		entries := throw2(os.ReadDir(root))
++		for _, entry := range entries {
++			throw(os.Symlink(filepath.Join(root, entry.Name()), filepath.Join(out, entry.Name())))
++		}
++		return
++	}
++
+ 	tmp := throw2(os.MkdirTemp("", "ay-fetch-*"))
+ 
+ 	defer os.RemoveAll(tmp)

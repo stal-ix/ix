@@ -1,5 +1,5 @@
 {% block version %}
-5.0.0-beta6
+5.0.0
 {% endblock %}
 
 {% block pkg_name %}
@@ -8,5 +8,5 @@ premake
 
 {% block fetch %}
 https://github.com/premake/premake-core/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-b46990b80aaa9e8f84ed628f179dfa55d1bae40de1be1239d7b27b22fa838989
+ed52d17463112d6b93bc6e34bb6e15c6332e1f313ad5259fdde60e270aa30aec
 {% endblock %}

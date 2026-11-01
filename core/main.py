@@ -28,8 +28,6 @@ CLIS = [
     ('core.cmd_realm', 'purge', False),
     ('core.cmd_realm', 'build', False),
     ('core.cmd_gc', 'gc', False),
-    ('core.cmd_tool', 'tool', False),
-    ('core.cmd_tool', 'recache', True),
     ('core.cmd_misc', 'misc_extract', True),
     ('core.cmd_misc', 'misc_fetch', True),
     ('core.cmd_misc', 'misc_link', True),

@@ -1,0 +1,574 @@
+diff --git a/dlls/ntdll/unix/env.c b/dlls/ntdll/unix/env.c
+index bd888b9..8fe8614 100644
+--- a/dlls/ntdll/unix/env.c
++++ b/dlls/ntdll/unix/env.c
+@@ -57,6 +57,7 @@
+ #include "winnls.h"
+ #include "wine/condrv.h"
+ #include "wine/debug.h"
++#include "wine/embed.h"
+ #include "unix_private.h"
+ #include "locale_private.h"
+ #include "error.h"
+@@ -128,7 +129,9 @@ static void *read_nls_file( const char *name )
+ 
+     if (asprintf( &path, "%s/nls/%s", dir, name ) == -1) return NULL;
+ 
+-    if ((fd = open( path, O_RDONLY )) != -1)
++    if (wine_is_embed_path( path )) fd = wine_embed_open( path );
++    else fd = open( path, O_RDONLY );
++    if (fd != -1)
+     {
+         fstat( fd, &st );
+         if ((data = malloc( st.st_size )) && st.st_size > 0x1000 &&
+diff --git a/dlls/ntdll/unix/file.c b/dlls/ntdll/unix/file.c
+index 8b87cc8..0ebe620 100644
+--- a/dlls/ntdll/unix/file.c
++++ b/dlls/ntdll/unix/file.c
+@@ -43,6 +43,7 @@
+ #endif
+ #include <poll.h>
+ #include <sys/stat.h>
++#include <sys/mman.h>
+ #ifdef HAVE_SYS_STATVFS_H
+ # include <sys/statvfs.h>
+ #endif
+@@ -123,6 +124,7 @@
+ #include "wine/server.h"
+ #include "wine/list.h"
+ #include "wine/debug.h"
++#include "wine/embed.h"
+ #include "unix_private.h"
+ 
+ WINE_DEFAULT_DEBUG_CHANNEL(file);
+@@ -1287,8 +1289,8 @@ static BOOLEAN is_legal_8dot3_name( const WCHAR *name, int len )
+  *
+  * Add a file to the directory data if it matches the mask.
+  */
+-static BOOL append_entry( struct dir_data *data, const char *long_name,
+-                          const char *short_name, const UNICODE_STRING *mask )
++static BOOL append_unix_entry( struct dir_data *data, const char *long_name, const char *short_name,
++                               const UNICODE_STRING *mask, const char *unix_name )
+ {
+     int long_len, short_len;
+     WCHAR long_nameW[MAX_DIR_ENTRY_LEN + 1];
+@@ -1322,7 +1324,13 @@ static BOOL append_entry( struct dir_data *data, const char *long_name,
+         if (!match_filename( short_nameW, short_len, mask )) return TRUE;
+     }
+ 
+-    return add_dir_data_names( data, long_nameW, short_nameW, long_name );
++    return add_dir_data_names( data, long_nameW, short_nameW, unix_name );
++}
++
++static BOOL append_entry( struct dir_data *data, const char *long_name,
++                          const char *short_name, const UNICODE_STRING *mask )
++{
++    return append_unix_entry( data, long_name, short_name, mask, long_name );
+ }
+ 
+ 
+@@ -1481,6 +1489,13 @@ static int get_file_info( const char *path, struct stat *st, ULONG *attr, ULONG
+     int attr_len, ret;
+ 
+     *attr = 0;
++    if (wine_is_embed_path( path ))
++    {
++        if (reparse_tag) *reparse_tag = 0;
++        if (wine_embed_stat( path, st ) == -1) return -1;
++        *attr = get_file_attributes( st );
++        return 0;
++    }
+     ret = lstat( path, st );
+     if (ret == -1) return ret;
+     if (reparse_tag) *reparse_tag = 0;
+@@ -2392,6 +2407,31 @@ done:
+ }
+ 
+ 
++/***********************************************************************
++ *           read_embed_dir_data
++ *
++ * List a directory of the embedded tree; entries keep their full unix
++ * names, as there is no directory to fchdir() into.
++ */
++static NTSTATUS read_embed_dir_data( struct dir_data *data, const char *path, const UNICODE_STRING *mask )
++{
++    char name[MAX_DIR_ENTRY_LEN + 1], *full;
++    unsigned int cookie = 0;
++    BOOL ret;
++
++    if (!append_unix_entry( data, ".", NULL, mask, path )) return STATUS_NO_MEMORY;
++    if (!append_unix_entry( data, "..", NULL, mask, path )) return STATUS_NO_MEMORY;
++    while (wine_embed_readdir( path, &cookie, name, sizeof(name) ))
++    {
++        if (asprintf( &full, "%s/%s", path, name ) == -1) return STATUS_NO_MEMORY;
++        ret = append_unix_entry( data, name, NULL, mask, full );
++        free( full );
++        if (!ret) return STATUS_NO_MEMORY;
++    }
++    return STATUS_SUCCESS;
++}
++
++
+ /***********************************************************************
+  *           read_directory_data
+  *
+@@ -2441,7 +2481,8 @@ static int name_compare( const void *a, const void *b )
+  *
+  * Initialize the cached directory contents.
+  */
+-static NTSTATUS init_cached_dir_data( struct dir_data **data_ret, int fd, const UNICODE_STRING *mask )
++static NTSTATUS init_cached_dir_data( struct dir_data **data_ret, int fd, const UNICODE_STRING *mask,
++                                      const char *embed_path )
+ {
+     struct dir_data *data;
+     struct stat st;
+@@ -2450,7 +2491,8 @@ static NTSTATUS init_cached_dir_data( struct dir_data **data_ret, int fd, const
+ 
+     if (!(data = calloc( 1, sizeof(*data) ))) return STATUS_NO_MEMORY;
+ 
+-    if ((status = read_directory_data( data, fd, mask )))
++    if ((status = embed_path ? read_embed_dir_data( data, embed_path, mask )
++                             : read_directory_data( data, fd, mask )))
+     {
+         free_dir_data( data );
+         return status;
+@@ -2566,7 +2608,7 @@ static unsigned int get_cached_dir_data( HANDLE handle, struct dir_data **data_r
+ 
+     if (!dir_data_cache[entry])
+     {
+-        status = init_cached_dir_data( &dir_data_cache[entry], fd, mask );
++        status = init_cached_dir_data( &dir_data_cache[entry], fd, mask, NULL );
+         if (status == STATUS_NO_SUCH_FILE && !fresh_handle) status = STATUS_NO_MORE_FILES;
+     }
+ 
+@@ -2576,6 +2618,111 @@ static unsigned int get_cached_dir_data( HANDLE handle, struct dir_data **data_r
+ }
+ 
+ 
++/* an open directory of the embedded tree: the handle wraps a placeholder memfd */
++struct embed_dir
++{
++    HANDLE           handle;
++    dev_t            dev;    /* identity of the placeholder, against handle reuse */
++    ino_t            ino;
++    char            *path;
++    struct dir_data *data;
++};
++
++static struct embed_dir **embed_dirs;
++static unsigned int embed_dirs_count, embed_dirs_size;
++
++static NTSTATUS add_embed_dir( HANDLE handle, int fd, const char *path )
++{
++    struct embed_dir *dir;
++    struct stat st;
++
++    if (fstat( fd, &st ) == -1) return errno_to_status( errno );
++    if (!(dir = calloc( 1, sizeof(*dir) )) || !(dir->path = strdup( path )))
++    {
++        free( dir );
++        return STATUS_NO_MEMORY;
++    }
++    dir->handle = handle;
++    dir->dev = st.st_dev;
++    dir->ino = st.st_ino;
++
++    mutex_lock( &dir_mutex );
++    if (embed_dirs_count == embed_dirs_size)
++    {
++        unsigned int size = max( 16, embed_dirs_size * 2 );
++        struct embed_dir **new_dirs = realloc( embed_dirs, size * sizeof(*new_dirs) );
++
++        if (!new_dirs)
++        {
++            mutex_unlock( &dir_mutex );
++            free( dir->path );
++            free( dir );
++            return STATUS_NO_MEMORY;
++        }
++        embed_dirs = new_dirs;
++        embed_dirs_size = size;
++    }
++    embed_dirs[embed_dirs_count++] = dir;
++    mutex_unlock( &dir_mutex );
++    return STATUS_SUCCESS;
++}
++
++/* called with dir_mutex held */
++static struct embed_dir *find_embed_dir( HANDLE handle, int fd )
++{
++    struct stat st;
++    unsigned int i;
++
++    if (!embed_dirs_count || fstat( fd, &st ) == -1) return NULL;
++    for (i = 0; i < embed_dirs_count; i++)
++        if (embed_dirs[i]->handle == handle && embed_dirs[i]->dev == st.st_dev && embed_dirs[i]->ino == st.st_ino)
++            return embed_dirs[i];
++    return NULL;
++}
++
++void close_embed_dir( HANDLE handle )
++{
++    unsigned int i;
++
++    if (!embed_dirs_count) return;
++    mutex_lock( &dir_mutex );
++    for (i = 0; i < embed_dirs_count; i++)
++    {
++        struct embed_dir *dir = embed_dirs[i];
++
++        if (dir->handle != handle) continue;
++        embed_dirs[i] = embed_dirs[--embed_dirs_count];
++        if (dir->data) free_dir_data( dir->data );
++        free( dir->path );
++        free( dir );
++        break;
++    }
++    mutex_unlock( &dir_mutex );
++}
++
++/* same as get_cached_dir_data, keeping the data in the embed_dir instead of the server cache */
++static unsigned int get_embed_dir_data( struct embed_dir *dir, struct dir_data **data_ret, int fd,
++                                        const UNICODE_STRING *mask, BOOLEAN restart_scan )
++{
++    BOOLEAN fresh_handle = !dir->data;
++    unsigned int status = STATUS_SUCCESS;
++
++    if (dir->data && restart_scan && mask && !ustring_equal( &dir->data->mask, mask ))
++    {
++        free_dir_data( dir->data );
++        dir->data = NULL;
++    }
++    if (!dir->data)
++    {
++        status = init_cached_dir_data( &dir->data, fd, mask, dir->path );
++        if (status == STATUS_NO_SUCH_FILE && !fresh_handle) status = STATUS_NO_MORE_FILES;
++    }
++    *data_ret = dir->data;
++    if (restart_scan && *data_ret) (*data_ret)->pos = 0;
++    return status;
++}
++
++
+ /******************************************************************************
+  *              NtQueryDirectoryFile   (NTDLL.@)
+  */
+@@ -2587,6 +2734,7 @@ NTSTATUS WINAPI NtQueryDirectoryFile( HANDLE handle, HANDLE event, PIO_APC_ROUTI
+     int cwd, fd, needs_close;
+     enum server_fd_type type;
+     struct dir_data *data;
++    struct embed_dir *embed = NULL;
+     unsigned int status;
+ 
+     TRACE("(%p %p %p %p %p %p 0x%08x 0x%08x 0x%08x %s 0x%08x\n",
+@@ -2628,7 +2776,11 @@ NTSTATUS WINAPI NtQueryDirectoryFile( HANDLE handle, HANDLE event, PIO_APC_ROUTI
+     if ((status = server_get_unix_fd( handle, FILE_LIST_DIRECTORY, &fd, &needs_close, &type, NULL )))
+         return status;
+ 
+-    if (type != FD_TYPE_DIR)
++    mutex_lock( &dir_mutex );
++    if (type == FD_TYPE_FILE) embed = find_embed_dir( handle, fd );
++    mutex_unlock( &dir_mutex );
++
++    if (type != FD_TYPE_DIR && !embed)
+     {
+         if (needs_close) close( fd );
+         return STATUS_INVALID_PARAMETER;
+@@ -2640,9 +2792,10 @@ NTSTATUS WINAPI NtQueryDirectoryFile( HANDLE handle, HANDLE event, PIO_APC_ROUTI
+     mutex_lock( &dir_mutex );
+ 
+     cwd = open( ".", O_RDONLY );
+-    if (fchdir( fd ) != -1)
++    if (embed || fchdir( fd ) != -1)
+     {
+-        if (!(status = get_cached_dir_data( handle, &data, fd, mask, restart_scan )))
++        if (!(status = embed ? get_embed_dir_data( embed, &data, fd, mask, restart_scan )
++                             : get_cached_dir_data( handle, &data, fd, mask, restart_scan )))
+         {
+             union file_directory_info *last_info = NULL;
+ 
+@@ -3934,6 +4087,13 @@ static NTSTATUS find_drive_nt_root( char *unix_name, unsigned int len,
+     while (len > 1 && unix_name[len - 1] == '/') len--;
+     unix_name[len] = 0;
+ 
++    if (wine_is_embed_path( unix_name ))
++    {
++        if (!wine_embed_stat( unix_name, &st )) return STATUS_SUCCESS;
++        if (disposition == FILE_OPEN || disposition == FILE_OVERWRITE) return STATUS_OBJECT_NAME_NOT_FOUND;
++        return STATUS_NO_SUCH_FILE;
++    }
++
+     for (pos = len; pos; pos = remove_last_component( unix_name, pos ))
+     {
+         char prev = unix_name[pos];
+@@ -4292,6 +4452,37 @@ NTSTATUS ntdll_unmount_device( int fd, char *mount_point )
+ }
+ 
+ 
++/******************************************************************************
++ *              open_embed_dir
++ *
++ * Open a directory of the embedded tree. Files of the tree are opened by
++ * the server like any other (it has the same tree), but a directory has no
++ * fd to list it: the handle wraps a placeholder, NtQueryDirectoryFile
++ * recognizes it through embed_dirs.
++ */
++static NTSTATUS open_embed_dir( HANDLE *handle, const char *unix_name, ACCESS_MASK access,
++                                OBJECT_ATTRIBUTES *attr, ULONG disposition, ULONG options )
++{
++    unsigned int status;
++    int fd;
++
++    if (disposition == FILE_CREATE) return STATUS_OBJECT_NAME_COLLISION;
++    if (disposition != FILE_OPEN && disposition != FILE_OPEN_IF) return STATUS_MEDIA_WRITE_PROTECTED;
++    if (options & FILE_DELETE_ON_CLOSE) return STATUS_CANNOT_DELETE;
++    if (options & FILE_NON_DIRECTORY_FILE) return STATUS_FILE_IS_A_DIRECTORY;
++
++    if ((fd = memfd_create( "wine-embed-dir", MFD_CLOEXEC )) == -1) return errno_to_status( errno );
++    status = wine_server_fd_to_handle( fd, access, attr->Attributes, handle );
++    if (!status && (status = add_embed_dir( *handle, fd, unix_name )))
++    {
++        NtClose( *handle );
++        *handle = 0;
++    }
++    close( fd );
++    return status;
++}
++
++
+ /******************************************************************************
+  *              open_unix_file
+  *
+@@ -4305,6 +4496,14 @@ NTSTATUS open_unix_file( HANDLE *handle, const char *unix_name, ACCESS_MASK acce
+     unsigned int status;
+     data_size_t len;
+ 
++    if (wine_is_embed_path( unix_name ))
++    {
++        struct stat st;
++
++        if (!wine_embed_stat( unix_name, &st ) && S_ISDIR( st.st_mode ))
++            return open_embed_dir( handle, unix_name, access, attr, disposition, options );
++    }
++
+     if ((status = wine_server_alloc_object_attributes( attr, &objattr, &len ))) return status;
+ 
+     SERVER_START_REQ( create_file )
+diff --git a/dlls/ntdll/unix/loader.c b/dlls/ntdll/unix/loader.c
+index ebfb6af..0a22af1 100644
+--- a/dlls/ntdll/unix/loader.c
++++ b/dlls/ntdll/unix/loader.c
+@@ -88,6 +88,7 @@
+ #include "unix_private.h"
+ #include "wine/list.h"
+ #include "wine/debug.h"
++#include "wine/embed.h"
+ 
+ WINE_DEFAULT_DEBUG_CHANNEL(module);
+ 
+@@ -384,10 +385,19 @@ static void init_paths(void)
+ {
+     Dl_info info;
+ 
+-    if (!dladdr( init_paths, &info ) || !(ntdll_dir = realpath_dirname( info.dli_fname )))
++    if (wine_embed_stat)
++    {
++        /* standalone executable: dlls and data are embedded, the loader is the executable itself */
++        dll_dir = WINE_EMBED_ROOT "/lib/wine";
++        ntdll_dir = build_path( dll_dir, get_so_dir(current_machine) + 1 );
++        bin_dir = WINE_EMBED_ROOT "/bin";
++        data_dir = WINE_EMBED_ROOT "/share/wine";
++        if (!(wineloader = realpath( "/proc/self/exe", NULL )))
++            fatal_error( "cannot get path to the wine executable\n" );
++    }
++    else if (!dladdr( init_paths, &info ) || !(ntdll_dir = realpath_dirname( info.dli_fname )))
+         fatal_error( "cannot get path to ntdll.so\n" );
+-
+-    if ((build_dir = remove_tail( ntdll_dir, "/dlls/ntdll" )))
++    else if ((build_dir = remove_tail( ntdll_dir, "/dlls/ntdll" )))
+     {
+         wineloader = build_path( build_dir, "loader/wine" );
+         alt_build_dir = realpath_dirname( build_path( build_dir, "loader-wow64" ));
+@@ -508,6 +518,12 @@ static int exec_wineserver( pid_t *pid, char **argv )
+ {
+     char *path;
+ 
++    if (wineserver_main)  /* linked into this executable, which runs it when called as wineserver */
++    {
++        argv[0] = (char *)"wineserver";
++        return posix_spawn( pid, "/proc/self/exe", NULL, NULL, argv, environ );
++    }
++
+     if (!is_win64 && alt_build_dir)  /* look for 64-bit server */
+         return build_path_and_exec( pid, alt_build_dir, "server/wineserver", argv );
+ 
+diff --git a/dlls/ntdll/unix/server.c b/dlls/ntdll/unix/server.c
+index fa9138d..cbe2d0c 100644
+--- a/dlls/ntdll/unix/server.c
++++ b/dlls/ntdll/unix/server.c
+@@ -1955,6 +1955,7 @@ NTSTATUS WINAPI NtClose( HANDLE handle )
+      * retrieve it again */
+     fd = remove_fd_from_cache( handle );
+     close_inproc_sync( handle );
++    close_embed_dir( handle );
+ 
+     SERVER_START_REQ( close_handle )
+     {
+diff --git a/dlls/ntdll/unix/unix_private.h b/dlls/ntdll/unix/unix_private.h
+index 7346ed1..9fcc616 100644
+--- a/dlls/ntdll/unix/unix_private.h
++++ b/dlls/ntdll/unix/unix_private.h
+@@ -389,6 +389,7 @@ extern NTSTATUS get_nt_and_unix_names( OBJECT_ATTRIBUTES *attr, UNICODE_STRING *
+ extern NTSTATUS unix_to_nt_file_name( const char *unix_name, WCHAR **nt, UINT disposition );
+ extern NTSTATUS get_full_path( char *name, const WCHAR *curdir, UNICODE_STRING *nt_name );
+ extern NTSTATUS get_nt_path( const WCHAR *name, UNICODE_STRING *nt_name );
++extern void close_embed_dir( HANDLE handle );
+ extern NTSTATUS open_unix_file( HANDLE *handle, const char *unix_name, ACCESS_MASK access,
+                                 OBJECT_ATTRIBUTES *attr, ULONG attributes, ULONG sharing, ULONG disposition,
+                                 ULONG options, void *ea_buffer, ULONG ea_length );
+diff --git a/dlls/win32u/freetype.c b/dlls/win32u/freetype.c
+index ce89912..006da00 100644
+--- a/dlls/win32u/freetype.c
++++ b/dlls/win32u/freetype.c
+@@ -68,6 +68,7 @@
+ #include "wingdi.h"
+ #include "ntgdi_private.h"
+ #include "wine/debug.h"
++#include "wine/embed.h"
+ #include "wine/list.h"
+ 
+ #ifdef SONAME_LIBFREETYPE
+@@ -902,7 +903,9 @@ static struct unix_face *unix_face_create( const char *unix_name, void *data_ptr
+ 
+     if (unix_name)
+     {
+-        if ((fd = open( unix_name, O_RDONLY )) == -1) return NULL;
++        if (wine_is_embed_path( unix_name )) fd = wine_embed_open( unix_name );
++        else fd = open( unix_name, O_RDONLY );
++        if (fd == -1) return NULL;
+         if (fstat( fd, &st ) == -1)
+         {
+             close( fd );
+diff --git a/include/Makefile.in b/include/Makefile.in
+index 3f23c63..72d8a0f 100644
+--- a/include/Makefile.in
++++ b/include/Makefile.in
+@@ -1119,6 +1119,7 @@ SOURCES = \
+ 	wine/condrv.h \
+ 	wine/dcetypes.idl \
+ 	wine/debug.h \
++	wine/embed.h \
+ 	wine/dplaysp.h \
+ 	wine/epm.idl \
+ 	wine/exception.h \
+diff --git a/include/wine/embed.h b/include/wine/embed.h
+new file mode 100644
+index 0000000..1fbfd47
+--- /dev/null
++++ b/include/wine/embed.h
+@@ -0,0 +1,33 @@
++/*
++ * Wine tree embedded into the executable
++ *
++ * A standalone build links the PE dlls and the data files into the wine
++ * binary itself; they show up under WINE_EMBED_ROOT, a unix path that
++ * never exists on disk. The functions are provided by the object carrying
++ * the payload and are weak here, so a regular build has none of them.
++ */
++
++#ifndef __WINE_WINE_EMBED_H
++#define __WINE_WINE_EMBED_H
++
++#include <string.h>
++#include <sys/stat.h>
++
++#define WINE_EMBED_ROOT "/@wine"
++
++/* stat() for a file or directory of the tree; -1 with errno set if absent */
++extern int wine_embed_stat( const char *path, struct stat *st ) __attribute__((weak));
++/* open a file of the tree; returns a read-only fd holding its contents */
++extern int wine_embed_open( const char *path ) __attribute__((weak));
++/* next entry name of a directory; *cookie starts at 0; returns 0 at the end */
++extern int wine_embed_readdir( const char *path, unsigned int *cookie, char *name, size_t size ) __attribute__((weak));
++/* the wineserver main, linked into the same executable */
++extern int wineserver_main( int argc, char *argv[] ) __attribute__((weak));
++
++static inline int wine_is_embed_path( const char *path )
++{
++    size_t len = sizeof(WINE_EMBED_ROOT) - 1;
++    return wine_embed_stat && !strncmp( path, WINE_EMBED_ROOT, len ) && (!path[len] || path[len] == '/');
++}
++
++#endif  /* __WINE_WINE_EMBED_H */
+diff --git a/loader/main.c b/loader/main.c
+index 71ba308..459230a 100644
+--- a/loader/main.c
++++ b/loader/main.c
+@@ -39,6 +39,7 @@
+ #endif
+ 
+ #include "main.h"
++#include "wine/embed.h"
+ 
+ #if defined(__APPLE__) && defined(__x86_64__) && !defined(HAVE_WINE_PRELOADER)
+ 
+@@ -169,8 +170,12 @@ static void *try_dlopen( const char *argv0 )
+  */
+ int main( int argc, char *argv[] )
+ {
++    const char *name = strrchr( argv[0], '/' ) ? strrchr( argv[0], '/' ) + 1 : argv[0];
+     void *handle;
+ 
++    /* a standalone executable carries the server too */
++    if (wineserver_main && !strcmp( name, "wineserver" )) return wineserver_main( argc, argv );
++
+     init_reserved_areas();
+ 
+     if ((handle = try_dlopen( get_self_exe() )) ||
+diff --git a/server/fd.c b/server/fd.c
+index 7cb48a2..a478bea 100644
+--- a/server/fd.c
++++ b/server/fd.c
+@@ -105,6 +105,7 @@
+ #include "winioctl.h"
+ #include "ddk/ntifs.h"
+ #include "ddk/wdm.h"
++#include "wine/embed.h"
+ 
+ #if defined(HAVE_SYS_EPOLL_H) && defined(HAVE_EPOLL_CREATE)
+ # include <sys/epoll.h>
+@@ -1928,7 +1929,11 @@ struct fd *open_fd( struct fd *root, const char *name, struct unicode_str nt_nam
+     }
+     else rw_mode = O_RDONLY;
+ 
+-    if ((fd->unix_fd = open( name, rw_mode | (flags & ~O_TRUNC), *mode )) == -1)
++    if (!root && wine_is_embed_path( name ))  /* the read-only tree embedded into the executable */
++        fd->unix_fd = rw_mode != O_RDONLY || (flags & O_TRUNC) ? (errno = EROFS, -1) : wine_embed_open( name );
++    else
++        fd->unix_fd = open( name, rw_mode | (flags & ~O_TRUNC), *mode );
++    if (fd->unix_fd == -1)
+     {
+         /* if we tried to open a directory for write access, retry read-only */
+         if (errno == EISDIR)
+diff --git a/server/unicode.c b/server/unicode.c
+index bb39b55..4ccf74a 100644
+--- a/server/unicode.c
++++ b/server/unicode.c
+@@ -38,6 +38,7 @@
+ #include "request.h"
+ #include "unicode.h"
+ #include "file.h"
++#include "wine/embed.h"
+ 
+ /* number of following bytes in sequence based on first byte value (for bytes above 0x7f) */
+ static const char utf8_length[128] =
+@@ -279,6 +280,8 @@ static char *get_nls_dir(void)
+ {
+     char *p, *dir, *ret;
+ 
++    if (wine_embed_stat) return strdup( WINE_EMBED_ROOT "/share/wine/nls" );
++
+ #if defined(__linux__) || defined(__FreeBSD_kernel__) || defined(__NetBSD__)
+     dir = realpath( "/proc/self/exe", NULL );
+ #elif defined (__FreeBSD__) || defined(__DragonFly__)

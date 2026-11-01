@@ -111,7 +111,7 @@ namespace {
     }
 
     SvgLibrary* library() {
-        static SvgLibrary* library = svg_library_create(decode, fail, nullptr);
+        static SvgLibrary* library = svg_library_create(decode, nullptr, fail, nullptr);
 
         return library;
     }

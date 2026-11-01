@@ -5,12 +5,12 @@ libressl
 {% endblock %}
 
 {% block version %}
-4.0.0
+4.4.0
 {% endblock %}
 
 {% block fetch %}
 https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-{{self.version().strip()}}.tar.gz
-4d841955f0acc3dfc71d0e3dd35f283af461222350e26843fea9731c0246a1e4
+7d02522ad5070b9adb32eb253ecabce181184a3750cf65abac0675ee908687c1
 {% endblock %}
 
 {% block lib_deps %}

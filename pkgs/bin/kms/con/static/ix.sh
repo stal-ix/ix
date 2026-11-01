@@ -2,10 +2,18 @@
 
 # check bin/kms/con
 
+{% block bld_libs %}
+{{super()}}
+bin/kms/con/modules
+{% for m in self.modules() | parse_list %}
+lib/dl/fix(dl_lib=mod-{{m}},dl_symbols=module={{m}}_module)
+{% endfor %}
+{% endblock %}
+
 {% block bld_tool %}
 {{super()}}
 bld/dlfcn
-bld/relink
+bld/wrap/cc/plugins/unreg(bins=kmscon)
 {% endblock %}
 
 {% block build_flags %}
@@ -17,35 +25,26 @@ wrap_rdynamic
 {% block patch %}
 {{super()}}
 sed -e 's|void kmscon_load_modules|void kmscon_load_modules_xxx|' \
-    -i src/kmscon_module.c
-cat << EOF >> src/kmscon_module.c
+    -i src/shl/module.c
+cat << EOF >> src/shl/module.c
 static void load1(const char* name) {
-    struct kmscon_module* mod;
+    struct shl_module* mod;
     mod = 0;
-    kmscon_module_open(&mod, name);
-    if (mod && kmscon_module_load(mod) == 0) {
-        shl_dlist_link(&module_list, &mod->list);
+    shl_module_open(&mod, name);
+    if (mod && shl_module_load(mod) == 0) {
+        dlist_link(&module_list, &mod->list);
     }
 }
 
 void kmscon_load_modules(void) {
-    load1("mod-bbulk");
-    load1("mod-gltex");
-    load1("mod-pango");
-    load1("mod-pixman");
-    load1("mod-unifont");
+{% for m in self.modules() | parse_list %}
+    load1("mod-{{m}}");
+{% endfor %}
 }
 EOF
 {% endblock %}
 
-{% block build %}
+{% block install %}
 {{super()}}
-cd ${tmp}/obj/src
-ls mod*.a | while read l; do
-    mn=$(echo ${l} | sed -e 's|mod-||' | sed -e 's|\.a||')
-    llvm-objcopy --redefine-sym=module=${mn}_module ${l}
-    echo "mod-${mn} module ${mn}_module"
-done | dl_stubs > stubs.c
-cat stubs.c
-relink kmscon -- ${PWD}/stubs.c
+rm -r ${out}/lib/kmscon
 {% endblock %}

@@ -5,12 +5,12 @@ mpc
 {% endblock %}
 
 {% block version %}
-1.3.1
+1.4.1
 {% endblock %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/mpc/mpc-{{self.version().strip()}}.tar.gz
-ab642492f5cf882b74aa0cb730cd410a81edcdbec895183ce930e706c1c759b8
+https://ftp.gnu.org/gnu/mpc/mpc-{{self.version().strip()}}.tar.xz
+91204cd32f164bd3b7c992d4a6a8ce6519511aadab30f78b6982d0bf8d73e931
 {% endblock %}
 
 {% block lib_deps %}

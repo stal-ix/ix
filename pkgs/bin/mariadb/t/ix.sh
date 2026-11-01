@@ -30,6 +30,7 @@ bld/wrap/cc/plugins/rdynamic/fake
 WITH_LIBFMT=system
 DISABLE_SHARED=ON
 WITH_UNIT_TESTS=OFF
+PLUGIN_COLUMNSTORE=NO
 {% endblock %}
 
 {% block build_flags %}

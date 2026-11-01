@@ -46,7 +46,13 @@ back through the LAN default route. The LAN and mesh routes are preserved.
 
 The existing dnsproxy retains port 53, enables AAAA, and forwards yandex.net
 and yandex-team.ru to 84.252.160.1. ovpn.net.yandex.net and yanet.org use public
-DNS to bootstrap the VPN. mesh/local retain their existing resolvers. There
+DNS to bootstrap the VPN. Public upstreams (including VPN bootstrap zones)
+use certificate-verified DoH at https://1.1.1.1/dns-query,
+https://8.8.8.8/dns-query and https://9.9.9.9/dns-query (the first two for
+VPN bootstrap). IP-literal endpoints avoid plaintext DNS bootstrap and
+local DNS recursion. This protects public queries from UDP/53 response
+spoofing on the host network; wirez -D forwards via this host resolver,
+not via SOCKS. mesh/local retain their existing resolvers. There
 is no public fallback for corporate zones. Valid cached records may survive
 an outage until their normal TTL; optimistic stale caching is disabled.
 The corporate DNS address in config.json must match the dnsproxy recipe.

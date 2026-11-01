@@ -5,12 +5,12 @@ gtklock
 {% endblock %}
 
 {% block version %}
-4.0.0
+5.0.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/jovanlanik/gtklock/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-db20bf27bd5dd01901ea1753c89c170777dd7cf8fca19130cf90f5f4e3fb9633
+018c50cf1d7b626f823e797750e5b304511b3b359e7277e8abb3383c11e7aed9
 {% endblock %}
 
 {% block bld_libs %}

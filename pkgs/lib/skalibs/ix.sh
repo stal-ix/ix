@@ -5,12 +5,12 @@ skalibs
 {% endblock %}
 
 {% block version %}
-2.15.1.0
+2.16.0.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/skarnet/skalibs/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-efa8b213fe341d57c8b7ad087d928b8d3296643a3a1583bf7e7675766bb68b06
+5a653ff1a7f9ba31b0415e3107f8cb30c91aeb8ace3d05e860850870bc839220
 {% endblock %}
 
 {% block lib_deps %}

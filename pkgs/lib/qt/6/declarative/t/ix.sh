@@ -5,12 +5,12 @@ qtdeclarative
 {% endblock %}
 
 {% block version %}
-6.7.2
+6.12.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/qt/qtdeclarative/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-3b91d1b75f22221f39b93647d73c9fe7fc4b9c8d45ff0cec402626eab15d8dd8
+0b71aa358703de8217177dbb620c86af9e9804482e607bb2cadbf116a65bd9c6
 {% endblock %}
 
 {% block lib_deps %}

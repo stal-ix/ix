@@ -66,6 +66,7 @@ DESKTOP_APP_DISABLE_JEMALLOC=ON
 DESKTOP_APP_USE_PACKAGED=ON
 DESKTOP_APP_USE_PACKAGED_RLOTTIE=ON
 DESKTOP_APP_QT6=ON
+QT_FIND_PRIVATE_MODULES=ON
 
 DESKTOP_APP_DISABLE_DBUS_INTEGRATION=ON
 DESKTOP_APP_DISABLE_SPELLCHECK=OFF
@@ -88,7 +89,6 @@ bld/wayland
 bld/prepend
 bld/pkg/config
 bld/qt/6/tools
-bld/qt/6/wayland
 bld/qt/6/tools/qml
 {% endblock %}
 
@@ -98,6 +98,10 @@ find . -type f | while read l; do
 done
 
 sed -e 's|Q_OS_LINUX|SHIT|' -i Telegram/lib_base/base/platform/linux/base_info_linux.cpp
+
+sed -e 's|qgenericunixservices|qdesktopunixservices|' \
+    -e 's|QGenericUnixServices|QDesktopUnixServices|' \
+    -i Telegram/lib_base/base/platform/linux/base_linux_xdp_utilities.cpp
 
 >Telegram/lib_ui/ui/text/qtextitemint.cpp
 

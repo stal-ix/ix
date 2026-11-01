@@ -5,7 +5,7 @@ gosmee
 {% endblock %}
 
 {% block version %}
-0.32.0
+0.32.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/chmouel/gosmee/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block go_sha %}
-f9ee3e6c011ad078e336d3b5952d1fb1198dfedda17b967deab23e009562ddcc
+d5d65f03436471061518421c7d9cb3fe17f59cd7cb89f061f6b436ef9ad28bdc
 {% endblock %}
 
 {% block go_bins %}
@@ -25,5 +25,5 @@ gosmee.bin
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/25
+bin/go/lang/27
 {% endblock %}

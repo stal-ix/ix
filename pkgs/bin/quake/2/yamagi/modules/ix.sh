@@ -1,5 +1,7 @@
 {% extends '//bin/quake/2/yamagi/t/ix.sh' %}
 
+# check bin/quake/2/yamagi
+
 {% block lib_deps %}
 lib/c
 lib/curl

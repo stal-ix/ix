@@ -1,0 +1,7 @@
+--- a/src/readcdf.c
++++ b/src/readcdf.c
+@@ -243 +243,3 @@ cdf_file_property_info(struct magic_set *ms, const cdf_property_info_t *info,
+-					c = cdf_ctime(&ts.tv_sec, tbuf);
++					time_t sec = ts.tv_sec;
++
++					c = cdf_ctime(&sec, tbuf);

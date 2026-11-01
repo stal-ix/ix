@@ -5,12 +5,12 @@ dconf
 {% endblock %}
 
 {% block version %}
-0.40.0
+51.0
 {% endblock %}
 
 {% block fetch %}
-https://download.gnome.org/sources/dconf/0.40/dconf-{{self.version().strip()}}.tar.xz
-cf7f22a4c9200421d8d3325c5c1b8b93a36843650c9f95d6451e20f0bcb24533
+https://download.gnome.org/sources/dconf/{{self.version().strip() | field(0)}}/dconf-{{self.version().strip()}}.tar.xz
+e65c1b7867f836faad9f9ee04acf5c5a6cae2bbc784833fe093207e0cb590248
 {% endblock %}
 
 {% block lib_deps %}

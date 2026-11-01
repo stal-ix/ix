@@ -5,12 +5,12 @@ iniparser
 {% endblock %}
 
 {% block version %}
-4.3.0
+4.3.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ndevilla/iniparser/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-97375d6a3c481ebb27c47884aa57934599eed027a3015225e2f13173efd39643
+e9eb6be555c30fbef87e5a07333fcff6ef8c5bbbdc5710321bbad7ebae0612a7
 {% endblock %}
 
 {% block lib_deps %}

@@ -79,6 +79,12 @@ cd ..
 {% endblock %}
 
 {% block patch %}
+# a mark word is an integer carried in a markOopDesc*: clang assumes the
+# pointer is 8-aligned and folds every lock-bit test on value() into a
+# constant; hide the provenance from it
+sed -e 's|uintptr_t value() const { return (uintptr_t) this; }|uintptr_t value() const { uintptr_t v = (uintptr_t) this; __asm__("" : "+r"(v)); return v; }|' \
+    -i openjdk.src/hotspot/src/share/vm/oops/markOop.hpp
+grep -q '__asm__("" : "+r"(v))' openjdk.src/hotspot/src/share/vm/oops/markOop.hpp
 sed -e 's|.*fpu_control.*||' \
     -i openjdk.src/hotspot/src/os/linux/vm/os_linux.cpp
 (cd openjdk.src/hotspot/src/share/vm/runtime; base64 -d | patch -p1) << EOF
@@ -155,6 +161,12 @@ HAS_GLIBC_GETHOSTBY_R=1
 
 {% block c_flags %}
 -Wno-implicit-function-declaration
+# hotspot is not clean C++: it tests this against NULL, overflows signed
+# ints and type-puns; with optimization clang would take all of it at face
+# value
+-fno-delete-null-pointer-checks
+-fno-strict-aliasing
+-fwrapv
 {% endblock %}
 
 {% block make_target %}

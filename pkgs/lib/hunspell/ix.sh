@@ -5,12 +5,12 @@ hunspell
 {% endblock %}
 
 {% block version %}
-1.7.4
+1.7.6
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hunspell/hunspell/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-57bd9927cd1ee691cb96b244b7532dd941edeab126482e23b970a6335e95f287
+4fa9c52a5337fb0a3e03f3212b6372d0159eac3d1a3e6e938e8897ff3d9c3d0c
 {% endblock %}
 
 {% block lib_deps %}

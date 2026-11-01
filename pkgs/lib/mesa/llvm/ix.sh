@@ -23,6 +23,9 @@ shared-llvm=disabled
 
 {% block patch %}
 {{super()}}
+patch -p1 <<'EOF'
+{% include 'llvm-23.patch' %}
+EOF
 sed -e 's|config-tool|auto|' \
     -e 's|_llvm_rtti = .*|_llvm_rtti = true|' \
     -i meson.build

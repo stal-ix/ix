@@ -28,3 +28,9 @@ lib/bsd/overlay
 {% block bld_tool %}
 bld/bison
 {% endblock %}
+
+{% block patch %}
+patch -p1 <<'EOF'
+{% include 'md5-update.patch' %}
+EOF
+{% endblock %}

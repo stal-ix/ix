@@ -1,0 +1,39 @@
+--- a/src/hotspot/os/posix/os_posix.cpp
++++ b/src/hotspot/os/posix/os_posix.cpp
+@@ -1120,7 +1120,7 @@
+                                          dli_fname, sizeof(dli_fname), nullptr);
+   assert(ret, "cannot locate libjvm");
+   if (!ret) {
+-    return;
++    dli_fname[0] = '\0';
+   }
+   fname = dli_fname;
+ #endif // AIX
+@@ -1128,8 +1128,25 @@
+   if (fname[0] != '\0') {
+     rp = os::realpath(fname, buf, buflen);
+   }
+-  if (rp == nullptr) {
+-    return;
++  if (rp == nullptr || strlen(rp) < 10 || strcmp(rp + strlen(rp) - 10, "/libjvm.so") != 0) {
++    // statically linked into the launcher, <java.home>/bin/<launcher>,
++    // which is what the lookup above finds; the layout puts libjvm at
++    // <java.home>/lib/server
++    char exe[MAXPATHLEN];
++    ssize_t len = readlink("/proc/self/exe", exe, sizeof(exe) - 1);
++    char* slash;
++    if (len <= 0) {
++      return;
++    }
++    exe[len] = '\0';
++    for (int i = 0; i < 2; i++) {
++      if ((slash = strrchr(exe, '/')) == nullptr) {
++        return;
++      }
++      *slash = '\0';
++    }
++    jio_snprintf(buf, buflen, "%s/lib/server/libjvm.so", exe);
++    rp = buf;
+   }
+ 
+   // If executing unit tests we require JAVA_HOME to point to the real JDK.

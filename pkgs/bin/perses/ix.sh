@@ -5,7 +5,7 @@ perses
 {% endblock %}
 
 {% block version %}
-0.53.1
+0.54.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,11 +13,11 @@ https://github.com/perses/perses/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-8707946e2d6c4e5f9d96bed8255cfbb48005ca88df93b3f85513e17db217da67
+3b95a99e82ad2a0f5498aaaf49bfaf8e03c985a33fb14612e771c676deed7037
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/25
+bin/go/lang/27
 {% endblock %}
 
 {% block bld_tool %}

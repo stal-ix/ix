@@ -1,0 +1,41 @@
+--- a/mplayer.c
++++ b/mplayer.c
+@@ -2433 +2433,2 @@ static void uninit_player(unsigned int mask)
+-    mpctx->sh_video = mpctx->sh_video->ds = NULL;
++    mpctx->sh_video->ds = NULL;
++    mpctx->sh_video = NULL;
+--- a/libmpdemux/demux_film.c
++++ b/libmpdemux/demux_film.c
+@@ -160 +160 @@ static int demux_film_fill_buffer(demuxer_t *demuxer, demux_stream_t *ds)
+-        unsigned short* tmp = dp->buffer;
++        unsigned short* tmp = (unsigned short *)dp->buffer;
+--- a/loader/qtx/qtxsdk/components.h
++++ b/loader/qtx/qtxsdk/components.h
+@@ -783 +783 @@ static inline void dump_CodecDecompressParams(void* xxx){
+-	unsigned int* p=cd->wantedDestinationPixelTypes;
++	unsigned int* p=(unsigned int *)cd->wantedDestinationPixelTypes;
+--- a/sub/sub.c
++++ b/sub/sub.c
+@@ -729,2 +729,5 @@ static inline void vo_update_text_sub(mp_osd_obj_t *obj, int dxs, int dys)
+-            if (sub_utf8)
+-              c = utf8_get_char(&t);
++            if (sub_utf8) {
++              const char *utf8_t = (const char *)t;
++              c = utf8_get_char(&utf8_t);
++              t = (unsigned char *)utf8_t;
++            }
+--- a/stream/stream.h
++++ b/stream/stream.h
+@@ -203 +203 @@ int cache_stream_seek_long(stream_t *s,int64_t pos);
+-int stream_write_buffer(stream_t *s, unsigned char *buf, int len);
++int stream_write_buffer(stream_t *s, const void *buf, int len);
+--- a/stream/stream.c
++++ b/stream/stream.c
+@@ -378,5 +378,5 @@ int stream_read(stream_t *s, char *mem, int total) {
+-int stream_write_buffer(stream_t *s, unsigned char *buf, int len) {
++int stream_write_buffer(stream_t *s, const void *buf, int len) {
+   int rd;
+   if(!s->write_buffer)
+     return -1;
+-  rd = s->write_buffer(s, buf, len);
++  rd = s->write_buffer(s, (char *)buf, len);

@@ -41,6 +41,12 @@ lib/harfbuzz
 __WORDSIZE=64
 {% endblock %}
 
+{% block patch %}
+patch -p1 << EOF
+{% include 'clang-23.diff' %}
+EOF
+{% endblock %}
+
 {% block gn_args %}
 is_official_build=true
 skia_use_piex=false

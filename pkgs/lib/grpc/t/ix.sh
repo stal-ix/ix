@@ -45,7 +45,9 @@ gRPC_BUILD_CSHARP_EXT=OFF
 {% endblock %}
 
 {% block setup_target_flags %}
-export CXXFLAGS="-Wno-missing-template-arg-list-after-template-kw -std=c++20 ${CXXFLAGS}"
+# include/grpc/event_engine/memory_request.h calls std::to_string without
+# <string>, which abseil 20260817 no longer drags in; C++ only, gRPC has C too
+export CXXFLAGS="-include string -Wno-missing-template-arg-list-after-template-kw -std=c++20 ${CXXFLAGS}"
 {% endblock %}
 
 {% block patch %}

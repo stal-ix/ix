@@ -1,5 +1,7 @@
 {% extends '//bin/epiphany/t/ix.sh' %}
 
+# check bin/epiphany
+
 {% block bld_libs %}
 lib/adwaita
 lib/shim/xdg

@@ -5,12 +5,12 @@ patch
 {% endblock %}
 
 {% block version %}
-2.8
+2.8.1
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/patch/patch-{{self.version().strip()}}.tar.xz
-f87cee69eec2b4fcbf60a396b030ad6aa3415f192aa5f7ee84cad5e11f7f5ae3
+3240c7959c5347c8ed347e3c4201c0337bf4240d5cf09d68889e58eeaba30e17
 {% endblock %}
 
 {% block bld_libs %}

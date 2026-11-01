@@ -1,5 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
+# noauto: upstream stopped at 1.1; 1.1.1 is a distro packager's repository
+
 {% block pkg_name %}
 libx86
 {% endblock %}

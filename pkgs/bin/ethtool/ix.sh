@@ -5,12 +5,12 @@ ethtool
 {% endblock %}
 
 {% block version %}
-7.1
+7.2
 {% endblock %}
 
 {% block fetch %}
 https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-{{self.version().strip()}}.tar.xz
-4d78c26edc0255bc92f4b995b5fd66108d75ff966ed4694f6025a6d370bc2496
+44256ddf4631ed08d816b7b8725f4b2e0f05e96b8c7ca64ee5c81449da2b6507
 {% endblock %}
 
 {% block bld_libs %}

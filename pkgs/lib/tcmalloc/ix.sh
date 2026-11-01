@@ -1,8 +1,13 @@
-{% extends '//die/c/ix.sh' %}
+{% extends '//die/c/bazel.sh' %}
+
+{# The targets come from tcmalloc's own BUILD files (see die/c/bazel.sh), so
+   only what //tcmalloc:tcmalloc needs is compiled, each source with its
+   target's flags. tcmalloc_variant picks another build of it, e.g.
+   large_pages, 256k_pages, small_but_slow, numa_aware. #}
 
 {% block fetch %}
-https://github.com/google/tcmalloc/archive/432d115adab8935b0a937d659c345aa8f82add57.tar.gz
-a5480b4012f0e36ab03f47479c8ba2f27ea70607156825266e3da84f6a28caf9
+https://github.com/google/tcmalloc/archive/876c092e7982a5585bb8bb01196d5c9ed99a4a6a.tar.gz
+d4259e9f2172f0f8b4091d80afe6bbd5449c836aa03c46af3347cd7ba6ec467c
 {% endblock %}
 
 {% block lib_deps %}
@@ -15,41 +20,26 @@ lib/build/w/include/next
 lib/kernel
 {% endblock %}
 
-{% block cpp_includes %}
-${PWD}
+{% block bazel_targets %}
+{% if tcmalloc_variant %}
+//tcmalloc:tcmalloc_{{tcmalloc_variant}}
+{% else %}
+//tcmalloc:tcmalloc
+{% endif %}
 {% endblock %}
 
-{% block cpp_defines %}
-TCMALLOC_INTERNAL_8K_PAGES
+{% block bazel_repos %}
+com_google_absl
 {% endblock %}
 
-{% block patch %}
-find . -type f -name '*_test.*' -delete
-find . -type f -name '*_fuzz.*' -delete
-find . -type f -name '*_benchmark.*' -delete
-find . -type f -name '*mock_*' -delete
-rm tcmalloc/internal/profile_builder.cc
-rm tcmalloc/profile_marshaler.cc
-rm -rf tcmalloc/testing
-{% endblock %}
-
-{% block build %}
-set -x
-echo 'tcmalloc/internal/percpu_rseq_asm.S' | while read l; do
-    c++ -c ${l} -o ${l}.o
-done
-find tcmalloc -type f -name '*.cc' | grep -v 'want_' | while read l; do
-    c++ -c ${l} -o ${l}.o
-done
-ar q libtcmalloc.a $(find . -type f -name '*.o')
-{% endblock %}
-
-{% block install %}
-mkdir ${out}/lib
-cp libtcmalloc.a ${out}/lib/
+{# from tcmalloc's .bazelrc #}
+{% block bazel_flags %}
+--cxxopt=-std=c++17
+--define=absl=1
 {% endblock %}
 
 {% block env %}
+{{super()}}
 export ac_cv_func_reallocarray=yes
 export ac_cv_func_malloc_0_nonnull=yes
 export ac_cv_func_realloc_0_nonnull=yes

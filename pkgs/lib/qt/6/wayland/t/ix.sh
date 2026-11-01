@@ -5,12 +5,12 @@ qtwayland
 {% endblock %}
 
 {% block version %}
-6.7.2
+6.12.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/qt/qtwayland/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-e4cb055bca9a76266821bc2320ff9feaae96eaca0a6a453e99722410b2a5fff2
+6a6ac145aaf34ab742f85ff79d688c5bab9160a1da32e7855c8e7278ff774f3c
 {% endblock %}
 
 {% block lib_deps %}

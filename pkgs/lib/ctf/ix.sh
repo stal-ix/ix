@@ -22,6 +22,7 @@ lib/c
 {% endblock %}
 
 {% block configure_flags %}
+--disable-werror
 --enable-targets=all
 --enable-install-libbfd
 {% endblock %}

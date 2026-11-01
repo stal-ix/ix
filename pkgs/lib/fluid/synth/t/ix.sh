@@ -1,13 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
-# noauto
-
 {% block pkg_name %}
 fluidsynth
 {% endblock %}
 
 {% block version %}
-2.5.3
+2.6.1
 {% endblock %}
 
 {% block git_repo %}
@@ -19,11 +17,22 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-cab473179ca6a0f861ff7e5958a562e825ef68f4e086a51dfa6703acdb712d1e
+8cad339694c37233ad3140cd3b0e449ac8d18c58a987a0a152c4dc2dbb037905
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/c++
 lib/glib
+{% endblock %}
+
+{% block bld_libs %}
+lib/signalsmith/dsp
+lib/signalsmith/linear
+lib/signalsmith/hilbert
+{% endblock %}
+
+{% block patch %}
+sed -e 's|FetchContent_MakeAvailable(\(.*\))|add_library(\1 INTERFACE)|' \
+    -i signalsmith-audio-basics/CMakeLists.txt
 {% endblock %}

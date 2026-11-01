@@ -5,12 +5,12 @@ patchelf
 {% endblock %}
 
 {% block version %}
-0.19.2
+0.19.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/NixOS/patchelf/archive/refs/tags/{{self.version().strip()}}.tar.gz
-05e674fcc89ef3ffbd851266d063f45f13bd16facec9839a54d0095b930c6f07
+c424c782c525ee0961006bec370cbdb19714fd4690c6552cc48ca21860ce4df3
 {% endblock %}
 
 {% block bld_libs %}

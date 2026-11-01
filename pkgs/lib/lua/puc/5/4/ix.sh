@@ -5,10 +5,10 @@ lua
 {% endblock %}
 
 {% block version %}
-5.4.8
+5.4.9
 {% endblock %}
 
 {% block fetch %}
 https://www.lua.org/ftp/lua-{{self.version().strip()}}.tar.gz
-4f18ddae154e793e46eeab727c59ef1c0c0c2b744e7b94219710d76f530629ae
+2335b6c582a52654f94612bf10d2f4672805d05329aa6568b1d8cd9e5c6fb8e6
 {% endblock %}

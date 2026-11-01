@@ -1,5 +1,7 @@
 {% extends '//bin/sway/t/ix.sh' %}
 
+# check bin/sway/stock
+
 {% block bld_libs %}
 {{super()}}
 lib/drivers/3d

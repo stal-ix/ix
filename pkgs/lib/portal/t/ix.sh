@@ -5,12 +5,12 @@ libportal
 {% endblock %}
 
 {% block version %}
-0.9.1
+0.11.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/flatpak/libportal/archive/refs/tags/{{self.version().strip()}}.tar.gz
-ea422b789ae487e04194d387bea031fd7485bf88a18aef8c767f7d1c29496a4e
+71482afa68b3373268e7df7feaf96ce99eb1a6701f60ff43a0d1b2594605eae8
 {% endblock %}
 
 {% block lib_deps %}

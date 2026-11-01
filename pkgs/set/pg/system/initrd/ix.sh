@@ -11,7 +11,7 @@ mount -t devtmpfs devtmpfs /dev
 mount -t proc proc /proc
 mount -t sysfs sysfs /sys
 btrfs device scan
-mount /dev/nvme0n1p2 /tmp
+mount -o noatime,compress=zstd:1,nodiscard /dev/nvme0n1p2 /tmp
 cd /tmp
 mount --move . /
 exec chroot . /bin/init

@@ -7,8 +7,8 @@ cat <<'EOF' > ${out}/bin/pg-arc-mount
 set -eu
 export HOME=/home/pg USER=pg LOGNAME=pg PATH=/bin
 cd "$HOME"
-mkdir -p "$HOME/1"
-exec /bin/arc mount -F "$HOME/1"
+mkdir -p "$HOME/$1"
+exec /bin/arc mount -F "$HOME/$1"
 EOF
 chmod 0755 ${out}/bin/pg-arc-mount
 {% endblock %}

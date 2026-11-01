@@ -1,5 +1,7 @@
 {% extends '//bin/xpdf/t/ix.sh' %}
 
+# check bin/xpdf
+
 {% block bld_libs %}
 lib/qt/6/base
 lib/qt/6/deps

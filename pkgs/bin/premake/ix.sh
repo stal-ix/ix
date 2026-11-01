@@ -16,6 +16,10 @@ wrap_rdynamic
 --no-luasocket
 {% endblock %}
 
+{% block make_flags %}
+config=release
+{% endblock %}
+
 {% block configure %}
 premake5 embed
 {{super()}}

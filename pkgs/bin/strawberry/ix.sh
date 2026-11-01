@@ -4,10 +4,12 @@
 strawberry
 {% endblock %}
 
-{% block version %}1.2.7{% endblock %}
+{% block version %}
+1.2.7
+{% endblock %}
 
 {% block fetch %}
-https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/{{self.version()}}.tar.gz
+https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/{{self.version().strip()}}.tar.gz
 e2e3db4fd3482b853ccfc41313dedbbc4ded723fb20c5dc858746e5a77f7c158
 {% endblock %}
 
@@ -40,7 +42,7 @@ bld/qt/6/tools
 {% block patch %}
 sed -e 's|.*FATAL.*Protobuf.*||' -i CMakeLists.txt
 find . -type f -name '*.cpp' | while read l; do
-    sed -e 's|STRAWBERRY_VERSION_DISPLAY|"{{self.version()}}"|g' -i ${l}
+    sed -e 's|STRAWBERRY_VERSION_DISPLAY|"{{self.version().strip()}}"|g' -i ${l}
 done
 {% endblock %}
 

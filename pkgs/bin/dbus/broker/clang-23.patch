@@ -1,0 +1,11 @@
+--- a/src/util/test-sockopt.c
++++ b/src/util/test-sockopt.c
+@@ -31 +31 @@ static void create_server(int fd) {
+-        r = bind(fd, &address, offsetof(struct sockaddr_un, sun_path));
++        r = bind(fd, (const struct sockaddr *)&address, offsetof(struct sockaddr_un, sun_path));
+@@ -49 +49 @@ static void create_client(
+-        r = connect(fd, address, n_address);
++        r = connect(fd, (const struct sockaddr *)address, n_address);
+@@ -164 +164 @@ static void test_peerpidfd(void) {
+-        r = getsockname(fd_server, &address, &n_address);
++        r = getsockname(fd_server, (struct sockaddr *)&address, &n_address);

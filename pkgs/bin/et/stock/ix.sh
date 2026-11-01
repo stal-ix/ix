@@ -5,12 +5,12 @@ EternalTerminal
 {% endblock %}
 
 {% block version %}
-7.0.0
+7.1.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/MisterTea/EternalTerminal/archive/refs/tags/et-v{{self.version().strip()}}.tar.gz
-3580962861589c0b69efd6b385ff92ad8fdf688c91d1a0edc1a83278205e28e8
+7f5ab26f5cc18e66184d806648a2437c447b549ca106a7e6107f793435e39270
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,6 +24,7 @@ lib/curses
 lib/unwind
 lib/openssl
 lib/protobuf
+lib/shim/fake(lib_name=gcc_s)
 lib/shim/fake(lib_name=stdc++fs)
 {% endblock %}
 

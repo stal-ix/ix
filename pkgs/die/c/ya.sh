@@ -30,10 +30,14 @@ export CONLYFLAGS=
 {% endblock %}
 
 {% block ya_make_cmd %}
+{% block ya_make_bin %}
 ya
+{% endblock %}
 make
+{% block ya_make_options %}
 -r
 -T
+{% endblock %}
 -j ${make_thrs}
 {% block ya_platform %}
 --host-platform=default-{{host.os}}-{{host.gnu_arch}}

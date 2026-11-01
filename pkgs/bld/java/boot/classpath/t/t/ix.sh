@@ -24,6 +24,10 @@ bin/fastjar
 {% if lib %}
 mv ${out}/lib/classpath/*.a ${out}/lib/
 rm -rf ${out}/lib/classpath
+{% else %}
+# the tool scripts exec the VM this was configured with, by its store path;
+# builds only see their declared inputs, so take the jamvm from PATH
+sed -e 's|^exec /[^ ]*/bin/jamvm |exec jamvm |' -i ${out}/bin/g*
 {% endif %}
 {% endblock %}
 

@@ -5,7 +5,7 @@ nfs-ganesha
 {% endblock %}
 
 {% block version %}
-15.5
+15.9
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ V{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-5bee6e6405847c2ebc1c44a2b85913a478eeba89073b0a06088c061159eec38d
+b684d50b03246653937008bd72b6647c11a2a5ac2a7d2d961731e00287435278
 {% endblock %}
 
 {% block bld_libs %}
@@ -52,6 +52,9 @@ NTIRPC_LIBRARY_DIR=${NTIRPC_PREFIX}/lib
 {% endblock %}
 
 {% block patch %}
+patch -p1 <<'EOF'
+{% include 'clang-23.patch' %}
+EOF
 sed -e 's|typedef.*_t;||' -i include/nlm4.h include/cqos.h
 sed -e 's|__gid_t|gid_t|g' -i idmapper/pwnam_wrappers.c
 sed -e 's|add_executable(sm_notify.ganesha |add_executable(sm_notify.ganesha EXCLUDE_FROM_ALL |' -i CMakeLists.txt

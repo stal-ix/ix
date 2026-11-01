@@ -5,12 +5,12 @@ cmocka
 {% endblock %}
 
 {% block version %}
-1.1.8
+2.0.2
 {% endblock %}
 
 {% block fetch %}
-https://cmocka.org/files/1.1/cmocka-{{self.version().strip()}}.tar.xz
-58435b558766d7f4c729ba163bdf3aec38bed3bc766dab684e3526ed0aa7c780
+https://cmocka.org/files/{{self.version().strip() | field(0)}}.{{self.version().strip() | field(1)}}/cmocka-{{self.version().strip()}}.tar.xz
+39f92f366bdf3f1a02af4da75b4a5c52df6c9f7e736c7d65de13283f9f0ef416
 {% endblock %}
 
 {% block lib_deps %}

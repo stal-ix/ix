@@ -1,5 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% set openmp_standalone_build %}{% block openmp_standalone_build %}ON{% endblock %}{% endset %}
+
 {% block lib_deps %}
 lib/c
 lib/c++
@@ -16,7 +18,7 @@ runtimes
 
 {% block cmake_flags %}
 ENABLE_OMPT_TOOLS=OFF
-OPENMP_STANDALONE_BUILD=ON
+OPENMP_STANDALONE_BUILD={{openmp_standalone_build}}
 LLVM_ENABLE_RUNTIMES=openmp
 OPENMP_ENABLE_LIBOMPTARGET=OFF
 LIBOMP_HEADERS_INSTALL_PATH=${out}/include

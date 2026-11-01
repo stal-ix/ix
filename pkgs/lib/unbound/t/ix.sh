@@ -5,12 +5,12 @@ unbound
 {% endblock %}
 
 {% block version %}
-1.26.1
+1.26.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
-09b01d7aafaa380e4f810b3dd009357b6c3b6a3a909e13a1dc300878cc1aad28
+4ec94f911afb4347600d6b1044264fe8e9b07d73c6fcba668ace5a0cf45803d5
 {% endblock %}
 
 {% block lib_deps %}

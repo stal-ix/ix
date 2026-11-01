@@ -5,12 +5,12 @@ inetutils
 {% endblock %}
 
 {% block version %}
-2.6
+2.8
 {% endblock %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/inetutils/inetutils-{{self.version().strip()}}.tar.xz
-68bedbfeaf73f7d86be2a7d99bcfbd4093d829f52770893919ae174c0b2357ca
+https://ftp.gnu.org/gnu/inetutils/inetutils-{{self.version().strip()}}.tar.gz
+57b3cf4f77555992881e5ba2a09a63b05aa2c56342a60ed4305b5f45938390b5
 {% endblock %}
 
 {% block bld_libs %}

@@ -86,7 +86,7 @@ class RenderContext:
             'isfile': os.path.isfile,
             'intro': self.intro,
             'default_allocator': 'gperftools',
-            'default_clang': '21',
+            'default_clang': '23',
             kind: True,
             tp['os']: True,
             tp['arch']: True,

@@ -5,12 +5,12 @@ libjpeg-turbo
 {% endblock %}
 
 {% block version %}
-3.2.0
+3.2.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/{{self.version().strip()}}.tar.gz
-980dd81f425082aa6d7c9e47fef27554ce7a9ffc8e2f6e863b97d263c5c50858
+6f5819c51649bce2571a23b1b0cd41eae2f57fc3f8908c7ec9e7047efb65ca13
 {% endblock %}
 
 {% block bld_tool %}
@@ -27,6 +27,7 @@ lib/shim/setjmp
 
 {% block lib_deps %}
 lib/c
+lib/z
 {% endblock %}
 
 {% block cmake_flags %}
@@ -34,4 +35,5 @@ lib/c
 REQUIRE_SIMD=ON
 {% endif %}
 ENABLE_SHARED=OFF
+WITH_SYSTEM_ZLIB=ON
 {% endblock %}

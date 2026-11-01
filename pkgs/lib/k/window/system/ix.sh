@@ -1,18 +1,16 @@
 {% extends '//die/c/cmake.sh' %}
 
-# noauto
-
 {% block pkg_name %}
 kwindowsystem
 {% endblock %}
 
 {% block version %}
-6.19.0
+6.31.0
 {% endblock %}
 
 {% block fetch %}
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v{{self.version().strip()}}/kwindowsystem-v{{self.version().strip()}}.tar.bz2
-48384ff2e2f3b28595c079ab11b5097991a3af3ca59096ef12819ed1ad21b624
+b1211b4bc29ec227ef9227a380c143da136b9d4ba04b9569110e06e4d4a6a56d
 {% endblock %}
 
 {% block lib_deps %}
@@ -29,7 +27,6 @@ lib/qt/6/declarative
 bld/qt/6
 bld/wayland
 bld/qt/6/tools
-bld/qt/6/wayland
 bld/qt/6/tools/qml
 {% endblock %}
 

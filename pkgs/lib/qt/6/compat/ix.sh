@@ -5,12 +5,12 @@ qt5compat
 {% endblock %}
 
 {% block version %}
-6.7.2
+6.12.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/qt/qt5compat/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-331a1e617952217868beeef7964828500388abeeb502ea3436f16eec816426c4
+c8a528b2f7d158ee76cdc61f24f7ea067ae27a0ede6968679cf9ba3ac1b24e05
 {% endblock %}
 
 {% block lib_deps %}

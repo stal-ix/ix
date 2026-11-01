@@ -1,9 +1,9 @@
 {% extends '//bin/mariadb/11/unwrap/ix.sh' %}
 
 {% block git_sha %}
-44941ec1ca2b4e6b5b95ef7c57602e20ea694df7409256571105f6a8fe413c3e
+ee99db795b543043034f7fd11caf58efc57e896f625a31be173be1ee6d91a7b6
 {% endblock %}
 
 {% block git_branch %}
-mariadb-10.11.3
+mariadb-10.11.19
 {% endblock %}

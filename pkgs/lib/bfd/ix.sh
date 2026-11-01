@@ -23,6 +23,7 @@ bld/texinfo
 {% endblock %}
 
 {% block configure_flags %}
+--disable-werror
 --with-zstd
 --with-system-zlib
 --enable-targets=all

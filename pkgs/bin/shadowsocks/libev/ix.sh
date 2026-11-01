@@ -38,6 +38,12 @@ lib/sodium
 lib/mbedtls/2
 {% endblock %}
 
+{% block patch %}
+patch -p1 <<'EOF'
+{% include 'clang-23.patch' %}
+EOF
+{% endblock %}
+
 {% block cmake_flags %}
 WITH_STATIC=OFF
 WITH_DOC_MAN=OFF

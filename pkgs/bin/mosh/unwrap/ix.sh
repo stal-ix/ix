@@ -28,3 +28,9 @@ bin/protoc
 {% block cxx_flags %}
 -std=c++20
 {% endblock %}
+
+{% block patch %}
+# shared_ptr::unique() is gone in C++20, which protobuf's headers need
+sed -e 's|mutable_row.unique()|(mutable_row.use_count() == 1)|' \
+    -i src/terminal/terminalframebuffer.h
+{% endblock %}

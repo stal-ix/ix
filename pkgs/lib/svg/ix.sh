@@ -9,12 +9,12 @@ svg
 {% endblock %}
 
 {% block version %}
-3
+5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/impulse-desktop/svg/releases/download/{{self.version().strip()}}/svg-{{self.version().strip()}}.tar.gz
-3458ff76b2b2a3cab63be129c4171879c1433f952370dfddd182a076ecafefc0
+829819c5fa796dd9e044ece2adc89912989b08b314d66c6f9e5e74def3fd2f52
 {% endblock %}
 
 {% block lib_deps %}

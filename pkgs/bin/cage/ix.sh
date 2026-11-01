@@ -1,23 +1,21 @@
 {% extends '//die/c/meson.sh' %}
 
-# noauto
-
 {% block pkg_name %}
 cage-kiosk
 {% endblock %}
 
 {% block version %}
-0.2.1
+0.3.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/cage-kiosk/cage/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-acab0c83175164a788d7b9f89338cbdebdc4f7197aff6fdc267c32f7181234a9
+6dc1619665acd367e0174c93b234002549a66f55f1de9197d67f0305415babc8
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
-lib/wlroots/19
+lib/wlroots/20
 {% endblock %}
 
 {% block bld_tool %}

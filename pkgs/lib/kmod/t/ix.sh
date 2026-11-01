@@ -5,12 +5,12 @@ kmod
 {% endblock %}
 
 {% block version %}
-34.2
+34.3
 {% endblock %}
 
 {% block fetch %}
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-{{self.version().strip()}}.tar.gz
-d1dfcf19b58133b6f39917e6e9560e33b73d9308282750d31501870c24f22c53
+26e7ef068cd935d0f882b2e3b11f4452a1ed239aa24d68bfcaa047475e254e1f
 {% endblock %}
 
 {% block lib_deps %}

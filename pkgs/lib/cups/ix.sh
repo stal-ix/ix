@@ -13,6 +13,10 @@ lib/c
 lib/kernel
 {% endblock %}
 
+{% block configure_flags %}
+--with-rcdir=${out}/etc/rc.d
+{% endblock %}
+
 {% block env %}
 export CUPS_HEADERS_PATH=${out}/include
 {% endblock %}

@@ -5,12 +5,12 @@ wayland-protocols
 {% endblock %}
 
 {% block version %}
-1.49
+1.50
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/{{self.version().strip()}}/wayland-protocols-{{self.version().strip()}}.tar.bz2
-7330d2d8fbda81991548738e81da493829bc55db2daf1ae15b9d4952e4d7d83b
+dc5899a21274fd03d06472a753d1954ab30ecc6af372105d72d472ba17a65705
 {% endblock %}
 
 {% block bld_tool %}

@@ -1,0 +1,20 @@
+--- a/ntpd/ntp_control.c
++++ b/ntpd/ntp_control.c
+@@ -3667,3 +3667,3 @@
+-	MD5Update(&ctx, salt, sizeof(salt));
+-	MD5Update(&ctx, &ts_i, sizeof(ts_i));
+-	MD5Update(&ctx, &ts_f, sizeof(ts_f));
++	MD5Update(&ctx, (const uint8_t *)salt, sizeof(salt));
++	MD5Update(&ctx, (const uint8_t *)&ts_i, sizeof(ts_i));
++	MD5Update(&ctx, (const uint8_t *)&ts_f, sizeof(ts_f));
+@@ -3671 +3671 @@
+-		MD5Update(&ctx, &SOCK_ADDR4(addr), sizeof(SOCK_ADDR4(addr)));
++		MD5Update(&ctx, (const uint8_t *)&SOCK_ADDR4(addr), sizeof(SOCK_ADDR4(addr)));
+@@ -3673 +3673 @@
+-		MD5Update(&ctx, &SOCK_ADDR6(addr), sizeof(SOCK_ADDR6(addr)));
++		MD5Update(&ctx, (const uint8_t *)&SOCK_ADDR6(addr), sizeof(SOCK_ADDR6(addr)));
+@@ -3675,2 +3675,2 @@
+-	MD5Update(&ctx, &NSRCPORT(addr), sizeof(NSRCPORT(addr)));
+-	MD5Update(&ctx, salt, sizeof(salt));
++	MD5Update(&ctx, (const uint8_t *)&NSRCPORT(addr), sizeof(NSRCPORT(addr)));
++	MD5Update(&ctx, (const uint8_t *)salt, sizeof(salt));

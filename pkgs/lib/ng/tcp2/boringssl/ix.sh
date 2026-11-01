@@ -1,5 +1,7 @@
 {% extends '//lib/ng/tcp2/t/ix.sh' %}
 
+# check bin/curl/aws
+
 {% block lib_deps %}
 {{super()}}
 lib/openssl

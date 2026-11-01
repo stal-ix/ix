@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block version %}
-0.56.2
+0.57.0
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ Hyprland
 
 {% block fetch %}
 https://github.com/hyprwm/Hyprland/releases/download/v{{self.version().strip()}}/source-v{{self.version().strip()}}.tar.gz
-03ad3f5ef152ff44116ffd56fcf808486211ecabf4f0ba567108ee746ba5cd2e
+82d006ba9264fe67266c7d583c16f1a6c64d51424dbdc472c3e9c9d5ddfcd559
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,6 +24,9 @@ lib/glslang
 lib/ei
 lib/lua/puc/5/5
 lib/readline
+lib/canberra
+lib/sd/bus/c++/2
+lib/jthread/polyfill
 lib/pango
 lib/cairo
 lib/input
@@ -47,6 +50,7 @@ bld/prepend
 bld/wayland
 bld/python/13
 bin/hypr/wayland/scanner
+bin/hypr/wayland/protocols
 lib/hypr/wire
 bld/wrap/cc/plugins/rdynamic/fake
 {% endblock %}
@@ -64,6 +68,17 @@ chmod +x scripts/generateVersion.sh
 
 prepend hyprpm/src/helpers/Sys.cpp << EOF
 #include <sstream>
+EOF
+
+sed -i 's|request.subview(i, 2)|std::string_view{request}.substr(i, 2)|' \
+    src/ipc/s1/S1.cpp
+
+prepend src/ipc/s2/S2.cpp << EOF
+#include <algorithm>
+EOF
+
+prepend src/keybinds/Bind.hpp << EOF
+#include <span>
 EOF
 {% endblock %}
 

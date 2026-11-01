@@ -5,12 +5,12 @@ wayfire
 {% endblock %}
 
 {% block version %}
-0.9.0
+0.11.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/WayfireWM/wayfire/releases/download/v{{self.version().strip()}}/wayfire-{{self.version().strip()}}.tar.xz
-dd0c9c08b8a72a2d8c3317c8be6c42b17a493c25abab1d02ac09c24eaa95229d
+29dc95468c4f954341c9ecbad889b661eb849bdb96fb47e19c9d6edc8d49640b
 {% endblock %}
 
 {% block bld_libs %}
@@ -33,7 +33,8 @@ lib/freetype
 lib/execinfo
 lib/xkb/common
 lib/drivers/3d
-lib/wlroots/17
+lib/wlroots/20
+lib/json/yy
 lib/json/nlohmann
 # {{opengl | defined('opengl')}}
 {% endblock %}

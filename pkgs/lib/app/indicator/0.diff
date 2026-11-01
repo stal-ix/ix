@@ -70,3 +70,9 @@ index ee03390..1fecbb4 100644
  ])
  
  if test "x$has_mono" = "xtrue" ; then
+diff --git a/src/app-indicator.c b/src/app-indicator.c
+--- a/src/app-indicator.c
++++ b/src/app-indicator.c
+@@ -2199 +2199 @@ app_indicator_set_secondary_activate_target (AppIndicator *self, GtkWidget *menuitem)
+-	priv->sec_activate_target = g_object_ref(G_OBJECT(menuitem));
++	priv->sec_activate_target = g_object_ref(menuitem);

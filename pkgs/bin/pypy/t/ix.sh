@@ -79,6 +79,12 @@ lib/c/dl
 sed -e 's|IS_SUPPORTED = (|IS_SUPPORTED = False and (|' \
     -i rpython/rlib/rvmprof/cintf.py
 
+{# PyPy renames its vendored expat.h to __expat.h, but the new
+   hash_table.h added with Expat 2.8.5 still uses the original name. #}
+sed -e 's|#  include "expat.h"|#  include "__expat.h"|' \
+    -i pypy/module/pyexpat/src/expat/hash_table.h
+grep -n '__expat.h' pypy/module/pyexpat/src/expat/hash_table.h
+
 {# pyexpat asserts at translation time that expat is not the UTF-16
    build, by actually calling XML_ExpatVersion(). The interpreter is not
    translated yet, so the call goes through ll2ctypes, which compiles

@@ -5,12 +5,12 @@ nim
 {% endblock %}
 
 {% block version %}
-2.2.12
+2.4.0
 {% endblock %}
 
 {% block fetch %}
 https://nim-lang.org/download/nim-{{self.version().strip()}}.tar.xz
-2639a06a5ea7a7fcf57df1e7e1ef4d1b2bee58c7ac9bd00dbd2aa5bea1e5a56a
+4fa00853bc6ac92ebdd924d8e2ce42509d3f708d76a3ffcc034e16288e0e0325
 {% endblock %}
 
 {% block bld_libs %}

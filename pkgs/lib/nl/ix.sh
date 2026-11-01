@@ -5,12 +5,12 @@ libnl
 {% endblock %}
 
 {% block version %}
-3.11.0
+3.12.0
 {% endblock %}
 
 {% block fetch %}
-https://github.com/thom311/libnl/releases/download/libnl3_11_0/libnl-{{self.version().strip()}}.tar.gz
-2a56e1edefa3e68a7c00879496736fdbf62fc94ed3232c0baba127ecfa76874d
+https://github.com/thom311/libnl/releases/download/libnl{{self.version().strip().replace('.', '_')}}/libnl-{{self.version().strip()}}.tar.gz
+fc51ca7196f1a3f5fdf6ffd3864b50f4f9c02333be28be4eeca057e103c0dd18
 {% endblock %}
 
 {% block lib_deps %}

@@ -1,0 +1,34 @@
+--- a/hotspot/src/os/linux/vm/os_linux.cpp
++++ b/hotspot/src/os/linux/vm/os_linux.cpp
+@@ -2453,8 +2453,29 @@
+   if (ret && dli_fname[0] != '\0') {
+     rp = realpath(dli_fname, buf);
+   }
+-  if (rp == NULL)
+-    return;
++  if (rp == NULL || strlen(rp) < 10 || strcmp(rp + strlen(rp) - 10, "/libjvm.so") != 0) {
++    // statically linked into the launcher, <jdk>/bin/<launcher> or
++    // <jdk>/jre/bin/<launcher>, which is what the lookup above finds; the
++    // layout puts libjvm at <jre>/lib/<arch>/server
++    char exe[MAXPATHLEN];
++    ssize_t len = readlink("/proc/self/exe", exe, sizeof(exe) - 1);
++    char* slash;
++    if (len <= 0) {
++      return;
++    }
++    exe[len] = '\0';
++    for (int i = 0; i < 2; i++) {
++      if ((slash = strrchr(exe, '/')) == NULL) {
++        return;
++      }
++      *slash = '\0';
++    }
++    jio_snprintf(buf, buflen, "%s/jre/lib/%s/server/libjvm.so", exe, cpu_arch);
++    if (access(buf, F_OK) != 0) {
++      jio_snprintf(buf, buflen, "%s/lib/%s/server/libjvm.so", exe, cpu_arch);
++    }
++    rp = buf;
++  }
+ 
+   if (Arguments::created_by_gamma_launcher()) {
+     // Support for the gamma launcher.  Typical value for buf is

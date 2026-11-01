@@ -5,12 +5,12 @@ libiconv
 {% endblock %}
 
 {% block version %}
-1.19
+1.19.1
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-{{self.version().strip()}}.tar.gz
-88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6
+9a06844846d664d7122161700c10a64480d7c7bcead3091925a785b38c91edab
 {% endblock %}
 
 {% block lib_deps %}

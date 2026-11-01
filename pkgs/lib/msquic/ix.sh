@@ -7,12 +7,12 @@ msquic
 {% endblock %}
 
 {% block version %}
-2.6.2
+2.6.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/microsoft/msquic/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-206e4604eb7ffbc496eb4df804afaaba4814c2bbfdb18fdb142172301b74c8c0
+8584e3918f2e3c43c97b3c5ee036a14783581906d1b18d103982b1ccf54266cf
 {% endblock %}
 
 {% block lib_deps %}

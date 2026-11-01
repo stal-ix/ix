@@ -17,5 +17,5 @@ https://github.com/johang/btfs/archive/refs/tags/v{{self.version().strip()}}.tar
 lib/c
 lib/curl
 lib/fuse/3
-lib/torrent/rasterbar
+lib/torrent/rasterbar/2/1
 {% endblock %}
