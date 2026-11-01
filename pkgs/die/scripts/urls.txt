@@ -659,6 +659,7 @@ https://download.gnome.org/sources/pangomm/2.58/pangomm-2.58.0.tar.xz
 https://download.gnome.org/sources/vala/0.48/vala-0.48.25.tar.xz
 https://download.imagemagick.org/archive/releases/ImageMagick-7.1.2-32.tar.xz
 https://download.imagemagick.org/archive/releases/ImageMagick-7.1.2-34.tar.xz
+https://download.imagemagick.org/archive/releases/ImageMagick-7.1.2-35.tar.xz
 https://download.java.net/openjdk/jdk17/ri/openjdk-17+35_linux-x64_bin.tar.gz
 https://download.kde.org/stable/frameworks/5.112/extra-cmake-modules-5.112.0.tar.xz
 https://download.kde.org/stable/frameworks/5.99/extra-cmake-modules-5.99.0.tar.xz
