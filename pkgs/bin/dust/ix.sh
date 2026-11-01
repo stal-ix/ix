@@ -13,7 +13,7 @@ https://github.com/bootandy/dust/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block cargo_sha %}
-81d4868cfef5068406c5dfc41c868b5c4a3984b64df3c53a44246e46df5694f7
+95ef36c3b63df7f74cfb183c2a671434870ea3ab63ade352ac53b8115eacc3f5
 {% endblock %}
 
 {% block cargo_bins %}
