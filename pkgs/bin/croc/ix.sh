@@ -5,7 +5,7 @@ croc
 {% endblock %}
 
 {% block version %}
-11.6.0
+11.6.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/schollz/croc/archive/refs/tags/v{{self.version().strip()}}.ta
 {% endblock %}
 
 {% block go_sha %}
-2bcf2a33dbecb2f1baa0e98ecb25e8c917f999cb23713299ff8d4be69935290e
+050e36e1a8bdf90ce3d7716e27a52eeb0e0a419828977836cfdef93ff133a25b
 {% endblock %}
 
 {% block go_bins %}
