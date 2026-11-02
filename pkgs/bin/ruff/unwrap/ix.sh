@@ -43,5 +43,5 @@ lib/zstd
 {% endblock %}
 
 {% block cargo_tool %}
-bld/rust/96
+bld/rust/97
 {% endblock %}
