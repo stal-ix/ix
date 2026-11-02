@@ -2680,6 +2680,7 @@ https://github.com/boostorg/boost/releases/download/boost-1.89.0/boost-1.89.0-b2
 https://github.com/boostorg/boost/releases/download/boost-1.90.0/boost-1.90.0-b2-nodocs.tar.xz
 https://github.com/bootandy/dust/archive/refs/tags/v1.2.4.tar.gz
 https://github.com/bootandy/dust/archive/refs/tags/v1.2.5.tar.gz
+https://github.com/bootandy/dust/archive/refs/tags/v1.2.7.tar.gz
 https://github.com/bpftrace/bpftrace/archive/refs/tags/v0.21.2.tar.gz
 https://github.com/bpftrace/bpftrace/archive/refs/tags/v0.23.0.tar.gz
 https://github.com/bugaevc/wl-clipboard/archive/refs/tags/v2.2.0.tar.gz

@@ -5,7 +5,7 @@ du-dust
 {% endblock %}
 
 {% block version %}
-1.2.5
+1.2.7
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/bootandy/dust/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block cargo_sha %}
-95ef36c3b63df7f74cfb183c2a671434870ea3ab63ade352ac53b8115eacc3f5
+e19cbec91ef58363a177d441ad2845ea4667c0a86497ae737949557c8bc441e5
 {% endblock %}
 
 {% block cargo_bins %}
@@ -21,5 +21,5 @@ dust
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/91
+bld/cargo/96
 {% endblock %}
