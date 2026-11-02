@@ -5068,6 +5068,7 @@ https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.16.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.17.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.25.0.tar.gz
+https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.26.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.5.0.tar.gz
