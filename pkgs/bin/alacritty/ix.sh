@@ -13,7 +13,11 @@ https://github.com/alacritty/alacritty/archive/refs/tags/v{{self.version().strip
 {% endblock %}
 
 {% block cargo_sha %}
-81d4868cfef5068406c5dfc41c868b5c4a3984b64df3c53a44246e46df5694f7
+e5e949c1f7ced31b76e67824a14f8eb3310896ea02e5812c116e0265ed1636fb
+{% endblock %}
+
+{% block cargo_ver %}
+v4
 {% endblock %}
 
 {% block bld_libs %}

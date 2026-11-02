@@ -13,7 +13,11 @@ https://github.com/dandavison/delta/archive/refs/tags/{{self.version().strip()}}
 {% endblock %}
 
 {% block cargo_sha %}
-81d4868cfef5068406c5dfc41c868b5c4a3984b64df3c53a44246e46df5694f7
+ce0e78337e6268906bcbf9944efd195118add524373d64a0ad77182b3bb2e0ba
+{% endblock %}
+
+{% block cargo_ver %}
+v4
 {% endblock %}
 
 {% block bld_libs %}
