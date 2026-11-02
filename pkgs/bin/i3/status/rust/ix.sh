@@ -19,6 +19,30 @@ d303d08839c8f35876906f6fdb6281d660dbaa7f961922ae0b3d41f394448153
 {% block bld_libs %}
 lib/sensors
 lib/openssl
+lib/linux/headers
+{% endblock %}
+
+{% block host_libs %}
+{{super()}}
+lib/llvm/19
+{% endblock %}
+
+{% block bld_tool %}
+bld/git
+bld/make
+bld/cmake
+bld/rust/helpers/patch/bindgen
+{% endblock %}
+
+{% block patch %}
+{{super()}}
+patch_bindgen vendored
+sed -e 's|"runtime"|"static"|' -i vendored/boring-sys/Cargo.toml
+{% endblock %}
+
+{% block setup_target_flags %}
+{{super()}}
+export BORING_BSSL_RUST_CPPLIB=c++
 {% endblock %}
 
 {% block cargo_features %}
