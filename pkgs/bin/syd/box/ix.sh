@@ -20,6 +20,10 @@ https://gitlab.exherbo.org/sydbox/sydbox/-/archive/v{{self.version().strip()}}/s
 lib/seccomp
 {% endblock %}
 
+{% block c_flags %}
+-fPIC
+{% endblock %}
+
 {% block cargo_bins %}
 syd
 {% endblock %}
