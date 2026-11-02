@@ -27,9 +27,6 @@ lib/drm
 lib/pango
 lib/opengl
 lib/hypr/utils
-{% endblock %}
-
-{% block bld_libs %}
 lib/hypr/rsvg
 {% endblock %}
 
