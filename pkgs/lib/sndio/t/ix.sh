@@ -31,8 +31,5 @@ done
 {% block configure %}
 sh ./configure \
     --prefix=${out} \
-{% if linux %}
-    --with-libbsd   \
-{% endif %}
     {% block configure_flags %}{% endblock %}
 {% endblock %}
