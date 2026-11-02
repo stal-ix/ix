@@ -11,12 +11,6 @@ hyprpicker
 {% block fetch %}
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 b3c1714d25bed3a1d59b813a7c59156a7c55f1f1cf2bea2306ba6b01cf8d49a7
-https://github.com/hyprwm/hyprpicker/commit/d6115cad31aab3d537039a817b0590d83833d2a2.diff
-ab9afa0317bbeacc6b4ff49f5a3ebf05d06b632ef5e9e72fa7823bb442578083
-{% endblock %}
-
-{% block patch %}
-patch -p1 < ${src}/d6115cad31aab3d537039a817b0590d83833d2a2.diff
 {% endblock %}
 
 {% block bld_libs %}
