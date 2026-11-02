@@ -5005,6 +5005,7 @@ https://github.com/neovim/unibilium/archive/refs/tags/v2.1.4.tar.gz
 https://github.com/netblue30/firejail/archive/refs/tags/0.9.74.tar.gz
 https://github.com/netblue30/firejail/archive/refs/tags/0.9.76.tar.gz
 https://github.com/netblue30/firejail/archive/refs/tags/0.9.80.tar.gz
+https://github.com/netblue30/firejail/archive/refs/tags/0.9.82.tar.gz
 https://github.com/netblue30/firejail/archive/refs/tags/landlock-split.tar.gz
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.01.tar.gz
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.03.tar.gz
