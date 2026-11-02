@@ -2645,6 +2645,7 @@ https://github.com/benhoyt/inih/archive/refs/tags/r59.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r60.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r61.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r62.tar.gz
+https://github.com/benhoyt/inih/archive/refs/tags/r63.tar.gz
 https://github.com/bensadeh/circumflex/archive/refs/tags/3.5.tar.gz
 https://github.com/bensadeh/circumflex/archive/refs/tags/3.8.tar.gz
 https://github.com/bensadeh/circumflex/archive/refs/tags/3.9.tar.gz
