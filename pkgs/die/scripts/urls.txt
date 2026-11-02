@@ -8157,6 +8157,7 @@ https://www.ivarch.com/programs/sources/pv-1.10.1.tar.gz
 https://www.ivarch.com/programs/sources/pv-1.10.2.tar.gz
 https://www.ivarch.com/programs/sources/pv-1.11.0.tar.gz
 https://www.ivarch.com/programs/sources/pv-1.12.0.tar.gz
+https://www.ivarch.com/programs/sources/pv-1.12.7.tar.gz
 https://www.ivarch.com/programs/sources/pv-1.8.0.tar.gz
 https://www.ivarch.com/programs/sources/pv-1.8.5.tar.gz
 https://www.ivarch.com/programs/sources/pv-1.8.9.tar.gz
