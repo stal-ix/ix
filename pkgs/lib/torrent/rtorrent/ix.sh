@@ -5,12 +5,17 @@ libtorrent
 {% endblock %}
 
 {% block version %}
-0.16.25
+0.16.26
 {% endblock %}
 
 {% block fetch %}
 https://github.com/rakshasa/libtorrent/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-c0390ef3454e9456aadb21f704eac6ef659bccc2b3ceb8215f59f1ef30735a14
+f3674a26c8398c38583f62e235a69056cf4142745af11cf9f7c2a6006c23a30a
+{% endblock %}
+
+{% block patch %}
+sed -e 's|std::distance(log_groups.begin(), this)|std::distance(log_groups.data(), this)|g' -i src/torrent/utils/log.cc
+sed -e 's|std::string_view(first, last - first)|std::string_view(\&*first, last - first)|' -i src/torrent/utils/string_manip.cc
 {% endblock %}
 
 {% block lib_deps %}
