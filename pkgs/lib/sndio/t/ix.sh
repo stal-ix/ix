@@ -5,12 +5,12 @@ sndio
 {% endblock %}
 
 {% block version %}
-1.10.0
+1.11.0
 {% endblock %}
 
 {% block fetch %}
 https://sndio.org/sndio-{{self.version().strip()}}.tar.gz
-bebd3bfd01c50c9376cf3e7814b9379bed9e17d0393b5113b7eb7a3d0d038c54
+3e274b5968aa863090d6c6857d7df4f432cd0bafbe4d27312bdca34726eff1e8
 {% endblock %}
 
 {% block lib_deps %}

@@ -7822,6 +7822,7 @@ https://smarden.org/runit/runit-2.2.0.tar.gz
 https://smarden.org/runit/runit-2.3.0.tar.gz
 https://smarden.org/runit/runit-2.3.1.tar.gz
 https://sndio.org/sndio-1.10.0.tar.gz
+https://sndio.org/sndio-1.11.0.tar.gz
 https://sndio.org/sndio-1.9.0.tar.gz
 https://snowballstem.org/dist/libstemmer_c-2.2.0.tar.gz
 https://snowballstem.org/dist/libstemmer_c-3.0.1.tar.gz
