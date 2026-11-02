@@ -1,3 +1,4 @@
 https://huggingface.co/datasets/stal-ix/pkgsrc/resolve/main/cas/{two}/{sha}
 https://ghcr.io/v2/stal-ix/pkgsrc/{one}/blobs/sha256:{sha}
 https://quay.io/v2/pshirshov/random/blobs/sha256:{sha}
+https://www.modelscope.ai/datasets/pg1983/pkgsrc/resolve/master/cas/{two}/{sha}
