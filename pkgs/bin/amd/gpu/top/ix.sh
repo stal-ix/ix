@@ -13,7 +13,7 @@ https://github.com/Umio-Yasuno/amdgpu_top/archive/refs/tags/v{{self.version().st
 {% endblock %}
 
 {% block cargo_sha %}
-81d4868cfef5068406c5dfc41c868b5c4a3984b64df3c53a44246e46df5694f7
+8988985f66cffffef73ade37fbafa5cffe590c4075ff7639048ca541509ebb70
 {% endblock %}
 
 {% block bld_libs %}
