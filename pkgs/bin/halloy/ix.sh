@@ -38,6 +38,38 @@ lib/shim/fake/symbol(symbol_name=xcb_send_request64)
 lib/shim/fake/symbol(symbol_name=xcb_wait_for_reply64)
 {% endblock %}
 
+{% block patch %}
+sed -i '/dependencies.xcb]/,/^$/d' vendored/display-info/Cargo.toml
+sed -i \
+    -e '/use xcb::XidNew;/d' \
+    -e 's/xcb::randr::Output::new(info.id)/info.id/' \
+    vendored/display-info/src/linux/wayland.rs
+python3 - << EOF
+p = 'vendored/display-info/src/error.rs'
+s = open(p).read()
+s = s.replace('    #[error(transparent)]\n    XcbError(#[from] xcb::Error),\n', '')
+s = s.replace('    #[error(transparent)]\n    XcbConnError(#[from] xcb::ConnError),\n', '')
+open(p, 'w').write(s)
+EOF
+cat > vendored/display-info/src/linux/mod.rs << EOF
+use crate::{DisplayInfo, error::DIResult};
+
+pub type ScreenRawHandle = u32;
+
+mod wayland;
+
+impl DisplayInfo {
+    pub fn all() -> DIResult<Vec<DisplayInfo>> {
+        wayland::get_all()
+    }
+
+    pub fn from_point(x: i32, y: i32) -> DIResult<DisplayInfo> {
+        wayland::get_from_point(x, y)
+    }
+}
+EOF
+{% endblock %}
+
 {% block cargo_bins %}
 halloy
 {% endblock %}
