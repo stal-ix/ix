@@ -7781,6 +7781,7 @@ https://raw.githubusercontent.com/macports/macports-ports/edf0ee1e2cf/devel/m4/f
 https://raw.githubusercontent.com/orsonteodoro/oiledmachine-overlay/8b1ba379ee536397a77cf12156edce5b36bdeb56/app-admin/keepassxc/files/keepassxc-2.7.6-qt6-support.patch
 https://raw.githubusercontent.com/orsonteodoro/oiledmachine-overlay/master/app-admin/keepassxc/files/keepassxc-2.7.6-qt6-support.patch
 https://registry.npmjs.org/@earendil-works/pi-coding-agent/-/pi-coding-agent-1.4.0.tgz
+https://registry.npmjs.org/@earendil-works/pi-coding-agent/-/pi-coding-agent-1.5.0.tgz
 https://registry.npmjs.org/@silvia-odwyer/photon-node/-/photon-node-0.3.4.tgz
 https://registry.npmjs.org/jiti/-/jiti-2.7.0.tgz
 https://releases.pagure.org/libaio/libaio-0.3.113.tar.gz
