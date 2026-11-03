@@ -4751,6 +4751,7 @@ https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.2.0.tar.gz
 https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.2.1.tar.gz
 https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.3.0.tar.gz
 https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.4.0.tar.gz
+https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.5.0.tar.gz
 https://github.com/lxqt/lxqt-openssh-askpass/archive/refs/tags/2.0.0.tar.gz
 https://github.com/lxqt/lxqt-openssh-askpass/archive/refs/tags/2.2.0.tar.gz
 https://github.com/lxqt/lxqt-openssh-askpass/archive/refs/tags/2.4.0.tar.gz
