@@ -26,6 +26,16 @@ lib/openssl
 lib/wayland/dl
 lib/drivers/3d
 lib/xkb/common/dl
+lib/shim/fake(lib_name=dl)
+lib/shim/fake(lib_name=xcb)
+lib/shim/fake/symbol(symbol_name=xcb_connect)
+lib/shim/fake/symbol(symbol_name=xcb_disconnect)
+lib/shim/fake/symbol(symbol_name=xcb_connection_has_error)
+lib/shim/fake/symbol(symbol_name=xcb_get_extension_data)
+lib/shim/fake/symbol(symbol_name=xcb_get_setup)
+lib/shim/fake/symbol(symbol_name=xcb_prefetch_extension_data)
+lib/shim/fake/symbol(symbol_name=xcb_send_request64)
+lib/shim/fake/symbol(symbol_name=xcb_wait_for_reply64)
 {% endblock %}
 
 {% block cargo_bins %}
