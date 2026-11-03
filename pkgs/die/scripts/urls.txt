@@ -4945,6 +4945,7 @@ https://github.com/munt/munt/archive/refs/tags/libmt32emu_2_7_1.tar.gz
 https://github.com/munt/munt/archive/refs/tags/libmt32emu_2_7_2.tar.gz
 https://github.com/munt/munt/archive/refs/tags/libmt32emu_2_8_3.tar.gz
 https://github.com/munt/munt/archive/refs/tags/libmt32emu_2_8_4.tar.gz
+https://github.com/munt/munt/archive/refs/tags/libmt32emu_2_8_5.tar.gz
 https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v0.9.13.tar.gz
 https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v0.9.9.tar.gz
 https://github.com/mvdan/sh/archive/refs/tags/v3.10.0.tar.gz
