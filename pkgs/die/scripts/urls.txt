@@ -5999,6 +5999,7 @@ https://github.com/squidowl/halloy/archive/refs/tags/2025.2.tar.gz
 https://github.com/squidowl/halloy/archive/refs/tags/2025.5.tar.gz
 https://github.com/squidowl/halloy/archive/refs/tags/2025.6.tar.gz
 https://github.com/squidowl/halloy/archive/refs/tags/2026.8.tar.gz
+https://github.com/squidowl/halloy/archive/refs/tags/2026.9.tar.gz
 https://github.com/stal-ix/sources/raw/main/bison-bootstrap-master.tar
 https://github.com/stal-ix/sources/raw/main/bison-bootstrap-master.tar.bz2
 https://github.com/stal-ix/sources/raw/main/bmake-20210808.tar.gz
