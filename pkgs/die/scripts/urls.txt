@@ -3826,6 +3826,7 @@ https://github.com/hyprwm/Hyprland/releases/download/v0.48.0/source-v0.48.0.tar.
 https://github.com/hyprwm/Hyprland/releases/download/v0.49.0/source-v0.49.0.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.56.2/source-v0.56.2.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.57.0/source-v0.57.0.tar.gz
+https://github.com/hyprwm/Hyprland/releases/download/v0.57.1/source-v0.57.1.tar.gz
 https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.15.1.tar.gz
