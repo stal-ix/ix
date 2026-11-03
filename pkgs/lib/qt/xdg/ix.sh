@@ -5,12 +5,12 @@ libqtxdg
 {% endblock %}
 
 {% block version %}
-4.4.0
+4.5.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/lxqt/libqtxdg/archive/refs/tags/{{self.version().strip()}}.tar.gz
-1e59690f5e74b2a23ec91564e8c5d03baffa8a3c6243d935c0f299a54d2e44ea
+58e862b54e80053abc4d1e941e525fc03745a487fffb996b88764ff8849e410b
 {% endblock %}
 
 {% block lib_deps %}
