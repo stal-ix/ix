@@ -195,6 +195,7 @@ https://archive.apache.org/dist/apr/apr-1.7.6.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.2.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.3.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.5.tar.bz2
+https://archive.apache.org/dist/apr/apr-util-1.6.6.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.3.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.4.tar.bz2
