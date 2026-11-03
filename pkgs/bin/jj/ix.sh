@@ -32,5 +32,5 @@ jj
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/96
+bld/cargo/97
 {% endblock %}
