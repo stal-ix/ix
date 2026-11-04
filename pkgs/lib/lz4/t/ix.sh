@@ -5,12 +5,12 @@ lz4
 {% endblock %}
 
 {% block version %}
-1.10.0
+1.11.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/lz4/lz4/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-537512904744b35e232912055ccf8ec66d768639ff3abe5788d90d792ec5f48b
+247e5fa64da5f7b75ee3dd3bed484076396c9ebe8254d9ccf693eb62800c5e26
 {% endblock %}
 
 {% block lib_deps %}
