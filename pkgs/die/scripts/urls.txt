@@ -687,6 +687,7 @@ https://download.samba.org/pub/rsync/src/rsync-3.3.0.tar.gz
 https://download.samba.org/pub/rsync/src/rsync-3.4.1.tar.gz
 https://download.samba.org/pub/rsync/src/rsync-3.5.0.tar.gz
 https://download.samba.org/pub/rsync/src/rsync-3.5.1.tar.gz
+https://download.samba.org/pub/rsync/src/rsync-3.5.2.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.17.2.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.19.5.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.20.4.tar.gz
