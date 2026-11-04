@@ -58,4 +58,6 @@ CMAKE_INTERPROCEDURAL_OPTIMIZATION=OFF
 
 {% block patch %}
 sed -e 's|.*add_sub.*man.*||' -i client/SDL/SDL2/CMakeLists.txt
+sed -e 's|SDL_VERSION_ATLEAST(3, 4, 20)|SDL_VERSION_ATLEAST(3, 5, 0)|' \
+    -i client/SDL/SDL3/sdl_utils.cpp
 {% endblock %}
