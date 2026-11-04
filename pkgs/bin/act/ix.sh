@@ -5,7 +5,7 @@ act
 {% endblock %}
 
 {% block version %}
-0.2.96
+0.2.97
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/nektos/act/archive/refs/tags/v{{self.version().strip()}}.tar.
 {% endblock %}
 
 {% block go_sha %}
-5a0b1673a4c22bde8737f81617ca6b528bb8b65a05410cb7d9bb79b5104183e2
+07ba710c48c251f76d4a85cad3b72474b48d0cf7ae403359294c9b65ecd09754
 {% endblock %}
 
 {% block go_bins %}
