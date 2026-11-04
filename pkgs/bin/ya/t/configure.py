@@ -18,7 +18,6 @@ args = parser.parse_args()
 host_os, host_arch = args.host_os, args.host_arch
 target_os, target_arch = args.target_os, args.target_arch
 clang = Path(os.environ['YA_CLANG_DIR'])
-java = Path(os.environ['JAVA_HOME'])
 python = Path(shutil.which('python3')).resolve().parent.parent
 version = re.search(r'clang version (\d+)', subprocess.check_output(
     [str(clang / 'bin/clang'), '--version'], text=True)).group(1)
@@ -42,7 +41,6 @@ resource('build/platform/clang', {f'CLANG{version}': clang, 'CLANG': clang})
 resource('build/platform/lld', {'LLD_ROOT': clang},
          f'LDFLAGS(-fuse-ld=lld --ld-path={clang}/bin/ld.lld)')
 resource('build/platform/python/ymake_python3', {'YMAKE_PYTHON3': python}, 'NO_YMAKE_PYTHON3()')
-resource('build/platform/java/jdk/jdk17', {'JDK17': java})
 
 # ay uses the same public toolchain descriptor as ymake. Its resource roots
 # point at immutable ix outputs; the final stage uses ya's system compiler.

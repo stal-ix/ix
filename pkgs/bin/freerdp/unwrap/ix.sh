@@ -5,12 +5,12 @@ FreeRDP
 {% endblock %}
 
 {% block version %}
-3.32.2
+3.33.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/{{self.version().strip()}}.tar.gz
-9ccb8357bf0188044a460de775c7ea289ca7d2a2a917eca0f0a7c4dc9c8b08ea
+3b5e7733e667ad66f54e0db51d952268c9d08b2e71a4fade44c716ab29dd5657
 {% endblock %}
 
 {% block bld_libs %}
@@ -58,4 +58,6 @@ CMAKE_INTERPROCEDURAL_OPTIMIZATION=OFF
 
 {% block patch %}
 sed -e 's|.*add_sub.*man.*||' -i client/SDL/SDL2/CMakeLists.txt
+sed -e 's|SDL_VERSION_ATLEAST(3, 4, 20)|SDL_VERSION_ATLEAST(3, 5, 0)|' \
+    -i client/SDL/SDL3/sdl_utils.cpp
 {% endblock %}

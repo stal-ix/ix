@@ -15,6 +15,7 @@ export GOWORK=off
 export GOCACHE=${tmp}/cgo
 export GOMODCACHE=${tmp}/gmc
 export GOPROXY="https://proxy.golang.org,direct"
+export GODEBUG=http2client=0
 
 {% if go_refine %}
 {{go_refine | b64d}}

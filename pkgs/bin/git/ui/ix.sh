@@ -13,7 +13,11 @@ https://github.com/extrawurst/gitui/archive/refs/tags/v{{self.version().strip()}
 {% endblock %}
 
 {% block cargo_sha %}
-81d4868cfef5068406c5dfc41c868b5c4a3984b64df3c53a44246e46df5694f7
+0e966d85167798ef31e1727f5e23180b04f6f3485ff871cba3c2f3d7ba16757c
+{% endblock %}
+
+{% block cargo_ver %}
+v4
 {% endblock %}
 
 {% block bld_libs %}

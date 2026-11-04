@@ -13,7 +13,7 @@ https://git.sr.ht/~kennylevinsen/greetd/archive/{{self.version().strip()}}.tar.g
 {% endblock %}
 
 {% block cargo_sha %}
-81d4868cfef5068406c5dfc41c868b5c4a3984b64df3c53a44246e46df5694f7
+929c2ce96ff640c9feb1a9cec94458f5171daaa6c0bedb7eb5b2c559e1de35ca
 {% endblock %}
 
 {% block cargo_tool %}

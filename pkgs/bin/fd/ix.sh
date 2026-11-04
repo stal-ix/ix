@@ -5,7 +5,7 @@ fd-find
 {% endblock %}
 
 {% block version %}
-10.4.2
+10.5.1
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,11 @@ https://github.com/sharkdp/fd/archive/refs/tags/v{{self.version().strip()}}.tar.
 {% endblock %}
 
 {% block cargo_sha %}
-81d4868cfef5068406c5dfc41c868b5c4a3984b64df3c53a44246e46df5694f7
+c648f442807dec8b95222d437308caf4d7f26566f3ce1bf0d5a22a1477166f16
+{% endblock %}
+
+{% block cargo_ver %}
+v4
 {% endblock %}
 
 {% block cargo_features %}
@@ -25,5 +29,5 @@ fd
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/91
+bld/cargo/96
 {% endblock %}

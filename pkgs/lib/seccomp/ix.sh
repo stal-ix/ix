@@ -27,6 +27,10 @@ bin/gperf
 bld/shebangs
 {% endblock %}
 
+{% block c_flags %}
+-fPIC
+{% endblock %}
+
 {% block conf_ver %}
 2/71
 {% endblock %}

@@ -5,7 +5,7 @@ yazi
 {% endblock %}
 
 {% block version %}
-26.8.15
+26.9.1
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,11 +13,15 @@ https://github.com/sxyazi/yazi/archive/refs/tags/v{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block cargo_sha %}
-31dd732d27eb7ccb2d11ad8fcbd3fcf898561ef089f266f00094e59aa48dafb4
+6fe8cab5d23970d077989be3fe1d848efda513df4e7719d6d8e2c8d3c64739aa
 {% endblock %}
 
 {% block bld_libs %}
 lib/oniguruma
+{% endblock %}
+
+{% block c_flags %}
+-fPIC
 {% endblock %}
 
 {% block unpack %}
@@ -27,6 +31,11 @@ cd yazi-fm
 
 {% block cargo_bins %}
 yazi
+{% endblock %}
+
+{% block build %}
+export YAZI_NO_GITCL=1
+{{super()}}
 {% endblock %}
 
 {% block cargo_tool %}

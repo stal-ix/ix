@@ -1,13 +1,8 @@
 {% extends '//die/c/ya.sh' %}
 
 {% block fetch %}
-https://github.com/yandex/yatool/archive/c475e0f238ddd60d119e977c77347da670773daf.tar.gz
-2010297d02ff55fbc455c96315d658c87919499c417251ca5f5488f373c5e955
-{% endblock %}
-
-{% block bld_tool %}
-{{super()}}
-bld/java/25
+https://github.com/yandex/yatool/archive/4e1ea6a99232d3c2e69d8fe5cc032f0215c0536f.tar.gz
+6085f7fb097637ab14e673df79109c96fb9f44581b529ce2d449b2df65413a72
 {% endblock %}
 
 {% block ya_c_flags %}
@@ -36,7 +31,6 @@ YMAKE_EXCLUDE_IDL_TOOL=yes
 NO_DEBUGINFO=yes
 BUILD_PYTHON3_BIN=${YA_BUILD_PYTHON}
 BUILD_PYTHON_BIN=${YA_BUILD_PYTHON}
-USE_SYSTEM_JDK=${JAVA_HOME}
 {% endblock %}
 
 {% block ya_make_options %}

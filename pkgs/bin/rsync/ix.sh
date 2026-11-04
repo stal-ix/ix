@@ -5,12 +5,12 @@ rsync
 {% endblock %}
 
 {% block version %}
-3.5.1
+3.5.2
 {% endblock %}
 
 {% block fetch %}
 https://download.samba.org/pub/rsync/src/rsync-{{self.version().strip()}}.tar.gz
-c55f9c9dc10fb8bec397b399a0fdded53cc9a2d8e30891bb0d63724d25c37bef
+a10d591825251e070f74c98df3daad195def4ed81b4a2de16169026aea33f6c8
 {% endblock %}
 
 {% block bld_libs %}

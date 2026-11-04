@@ -1,2 +1,2 @@
-https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-23.1.4.tar.gz
-3e1c70b30f623976c2046d94b8eeab6cac536f107914cb4ed7bac572a03131db
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-23.1.5.tar.gz
+70642a7e44e63c0ceff6624e5fd077b87766e4ed0bcd4a3ea8e3ffa3827ba538

@@ -16,11 +16,11 @@ The final stage also fixes a missing template argument list in the EDL
 exporter and redundant template keywords in YT, as required by Clang 23.
 It runs with -k to report independent build errors in one pass.
 
-The bootstrap graph uses local resource directories for ix's Clang, Python
-and Java. bin/ay's local-resources.patch adds file:// directories: resource
+The bootstrap graph uses local resource directories for ix's Clang and
+Python. bin/ay's local-resources.patch adds file:// directories: resource
 nodes link to immutable store entries instead of downloading binary tools.
-The final stage uses ya's system compiler and Python/Java overrides. ANTLR
-runs on the real JDK; no generated grammar snapshot or fake Java is needed.
+The final stage uses ya's system compiler and Python overrides. Ymake's
+parsers use Ragel and recursive descent, so neither stage needs a JDK.
 
 Build the complete chain:
   ./ix build bin/ya

@@ -13,7 +13,7 @@ https://github.com/reubeno/brush/archive/refs/tags/brush-shell-v{{self.version()
 {% endblock %}
 
 {% block cargo_sha %}
-81d4868cfef5068406c5dfc41c868b5c4a3984b64df3c53a44246e46df5694f7
+d2677d3b165d7e333597388abba2220349de31d5bf14be4bb1e2ab20be9b29fc
 {% endblock %}
 
 {% block cargo_bins %}

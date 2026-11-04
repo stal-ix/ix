@@ -5,12 +5,12 @@ apr-util
 {% endblock %}
 
 {% block version %}
-1.6.5
+1.6.6
 {% endblock %}
 
 {% block fetch %}
 https://archive.apache.org/dist/apr/apr-util-{{self.version().strip()}}.tar.bz2
-96de1dd6f6a0476d2d2e7964926d8c1ddc3bb0e210e1b1812d3ba5a454a392e2
+aa77dd25f036731b7246abbfbebe6cc813b42799b62c874bc82bd4e1f90f2918
 {% endblock %}
 
 {% block lib_deps %}

@@ -5,7 +5,7 @@ jujutsu
 {% endblock %}
 
 {% block version %}
-0.44.0
+0.46.0
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/martinvonz/jj/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block cargo_sha %}
-d546401f10f0a35b63684be0e8f5d1a4dd167ca7a8ef3540ea895da7f262bcb0
+268d843a5e153a43cc8fe217bc6a84bf671ccab3d4b2dd6bba06cd6a120ba09f
 {% endblock %}
 
 {% block unpack %}
@@ -32,5 +32,5 @@ jj
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/96
+bld/cargo/97
 {% endblock %}

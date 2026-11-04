@@ -4,6 +4,7 @@
 {# one can make an overlay in private git repo instead #}
 
 {% block run_deps %}
+bin/pi
 bin/mc
 bin/jq
 bin/gh

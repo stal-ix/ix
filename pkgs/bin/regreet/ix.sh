@@ -17,7 +17,10 @@ f3ed10a824977ca13626130167c7ff6a9d34daaa74e25804a9c4e47ce1ef45e4
 {% endblock %}
 
 {% block bld_libs %}
+lib/intl
 lib/gtk/4
+lib/bzip/2
+lib/seccomp
 {% endblock %}
 
 {% block cargo_bins %}

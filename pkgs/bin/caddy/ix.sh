@@ -5,7 +5,7 @@ caddy
 {% endblock %}
 
 {% block version %}
-2.11.7
+2.11.8
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/caddyserver/caddy/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block go_sha %}
-10977d57208600536074791eaad8f30818999ba7edbac09a7759cf1015c27100
+d396e481aa50d3323aea8b02750bfe610e50f9dfe1ca6760e76fc5d94b4703cd
 {% endblock %}
 
 {% block unpack %}
@@ -26,5 +26,5 @@ caddy
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/26
+bin/go/lang/27
 {% endblock %}
