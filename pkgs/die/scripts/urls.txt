@@ -2064,6 +2064,7 @@ https://github.com/Nefelim4ag/Ananicy/archive/refs/tags/2.2.1.tar.gz
 https://github.com/Netatalk/netatalk/archive/refs/tags/netatalk-3-2-8.tar.gz
 https://github.com/Netflix/bpftop/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/Netflix/bpftop/archive/refs/tags/v0.9.0.tar.gz
+https://github.com/Netflix/bpftop/archive/refs/tags/v0.9.1.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.2.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.3.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.4.tar.gz
