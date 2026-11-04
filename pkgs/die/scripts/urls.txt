@@ -4927,6 +4927,7 @@ https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.16.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.17.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.18.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.19.1.tar.gz
+https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.20.tar.gz
 https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.4.0.tar.gz
 https://github.com/moriyoshi/s3-sftp-proxy/archive/d292467c629fd57c6d8471b324d8987a734b8c99.zip
 https://github.com/mozilla/cbindgen/archive/refs/tags/0.28.0.tar.gz

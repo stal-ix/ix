@@ -5,12 +5,12 @@ Little-CMS
 {% endblock %}
 
 {% block version %}
-2.19.1
+2.20
 {% endblock %}
 
 {% block fetch %}
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms{{self.version().strip()}}.tar.gz
-267705e278e2f7c2fb886c259dadcbaeb2be52748bcbc71c79f08aacacb7a709
+49908a4492fe7fc886517d636474bd953ebe698d38ecd3ee5862dfa308dd43ae
 {% endblock %}
 
 {% block lib_deps %}
