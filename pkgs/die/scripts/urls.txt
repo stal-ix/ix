@@ -5928,6 +5928,7 @@ https://github.com/sharkdp/bat/archive/refs/tags/v0.26.1.tar.gz
 https://github.com/sharkdp/binocle/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/sharkdp/fd/archive/refs/tags/v10.4.2.tar.gz
 https://github.com/sharkdp/fd/archive/refs/tags/v10.5.0.tar.gz
+https://github.com/sharkdp/fd/archive/refs/tags/v10.5.1.tar.gz
 https://github.com/sharkdp/fd/archive/refs/tags/v9.0.0.tar.gz
 https://github.com/sharkdp/hyperfine/archive/refs/tags/v1.20.0.tar.gz
 https://github.com/sharkdp/hyperfine/archive/refs/tags/v1.21.0.tar.gz

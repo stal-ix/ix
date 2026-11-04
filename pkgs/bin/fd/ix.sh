@@ -5,7 +5,7 @@ fd-find
 {% endblock %}
 
 {% block version %}
-10.5.0
+10.5.1
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/sharkdp/fd/archive/refs/tags/v{{self.version().strip()}}.tar.
 {% endblock %}
 
 {% block cargo_sha %}
-1ef2d0c55e4a24288d91bf6670e450497ff4bfde6302d9b1e15057bf5cb56ae2
+c648f442807dec8b95222d437308caf4d7f26566f3ce1bf0d5a22a1477166f16
 {% endblock %}
 
 {% block cargo_ver %}
