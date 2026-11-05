@@ -5,12 +5,12 @@ mpv
 {% endblock %}
 
 {% block version %}
-0.41.0
+0.42.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/mpv-player/mpv/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-ee21092a5ee427353392360929dc64645c54479aefdb5babc5cfbb5fad626209
+bcfebbfa2b65a6d88dc97ea18117831072373e38b5785a2afb874ed4df5070dd
 {% endblock %}
 
 {% block lib_deps %}

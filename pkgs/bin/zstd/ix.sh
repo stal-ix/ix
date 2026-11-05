@@ -12,6 +12,11 @@ lib/lz4
 {{super()}}
 {% endblock %}
 
+{% block patch %}
+{{super()}}
+sed -e 's|(contentChecksum_t)|(LZ4F_contentChecksum_t)|' -i ../../programs/fileio.c
+{% endblock %}
+
 {% block cmake_flags %}
 {{super()}}
 ZSTD_LZ4_SUPPORT=ON
