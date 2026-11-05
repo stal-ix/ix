@@ -2744,6 +2744,7 @@ https://github.com/caddyserver/caddy/archive/refs/tags/v2.11.4.tar.gz
 https://github.com/caddyserver/caddy/archive/refs/tags/v2.11.6.tar.gz
 https://github.com/caddyserver/caddy/archive/refs/tags/v2.11.7.tar.gz
 https://github.com/caddyserver/caddy/archive/refs/tags/v2.11.8.tar.gz
+https://github.com/caddyserver/caddy/archive/refs/tags/v2.11.9.tar.gz
 https://github.com/caddyserver/caddy/archive/refs/tags/v2.9.1.tar.gz
 https://github.com/cage-kiosk/cage/archive/refs/tags/v0.2.0.tar.gz
 https://github.com/cage-kiosk/cage/archive/refs/tags/v0.2.1.tar.gz
