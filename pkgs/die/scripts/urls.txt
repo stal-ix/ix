@@ -4950,6 +4950,7 @@ https://github.com/mpv-player/mpv/archive/refs/tags/v0.38.0.tar.gz
 https://github.com/mpv-player/mpv/archive/refs/tags/v0.39.0.tar.gz
 https://github.com/mpv-player/mpv/archive/refs/tags/v0.40.0.tar.gz
 https://github.com/mpv-player/mpv/archive/refs/tags/v0.41.0.tar.gz
+https://github.com/mpv-player/mpv/archive/refs/tags/v0.42.0.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.0.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.1.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.2.tar.gz
