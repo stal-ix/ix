@@ -2568,6 +2568,7 @@ https://github.com/aristocratos/btop/archive/refs/tags/v1.4.5.tar.gz
 https://github.com/aristocratos/btop/archive/refs/tags/v1.4.6.tar.gz
 https://github.com/aristocratos/btop/archive/refs/tags/v1.4.7.tar.gz
 https://github.com/aristocratos/btop/archive/refs/tags/v1.4.8.tar.gz
+https://github.com/arminbiere/cadical/archive/rel-2.1.2.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v1.12.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.0.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.1.tar.gz
@@ -4791,6 +4792,7 @@ https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.39.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.42.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.43.1.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.43.tar.gz
+https://github.com/martin-cs/symfpu/archive/40bdec00e99f8ea1b96c3dac0a05eed11c541639.tar.gz
 https://github.com/martinrotter/rssguard/archive/refs/tags/4.8.5.tar.gz
 https://github.com/martinrotter/rssguard/archive/refs/tags/4.8.6.tar.gz
 https://github.com/martinus/robin-hood-hashing/archive/refs/tags/3.11.3.tar.gz
@@ -5660,6 +5662,7 @@ https://github.com/randombit/botan/archive/refs/tags/2.19.3.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/2.19.5.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.10.0.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.13.0.tar.gz
+https://github.com/randombit/botan/archive/refs/tags/3.14.0.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.3.0.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.4.0.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.5.0.tar.gz
