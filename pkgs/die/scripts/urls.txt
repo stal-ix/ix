@@ -5691,6 +5691,7 @@ https://github.com/rclone/rclone/archive/refs/tags/v1.73.4.tar.gz
 https://github.com/rclone/rclone/archive/refs/tags/v1.75.0.tar.gz
 https://github.com/rclone/rclone/archive/refs/tags/v1.75.1.tar.gz
 https://github.com/rclone/rclone/archive/refs/tags/v1.75.2.tar.gz
+https://github.com/rclone/rclone/archive/refs/tags/v1.76.0.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.4.1.tar.gz
