@@ -1,9 +1,9 @@
 {% block kernel_version %}
-7.3.1
+7.3.3
 {% endblock %}
 
 {% block kernel_sha %}
-fa595aad93734f829c963c2a90ef7c3673224fd7fdae7b49406e397cde2de231
+79c66dde66cd96877fcde8f7d36aec946b1f423d2b97b5a7b1751b75c764f3d1
 {% endblock %}
 
 {% block kernel_url %}
