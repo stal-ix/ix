@@ -5,7 +5,7 @@ yq
 {% endblock %}
 
 {% block version %}
-4.54.1
+4.54.2
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/mikefarah/yq/archive/refs/tags/v{{self.version().strip()}}.ta
 {% endblock %}
 
 {% block go_sha %}
-7bb70987780eecf56afd04f420b53839953524cbc2282736374591faa3670f0a
+5f63436d3d1b6ba87e60e81f726749a239ca575ba7a1d95a73079944a640bd8d
 {% endblock %}
 
 {% block go_bins %}
@@ -21,5 +21,5 @@ yq
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/26
+bin/go/lang/27
 {% endblock %}

@@ -4908,6 +4908,7 @@ https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-03-14.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-04-23.tar.gz
 https://github.com/mikefarah/yq/archive/refs/tags/v4.53.6.tar.gz
 https://github.com/mikefarah/yq/archive/refs/tags/v4.54.1.tar.gz
+https://github.com/mikefarah/yq/archive/refs/tags/v4.54.2.tar.gz
 https://github.com/mikefarah/yq/archive/refs/tags/v4.9.8.tar.gz
 https://github.com/minio/console/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/minio/mc/archive/refs/tags/RELEASE.2024-03-30T15-29-52Z.tar.gz
