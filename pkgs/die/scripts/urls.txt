@@ -1842,6 +1842,7 @@ https://github.com/KDE/kcachegrind/archive/refs/tags/v24.04.80.tar.gz
 https://github.com/KDE/kcachegrind/archive/refs/tags/v26.08.0.tar.gz
 https://github.com/KDE/kcachegrind/archive/refs/tags/v26.08.1.tar.gz
 https://github.com/KDE/kcachegrind/archive/refs/tags/v26.08.2.tar.gz
+https://github.com/KDE/kcachegrind/archive/refs/tags/v26.08.3.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v5.247.0.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v6.14.0.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v6.16.0.tar.gz
@@ -2186,6 +2187,7 @@ https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.9.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.7.6.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.7.7.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.7.8.tar.gz
+https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.7.9.tar.gz
 https://github.com/OpenVisualCloud/SVT-HEVC/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/OpenVisualCloud/SVT-VP9/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/Orc/discount/archive/refs/tags/v3.0.0d.tar.gz
@@ -5460,6 +5462,7 @@ https://github.com/prometheus/prometheus/archive/refs/tags/v3.1.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v3.14.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v3.15.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v3.15.1.tar.gz
+https://github.com/prometheus/prometheus/archive/refs/tags/v3.16.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v3.2.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v3.2.1.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v3.3.1.tar.gz
@@ -6184,6 +6187,7 @@ https://github.com/tavianator/bfs/archive/refs/tags/4.0.7.tar.gz
 https://github.com/tavianator/bfs/archive/refs/tags/4.0.8.tar.gz
 https://github.com/tavianator/bfs/archive/refs/tags/4.1.4.tar.gz
 https://github.com/tavianator/bfs/archive/refs/tags/4.1.5.tar.gz
+https://github.com/tavianator/bfs/archive/refs/tags/4.1.6.tar.gz
 https://github.com/tavianator/bfs/archive/refs/tags/4.1.tar.gz
 https://github.com/tdlib/td/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.1/tdesktop-4.10.1-full.tar.gz
