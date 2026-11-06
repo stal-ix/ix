@@ -4268,6 +4268,7 @@ https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.9.tar.gz
 https://github.com/klange/bim/archive/refs/tags/v3.1.0.tar.gz
 https://github.com/kmscon/kmscon/archive/refs/tags/v10.0.4.tar.gz
 https://github.com/kmscon/kmscon/archive/refs/tags/v10.1.0.tar.gz
+https://github.com/kmscon/kmscon/archive/refs/tags/v10.1.1.tar.gz
 https://github.com/kmscon/libtsm/archive/refs/tags/v4.8.0.tar.gz
 https://github.com/knik0/faac/archive/refs/tags/1_30.tar.gz
 https://github.com/knik0/faac/archive/refs/tags/faac-1.31.1.tar.gz
