@@ -3040,6 +3040,7 @@ https://github.com/dundee/gdu/archive/refs/tags/v5.32.0.tar.gz
 https://github.com/dundee/gdu/archive/refs/tags/v5.33.0.tar.gz
 https://github.com/dundee/gdu/archive/refs/tags/v5.37.0.tar.gz
 https://github.com/dundee/gdu/archive/refs/tags/v5.38.0.tar.gz
+https://github.com/dundee/gdu/archive/refs/tags/v5.39.0.tar.gz
 https://github.com/dunst-project/dunst/archive/refs/tags/v1.10.0.tar.gz
 https://github.com/dunst-project/dunst/archive/refs/tags/v1.9.2.tar.gz
 https://github.com/e2tools/e2tools/archive/refs/tags/v0.1.2.tar.gz
