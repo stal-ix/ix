@@ -5181,6 +5181,7 @@ https://github.com/onetrueawk/awk/archive/refs/tags/20240422.tar.gz
 https://github.com/onetrueawk/awk/archive/refs/tags/20250116.tar.gz
 https://github.com/onetrueawk/awk/archive/refs/tags/20251225.tar.gz
 https://github.com/onetrueawk/awk/archive/refs/tags/20260426.tar.gz
+https://github.com/onetrueawk/awk/archive/refs/tags/20261106.tar.gz
 https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz
 https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.6.tar.gz
 https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.8.tar.gz
