@@ -7009,6 +7009,7 @@ https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.26.8/gstreamer-1.
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.28.6/gstreamer-1.28.6.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.28.7/gstreamer-1.28.7.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.28.8/gstreamer-1.28.8.tar.gz
+https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.28.9/gstreamer-1.28.9.tar.gz
 https://gitlab.freedesktop.org/gstreamer/orc/-/archive/0.4.40/orc-0.4.40.tar.bz2
 https://gitlab.freedesktop.org/gstreamer/orc/-/archive/0.4.40/orc-0.4.41.tar.bz2
 https://gitlab.freedesktop.org/gstreamer/orc/-/archive/0.4.40/orc-0.4.42.tar.bz2
