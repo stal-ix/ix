@@ -5231,6 +5231,7 @@ https://github.com/opencv/opencv/archive/refs/tags/4.8.0.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.8.1.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.9.0.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/5.0.0.tar.gz
+https://github.com/opencv/opencv/archive/refs/tags/5.1.0.tar.gz
 https://github.com/openjdk/jdk/archive/refs/tags/jdk-10+46.tar.gz
 https://github.com/openjdk/jdk/archive/refs/tags/jdk-12+33.tar.gz
 https://github.com/openjdk/jdk/archive/refs/tags/jdk-13+33.tar.gz
