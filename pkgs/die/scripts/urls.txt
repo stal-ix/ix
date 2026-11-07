@@ -6367,6 +6367,7 @@ https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.25.9.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.26.0.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.27.0.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.27.1.tar.gz
+https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.27.2.tar.gz
 https://github.com/troglobit/editline/archive/refs/tags/1.17.1.tar.gz
 https://github.com/troglobit/editline/archive/refs/tags/2.1.0.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.1.tar.gz
