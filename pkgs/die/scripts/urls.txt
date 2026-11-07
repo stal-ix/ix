@@ -4005,6 +4005,7 @@ https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.23.9.0.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.25.9.0.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.262.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.270.tar.gz
+https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.272.tar.gz
 https://github.com/intel/intel-one-mono/releases/download/V1.2.1/otf.zip
 https://github.com/intel/intel-one-mono/releases/download/V1.4.0/otf.zip
 https://github.com/intel/libipt/archive/refs/tags/v2.0.6.tar.gz
