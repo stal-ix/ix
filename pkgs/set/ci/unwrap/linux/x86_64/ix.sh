@@ -63,6 +63,7 @@ bin/oras
 bin/rss/guard
 bin/auto/make/1/18
 bin/auto/make/1/19
+bin/auto/make/1/20
 bin/huggingface/cli
 bin/bfs
 bin/perl/latest

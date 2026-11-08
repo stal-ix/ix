@@ -993,6 +993,7 @@ https://ftp.gnu.org/gnu/automake/automake-1.17.tar.xz
 https://ftp.gnu.org/gnu/automake/automake-1.18.1.tar.xz
 https://ftp.gnu.org/gnu/automake/automake-1.18.tar.xz
 https://ftp.gnu.org/gnu/automake/automake-1.19.tar.xz
+https://ftp.gnu.org/gnu/automake/automake-1.20.tar.xz
 https://ftp.gnu.org/gnu/bash/bash-3.2.57.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-4.4.18.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-5.1.16.tar.gz
@@ -1092,6 +1093,7 @@ https://ftp.gnu.org/gnu/grep/grep-3.6.tar.xz
 https://ftp.gnu.org/gnu/groff/groff-1.23.0.tar.gz
 https://ftp.gnu.org/gnu/groff/groff-1.24.1.tar.gz
 https://ftp.gnu.org/gnu/groff/groff-1.24.2.tar.gz
+https://ftp.gnu.org/gnu/groff/groff-1.25.0.tar.gz
 https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz
 https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz
 https://ftp.gnu.org/gnu/grub/grub-2.14.tar.xz
@@ -3395,6 +3397,7 @@ https://github.com/fmtlib/fmt/archive/refs/tags/11.2.0.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/12.0.0.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/12.1.0.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/12.2.0.tar.gz
+https://github.com/fmtlib/fmt/archive/refs/tags/12.2.1.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz
 https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.2.0.tar.gz
@@ -3703,6 +3706,7 @@ https://github.com/greshake/i3status-rust/archive/refs/tags/v0.34.0.tar.gz
 https://github.com/greshake/i3status-rust/archive/refs/tags/v0.35.0.tar.gz
 https://github.com/greshake/i3status-rust/archive/refs/tags/v0.36.1.tar.gz
 https://github.com/greshake/i3status-rust/archive/refs/tags/v0.36.2.tar.gz
+https://github.com/greshake/i3status-rust/archive/refs/tags/v0.40.0.tar.gz
 https://github.com/grpc/grpc-java/archive/refs/tags/v1.51.3.tar.gz
 https://github.com/grpc/grpc-java/archive/refs/tags/v1.63.1.tar.gz
 https://github.com/gtk-rs/gir-files/archive/refs/tags/0.20.0.tar.gz
@@ -4005,6 +4009,7 @@ https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.23.9.0.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.25.9.0.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.262.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.270.tar.gz
+https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.272.tar.gz
 https://github.com/intel/intel-one-mono/releases/download/V1.2.1/otf.zip
 https://github.com/intel/intel-one-mono/releases/download/V1.4.0/otf.zip
 https://github.com/intel/libipt/archive/refs/tags/v2.0.6.tar.gz
@@ -4145,6 +4150,7 @@ https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.65.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.65.1.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.66.1.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.66.2.tar.gz
+https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.66.3.tar.gz
 https://github.com/jhawthorn/fzy/archive/refs/tags/1.0.tar.gz
 https://github.com/jhawthorn/fzy/archive/refs/tags/1.1.tar.gz
 https://github.com/jiixyj/epoll-shim/archive/refs/tags/v0.0.20240608.tar.gz
@@ -4252,6 +4258,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/v0.68.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.74.3.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.74.4.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.74.5.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/v0.75.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.1.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.2.tar.gz
@@ -5226,6 +5233,7 @@ https://github.com/opencv/opencv/archive/refs/tags/4.8.0.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.8.1.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.9.0.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/5.0.0.tar.gz
+https://github.com/opencv/opencv/archive/refs/tags/5.1.0.tar.gz
 https://github.com/openjdk/jdk/archive/refs/tags/jdk-10+46.tar.gz
 https://github.com/openjdk/jdk/archive/refs/tags/jdk-12+33.tar.gz
 https://github.com/openjdk/jdk/archive/refs/tags/jdk-13+33.tar.gz
@@ -5909,6 +5917,7 @@ https://github.com/schollz/croc/archive/refs/tags/v11.6.1.tar.gz
 https://github.com/schollz/croc/archive/refs/tags/v11.6.2.tar.gz
 https://github.com/schollz/croc/archive/refs/tags/v11.6.3.tar.gz
 https://github.com/schollz/croc/archive/refs/tags/v11.6.4.tar.gz
+https://github.com/schollz/croc/archive/refs/tags/v11.6.5.tar.gz
 https://github.com/schollz/croc/archive/refs/tags/v9.6.9.tar.gz
 https://github.com/sctplab/usrsctp/archive/refs/tags/0.9.5.0.tar.gz
 https://github.com/sddm/sddm/archive/refs/tags/v0.20.0.tar.gz
@@ -6366,6 +6375,7 @@ https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.25.9.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.26.0.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.27.0.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.27.1.tar.gz
+https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.27.2.tar.gz
 https://github.com/troglobit/editline/archive/refs/tags/1.17.1.tar.gz
 https://github.com/troglobit/editline/archive/refs/tags/2.1.0.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.1.tar.gz
@@ -6636,6 +6646,7 @@ https://github.com/weechat/weechat/archive/refs/tags/v4.1.3.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.10.0.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.10.1.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.10.2.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.10.3.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.2.0.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.2.1.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.2.2.tar.gz
@@ -7311,6 +7322,7 @@ https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.8.1/libsoup-3.8.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.0/libspelling-0.4.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.1/libspelling-0.4.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.10/libspelling-0.4.10.tar.bz2
+https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.11/libspelling-0.4.11.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.2/libspelling-0.4.2.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.3/libspelling-0.4.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.5/libspelling-0.4.5.tar.bz2

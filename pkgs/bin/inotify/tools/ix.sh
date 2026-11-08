@@ -5,7 +5,7 @@ inotify-tools
 {% endblock %}
 
 {% block version %}
-4.26.270
+4.26.272
 {% endblock %}
 
 {% block cargo_url %}
