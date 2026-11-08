@@ -4150,6 +4150,7 @@ https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.65.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.65.1.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.66.1.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.66.2.tar.gz
+https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.66.3.tar.gz
 https://github.com/jhawthorn/fzy/archive/refs/tags/1.0.tar.gz
 https://github.com/jhawthorn/fzy/archive/refs/tags/1.1.tar.gz
 https://github.com/jiixyj/epoll-shim/archive/refs/tags/v0.0.20240608.tar.gz

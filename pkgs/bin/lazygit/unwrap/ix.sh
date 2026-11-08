@@ -5,7 +5,7 @@ lazygit
 {% endblock %}
 
 {% block version %}
-0.66.2
+0.66.3
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/jesseduffield/lazygit/archive/refs/tags/v{{self.version().str
 {% endblock %}
 
 {% block go_sha %}
-d82c34ac6a6a21a236b8e57b80e6915f2fdf3a6e8d449c3439c5ba15e436c6fe
+f126566abdc2f37cf9b5e5f71e3e1e34f10abc35738d06798f7237e8201ab28d
 {% endblock %}
 
 {% block go_tool %}
