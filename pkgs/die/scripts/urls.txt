@@ -5915,6 +5915,7 @@ https://github.com/schollz/croc/archive/refs/tags/v11.6.1.tar.gz
 https://github.com/schollz/croc/archive/refs/tags/v11.6.2.tar.gz
 https://github.com/schollz/croc/archive/refs/tags/v11.6.3.tar.gz
 https://github.com/schollz/croc/archive/refs/tags/v11.6.4.tar.gz
+https://github.com/schollz/croc/archive/refs/tags/v11.6.5.tar.gz
 https://github.com/schollz/croc/archive/refs/tags/v9.6.9.tar.gz
 https://github.com/sctplab/usrsctp/archive/refs/tags/0.9.5.0.tar.gz
 https://github.com/sddm/sddm/archive/refs/tags/v0.20.0.tar.gz
