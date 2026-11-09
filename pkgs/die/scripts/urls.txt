@@ -7922,6 +7922,7 @@ https://sndio.org/sndio-1.9.0.tar.gz
 https://snowballstem.org/dist/libstemmer_c-2.2.0.tar.gz
 https://snowballstem.org/dist/libstemmer_c-3.0.1.tar.gz
 https://snowballstem.org/dist/libstemmer_c-3.1.1.tar.gz
+https://snowballstem.org/dist/libstemmer_c-3.2.0.tar.gz
 https://sortix.org/libz/release/libz-1.2.8.2015.12.26.tar.gz
 https://source.netsurf-browser.org/buildsystem.git/snapshot/buildsystem-release/1.9.tar.gz
 https://sourceforge.net/projects/corefonts/files/the%20fonts/final/andale32.exe
