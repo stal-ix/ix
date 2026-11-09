@@ -2273,6 +2273,7 @@ https://github.com/Syllo/nvtop/archive/refs/tags/3.0.2.tar.gz
 https://github.com/Syllo/nvtop/archive/refs/tags/3.1.0.tar.gz
 https://github.com/Syllo/nvtop/archive/refs/tags/3.2.0.tar.gz
 https://github.com/Syllo/nvtop/archive/refs/tags/3.3.2.tar.gz
+https://github.com/Syllo/nvtop/archive/refs/tags/3.4.0.tar.gz
 https://github.com/System64fumo/syshud/archive/734d632ca0665a288d1308f883d974462fa2d349.zip
 https://github.com/TartanLlama/expected/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/TartanLlama/expected/archive/refs/tags/v1.2.0.tar.gz
