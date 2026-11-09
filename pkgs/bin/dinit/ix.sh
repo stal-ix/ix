@@ -9,7 +9,7 @@ dinit
 {% endblock %}
 
 {% block version %}
-0.22.1
+0.23.0
 {% endblock %}
 
 {% block git_branch %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-79be8d565f0cbaa04247a9eedebd9998871ffaa9e57c3686e2ae3b1504213ada
+441b46bc2060328eacae753610f54b949574f8bae3ac30a9fda6a10a6253d1c1
 {% endblock %}
 
 {% block bld_libs %}
