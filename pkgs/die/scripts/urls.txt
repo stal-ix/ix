@@ -4769,6 +4769,7 @@ https://github.com/lxqt/liblxqt/archive/refs/tags/2.0.0.tar.gz
 https://github.com/lxqt/liblxqt/archive/refs/tags/2.1.0.tar.gz
 https://github.com/lxqt/liblxqt/archive/refs/tags/2.2.0.tar.gz
 https://github.com/lxqt/liblxqt/archive/refs/tags/2.4.0.tar.gz
+https://github.com/lxqt/liblxqt/archive/refs/tags/2.5.0.tar.gz
 https://github.com/lxqt/libqtxdg/archive/refs/tags/4.0.0.tar.gz
 https://github.com/lxqt/libqtxdg/archive/refs/tags/4.0.1.tar.gz
 https://github.com/lxqt/libqtxdg/archive/refs/tags/4.1.0.tar.gz
