@@ -5,12 +5,12 @@ desktop-file-utils
 {% endblock %}
 
 {% block version %}
-0.28
+0.29
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/xdg/desktop-file-utils/-/archive/{{self.version().strip()}}/desktop-file-utils-{{self.version().strip()}}.tar.bz2
-cf81ab80b672a54b3858cb1b28d6ac02b84a3085151cbed92c6a2457643304fd
+ad9c083613563a757020f8ec1cb60dc2706fd16fcbed06b4ddfa877665ec83a6
 {% endblock %}
 
 {% block bld_libs %}
