@@ -3610,6 +3610,7 @@ https://github.com/golang/go/archive/refs/tags/go1.26.2.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.26.7.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.27.2.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.27.3.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.27.4.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.2.1.tar.gz
