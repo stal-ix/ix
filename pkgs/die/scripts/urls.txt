@@ -3872,6 +3872,7 @@ https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.10.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.11.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.12.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.13.tar.gz
+https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.14.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.6.tar.gz
