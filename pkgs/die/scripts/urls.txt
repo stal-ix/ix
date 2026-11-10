@@ -3701,6 +3701,7 @@ https://github.com/gperftools/gperftools/releases/download/gperftools-2.18.1/gpe
 https://github.com/gperftools/gperftools/releases/download/gperftools-2.18/gperftools-2.18.tar.gz
 https://github.com/gperftools/gperftools/releases/download/gperftools-2.19.1/gperftools-2.19.1.tar.gz
 https://github.com/gperftools/gperftools/releases/download/gperftools-2.19.2/gperftools-2.19.2.tar.gz
+https://github.com/gperftools/gperftools/releases/download/gperftools-2.19.3/gperftools-2.19.3.tar.gz
 https://github.com/gperftools/gperftools/releases/download/gperftools-2.19/gperftools-2.19.tar.gz
 https://github.com/gphoto/libgphoto2/archive/refs/tags/v2.5.30.tar.gz
 https://github.com/grafana/grafana/archive/refs/tags/v13.0.1.tar.gz
