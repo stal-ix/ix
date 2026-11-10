@@ -2157,6 +2157,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.35.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.35.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.35.4.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.35.5.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.35.6.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.19.1.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.19.2.tar.gz
