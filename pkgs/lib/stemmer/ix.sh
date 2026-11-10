@@ -5,12 +5,12 @@ libstemmer_c
 {% endblock %}
 
 {% block version %}
-3.1.1
+3.2.0
 {% endblock %}
 
 {% block fetch %}
 https://snowballstem.org/dist/libstemmer_c-{{self.version().strip()}}.tar.gz
-0e82fb0e29006cad2831b4b25980a1dae85959c6a1faaaf96547f551e352042a
+561a8864a7dd6a366c0faca88d76b516d844a8b4505949a1dc43cd21bb76eea2
 {% endblock %}
 
 {% block lib_deps %}

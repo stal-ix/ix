@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block version %}
-0.57.1
+0.57.2
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ Hyprland
 
 {% block fetch %}
 https://github.com/hyprwm/Hyprland/releases/download/v{{self.version().strip()}}/source-v{{self.version().strip()}}.tar.gz
-24e7428f83115e58e5fc81f100f6b73691dcaaf7a503087391e44327a71c43ab
+34dbec0738ab88c8228caf89385662688ab1601ea58fbe5c60a6b6ab383db46d
 {% endblock %}
 
 {% block bld_libs %}

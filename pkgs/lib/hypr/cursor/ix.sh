@@ -5,12 +5,12 @@ hyprcursor
 {% endblock %}
 
 {% block version %}
-0.1.13
+0.1.14
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-82af8b2ce27242ffdd6baebaa71b3f6c8665dc25c52bfcfccc16912622896af8
+f835995a1225ab169723d5e4e7510e31231dbb3048c4da6de6f6a51794e4cb38
 {% endblock %}
 
 {% block lib_deps %}

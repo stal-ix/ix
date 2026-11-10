@@ -5,12 +5,12 @@ fheroes2
 {% endblock %}
 
 {% block version %}
-1.1.17
+1.1.18
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ihhub/fheroes2/archive/refs/tags/{{self.version().strip()}}.tar.gz
-29f0be1a15ecce658e647b8c3d3fe2e6acddf6fa2144b1e05c82984846f568a1
+5ea493f0120962d52ea042ba2f0593417a9643d16102445c2eb6ffc4ada0b4a5
 {% endblock %}
 
 {% block bld_libs %}
