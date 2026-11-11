@@ -6886,6 +6886,7 @@ https://github.com/zellij-org/zellij/archive/refs/tags/v0.41.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.42.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.43.1.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.45.1.tar.gz
+https://github.com/zellij-org/zellij/archive/refs/tags/v0.46.0.tar.gz
 https://github.com/zeux/pugixml/releases/download/v1.16/pugixml-1.16.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.290.0.tar.gz
