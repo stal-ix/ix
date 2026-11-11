@@ -5,12 +5,12 @@ autoconf-archive
 {% endblock %}
 
 {% block version %}
-2024.10.16
+2026.11.11
 {% endblock %}
 
 {% block fetch %}
 https://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-{{self.version().strip()}}.tar.xz
-7bcd5d001916f3a50ed7436f4f700e3d2b1bade3ed803219c592d62502a57363
+2c18f15e2b3bb79e09622b27391df07d8608ce9f07fbfc7c1143fa683891ab26
 {% endblock %}
 
 {% block bld_tool %}
