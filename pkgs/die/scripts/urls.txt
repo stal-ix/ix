@@ -2393,6 +2393,7 @@ https://github.com/Z3Prover/z3/archive/refs/tags/z3-5.3.0.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-5.3.1.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-5.3.2.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-5.3.3.tar.gz
+https://github.com/Z3Prover/z3/archive/refs/tags/z3-5.4.1.tar.gz
 https://github.com/Zouuup/landrun/archive/refs/tags/v0.1.17.tar.gz
 https://github.com/Zouuup/landrun/archive/refs/tags/v0.1.9.tar.gz
 https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
