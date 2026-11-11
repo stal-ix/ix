@@ -5,12 +5,12 @@ rtorrent
 {% endblock %}
 
 {% block version %}
-0.16.26
+0.16.28
 {% endblock %}
 
 {% block fetch %}
 https://github.com/rakshasa/rtorrent/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-913139a61de5511e61818f38d44cb75aa0be1162b66cd221cab22eda01fd3037
+7d93cf88a75264b267bb66d576d311f6f3bf9af1da01fa645194ccc7e4a50190
 {% endblock %}
 
 {% block lib_deps %}
