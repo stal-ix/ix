@@ -5,12 +5,12 @@ qtkeychain
 {% endblock %}
 
 {% block version %}
-0.17.0
+0.18.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/{{self.version().strip()}}.tar.gz
-3b85c3929034b0a99da777130c34d99f006fcd3a9d56564159399a33fee0e504
+837af59f2b950760a73eff81ccae817f7d3051183b447438dc610bb984a41691
 {% endblock %}
 
 {% block lib_deps %}
