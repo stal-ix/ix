@@ -6778,6 +6778,7 @@ https://github.com/ximion/appstream/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/ximion/appstream/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/ximion/appstream/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/ximion/appstream/archive/refs/tags/v1.2.2.tar.gz
+https://github.com/ximion/appstream/archive/refs/tags/v1.2.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.4.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.5.0.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.4.tar.gz
