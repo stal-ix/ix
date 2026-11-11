@@ -7882,6 +7882,7 @@ https://raw.githubusercontent.com/orsonteodoro/oiledmachine-overlay/8b1ba379ee53
 https://raw.githubusercontent.com/orsonteodoro/oiledmachine-overlay/master/app-admin/keepassxc/files/keepassxc-2.7.6-qt6-support.patch
 https://registry.npmjs.org/@earendil-works/pi-coding-agent/-/pi-coding-agent-1.4.0.tgz
 https://registry.npmjs.org/@earendil-works/pi-coding-agent/-/pi-coding-agent-1.5.0.tgz
+https://registry.npmjs.org/@earendil-works/pi-coding-agent/-/pi-coding-agent-1.5.2.tgz
 https://registry.npmjs.org/@silvia-odwyer/photon-node/-/photon-node-0.3.4.tgz
 https://registry.npmjs.org/jiti/-/jiti-2.7.0.tgz
 https://releases.pagure.org/libaio/libaio-0.3.113.tar.gz
