@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/libfuse/sshfs/releases/download/sshfs-{{self.version().strip()}}/sshfs-{{self.version().strip()}}.tar.xz
-6a1bcb31450a077e9cb1b7ff158c71de34db697c3c0da6cb362502131e495893
+893013ce6cdbf6f9fa790c9a4ca2b07eea95139f965f5c14f06b458cbe17f00d
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ sshfs
 {% endblock %}
 
 {% block version %}
-3.7.6
+3.7.7
 {% endblock %}
 
 {% block bld_libs %}
