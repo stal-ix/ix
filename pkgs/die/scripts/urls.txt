@@ -1264,6 +1264,7 @@ https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_96_RTM/src/nss-3.96.tar.
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_99_RTM/src/nss-3.99.tar.gz
 https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-4.0.0.tar.gz
 https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-4.4.0.tar.gz
+https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-4.4.1.tar.gz
 https://ftp.osuosl.org/pub/rpm/releases/rpm-4.19.x/rpm-4.19.0.tar.bz2
 https://ftp.osuosl.org/pub/rpm/releases/rpm-6.1.x/rpm-6.1.0.tar.bz2
 https://ftp.postgresql.org/pub/source/v15.4/postgresql-15.4.tar.bz2
