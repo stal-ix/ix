@@ -32,6 +32,13 @@ bld/byacc
 {% block patch %}
 >compat/reallocarray.c
 >compat/getprogname.c
+{% if x86_64 %}
+{# lib/str (lib/c) has these in its one object #}
+>compat/strnlen.c
+>compat/strlcpy.c
+>compat/strlcat.c
+>compat/strsep.c
+{% endif %}
 sed -e 's|set_panel_userptr(view->panel, view)|set_panel_userptr(view->panel, (char *)view)|' \
     -e 's|view_above = panel_userptr(panel)|view_above = (const struct tog_view *)panel_userptr(panel)|' \
     -i tog/tog.c
