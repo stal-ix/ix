@@ -22,6 +22,15 @@ https://github.com/pg83/str/archive/refs/tags/{{self.version().strip()}}.tar.gz
 bld/python
 {% endblock %}
 
+{# in place of musl's string functions (lib/musl/naked): under a sanitizer the intercepted ones become __real_*, as musl's would #}
+{% block bld_libs %}
+lib/build/sanitize
+{% endblock %}
+
+{% block build_flags %}
+san_intercept
+{% endblock %}
+
 {# the released archive as it is, then its public functions under their libc names:
    only the symbol table changes, the code is the one proved #}
 {% block build %}
