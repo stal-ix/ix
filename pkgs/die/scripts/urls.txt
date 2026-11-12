@@ -2875,6 +2875,7 @@ https://github.com/cli/cli/archive/refs/tags/v2.103.0.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.103.1.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.103.2.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.103.3.tar.gz
+https://github.com/cli/cli/archive/refs/tags/v2.104.0.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.14.4.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.72.0.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.73.0.tar.gz
