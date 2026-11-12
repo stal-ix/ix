@@ -31,23 +31,7 @@ lib/build/sanitize
 san_intercept
 {% endblock %}
 
-{# lib/c/naked has no allocator. The archive has one .text, so unused
-   strdup/strndup code still adds an undefined malloc reference; leave those
-   two functions to musl instead. #}
-{% block patch %}
-python3 - <<'EOF'
-from pathlib import Path
-
-p = Path('derived.c')
-s = p.read_text()
-s = s.replace('void *malloc(size_t);', '', 1)
-start = s.index('char *str_strdup(')
-end = s.index('/* ------------------------------------------------------------ two-way */', start)
-p.write_text(s[:start] + s[end:])
-EOF
-{% endblock %}
-
-{# the remaining released code as it is, then its public functions under their libc names:
+{# the released archive as it is, then its public functions under their libc names:
    only the symbol table changes, the code is the one proved #}
 {% block build %}
 python3 dev/strcc.py . -o libstr.a --out post
