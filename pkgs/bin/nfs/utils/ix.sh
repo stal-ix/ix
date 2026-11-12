@@ -51,6 +51,11 @@ udev_rulesdir=${out}/share/udev
 {% endblock %}
 
 {% block patch %}
+{% if x86_64 %}
+{# lib/str (lib/c) has these in its one object #}
+>support/nfs/strlcpy.c
+>support/nfs/strlcat.c
+{% endif %}
 echo 'int main() {}' > utils/nfsidmap/nfsidmap.c
 cat - support/nfs/getport.c << EOF > _
 #include <stddef.h>
