@@ -5,7 +5,7 @@ gocryptfs
 {% endblock %}
 
 {% block version %}
-2.6.1
+2.7.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/rfjakob/gocryptfs/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block go_sha %}
-9f639b8ced4285439ffb5d32925e78fdf2c2b94fa705c308861273b5f6f87924
+7bcb517c543cc5ef01cbc7993328b152f86eb8934d98ef698019a15fb22e0082
 {% endblock %}
 
 {% block bld_libs %}
@@ -35,5 +35,5 @@ gocryptfs-xray
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/27
 {% endblock %}
