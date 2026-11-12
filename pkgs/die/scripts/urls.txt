@@ -1281,6 +1281,7 @@ https://ftp.postgresql.org/pub/source/v17.6/postgresql-17.6.tar.bz2
 https://ftp.postgresql.org/pub/source/v18.0/postgresql-18.0.tar.bz2
 https://ftp.postgresql.org/pub/source/v18.1/postgresql-18.1.tar.bz2
 https://ftp.postgresql.org/pub/source/v18.6/postgresql-18.6.tar.bz2
+https://ftp.postgresql.org/pub/source/v18.7/postgresql-18.7.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.4.7.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.5.4.tar.gz
