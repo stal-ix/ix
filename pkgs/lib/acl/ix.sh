@@ -23,5 +23,5 @@ bld/gettext
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux/headers
+lib/linux/headers/next
 {% endblock %}
