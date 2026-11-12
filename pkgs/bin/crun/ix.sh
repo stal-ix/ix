@@ -5,7 +5,7 @@ crun
 {% endblock %}
 
 {% block version %}
-1.30.1
+1.31
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ https://github.com/containers/crun
 {% endblock %}
 
 {% block git_sha %}
-0d8a91cce6132346d4d18f4249344cd548a3ea24061cf829309ed16a5ba9da30
+201bfe2033357d4a190fb24b15804f6648fedbb3efb98a1da55e50be2f2d781d
 {% endblock %}
 
 {% block bld_libs %}
