@@ -5,12 +5,12 @@ cabextract
 {% endblock %}
 
 {% block version %}
-1.11
+1.12
 {% endblock %}
 
 {% block fetch %}
 https://www.cabextract.org.uk/cabextract-{{self.version().strip()}}.tar.gz
-b5546db1155e4c718ff3d4b278573604f30dd64c3c5bfd4657cd089b823a3ac6
+8f39ad5f9c076b9c62c67dea4f8649e75dcc16899a2d8122ca32ba68262cb713
 {% endblock %}
 
 {% block bld_libs %}
