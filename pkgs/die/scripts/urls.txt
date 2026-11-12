@@ -5414,6 +5414,7 @@ https://github.com/pg83/std/archive/1823073b33e072568b28261b43970e9c81074d37.tar
 https://github.com/pg83/std/archive/f14cc2379834cf0560d9bfab4f646163766f4915.tar.gz
 https://github.com/pg83/std/archive/refs/tags/3.tar.gz
 https://github.com/pg83/str/archive/refs/tags/3.tar.gz
+https://github.com/pg83/str/archive/refs/tags/4.tar.gz
 https://github.com/pg83/ted/archive/refs/tags/v6.tar.gz
 https://github.com/pg83/wirez/archive/refs/tags/2.tar.gz
 https://github.com/pg83/wirez/archive/refs/tags/6.tar.gz
