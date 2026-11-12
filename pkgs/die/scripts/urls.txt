@@ -6244,6 +6244,7 @@ https://github.com/tavianator/bfs/archive/refs/tags/4.0.8.tar.gz
 https://github.com/tavianator/bfs/archive/refs/tags/4.1.4.tar.gz
 https://github.com/tavianator/bfs/archive/refs/tags/4.1.5.tar.gz
 https://github.com/tavianator/bfs/archive/refs/tags/4.1.6.tar.gz
+https://github.com/tavianator/bfs/archive/refs/tags/4.1.7.tar.gz
 https://github.com/tavianator/bfs/archive/refs/tags/4.1.tar.gz
 https://github.com/tdlib/td/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.1/tdesktop-4.10.1-full.tar.gz
