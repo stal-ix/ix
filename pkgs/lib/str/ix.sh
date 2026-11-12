@@ -8,12 +8,12 @@ str
 {% endblock %}
 
 {% block version %}
-3
+4
 {% endblock %}
 
 {% block fetch %}
 https://github.com/pg83/str/archive/refs/tags/{{self.version().strip()}}.tar.gz
-85fb32c2f9c0ec47a3c1d93861c90bcfd851e2dfa62cfaa40b2c03b9d857c84d
+e39aee132383a5056da9776f77b193d36d1f69ec604622d75f991724b5f5ffcd
 {% endblock %}
 
 {# under a std_box/std_env flag (the boot tools) the box is the flag's, its python 3.10 builds this #}
@@ -37,7 +37,7 @@ san_intercept
 python3 dev/strcc.py . -o libstr.a --out post
 for f in memcpy memmove memset memcmp memchr strlen strnlen strcpy strcat strcmp strspn strcspn \
          bcmp bcopy bzero explicit_bzero mempcpy strncat strlcpy strlcat strpbrk strsep strtok strtok_r \
-         strdup strndup memmem strstr
+         memmem strstr
 do
     echo "str_${f} ${f}"
 done > libc.syms

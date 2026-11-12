@@ -9,7 +9,7 @@ done
 {# lib/str (lib/musl/naked) defines these, all in one object: a copy of any of them here could be linked beside it #}
 for f in memcpy memmove memset memcmp memchr strlen strnlen strcpy strcat strcmp strspn strcspn \
          bcmp bcopy bzero explicit_bzero mempcpy strncat strlcpy strlcat strpbrk strsep strtok strtok_r \
-         strdup strndup memmem strstr
+         memmem strstr
 do
     >src/string/${f}.c
 done
