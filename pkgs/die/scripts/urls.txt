@@ -1264,6 +1264,7 @@ https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_96_RTM/src/nss-3.96.tar.
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_99_RTM/src/nss-3.99.tar.gz
 https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-4.0.0.tar.gz
 https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-4.4.0.tar.gz
+https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-4.4.1.tar.gz
 https://ftp.osuosl.org/pub/rpm/releases/rpm-4.19.x/rpm-4.19.0.tar.bz2
 https://ftp.osuosl.org/pub/rpm/releases/rpm-6.1.x/rpm-6.1.0.tar.bz2
 https://ftp.postgresql.org/pub/source/v15.4/postgresql-15.4.tar.bz2
@@ -2393,6 +2394,7 @@ https://github.com/Z3Prover/z3/archive/refs/tags/z3-5.3.0.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-5.3.1.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-5.3.2.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-5.3.3.tar.gz
+https://github.com/Z3Prover/z3/archive/refs/tags/z3-5.4.1.tar.gz
 https://github.com/Zouuup/landrun/archive/refs/tags/v0.1.17.tar.gz
 https://github.com/Zouuup/landrun/archive/refs/tags/v0.1.9.tar.gz
 https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
@@ -4484,6 +4486,7 @@ https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.18.1.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.18.2.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.18.3.tar.gz
 https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.6/sshfs-3.7.6.tar.xz
+https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.7/sshfs-3.7.7.tar.xz
 https://github.com/libgd/libgd/archive/refs/tags/gd-2.3.3.tar.gz
 https://github.com/libgit2/libgit2/archive/c6111ec06cc0b0126cd67bdab78f8091e4cfaa10.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.0.1.tar.gz
@@ -4521,6 +4524,7 @@ https://github.com/libjxl/libjxl/archive/refs/tags/v0.11.0.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.11.1.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.11.2.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.12.0.tar.gz
+https://github.com/libjxl/libjxl/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.9.0.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.9.1.tar.gz
@@ -5254,6 +5258,8 @@ https://github.com/openai/codex/releases/download/rust-v0.167.0/codex-code-mode-
 https://github.com/openai/codex/releases/download/rust-v0.167.0/codex-x86_64-unknown-linux-musl.tar.gz
 https://github.com/openai/codex/releases/download/rust-v0.167.1/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz
 https://github.com/openai/codex/releases/download/rust-v0.167.1/codex-x86_64-unknown-linux-musl.tar.gz
+https://github.com/openai/codex/releases/download/rust-v0.167.2/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz
+https://github.com/openai/codex/releases/download/rust-v0.167.2/codex-x86_64-unknown-linux-musl.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.10.0.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.11.0.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.12.0.tar.gz
@@ -5703,12 +5709,14 @@ https://github.com/rakshasa/libtorrent/archive/refs/tags/v0.15.2.tar.gz
 https://github.com/rakshasa/libtorrent/archive/refs/tags/v0.16.25.tar.gz
 https://github.com/rakshasa/libtorrent/archive/refs/tags/v0.16.26.tar.gz
 https://github.com/rakshasa/libtorrent/archive/refs/tags/v0.16.27.tar.gz
+https://github.com/rakshasa/libtorrent/archive/refs/tags/v0.16.28.tar.gz
 https://github.com/rakshasa/rtorrent/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/rakshasa/rtorrent/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/rakshasa/rtorrent/archive/refs/tags/v0.15.2.tar.gz
 https://github.com/rakshasa/rtorrent/archive/refs/tags/v0.16.20.tar.gz
 https://github.com/rakshasa/rtorrent/archive/refs/tags/v0.16.25.tar.gz
 https://github.com/rakshasa/rtorrent/archive/refs/tags/v0.16.26.tar.gz
+https://github.com/rakshasa/rtorrent/archive/refs/tags/v0.16.28.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/2.19.3.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/2.19.5.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.10.0.tar.gz
@@ -5787,6 +5795,7 @@ https://github.com/rfjakob/gocryptfs/archive/refs/tags/v2.5.2.tar.gz
 https://github.com/rfjakob/gocryptfs/archive/refs/tags/v2.5.4.tar.gz
 https://github.com/rfjakob/gocryptfs/archive/refs/tags/v2.6.0.tar.gz
 https://github.com/rfjakob/gocryptfs/archive/refs/tags/v2.6.1.tar.gz
+https://github.com/rfjakob/gocryptfs/archive/refs/tags/v2.7.0.tar.gz
 https://github.com/rgburke/grv/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/rharish101/ReGreet/archive/9ff3e11bb1b66b52f6e44a9b6c0fe93a8c993f74.zip
 https://github.com/rharish101/ReGreet/archive/refs/tags/0.1.3.tar.gz
@@ -5822,6 +5831,7 @@ https://github.com/rpm-software-management/rpmpgp_legacy/archive/30699f403450a8f
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.4.tar.gz
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.6.tar.gz
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.7.tar.gz
+https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.8.tar.gz
 https://github.com/rr-debugger/rr/archive/refs/tags/5.7.0.tar.gz
 https://github.com/rrthomas/enchant/releases/download/v2.8.10/enchant-2.8.10.tar.gz
 https://github.com/rrthomas/enchant/releases/download/v2.8.11/enchant-2.8.11.tar.gz
@@ -6239,6 +6249,7 @@ https://github.com/tavianator/bfs/archive/refs/tags/4.0.8.tar.gz
 https://github.com/tavianator/bfs/archive/refs/tags/4.1.4.tar.gz
 https://github.com/tavianator/bfs/archive/refs/tags/4.1.5.tar.gz
 https://github.com/tavianator/bfs/archive/refs/tags/4.1.6.tar.gz
+https://github.com/tavianator/bfs/archive/refs/tags/4.1.7.tar.gz
 https://github.com/tavianator/bfs/archive/refs/tags/4.1.tar.gz
 https://github.com/tdlib/td/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.1/tdesktop-4.10.1-full.tar.gz
@@ -6884,6 +6895,7 @@ https://github.com/zellij-org/zellij/archive/refs/tags/v0.41.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.42.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.43.1.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.45.1.tar.gz
+https://github.com/zellij-org/zellij/archive/refs/tags/v0.46.0.tar.gz
 https://github.com/zeux/pugixml/releases/download/v1.16/pugixml-1.16.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.290.0.tar.gz
@@ -7689,6 +7701,7 @@ https://mesa.freedesktop.org/archive/mesa-24.3.4.tar.xz
 https://miniupnp.tuxfamily.org/files/libnatpmp-20230423.tar.gz
 https://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2023.02.20.tar.xz
 https://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2024.10.16.tar.xz
+https://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2026.11.11.tar.xz
 https://mirror.tochlab.net/pub/gnu/help2man/help2man-1.49.2.tar.xz
 https://mirror.tochlab.net/pub/gnu/help2man/help2man-1.49.3.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.6/e2fsprogs-1.46.6.tar.xz

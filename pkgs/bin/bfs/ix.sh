@@ -5,12 +5,12 @@ bfs
 {% endblock %}
 
 {% block version %}
-4.1.6
+4.1.7
 {% endblock %}
 
 {% block fetch %}
 https://github.com/tavianator/bfs/archive/refs/tags/{{self.version().strip()}}.tar.gz
-5b706e1b362c1f05093e1436b396fc8129c6e456a112b9e4a06fd7916f19baaf
+7b17e3ff2fac9a41ca9f06f61cfa1c7bd2474ad583fcbbee6e6d72fa8572c837
 {% endblock %}
 
 {% block bld_libs %}
