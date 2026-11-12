@@ -23,5 +23,5 @@ lib/c
 
 {% block bld_libs %}
 lib/shim/gnu/basename/overlay
-lib/linux/headers
+lib/linux/headers/next
 {% endblock %}
