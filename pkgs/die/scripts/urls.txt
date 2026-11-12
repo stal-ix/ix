@@ -2013,6 +2013,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v4.2.3.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v4.4.3.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v4.4.4.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v4.4.5.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v4.5.0.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta16.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta17.tar.gz
