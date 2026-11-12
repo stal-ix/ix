@@ -1081,5 +1081,5 @@ bin/java/11
 bin/java/17
 bin/java/21
 bin/java/25
-lib/str
+lib/str(kind=lib)
 {% endblock %}
