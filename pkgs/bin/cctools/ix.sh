@@ -34,6 +34,11 @@ sed -e 's/__arm__/__eat_shit__/' -i configure
 __crashreporter_info__
 {% if linux %}
 reallocf
+{% if x86_64 %}
+# lib/str (lib/c) also defines these
+strlcpy
+strlcat
+{% endif %}
 {% endif %}
 {% endblock %}
 
