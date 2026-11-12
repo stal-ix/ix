@@ -5,12 +5,12 @@ unionfs-fuse
 {% endblock %}
 
 {% block version %}
-3.7
+3.8
 {% endblock %}
 
 {% block fetch %}
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-026f5302279110ceb7465e5c9e863cd0319ea0dc32ad253d162cf9db0f5e9a81
+88482d27a886fefd251af3d5b7123e82b2b5800219e7d61d4f29bfee718bbaac
 {% endblock %}
 
 {% block lib_deps %}

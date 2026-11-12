@@ -5831,6 +5831,7 @@ https://github.com/rpm-software-management/rpmpgp_legacy/archive/30699f403450a8f
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.4.tar.gz
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.6.tar.gz
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.7.tar.gz
+https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.8.tar.gz
 https://github.com/rr-debugger/rr/archive/refs/tags/5.7.0.tar.gz
 https://github.com/rrthomas/enchant/releases/download/v2.8.10/enchant-2.8.10.tar.gz
 https://github.com/rrthomas/enchant/releases/download/v2.8.11/enchant-2.8.11.tar.gz
