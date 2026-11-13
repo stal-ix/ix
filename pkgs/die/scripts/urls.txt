@@ -521,6 +521,7 @@ https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.116.tar.gz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.16.0.tar.xz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.16.2.tar.xz
+https://dbus.freedesktop.org/releases/dbus/dbus-1.16.4.tar.xz
 https://deb.debian.org/debian/pool/main/t/tor/tor_0.4.9.12.orig.tar.gz
 https://deb.debian.org/debian/pool/main/t/tor/tor_0.4.9.13.orig.tar.gz
 https://deb.debian.org/debian/pool/main/t/tor/tor_0.4.9.14.orig.tar.gz
