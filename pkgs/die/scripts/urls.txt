@@ -3721,6 +3721,7 @@ https://github.com/grafana/grafana/archive/refs/tags/v13.2.4.tar.gz
 https://github.com/grafana/grafana/archive/refs/tags/v13.3.0.tar.gz
 https://github.com/grafana/grafana/archive/refs/tags/v13.3.1.tar.gz
 https://github.com/grafana/loki/archive/refs/tags/v3.3.2.tar.gz
+https://github.com/grafana/loki/archive/refs/tags/v3.7.10.tar.gz
 https://github.com/grafana/loki/archive/refs/tags/v3.7.8.tar.gz
 https://github.com/grafana/loki/archive/refs/tags/v3.7.9.tar.gz
 https://github.com/greshake/i3status-rust/archive/refs/tags/v0.33.0.tar.gz
