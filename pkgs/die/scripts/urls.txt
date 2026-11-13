@@ -2641,6 +2641,7 @@ https://github.com/astral-sh/ruff/archive/refs/tags/0.16.9.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.17.0.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.17.3.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.17.4.tar.gz
+https://github.com/astral-sh/ruff/archive/refs/tags/0.17.5.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.9.6.tar.gz
 https://github.com/atanunq/viu/archive/refs/tags/v1.6.1.tar.gz
 https://github.com/avahi/avahi/releases/download/v0.8/avahi-0.8.tar.gz
