@@ -58,6 +58,8 @@ bld/bash
 {% endblock %}
 
 {% block patch %}
+sed -e "/'host_locale/d" -e "/'iso_locale_codes.cpp',/d" -i src/misc/meson.build
+sed -e "/'drives.cpp',/a \\    'mount.cpp'," -i src/dos/meson.build
 sed -e "/'misc',/d" -i resources/shaders/meson.build
 sed -e "/src\/libs\/residfp/a subdir('src/libs/riffcpp')" -i meson.build
 sed -e '/^libriffcpp =/i )' -i src/libs/riffcpp/meson.build
