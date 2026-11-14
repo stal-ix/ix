@@ -5,12 +5,12 @@ dash
 {% endblock %}
 
 {% block version %}
-0.5.13.5
+0.5.13.6
 {% endblock %}
 
 {% block fetch %}
 http://gondor.apana.org.au/~herbert/dash/files/dash-{{self.version().strip()}}.tar.gz
-40090101a2a491f13e901d3d48e90414f26634628b9bfff35ff540363c227a7d
+26aac476f476cef391c600cb064417d82a5465d8fc7c4fd56158c276e86538c1
 {% endblock %}
 
 {% block bld_libs %}

@@ -74,6 +74,7 @@ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.11.3.tar.gz
 http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
 http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.1.tar.gz
 http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.5.tar.gz
+http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.6.tar.gz
 http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.tar.gz
 http://haddonthethird.net/m4/m4-2.tar.bz2
 http://hpc.sourceforge.net/f2c.tar
