@@ -10,9 +10,6 @@ lib/musl/unwrap
 {% endif %}
 lib/{{purec}}
 {% else %}
-{% if linux and x86_64 %}
-lib/asm
-{% endif %}
 lib/dlfcn
 lib/c/bare
 {% endif %}

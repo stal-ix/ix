@@ -5,12 +5,12 @@ extra-cmake-modules
 {% endblock %}
 
 {% block version %}
-6.31.0
+6.32.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-be7a53f3712da42727d78adaef5219d2e990338da24204badde6bd027ab93ecf
+47abc4ab7274a5ca3449a07ea45e2b6f39614ed2b6303a4ec7f40aed65cf060b
 {% endblock %}
 
 {% block postinstall %}

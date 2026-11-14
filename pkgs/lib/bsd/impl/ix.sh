@@ -13,6 +13,12 @@ lib/kernel
 {{super()}}
 sed -e 's|install-exec-hook:|install-exec-hook-xxx:|' -i src/Makefile.am
 >src/reallocarray.c
+{% if x86_64 %}
+{# lib/str (lib/c) has these in its one object: libbsd's linked first meant a second copy #}
+>src/strlcpy.c
+>src/strlcat.c
+>src/explicit_bzero.c
+{% endif %}
 cat << EOF >> include/bsd/sys/cdefs.h
 #pragma once
 #ifndef __scanflike

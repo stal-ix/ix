@@ -52,6 +52,10 @@ NTIRPC_LIBRARY_DIR=${NTIRPC_PREFIX}/lib
 {% endblock %}
 
 {% block patch %}
+{% if x86_64 %}
+{# lib/str (lib/c) defines this in its one object #}
+>support/strlcpy.c
+{% endif %}
 patch -p1 <<'EOF'
 {% include 'clang-23.patch' %}
 EOF

@@ -49,4 +49,8 @@ cp libbcachefs.a ${out}/lib/libbcachefs_real.a
 
 {% block c_rename_symbol %}
 crc32c
+{% if x86_64 %}
+# lib/str (lib/c) also defines this
+strlcpy
+{% endif %}
 {% endblock %}

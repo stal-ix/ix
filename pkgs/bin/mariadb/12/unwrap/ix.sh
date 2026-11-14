@@ -5,11 +5,11 @@ MariaDB
 {% endblock %}
 
 {% block version %}
-12.3.3
+12.3.4
 {% endblock %}
 
 {% block git_sha %}
-65f3eb878c31458c628240be48b0d14ccae8a94c0cc074b3840b45c07a2aa810
+06c767284f2f92b8cc912e2ceb32cb2a1b9507b4e9567ac53d460af8d6774819
 {% endblock %}
 
 {% block git_repo %}

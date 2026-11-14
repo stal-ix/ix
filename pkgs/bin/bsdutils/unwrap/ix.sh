@@ -50,4 +50,9 @@ wrap_cc
 prepend src/df/df.c << EOF
 #include <err.h>
 EOF
+{% if x86_64 %}
+{# lib/str (lib/c) has these in its one object #}
+>compat/strlcpy.c
+>compat/strlcat.c
+{% endif %}
 {% endblock %}

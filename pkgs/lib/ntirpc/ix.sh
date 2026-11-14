@@ -35,6 +35,10 @@ USE_MONITORING=OFF
 {% endblock %}
 
 {% block patch %}
+{% if x86_64 %}
+{# lib/str (lib/c) defines this in its one object #}
+>src/strlcpy.c
+{% endif %}
 sed -e '/^SET(monitoring_SRCS/i if(USE_MONITORING)' \
     -e '/^add_executable(rpcping/i endif(USE_MONITORING)' \
     -i tests/CMakeLists.txt

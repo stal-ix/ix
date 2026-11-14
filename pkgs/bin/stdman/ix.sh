@@ -5,12 +5,12 @@ stdman
 {% endblock %}
 
 {% block version %}
-2024.07.05
+2026.11.13
 {% endblock %}
 
 {% block fetch %}
 https://github.com/jeaye/stdman/archive/refs/tags/{{self.version().strip()}}.tar.gz
-3cd652cb76c4fc7604c2b961a726788550c01065032bcff0a706b44f2eb0f75a
+deb29cc1df1ff34618f2cd4b222295db68428c462d7526aed92bd13400019740
 {% endblock %}
 
 {% block bld_tool %}
