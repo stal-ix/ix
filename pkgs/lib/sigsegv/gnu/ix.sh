@@ -17,6 +17,12 @@ f8b2fac06c091fc29d6474733d118dc163ed7cd6be4783240d31ad7af11efa30
 lib/c
 {% endblock %}
 
+{% block bld_libs %}
+{% if linux %}
+lib/linux/headers
+{% endif %}
+{% endblock %}
+
 {% block env %}
 export COFLAGS="--with-libsigsegv --with-libsigsegv-prefix=${out} \${COFLAGS}"
 {% endblock %}
