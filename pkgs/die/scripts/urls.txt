@@ -4141,6 +4141,7 @@ https://github.com/jbeder/yaml-cpp/archive/refs/tags/yaml-cpp-0.7.0.tar.gz
 https://github.com/jbeder/yaml-cpp/archive/refs/tags/yaml-cpp-0.9.0.tar.gz
 https://github.com/jeaye/stdman/archive/refs/tags/2022.07.30.tar.gz
 https://github.com/jeaye/stdman/archive/refs/tags/2024.07.05.tar.gz
+https://github.com/jeaye/stdman/archive/refs/tags/2026.11.13.tar.gz
 https://github.com/jech/dht/archive/refs/tags/dht-0.27.tar.gz
 https://github.com/jech/dht/archive/refs/tags/dht-0.28.tar.gz
 https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.18.tar.gz
