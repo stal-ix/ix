@@ -7848,6 +7848,7 @@ https://nheko.im/nheko-reborn/coeurl/-/archive/v0.3.1/coeurl-v0.3.1.tar.bz2
 https://nheko.im/nheko-reborn/coeurl/-/archive/v0.3.2/coeurl-v0.3.2.tar.bz2
 https://nim-lang.org/download/nim-2.2.12.tar.xz
 https://nim-lang.org/download/nim-2.4.0.tar.xz
+https://nim-lang.org/download/nim-2.4.2.tar.xz
 https://nmap.org/dist/nmap-7.93.tar.bz2
 https://nmap.org/dist/nmap-7.95.tar.bz2
 https://nmap.org/dist/nmap-7.96.tar.bz2
