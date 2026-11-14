@@ -3037,6 +3037,7 @@ https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.81.2.tar.g
 https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.82.1.tar.gz
 https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.82.2.tar.gz
 https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.83.0.tar.gz
+https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.83.1.tar.gz
 https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_10_0.tar.gz
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_12_0.tar.gz
