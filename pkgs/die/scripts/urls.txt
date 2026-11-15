@@ -5463,6 +5463,7 @@ https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.4.3.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.5.0.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.5.1.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-3.0.10.tar.gz
+https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-3.0.11.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-3.0.6.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-3.0.7.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-3.0.8.tar.gz
