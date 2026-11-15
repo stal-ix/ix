@@ -6071,6 +6071,7 @@ https://github.com/simdutf/simdutf/archive/refs/tags/v9.2.1.tar.gz
 https://github.com/simdutf/simdutf/archive/refs/tags/v9.3.0.tar.gz
 https://github.com/simdutf/simdutf/archive/refs/tags/v9.3.2.tar.gz
 https://github.com/simdutf/simdutf/archive/refs/tags/v9.3.3.tar.gz
+https://github.com/simdutf/simdutf/archive/refs/tags/v9.4.0.tar.gz
 https://github.com/sivel/speedtest-cli/archive/refs/tags/v2.1.3.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.10.0.0.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.4.0.tar.gz
