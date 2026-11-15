@@ -2524,6 +2524,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.1.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.12.2.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.12.3.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.13.0.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.14.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.3.tar.gz
