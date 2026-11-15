@@ -1878,6 +1878,7 @@ https://github.com/KDE/kimageformats/archive/refs/tags/v6.16.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v6.17.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v6.19.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v6.31.0.tar.gz
+https://github.com/KDE/kimageformats/archive/refs/tags/v6.32.0.tar.gz
 https://github.com/KarsMulder/evsieve/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/6c09849fe88c48eaed08413aa022aaa136a3a057.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/sdk-1.3.261.1.tar.gz
