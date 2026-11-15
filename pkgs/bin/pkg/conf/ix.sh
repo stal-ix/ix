@@ -5,12 +5,12 @@ pkgconf
 {% endblock %}
 
 {% block version %}
-3.0.10
+3.0.11
 {% endblock %}
 
 {% block fetch %}
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-{{self.version().strip()}}.tar.gz
-11818a25f2730132f3b258ac8be4e82f83b9db03a1a99a6c29cd01b94fc9d310
+d2c8a0965d5b80dcc454cc999ad5edb8bfbc4d8e65cde7a6f19a5cb7ecaf3377
 {% endblock %}
 
 {% block bld_libs %}

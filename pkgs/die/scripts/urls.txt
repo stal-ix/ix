@@ -3031,12 +3031,14 @@ https://github.com/dlbeer/quirc/archive/refs/tags/v1.2.tar.gz
 https://github.com/dlvhdr/gh-dash/archive/refs/tags/v4.25.2.tar.gz
 https://github.com/dlvhdr/gh-dash/archive/refs/tags/v4.26.0.tar.gz
 https://github.com/dlvhdr/gh-dash/archive/refs/tags/v4.26.2.tar.gz
+https://github.com/dlvhdr/gh-dash/archive/refs/tags/v4.26.3.tar.gz
 https://github.com/dlvhdr/gh-dash/archive/refs/tags/v4.9.1.tar.gz
 https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.81.0.tar.gz
 https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.81.2.tar.gz
 https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.82.1.tar.gz
 https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.82.2.tar.gz
 https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.83.0.tar.gz
+https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.83.1.tar.gz
 https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_10_0.tar.gz
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_12_0.tar.gz
@@ -4044,6 +4046,7 @@ https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.262.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.270.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.272.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.275.tar.gz
+https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.277.tar.gz
 https://github.com/intel/intel-one-mono/releases/download/V1.2.1/otf.zip
 https://github.com/intel/intel-one-mono/releases/download/V1.4.0/otf.zip
 https://github.com/intel/libipt/archive/refs/tags/v2.0.6.tar.gz
@@ -4487,6 +4490,7 @@ https://github.com/libffi/libffi/archive/refs/tags/v3.4.8.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.5.1.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.5.2.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.8.0.tar.gz
+https://github.com/libffi/libffi/archive/refs/tags/v3.8.1.tar.gz
 https://github.com/libffi/libffi/commit/8308bed5b2423878aa20d7884a99cf2e30b8daf7.diff
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-2.9.9.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.1.tar.gz
@@ -4659,6 +4663,7 @@ https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.3.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.7.2.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.7.3.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.7.4.tar.gz
+https://github.com/limine-bootloader/limine/releases/download/v12.10.0/limine-12.10.0.tar.xz
 https://github.com/limine-bootloader/limine/releases/download/v12.7.0/limine-12.7.0.tar.xz
 https://github.com/limine-bootloader/limine/releases/download/v12.8.0/limine-12.8.0.tar.xz
 https://github.com/limine-bootloader/limine/releases/download/v12.9.1/limine-12.9.1.tar.xz
@@ -5460,6 +5465,7 @@ https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.4.3.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.5.0.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.5.1.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-3.0.10.tar.gz
+https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-3.0.11.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-3.0.6.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-3.0.7.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-3.0.8.tar.gz

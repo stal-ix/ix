@@ -5,12 +5,12 @@ dosbox-staging
 {% endblock %}
 
 {% block version %}
-0.83.0
+0.83.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-9b36be5a666784adaeffa560bd0950691f851a76bdb97e7ae3c989561e91caf3
+14c3703369e56125a425aea8ebb1a425823df58f9769f3e48b1b8ebbf2c6cf09
 {% endblock %}
 
 {% block bld_libs %}
@@ -58,6 +58,8 @@ bld/bash
 {% endblock %}
 
 {% block patch %}
+sed -e "/'host_locale/d" -e "/'iso_locale_codes.cpp',/d" -i src/misc/meson.build
+sed -e "/'drives.cpp',/a \\    'mount.cpp'," -i src/dos/meson.build
 sed -e "/'misc',/d" -i resources/shaders/meson.build
 sed -e "/src\/libs\/residfp/a subdir('src/libs/riffcpp')" -i meson.build
 sed -e '/^libriffcpp =/i )' -i src/libs/riffcpp/meson.build
