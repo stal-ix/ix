@@ -3031,6 +3031,7 @@ https://github.com/dlbeer/quirc/archive/refs/tags/v1.2.tar.gz
 https://github.com/dlvhdr/gh-dash/archive/refs/tags/v4.25.2.tar.gz
 https://github.com/dlvhdr/gh-dash/archive/refs/tags/v4.26.0.tar.gz
 https://github.com/dlvhdr/gh-dash/archive/refs/tags/v4.26.2.tar.gz
+https://github.com/dlvhdr/gh-dash/archive/refs/tags/v4.26.3.tar.gz
 https://github.com/dlvhdr/gh-dash/archive/refs/tags/v4.9.1.tar.gz
 https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.81.0.tar.gz
 https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.81.2.tar.gz
