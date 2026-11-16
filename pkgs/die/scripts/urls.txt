@@ -1675,6 +1675,7 @@ https://github.com/GNOME/file-roller/archive/refs/tags/43.1.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/44.5.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/44.6.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/44.7.tar.gz
+https://github.com/GNOME/file-roller/archive/refs/tags/44.8.tar.gz
 https://github.com/GNOME/gdk-pixbuf/archive/refs/tags/2.44.2.tar.gz
 https://github.com/GNOME/gdk-pixbuf/archive/refs/tags/2.44.3.tar.gz
 https://github.com/GNOME/gdk-pixbuf/archive/refs/tags/2.44.4.tar.gz
