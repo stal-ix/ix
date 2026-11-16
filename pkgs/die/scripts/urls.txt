@@ -596,6 +596,7 @@ https://download.gnome.org/sources/evince/46/evince-46.3.tar.xz
 https://download.gnome.org/sources/evince/48/evince-48.0.tar.xz
 https://download.gnome.org/sources/evince/48/evince-48.1.tar.xz
 https://download.gnome.org/sources/evince/48/evince-48.4.tar.xz
+https://download.gnome.org/sources/evince/48/evince-48.5.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.11.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
