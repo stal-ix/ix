@@ -533,6 +533,7 @@ https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.8.tar.xz
 https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.9.tar.xz
 https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.10.tar.xz
 https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.11.tar.xz
+https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.12.tar.xz
 https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.7.tar.xz
 https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.8.tar.xz
 https://dev.yorhel.nl/download/ncdu-1.18.1.tar.gz
