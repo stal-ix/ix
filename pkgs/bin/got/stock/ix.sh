@@ -5,12 +5,12 @@ got-portable
 {% endblock %}
 
 {% block version %}
-0.130.1
+0.131
 {% endblock %}
 
 {% block fetch %}
 https://gameoftrees.org/releases/portable/got-portable-{{self.version().strip()}}.tar.gz
-43c5fba2f3791e3cef202803baa819fd29c53c4ba1f89f90582e06c6a443beb4
+7c0cde4201feaa398d1e9bf8a8bb697bb39b2dfba05a317d9fae20f1b19b51f1
 {% endblock %}
 
 {% block bld_libs %}

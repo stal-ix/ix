@@ -30,6 +30,7 @@ http://download.savannah.nongnu.org/releases/man-db/man-db-2.12.0.tar.xz
 http://download.savannah.nongnu.org/releases/man-db/man-db-2.13.0.tar.xz
 http://download.savannah.nongnu.org/releases/man-db/man-db-2.13.1.tar.xz
 http://download.savannah.nongnu.org/releases/man-db/man-db-2.13.2.tar.xz
+http://download.savannah.nongnu.org/releases/man-db/man-db-2.13.3.tar.xz
 http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe
 http://downloads.sourceforge.net/djvu/djvulibre-3.5.28.tar.gz
 http://downloads.sourceforge.net/djvu/djvulibre-3.5.29.tar.gz
@@ -1294,6 +1295,7 @@ https://ftpmirror.gnu.org/libtool/libtool-2.4.7.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.5.4.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.6.2.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.130.1.tar.gz
+https://gameoftrees.org/releases/portable/got-portable-0.131.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.93.tar.gz
 https://git.adelielinux.org/community/a52dec/-/archive/v0.8.0/a52dec-v0.8.0.tar.bz2
@@ -4951,6 +4953,7 @@ https://github.com/microsoft/mimalloc/archive/refs/tags/v3.0.1.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v3.5.4.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v3.6.0.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v3.6.1.tar.gz
+https://github.com/microsoft/mimalloc/archive/refs/tags/v3.7.0.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.2.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.3.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.4.tar.gz
