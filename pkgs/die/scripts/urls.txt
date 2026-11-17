@@ -2368,6 +2368,7 @@ https://github.com/WebAssembly/binaryen/archive/refs/tags/version_133.tar.gz
 https://github.com/WebPlatformForEmbedded/libwpe/archive/refs/tags/1.12.3.tar.gz
 https://github.com/WerWolv/ImHex/releases/download/v1.19.1/Full.Sources.tar.gz
 https://github.com/WillPower3309/swayfx/archive/refs/tags/0.4.tar.gz
+https://github.com/WillPower3309/swayfx/archive/refs/tags/0.6.1.tar.gz
 https://github.com/WillPower3309/swayfx/archive/refs/tags/0.6.tar.gz
 https://github.com/XAMPPRocky/tokei/archive/refs/tags/v12.1.2.tar.gz
 https://github.com/XAMPPRocky/tokei/archive/refs/tags/v14.0.0.tar.gz
