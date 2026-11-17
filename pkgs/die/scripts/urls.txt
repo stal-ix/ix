@@ -29,6 +29,7 @@ http://download.savannah.nongnu.org/releases/man-db/man-db-2.11.2.tar.xz
 http://download.savannah.nongnu.org/releases/man-db/man-db-2.12.0.tar.xz
 http://download.savannah.nongnu.org/releases/man-db/man-db-2.13.0.tar.xz
 http://download.savannah.nongnu.org/releases/man-db/man-db-2.13.1.tar.xz
+http://download.savannah.nongnu.org/releases/man-db/man-db-2.13.2.tar.xz
 http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe
 http://downloads.sourceforge.net/djvu/djvulibre-3.5.28.tar.gz
 http://downloads.sourceforge.net/djvu/djvulibre-3.5.29.tar.gz
@@ -533,6 +534,7 @@ https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.8.tar.xz
 https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.9.tar.xz
 https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.10.tar.xz
 https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.11.tar.xz
+https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.12.tar.xz
 https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.7.tar.xz
 https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.8.tar.xz
 https://dev.yorhel.nl/download/ncdu-1.18.1.tar.gz
@@ -594,6 +596,7 @@ https://download.gnome.org/sources/evince/46/evince-46.3.tar.xz
 https://download.gnome.org/sources/evince/48/evince-48.0.tar.xz
 https://download.gnome.org/sources/evince/48/evince-48.1.tar.xz
 https://download.gnome.org/sources/evince/48/evince-48.4.tar.xz
+https://download.gnome.org/sources/evince/48/evince-48.5.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.11.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
@@ -744,6 +747,7 @@ https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.6.tar.bz2
 https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.7.tar.bz2
 https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.8.tar.bz2
 https://downloads.sourceforge.net/modplug-xmms/libmodplug-0.8.9.0.tar.gz
+https://downloads.sourceforge.net/modplug-xmms/libmodplug-0.8.9.2.tar.gz
 https://downloads.sourceforge.net/project/acpid2/acpid-2.0.34.tar.xz
 https://downloads.sourceforge.net/project/codeblocks/Sources/20.03/codeblocks-20.03.tar.xz
 https://downloads.sourceforge.net/project/dejavu/dejavu/2.37/dejavu-fonts-ttf-2.37.tar.bz2
@@ -1671,6 +1675,7 @@ https://github.com/GNOME/file-roller/archive/refs/tags/43.1.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/44.5.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/44.6.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/44.7.tar.gz
+https://github.com/GNOME/file-roller/archive/refs/tags/44.8.tar.gz
 https://github.com/GNOME/gdk-pixbuf/archive/refs/tags/2.44.2.tar.gz
 https://github.com/GNOME/gdk-pixbuf/archive/refs/tags/2.44.3.tar.gz
 https://github.com/GNOME/gdk-pixbuf/archive/refs/tags/2.44.4.tar.gz
@@ -1803,6 +1808,7 @@ https://github.com/GyulyVGC/sniffnet/archive/refs/tags/v1.3.2.tar.gz
 https://github.com/GyulyVGC/sniffnet/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/GyulyVGC/sniffnet/archive/refs/tags/v1.4.2.tar.gz
 https://github.com/GyulyVGC/sniffnet/archive/refs/tags/v1.5.1.tar.gz
+https://github.com/GyulyVGC/sniffnet/archive/refs/tags/v1.6.0.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.3.tar.gz
@@ -1867,6 +1873,7 @@ https://github.com/KDE/kcoreaddons/archive/refs/tags/v6.19.0.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v6.29.0.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v6.30.0.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v6.31.0.tar.gz
+https://github.com/KDE/kcoreaddons/archive/refs/tags/v6.32.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.112.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.98.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v6.13.0.tar.gz
@@ -1876,6 +1883,7 @@ https://github.com/KDE/kimageformats/archive/refs/tags/v6.16.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v6.17.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v6.19.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v6.31.0.tar.gz
+https://github.com/KDE/kimageformats/archive/refs/tags/v6.32.0.tar.gz
 https://github.com/KarsMulder/evsieve/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/6c09849fe88c48eaed08413aa022aaa136a3a057.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/sdk-1.3.261.1.tar.gz
@@ -2437,6 +2445,7 @@ https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_6_0.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_6_1.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_7_0.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_8_0.tar.gz
+https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_8_0_1.tar.gz
 https://github.com/adnanh/webhook/archive/refs/tags/2.8.2.tar.gz
 https://github.com/adnanh/webhook/archive/refs/tags/2.8.3.tar.gz
 https://github.com/adobe-fonts/source-code-pro/archive/refs/tags/2.038R-ro/1.058R-it/1.018R-VAR.tar.gz
@@ -2524,6 +2533,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.1.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.12.2.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.12.3.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.13.0.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.14.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.3.tar.gz
@@ -3552,6 +3562,7 @@ https://github.com/go-gitea/gitea/archive/refs/tags/v1.27.3.tar.gz
 https://github.com/go-gitea/gitea/archive/refs/tags/v28.1.0.tar.gz
 https://github.com/go-gitea/gitea/archive/refs/tags/v28.2.0.tar.gz
 https://github.com/go-gitea/gitea/archive/refs/tags/v28.3.0.tar.gz
+https://github.com/go-gitea/gitea/archive/refs/tags/v28.4.0.tar.gz
 https://github.com/go-gost/gost/archive/1fa5067d1450c7d0c7c4bfb5cbddc7ddbb49f76c.zip
 https://github.com/go-gost/gost/archive/refs/tags/v3.0.0-nightly.20240927.tar.gz
 https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
@@ -4047,6 +4058,8 @@ https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.270.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.272.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.275.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.277.tar.gz
+https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.282.tar.gz
+https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.26.285.tar.gz
 https://github.com/intel/intel-one-mono/releases/download/V1.2.1/otf.zip
 https://github.com/intel/intel-one-mono/releases/download/V1.4.0/otf.zip
 https://github.com/intel/libipt/archive/refs/tags/v2.0.6.tar.gz
@@ -4250,6 +4263,7 @@ https://github.com/josuttis/jthread/archive/0fa8d394254886c555d6faccd0a3de819b7d
 https://github.com/jovanlanik/gtklock/archive/refs/tags/v2.0.1.tar.gz
 https://github.com/jovanlanik/gtklock/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/jovanlanik/gtklock/archive/refs/tags/v5.0.0.tar.gz
+https://github.com/jovanlanik/gtklock/archive/refs/tags/v5.0.1.tar.gz
 https://github.com/jstedfast/gmime/archive/refs/tags/3.2.13.tar.gz
 https://github.com/jstedfast/gmime/archive/refs/tags/3.2.15.tar.gz
 https://github.com/jtanx/libclipboard/archive/refs/tags/v1.1.tar.gz
@@ -4641,6 +4655,7 @@ https://github.com/libunwind/libunwind/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/libunwind/libunwind/archive/refs/tags/v1.8.3.tar.gz
 https://github.com/libusb/hidapi/archive/refs/tags/hidapi-0.14.0.tar.gz
 https://github.com/libusb/hidapi/archive/refs/tags/hidapi-0.15.0.tar.gz
+https://github.com/libusb/hidapi/archive/refs/tags/hidapi-0.16.0.tar.gz
 https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
 https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.tar.bz2
 https://github.com/libusb/libusb/releases/download/v1.0.28/libusb-1.0.28.tar.bz2
@@ -5053,6 +5068,7 @@ https://github.com/nektos/act/archive/refs/tags/v0.2.94.tar.gz
 https://github.com/nektos/act/archive/refs/tags/v0.2.95.tar.gz
 https://github.com/nektos/act/archive/refs/tags/v0.2.96.tar.gz
 https://github.com/nektos/act/archive/refs/tags/v0.2.97.tar.gz
+https://github.com/nektos/act/archive/refs/tags/v0.2.98.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.4.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.5.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.0.tar.gz
@@ -5064,6 +5080,7 @@ https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.6.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.8.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.2.0.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.2.1.tar.gz
+https://github.com/nemtrif/utfcpp/archive/refs/tags/v5.0.0.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20220429.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20231006.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20250404.tar.gz
@@ -6059,6 +6076,7 @@ https://github.com/simdjson/simdjson/archive/refs/tags/v5.0.6.tar.gz
 https://github.com/simdjson/simdjson/archive/refs/tags/v5.0.7.tar.gz
 https://github.com/simdjson/simdjson/archive/refs/tags/v5.1.0.tar.gz
 https://github.com/simdjson/simdjson/archive/refs/tags/v5.1.1.tar.gz
+https://github.com/simdjson/simdjson/archive/refs/tags/v5.2.0.tar.gz
 https://github.com/simdutf/simdutf/archive/refs/tags/v7.4.0.tar.gz
 https://github.com/simdutf/simdutf/archive/refs/tags/v7.5.0.tar.gz
 https://github.com/simdutf/simdutf/archive/refs/tags/v7.7.0.tar.gz
@@ -6068,6 +6086,7 @@ https://github.com/simdutf/simdutf/archive/refs/tags/v9.2.1.tar.gz
 https://github.com/simdutf/simdutf/archive/refs/tags/v9.3.0.tar.gz
 https://github.com/simdutf/simdutf/archive/refs/tags/v9.3.2.tar.gz
 https://github.com/simdutf/simdutf/archive/refs/tags/v9.3.3.tar.gz
+https://github.com/simdutf/simdutf/archive/refs/tags/v9.4.0.tar.gz
 https://github.com/sivel/speedtest-cli/archive/refs/tags/v2.1.3.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.10.0.0.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.4.0.tar.gz
@@ -6260,6 +6279,7 @@ https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.10.0/syslog
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.10.1/syslog-ng-4.10.1.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.10.2/syslog-ng-4.10.2.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.12.0/syslog-ng-4.12.0.tar.gz
+https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.13.0/syslog-ng-4.13.0.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.3.1/syslog-ng-4.3.1.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.4.0/syslog-ng-4.4.0.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.6.0/syslog-ng-4.6.0.tar.gz
@@ -6676,6 +6696,9 @@ https://github.com/vim/vim/archive/refs/tags/v9.2.1320.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.2.1332.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.2.1342.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.2.1345.tar.gz
+https://github.com/vim/vim/archive/refs/tags/v9.2.1351.tar.gz
+https://github.com/vim/vim/archive/refs/tags/v9.2.1352.tar.gz
+https://github.com/vim/vim/archive/refs/tags/v9.2.1355.tar.gz
 https://github.com/vmatare/thinkfan/archive/refs/tags/1.3.1.tar.gz
 https://github.com/vmatare/thinkfan/archive/refs/tags/2.0.0.tar.gz
 https://github.com/vmt/udis86/archive/refs/tags/v1.7.2.tar.gz
@@ -7617,6 +7640,7 @@ https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.17.0/kwindowsystem-
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.18.0/kwindowsystem-v6.18.0.tar.bz2
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.19.0/kwindowsystem-v6.19.0.tar.bz2
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.31.0/kwindowsystem-v6.31.0.tar.bz2
+https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.32.0/kwindowsystem-v6.32.0.tar.bz2
 https://invisible-island.net/archives/dialog/dialog-1.3-20240101.tgz
 https://invisible-island.net/archives/dialog/dialog-1.3-20250116.tgz
 https://invisible-island.net/archives/dialog/dialog-1.3-20250817.tgz
