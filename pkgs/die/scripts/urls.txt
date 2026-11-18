@@ -498,6 +498,7 @@ https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.6.1.2.tar.gz
 https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.6.1.tar.gz
 https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.7.0.tar.gz
 https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.8.1.tar.gz
+https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.9.0.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.3.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.4.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.5.tar.gz
