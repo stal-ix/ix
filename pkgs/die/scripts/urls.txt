@@ -6657,6 +6657,7 @@ https://github.com/videolan/dav1d/archive/refs/tags/1.5.1.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.5.2.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.5.3.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.5.4.tar.gz
+https://github.com/videolan/dav1d/archive/refs/tags/1.5.5.tar.gz
 https://github.com/vifm/vifm/archive/refs/tags/v0.13.tar.gz
 https://github.com/vifm/vifm/archive/refs/tags/v0.14.1.tar.gz
 https://github.com/vifm/vifm/archive/refs/tags/v0.14.2.tar.gz

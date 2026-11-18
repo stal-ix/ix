@@ -5,12 +5,12 @@ dav1d
 {% endblock %}
 
 {% block version %}
-1.5.4
+1.5.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/videolan/dav1d/archive/refs/tags/{{self.version().strip()}}.tar.gz
-a1d5b63d2d38ec9bd03acf643caa51fa22edd1e89c5a109c4807717216bbec07
+76ad07ab121d68407b64a6f50f540c90ca0b066d178bdc9adbea14acf4ce25a9
 {% endblock %}
 
 {% block lib_deps %}
