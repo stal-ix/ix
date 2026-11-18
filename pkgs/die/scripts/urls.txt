@@ -7562,6 +7562,7 @@ https://gitlab.isc.org/isc-projects/bind9/-/archive/v9.20.19/bind9-v9.20.19.tar.
 https://gitlab.isc.org/isc-projects/bind9/-/archive/v9.20.27/bind9-v9.20.27.tar.bz2?ref_type=tags
 https://gitlab.isc.org/isc-projects/bind9/-/archive/v9.20.29/bind9-v9.20.29.tar.bz2?ref_type=tags
 https://gitlab.isc.org/isc-projects/bind9/-/archive/v9.20.30/bind9-v9.20.30.tar.bz2?ref_type=tags
+https://gitlab.isc.org/isc-projects/bind9/-/archive/v9.20.31/bind9-v9.20.31.tar.bz2?ref_type=tags
 https://gitlab.matrix.org/matrix-org/olm/-/archive/3.2.15/olm-3.2.15.tar.bz2
 https://gitlab.matrix.org/matrix-org/olm/-/archive/3.2.16/olm-3.2.16.tar.bz2
 https://gitlab.xiph.org/xiph/ogg/-/archive/v1.3.5/ogg-v1.3.5.tar.bz2
