@@ -1246,6 +1246,7 @@ https://ftp.mozilla.org/pub/nspr/releases/v4.37/src/nspr-4.37.tar.gz
 https://ftp.mozilla.org/pub/nspr/releases/v4.38.2/src/nspr-4.38.2.tar.gz
 https://ftp.mozilla.org/pub/nspr/releases/v4.38/src/nspr-4.38.tar.gz
 https://ftp.mozilla.org/pub/nspr/releases/v4.40/src/nspr-4.40.tar.gz
+https://ftp.mozilla.org/pub/nspr/releases/v4.41/src/nspr-4.41.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_100_RTM/src/nss-3.100.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_102_RTM/src/nss-3.102.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_103_RTM/src/nss-3.103.tar.gz
