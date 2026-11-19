@@ -5,7 +5,7 @@ delta
 {% endblock %}
 
 {% block version %}
-0.21.0
+0.21.1
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/dandavison/delta/archive/refs/tags/{{self.version().strip()}}
 {% endblock %}
 
 {% block cargo_sha %}
-aa28cf835edadd526acc78e7be6ebe9a7d51939ffbb305ba2a29f8fd25fe3876
+221b7089f751b77e42a7dcbfc173c554335f56c3e80c76ba62c3e77abe07defc
 {% endblock %}
 
 {% block cargo_ver %}
