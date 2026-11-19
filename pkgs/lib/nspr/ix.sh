@@ -34,7 +34,3 @@ wrap_cc
 {% block env %}
 export CPPFLAGS="-I${out}/include/nspr \${CPPFLAGS}"
 {% endblock %}
-
-{% block c_rename_symbol %}
-poll
-{% endblock %}
