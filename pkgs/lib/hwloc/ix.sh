@@ -5,12 +5,12 @@ hwloc
 {% endblock %}
 
 {% block version %}
-2.15.0
+2.16.0
 {% endblock %}
 
 {% block fetch %}
 https://download.open-mpi.org/release/hwloc/v{{self.version().strip()[:4]}}/hwloc-{{self.version().strip()}}.tar.bz2
-0084b926fff9a960ddbf175654db39054ed60afbb830d2039d8a60686ca06a7f
+ad05eb466b915a4f0e0228173d7e09974ac38760c38d5b6f060254c050fca12d
 {% endblock %}
 
 {% block lib_deps %}

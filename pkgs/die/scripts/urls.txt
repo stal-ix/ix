@@ -692,6 +692,7 @@ https://download.open-mpi.org/release/hwloc/v2.12/hwloc-2.12.2.tar.bz2
 https://download.open-mpi.org/release/hwloc/v2.13/hwloc-2.13.0.tar.bz2
 https://download.open-mpi.org/release/hwloc/v2.14/hwloc-2.14.0.tar.bz2
 https://download.open-mpi.org/release/hwloc/v2.15/hwloc-2.15.0.tar.bz2
+https://download.open-mpi.org/release/hwloc/v2.16/hwloc-2.16.0.tar.bz2
 https://download.open-mpi.org/release/hwloc/v2.9/hwloc-2.9.0.tar.bz2
 https://download.oracle.com/berkeley-db/db-6.2.32.tar.gz
 https://download.qemu.org/qemu-8.0.0.tar.xz
