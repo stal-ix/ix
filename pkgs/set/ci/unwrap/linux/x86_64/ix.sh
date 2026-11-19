@@ -142,6 +142,7 @@ bin/agrep
 bin/tun2socks
 bin/postgresql/17
 bin/postgresql/18
+bin/postgresql/19
 bin/actkbd
 bld/git
 bin/dcraw
