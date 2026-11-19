@@ -5840,6 +5840,7 @@ https://github.com/redis/redis/archive/refs/tags/8.2.3.tar.gz
 https://github.com/relan/exfat/releases/download/v1.4.0/exfat-utils-1.4.0.tar.gz
 https://github.com/restic/restic/archive/refs/tags/v0.18.1.tar.gz
 https://github.com/restic/restic/archive/refs/tags/v0.19.1.tar.gz
+https://github.com/restic/restic/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/reubeno/brush/archive/refs/tags/brush-shell-v0.2.19.tar.gz
 https://github.com/reubeno/brush/archive/refs/tags/brush-shell-v0.2.20.tar.gz
 https://github.com/reubeno/brush/archive/refs/tags/brush-shell-v0.2.21.tar.gz
