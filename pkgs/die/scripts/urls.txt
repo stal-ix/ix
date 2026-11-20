@@ -3194,6 +3194,7 @@ https://github.com/esnet/iperf/archive/refs/tags/3.19.1.tar.gz
 https://github.com/esnet/iperf/archive/refs/tags/3.19.tar.gz
 https://github.com/esnet/iperf/archive/refs/tags/3.20.tar.gz
 https://github.com/esnet/iperf/archive/refs/tags/3.21.tar.gz
+https://github.com/esnet/iperf/archive/refs/tags/3.22.1.tar.gz
 https://github.com/esnet/iperf/archive/refs/tags/3.22.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.4.22.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.10.tar.gz
