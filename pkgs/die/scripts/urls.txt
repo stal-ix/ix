@@ -1681,6 +1681,7 @@ https://github.com/GNOME/epiphany/archive/refs/tags/48.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/48.3.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/51.1.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/51.2.tar.gz
+https://github.com/GNOME/epiphany/archive/refs/tags/51.3.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/43.1.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/44.5.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/44.6.tar.gz
