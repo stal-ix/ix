@@ -2450,6 +2450,7 @@ https://github.com/ada-url/ada/archive/refs/tags/v3.2.7.tar.gz
 https://github.com/ada-url/ada/archive/refs/tags/v3.3.0.tar.gz
 https://github.com/ada-url/ada/archive/refs/tags/v3.4.2.tar.gz
 https://github.com/ada-url/ada/archive/refs/tags/v4.0.0.tar.gz
+https://github.com/ada-url/ada/archive/refs/tags/v4.1.1.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_5_1.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_6_0.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_6_1.tar.gz
