@@ -19,7 +19,7 @@ lib/c++
 lib/curl
 lib/git/2
 lib/cpuid
-lib/boost
+lib/boost(libboost_ver=89)
 lib/kernel
 lib/brotli
 lib/sodium
