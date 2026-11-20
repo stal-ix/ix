@@ -5821,6 +5821,7 @@ https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.5.0.tar.gz
+https://github.com/redis/hiredis/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.2.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.3.tar.gz
