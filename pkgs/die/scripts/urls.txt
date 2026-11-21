@@ -4712,6 +4712,7 @@ https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.7.2.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.7.3.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.7.4.tar.gz
 https://github.com/limine-bootloader/limine/releases/download/v12.10.0/limine-12.10.0.tar.xz
+https://github.com/limine-bootloader/limine/releases/download/v12.11.0/limine-12.11.0.tar.xz
 https://github.com/limine-bootloader/limine/releases/download/v12.7.0/limine-12.7.0.tar.xz
 https://github.com/limine-bootloader/limine/releases/download/v12.8.0/limine-12.8.0.tar.xz
 https://github.com/limine-bootloader/limine/releases/download/v12.9.1/limine-12.9.1.tar.xz
