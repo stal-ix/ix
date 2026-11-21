@@ -6057,6 +6057,7 @@ https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.4.tar.gz
 https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.5.tar.gz
 https://github.com/seccomp/libseccomp/archive/refs/tags/v2.6.0.tar.gz
 https://github.com/seccomp/libseccomp/archive/refs/tags/v2.6.1.tar.gz
+https://github.com/seccomp/libseccomp/archive/refs/tags/v2.6.2.tar.gz
 https://github.com/sekrit-twc/zimg/archive/refs/tags/release-3.0.4.tar.gz
 https://github.com/sekrit-twc/zimg/archive/refs/tags/release-3.0.5.tar.gz
 https://github.com/sekrit-twc/zimg/archive/refs/tags/release-3.0.6.tar.gz
