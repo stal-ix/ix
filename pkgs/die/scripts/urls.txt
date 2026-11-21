@@ -843,6 +843,7 @@ https://downloads.sourceforge.net/project/nfs/nfs-utils/2.8.3/nfs-utils-2.8.3.ta
 https://downloads.sourceforge.net/project/nfs/nfs-utils/2.8.4/nfs-utils-2.8.4.tar.xz
 https://downloads.sourceforge.net/project/nfs/nfs-utils/2.9.2/nfs-utils-2.9.2.tar.xz
 https://downloads.sourceforge.net/project/nfs/nfs-utils/3.1.1/nfs-utils-3.1.1.tar.xz
+https://downloads.sourceforge.net/project/nfs/nfs-utils/3.2.1/nfs-utils-3.2.1.tar.xz
 https://downloads.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2
 https://downloads.sourceforge.net/project/perfmon2/libpfm4/libpfm-4.13.0.tar.gz
 https://downloads.sourceforge.net/project/perfmon2/libpfm4/libpfm-4.14.1.tar.gz
