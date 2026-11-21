@@ -5,12 +5,12 @@ gnutls
 {% endblock %}
 
 {% block version %}
-3.8.13
+3.8.14
 {% endblock %}
 
 {% block fetch %}
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-{{self.version().strip()}}.tar.xz
-ffed8ec1bf09c2426d4f14aae377de4753b53e537d685e604e99a8b16ca9c97e
+7e2d258071f5db9620aa7ff34259331d004f7beafa3eb18560cfaf60acfbf02a
 {% endblock %}
 
 {% block conf_ver %}

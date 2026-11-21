@@ -5,12 +5,12 @@ nix
 {% endblock %}
 
 {% block version %}
-2.35.6
+2.36.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/NixOS/nix/archive/refs/tags/{{self.version().strip()}}.tar.gz
-0a10c2dadca75797ae7e0bce264230cf818a028d7ac5bbd122984cf3bb82ec59
+9e1efb11f65046ea2b02d2a57c07369e354ac619938d638051fff083fcdc5be3
 {% endblock %}
 
 {% block bld_libs %}
@@ -19,7 +19,7 @@ lib/c++
 lib/curl
 lib/git/2
 lib/cpuid
-lib/boost
+lib/boost(libboost_ver=89)
 lib/kernel
 lib/brotli
 lib/sodium

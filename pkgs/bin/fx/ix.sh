@@ -5,7 +5,7 @@ fx
 {% endblock %}
 
 {% block version %}
-40.0.1
+40.0.2
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/antonmedv/fx/archive/refs/tags/{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block go_sha %}
-65c60531287c6d9529e2aaae5902329d853f333566612527c8ceef222a9aa915
+e44859a08c2d73a9ea514958f3f17c623ab241694e9f2ed6513ff8ea4693bc92
 {% endblock %}
 
 {% block go_bins %}

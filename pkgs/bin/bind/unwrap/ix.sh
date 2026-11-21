@@ -5,12 +5,12 @@ bind9
 {% endblock %}
 
 {% block version %}
-9.20.30
+9.20.31
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.isc.org/isc-projects/bind9/-/archive/v{{self.version().strip()}}/bind9-v{{self.version().strip()}}.tar.bz2?ref_type=tags
-fb58d1807172732d3b28e758bb6fa8cba84b8f803280ca8f1632b0ee6d3896b0
+c7f9fbfe2382c9cc6a9b1a6c4fa1261a37104ad3198d2d6b074d43e93dee7a20
 {% endblock %}
 
 {% block bld_libs %}

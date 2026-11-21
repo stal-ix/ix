@@ -5,12 +5,12 @@ nspr
 {% endblock %}
 
 {% block version %}
-4.40
+4.41
 {% endblock %}
 
 {% block fetch %}
 https://ftp.mozilla.org/pub/nspr/releases/v{{self.version().strip()}}/src/nspr-{{self.version().strip()}}.tar.gz
-c0c1884c627f3db7a783f7c7314c695226b2043696791d15519e7e0578c19bdc
+c562b8ddfe93704b7dc077be013f01448fdc6c124b1821c0f10471a71cb2e9e6
 {% endblock %}
 
 {% block unpack %}
@@ -33,8 +33,4 @@ wrap_cc
 
 {% block env %}
 export CPPFLAGS="-I${out}/include/nspr \${CPPFLAGS}"
-{% endblock %}
-
-{% block c_rename_symbol %}
-poll
 {% endblock %}

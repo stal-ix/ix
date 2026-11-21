@@ -5,12 +5,12 @@ hiredis
 {% endblock %}
 
 {% block version %}
-1.5.0
+1.5.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/redis/hiredis/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-eec7ef8641d221e144a58d5ef8d733c8c75c7fd487097a233aacb4fa33981cfb
+f5ec19151c0f4f15ca018c22b17b6f6739a672a4fc0c085b692aef69a154ebef
 {% endblock %}
 
 {% block lib_deps %}

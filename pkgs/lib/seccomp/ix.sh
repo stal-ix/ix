@@ -5,12 +5,12 @@ libseccomp
 {% endblock %}
 
 {% block version %}
-2.6.1
+2.6.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/seccomp/libseccomp/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-f9a13e4c633d319a9240189760ca348caa0837c0ebe2a09b17061da8ceaf60f0
+4e3dfa94dfc4c2aa21e5e707e5bfebc87063f2461b1d22f84e9d1ed507db7e4b
 {% endblock %}
 
 {% block lib_deps %}

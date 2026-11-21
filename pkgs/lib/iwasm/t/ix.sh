@@ -5,12 +5,12 @@ wasm-micro-runtime
 {% endblock %}
 
 {% block version %}
-2.4.5
+2.4.6
 {% endblock %}
 
 {% block fetch %}
 https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-{{self.version().strip()}}.tar.gz
-1ab09d51099f276ca4a1d6629f6b589aab2bd0caa01445e05031a4bed22c199b
+6a8de3f74671a72698b4bd61a96c1ce8966db077b2adad7b720757cfd9caff62
 {% endblock %}
 
 {% block bld_libs %}

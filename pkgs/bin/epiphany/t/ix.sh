@@ -5,12 +5,12 @@ epiphany
 {% endblock %}
 
 {% block version %}
-51.2
+51.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/epiphany/archive/refs/tags/{{self.version().strip()}}.tar.gz
-8a3392d7e7d436bf16ab4b3e787a518dba9eabccdb17c863d5c7dadb259c8144
+23f9c816460d0878ee63352f169dd3598355de731f0be58ac0f9c87d8e55ac66
 {% endblock %}
 
 {% block bld_libs %}

@@ -5,12 +5,12 @@ vim
 {% endblock %}
 
 {% block version %}
-9.2.1355
+9.2.1373
 {% endblock %}
 
 {% block fetch %}
 https://github.com/vim/vim/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-4290f6ca08613564329d8e384ab2406d75ba5dca3971b824238967c4e0090665
+1530e7f53811c5c1000410b6f9831d15a3f1e258d6dc4fbd7ab3dca344fb541f
 {% endblock %}
 
 {% block unpack %}

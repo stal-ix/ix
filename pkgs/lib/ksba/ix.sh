@@ -5,12 +5,12 @@ libksba
 {% endblock %}
 
 {% block version %}
-1.8.1
+1.9.1
 {% endblock %}
 
 {% block fetch %}
 https://www.gnupg.org/ftp/gcrypt/libksba/libksba-{{self.version().strip()}}.tar.bz2
-c2f84393011827219ae117131dba8e7684c2bed0961eed11b0642c2acba440b5
+9afdd398b4a076735e1e7fd29c7f6e7670b6c382aee2d3a55aa937b283f43e5b
 {% endblock %}
 
 {% block lib_deps %}
